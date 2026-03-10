@@ -1,0 +1,24 @@
+# ModelSim generated files
+transcript
+vlog.opt
+vsim.wlf
+*.wlf
+
+# ModelSim work library
+sim/work/
+
+# ModelSim internal files
+_info
+_lib*.qdb
+_lib*.qpg
+_lib*.qtl
+_vmake
+
+# temporary files
+*.log
+*.jou
+*.bak
+
+# OS files
+.DS_Store
+Thumbs.db
