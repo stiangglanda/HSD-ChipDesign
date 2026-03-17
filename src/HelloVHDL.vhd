@@ -31,12 +31,23 @@ begin
     variable boolean_var : boolean := true;
     variable bit_var : bit := '1';
 
-    type tage_array is array (tage) of tage;
+    type tage_array is array (tage) of tage; --(INDEX_DEFINITION)
     variable vTage : tage_array := (mo, di, mi, do, fr, sa, so);
 
+    subtype aIntSub is integer range 0 to 255;
+    variable aIntSubVar : aIntSub := 5;
+
+    type aMathVector is array (integer range <>) of real; -- unconstrained
+    variable vMathVec : aMathVector(0 to 3) := (1.0, 2.0, 3.0, 4.0);
+
+    type string2 is array (positive range <>) of character; -- unconstrained
+    variable vString : string2(1 to 5) := "Hello";
+
+    variable vBitVec : bit_vector (7 downto 0) := "10101010";
+    variable vBitVec2 : bit_vector (3 downto 0) := "1101";
   begin
 
-
+    vBitVec2(3 downto 0) := vBitVec(7 downto 4); -- slice assignment
   
     report "Hello VHDL";
     add (c3, c2, sum);
