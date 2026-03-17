@@ -3,7 +3,6 @@ end first;
 
 architecture do_it of first is
     -- deklarationen fuer architecture
-
 begin
 
   lets_do_it : process is
@@ -24,6 +23,11 @@ begin
     subtype werktage is tage range mo to fr;
     variable d1 : werktage := di;
 
+    variable integer_var : integer := 42;
+    variable real_var : real := 2.3;
+    variable char_var : character := 'A';
+    variable boolean_var : boolean := true;
+    variable bit_var : bit := '1';
   begin
 
 
