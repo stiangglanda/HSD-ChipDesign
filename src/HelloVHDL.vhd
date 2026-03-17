@@ -18,8 +18,10 @@ begin
 
     variable r1 : real := 1.5;
     constant c2 : integer := 2;
+    constant c3 : integer := 5;
 
     type tage is (mo, di,mi,do,fr,sa,so);
+    variable tag1 : tage := fr;
     subtype werktage is tage range mo to fr;
     variable d1 : werktage := di;
 
@@ -28,12 +30,16 @@ begin
     variable char_var : character := 'A';
     variable boolean_var : boolean := true;
     variable bit_var : bit := '1';
+
+    type tage_array is array (tage) of tage;
+    variable vTage : tage_array := (mo, di, mi, do, fr, sa, so);
+
   begin
 
 
   
     report "Hello VHDL";
-    add (5, c2, sum);
+    add (c3, c2, sum);
 
     wait for 10 ns;
 
