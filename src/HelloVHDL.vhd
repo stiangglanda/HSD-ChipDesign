@@ -20,6 +20,10 @@ begin
     variable r1 : real := 1.5;
     constant c2 : integer := 2;
 
+    type tage is (mo, di,mi,do,fr,sa,so);
+    subtype werktage is tage range mo to fr;
+    variable d1 : werktage := di;
+
   begin
 
 
@@ -29,7 +33,7 @@ begin
 
     wait for 10 ns;
 
-    if sum = 7 then
+    if sum = 7 then --for uebung work with elsif
       report "5+2 = 7";
     else
        report "5+2 /= 7";
@@ -45,7 +49,7 @@ begin
 
     wait for 10 ns;
 
-    while sum > 0 loop
+    while sum > 0 loop 
       report "while loop";
       sum := sum-3;
       wait for 5 ns;
