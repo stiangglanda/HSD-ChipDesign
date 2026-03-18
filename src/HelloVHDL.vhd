@@ -12,6 +12,11 @@ begin
       y := a + b;
     end;
 
+    procedure sub (a : in integer; b : in integer; y : out integer) is
+    begin
+      y := a - b;
+    end;
+
     variable sum : integer;
     variable b1 : boolean := true;
     variable bit1 : bit := '0';
@@ -48,17 +53,53 @@ begin
   begin
 
     vBitVec2(3 downto 0) := vBitVec(7 downto 4); -- slice assignment
+
+    vBitVec := vBitVec and "11110000"; -- bitwise and
+    vBitVec2 := vBitVec2 xor "1010"; -- bitwise xor
+
+    -- Gleich
+    report "7 rem 3 =" & integer'image(7 rem 3);
+    report "7 mod 3 =" & integer'image(7 mod 3);
+
+    -- Unterschiedlich
+    report "-7 rem 3 =" & integer'image((-7) rem 3);
+    report "-7 mod 3 =" & integer'image((-7) mod 3);
+
+    -- Unterschiedlich
+    report "7 rem -3 =" & integer'image(7 rem (-3));
+    report "7 mod -3 =" & integer'image(7 mod (-3));
+
+    -- Gleich
+    report "-7 rem -3 =" & integer'image((-7) rem (-3)); -- (negative number)
+    report "-7 mod -3 =" & integer'image((-7) mod (-3));
+    -- rem nimt das vorzeichen von a und mod das von b
+
+    case tag1 is
+      when mo | di | mi | do | fr =>
+        report "Werktag";
+      when sa | so =>
+        report "Wochenende";
+      when others =>
+        report "Ungültiger Tag";
+    end case;
   
     report "Hello VHDL";
     add (c3, c2, sum);
+    sub (sum, c2, sum);
 
     wait for 10 ns;
 
     if sum = 7 then --for uebung work with elsif
       report "5+2 = 7";
+    elsif sum < 7 then
+      report "sum < 7";
     else
        report "5+2 /= 7";
     end if;
+
+    assert (sum = 7) 
+      report "Sum is not 7"
+      severity warning;
 
     wait for 15 ns;
 
