@@ -56,12 +56,21 @@ P1: process
 
 	function BinToInt(vBVector : bit_vector; bTwosComplement : boolean) return integer is
 		variable vResult : integer := 0;
+		variable vHighestBitVal : integer := 0;
 	begin
+		if vBVector(vBVector'range) = '1' then
+			vHighestBitVal := PowOfTwo(vBVector'range);
+		end if;
+
 		for i in vBVector'range loop
 			if vBVector(i) = '1' then
 				vResult := vResult + PowOfTwo(i);
 			end if;
 		end loop;
+
+		if bTwosComplement then
+			vResult = vResult - vHighestBitVal * 2;
+		end if;
 		return vResult;
 	end;
 	
