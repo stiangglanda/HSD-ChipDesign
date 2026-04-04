@@ -38,10 +38,12 @@ P1: process
 	-- Der 1. Eingabe-Parameter hat Typ bit_vector
 	-- Der 2. Eingabe-Parameter hat Typ boolean (true: Zahl im Zweierkomplement)
 	-- Der Rueckgabe-Wert hat den Typ Integer.
-	function PowOfTwo(pow: integer) return integer is
-		variable nResult : integer := 1;
+	function PowOfTwo(pow: NATURAL) return NATURAL is
+		variable nResult : NATURAL := 1;
 	begin
-		if pow = 1 then
+		if pow = 0 then
+			return 1;
+		elsif pow = 1 then
 			return 2;
 		end if;
 
