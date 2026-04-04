@@ -3,7 +3,7 @@
 -- Author		    : Thomas Mueller-W.
 ---------------------------------------------------------------------------
 -- Aufgabe        	: Aufgabe 1 - BinToInt
--- Student*in      	: 
+-- Student*in      	: Leander Kieweg
 ---------------------------------------------------------------------------
 
 use std.textio.all;	-- zur Ausgabe der Ergebnisse in eine Datei
@@ -38,8 +38,30 @@ P1: process
 	-- Der 1. Eingabe-Parameter hat Typ bit_vector
 	-- Der 2. Eingabe-Parameter hat Typ boolean (true: Zahl im Zweierkomplement)
 	-- Der Rueckgabe-Wert hat den Typ Integer.
-	
-	-- function BinToInt() ......
+	function PowOfTwo(pow: integer) return integer is
+		variable nResult : integer := 1;
+	begin
+		if pow = 1 then
+			return 2;
+		end if;
+
+		for i in 1 to pow loop
+			nResult := nResult * 2;
+		end loop;
+
+		return nResult;
+	end;
+
+	function BinToInt(vBVector : bit_vector; bTwosComplement : boolean) return integer is
+		variable vResult : integer := 0;
+	begin
+		for i in vBVector'range loop
+			if vBVector(i) = '1' then
+				vResult := vResult + PowOfTwo(i);
+			end if;
+		end loop;
+		return vResult;
+	end;
 	
 	-- =============== Ende des zu editierenden Bereiches ==================
 		
