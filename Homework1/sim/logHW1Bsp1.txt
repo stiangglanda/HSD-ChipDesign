@@ -1,0 +1,6 @@
+Vektor/Unsigned/Signed: 00000000/0/0
+Vektor/Unsigned/Signed: 10000100/132/-124
+Vektor/Unsigned/Signed: 00001111/15/15
+Vektor/Unsigned/Signed: 10000000/128/-128
+Vektor/Unsigned/Signed: 1111111111111111/65535/-1
+Vektor/Unsigned/Signed: 0000000001100100/100/100

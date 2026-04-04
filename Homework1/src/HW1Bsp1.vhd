@@ -58,8 +58,8 @@ P1: process
 		variable vResult : integer := 0;
 		variable vHighestBitVal : integer := 0;
 	begin
-		if vBVector(vBVector'range) = '1' then
-			vHighestBitVal := PowOfTwo(vBVector'range);
+		if vBVector(vBVector'left) = '1' then
+			vHighestBitVal := PowOfTwo(vBVector'left);
 		end if;
 
 		for i in vBVector'range loop
@@ -69,7 +69,7 @@ P1: process
 		end loop;
 
 		if bTwosComplement then
-			vResult = vResult - vHighestBitVal * 2;
+			vResult := vResult - vHighestBitVal - vHighestBitVal;
 		end if;
 		return vResult;
 	end;
