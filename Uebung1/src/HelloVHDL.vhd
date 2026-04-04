@@ -12,9 +12,9 @@ begin
       y := a + b;
     end;
 
-    procedure sub (a : in integer; b : in integer; y : out integer) is
+    function sub (a : integer; b : integer) return integer is
     begin
-      y := a - b;
+      return a - b;
     end;
 
     variable sum : integer;
@@ -36,8 +36,8 @@ begin
     variable boolean_var : boolean := true;
     variable bit_var : bit := '1';
 
-    type tage_array is array (tage) of tage; --(INDEX_DEFINITION)
-    variable vTage : tage_array := (mo, di, mi, do, fr, sa, so);
+    type tage_array is array (tage) of boolean; --(INDEX_DEFINITION)
+    variable vTage : tage_array := (sa=>false, so=>false, others=>true);
 
     subtype aIntSub is integer range 0 to 255;
     variable aIntSubVar : aIntSub := 5;
@@ -50,12 +50,19 @@ begin
 
     variable vBitVec : bit_vector (7 downto 0) := "10101010";
     variable vBitVec2 : bit_vector (3 downto 0) := "1101";
-  begin
+variable vBitVec3 : bit_vector (3 downto 0) := ('1','1','0','1');
+type abv is array (3 downto 0) of bit;
+variable vBitVec4 : abv;
+variable vb1 : boolean;
 
+  begin
+    vBitVec4:=(others=>'0');
     vBitVec2(3 downto 0) := vBitVec(7 downto 4); -- slice assignment
 
     vBitVec := vBitVec and "11110000"; -- bitwise and
     vBitVec2 := vBitVec2 xor "1010"; -- bitwise xor
+
+vb1 := vBitVec2<vBitVec; --LRM
 
     -- Gleich
     report "7 rem 3 =" & integer'image(7 rem 3);
@@ -77,15 +84,15 @@ begin
     case tag1 is
       when mo | di | mi | do | fr =>
         report "Werktag";
-      when sa | so =>
+      when so =>
         report "Wochenende";
       when others =>
-        report "Ungültiger Tag";
+        report "Ungueltiger Tag";
     end case;
   
     report "Hello VHDL";
     add (c3, c2, sum);
-    sub (sum, c2, sum);
+    sum := sub(sum, c2);
 
     wait for 10 ns;
 
