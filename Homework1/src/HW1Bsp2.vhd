@@ -33,13 +33,19 @@ begin
 	procedure my_sll (vector: in aBVector; shamt: in ashamt; result: out aBVector) is
 	begin
 		result := (others => '0');			-- to be replaced
+		for i in vector'left to vector'right - shamt loop
+			result(i+shamt) := vector(i);
+		end loop;
 	end procedure my_sll;
 
 	--------- SRL ---------------------------------------------------------------
 	
 	procedure my_srl (vector: in aBVector; shamt: in ashamt; result: out aBVector) is
 	begin
- 	     result := (others => '0');			-- to be replaced
+ 	    result := (others => '0');			-- to be replaced
+		for i in vector'right to vector'left - shamt loop
+			result(i+shamt) := vector(i);
+		end loop;
 	end procedure my_srl;
 
 	--------- SRA ---------------------------------------------------------------
