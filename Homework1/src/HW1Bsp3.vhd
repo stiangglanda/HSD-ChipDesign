@@ -35,13 +35,26 @@ begin
 	-- ======================= Ab hier editieren =====================
 
 	function HexTo7SegA (HexVal : aHexVal) return a7SegVal is
-		type a7SegValArr is array (integer) of a7SegVal;
+		type a7SegValArr is array (0 to 15) of a7SegVal;
 		variable vDigits : a7SegValArr := ("1111110","0110000","1101101", 
 		"1111001", "1011011", "1011110", "1011110", "1110000", "1111111",
 		"1111011", "1110111", "0011111", "1001110", "0111101", "1001111", "1000111");
+		variable vIndex : integer:=0;
 	begin
-		--return vDigits(HexVal);
-		return ("1111110");
+		if(HexVal(3)='1') then
+			vIndex := vIndex + 8;
+		end if;
+		if(HexVal(2)='1') then
+			vIndex := vIndex + 4;
+		end if;
+		if(HexVal(1)='1') then
+			vIndex := vIndex + 2;
+		end if;
+		if(HexVal(0)='1') then
+			vIndex := vIndex + 1;
+		end if;
+
+		return vDigits(vIndex);
 	end function HexTo7SegA;
 	
 	
