@@ -70,7 +70,7 @@ begin
  	    result := (others => '0');			-- to be replaced
 
 		for i in vector'left to vector'right loop
-			result((i+shamt) mod (vector'length + vector'left)) := vector(i); -- mod vector'length
+			result(((i+shamt-vector'left) mod vector'length)+vector'left) := vector(i); -- mod vector'length
 		end loop;
 	end procedure my_ror;
 	
