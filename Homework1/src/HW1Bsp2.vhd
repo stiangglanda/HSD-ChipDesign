@@ -3,7 +3,7 @@
 -- Author			: Thomas Mueller-W.
 -------------------------------------------------------------------------------
 -- Aufgabe        	: Aufgabe 2
--- Student*in      	: 
+-- Student*in      	: Leander Kieweg
 -------------------------------------------------------------------------------
 
 use std.textio.all;	-- zur Ausgabe der Ergebnisse in eine Datei
