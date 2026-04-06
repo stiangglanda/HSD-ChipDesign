@@ -37,22 +37,15 @@ begin
 	function HexTo7SegA (HexVal : aHexVal) return a7SegVal is
 		type a7SegValArr is array (0 to 15) of a7SegVal;
 		variable vDigits : a7SegValArr := ("1111110","0110000","1101101", 
-		"1111001", "1011011", "1011110", "1011110", "1110000", "1111111",
+		"1111001", "0110011", "1011011", "1011111", "1110000", "1111111",
 		"1111011", "1110111", "0011111", "1001110", "0111101", "1001111", "1000111");
 		variable vIndex : integer:=0;
 	begin
-		if(HexVal(3)='1') then
-			vIndex := vIndex + 8;
-		end if;
-		if(HexVal(2)='1') then
-			vIndex := vIndex + 4;
-		end if;
-		if(HexVal(1)='1') then
-			vIndex := vIndex + 2;
-		end if;
-		if(HexVal(0)='1') then
-			vIndex := vIndex + 1;
-		end if;
+		for i in HexVal'range loop
+    		if HexVal(i) = '1' then
+        		vIndex := vIndex + (2**i);
+    		end if;
+		end loop;
 
 		return vDigits(vIndex);
 	end function HexTo7SegA;
@@ -74,7 +67,7 @@ begin
 			when "0101" => -- 5
         		return ("1011011"); -- a, c, d, f, g
 			when "0110" => -- 6
-        		return ("1011110"); -- a, c, d, e, f
+        		return ("1011111"); -- a, c, d, e, f, g
 			when "0111" => -- 7
         		return ("1110000"); -- a, b, c
 			when "1000" => -- 8

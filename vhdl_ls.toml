@@ -1,10 +1,10 @@
 [libraries]
 
 lib.files = [
-"Homework1/src/HW1Bsp1.vhd",
-"Homework1/src/HW1Bsp2.vhd",
-"Homework1/src/HW1Bsp3.vhd",
 "Uebung2/src/Uebung2_2.vhd",
 "Uebung2/src/Uebung2_1.vhd",
 "Uebung1/src/HelloVHDL.vhd",
+"Homework1/src/HW1Bsp1.vhd",
+"Homework1/src/HW1Bsp2.vhd",
+"Homework1/src/HW1Bsp3.vhd",
 ]

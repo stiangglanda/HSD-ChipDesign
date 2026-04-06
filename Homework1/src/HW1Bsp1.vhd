@@ -38,15 +38,6 @@ P1: process
 	-- Der 1. Eingabe-Parameter hat Typ bit_vector
 	-- Der 2. Eingabe-Parameter hat Typ boolean (true: Zahl im Zweierkomplement)
 	-- Der Rueckgabe-Wert hat den Typ Integer.
-	function PowOfTwo(pow: NATURAL) return NATURAL is
-		variable nResult : NATURAL := 1;
-	begin
-		for i in 1 to pow loop
-			nResult := nResult * 2;
-		end loop;
-
-		return nResult;
-	end function PowOfTwo;
 
 	function BinToInt(vBVector : bit_vector; bTwosComplement : boolean) return integer is
 		variable vResult : integer := 0;
@@ -54,13 +45,13 @@ P1: process
 	begin
 		for i in vBVector'range loop
 			if vBVector(i) = '1' then
-				vResult := vResult + PowOfTwo(i);
+				vResult := vResult + (2**i);
 			end if;
 		end loop;
 
 		if bTwosComplement then
 			if vBVector(vBVector'left) = '1' then
-				vHighestBitVal := PowOfTwo(vBVector'left);
+				vHighestBitVal := (2**vBVector'left);
 			end if;
 			vResult := vResult - vHighestBitVal - vHighestBitVal;
 		end if;
