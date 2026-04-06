@@ -35,14 +35,52 @@ begin
 	-- ======================= Ab hier editieren =====================
 
 	function HexTo7SegA (HexVal : aHexVal) return a7SegVal is
+		variable vDigits : a7SegVal := ("1111110","0110000","1101101", 
+		"1111001", "1011011", "1011110", "1011110", "1110000", "1111111",
+		"1111011", "1110111", "0011111", "1001110", "0111101", "1001111", "1000111");
 	begin
- 	     return ("1111111");		-- to be replaced
+		return vDigits(toInteger(HexVal));
 	end function HexTo7SegA;
 	
 	
 	function HexTo7SegB (HexVal : aHexVal) return a7SegVal is
 	begin
- 	     return ("1111111");		-- to be replaced
+		case HexVal is
+      		when "0000" => -- 0
+        		return ("1111110"); -- a, b, c, d, e, f
+      		when "0001" => -- 1
+        		return ("0110000"); -- b,c
+			when "0010" => -- 2
+        		return ("1101101"); -- a, b, d, e, g
+			when "0011" => -- 3
+        		return ("1111001"); -- a, b, g, c, d
+			when "0100" => -- 4
+        		return ("0110011"); -- b, c, f, g
+			when "0101" => -- 5
+        		return ("1011011"); -- a, c, d, f, g
+			when "0110" => -- 6
+        		return ("1011110"); -- a, c, d, e, f
+			when "0111" => -- 7
+        		return ("1110000"); -- a, b, c
+			when "1000" => -- 8
+        		return ("1111111"); -- a, b, c, d, e, f, g
+			when "1001" => -- 9
+        		return ("1111011"); -- a, b, c, d, f, g
+			when "1010" => -- A
+        		return ("1110111"); -- a, b, c, e, f, g
+			when "1011" => -- B
+        		return ("0011111"); -- c, d, e, f, g
+			when "1100" => -- C
+        		return ("1001110"); -- a, d, e, f
+			when "1101" => -- D
+        		return ("0111101"); -- b, c, d, e, g
+			when "1110" => -- E
+        		return ("1001111"); -- a, d, e, f, g
+			when "1111" => -- F
+        		return ("1000111"); -- a, e, f, g
+      		when others =>
+        		report "Ungueltiger HexVal";
+    	end case;
 	end function HexTo7SegB;
 
     	-- =============== Ende des zu editierenden Bereiches ==========
