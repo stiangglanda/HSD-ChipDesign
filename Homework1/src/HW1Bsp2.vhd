@@ -33,8 +33,8 @@ begin
 	procedure my_sll (vector: in aBVector; shamt: in ashamt; result: out aBVector) is
 	begin
 		result := (others => '0');			-- to be replaced
-		for i in vector'left to vector'right - shamt loop
-			result(i+shamt) := vector(i);
+		for i in vector'right downto vector'left + shamt loop
+			result(i-shamt) := vector(i);
 		end loop;
 	end procedure my_sll;
 
@@ -43,7 +43,7 @@ begin
 	procedure my_srl (vector: in aBVector; shamt: in ashamt; result: out aBVector) is
 	begin
  	    result := (others => '0');			-- to be replaced
-		for i in vector'right to vector'left - shamt loop
+		for i in vector'left to vector'right - shamt loop
 			result(i+shamt) := vector(i);
 		end loop;
 	end procedure my_srl;
@@ -69,8 +69,8 @@ begin
 	begin
  	    result := (others => '0');			-- to be replaced
 
-		for i in vector'left to vector'right - shamt loop
-			result(i+shamt mod vector'length) := vector(i);
+		for i in vector'left to vector'right loop
+			result((i+shamt) mod (vector'length + vector'left)) := vector(i); -- mod vector'length
 		end loop;
 	end procedure my_ror;
 	

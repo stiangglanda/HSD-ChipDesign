@@ -95,6 +95,7 @@ begin
         		return ("1000111"); -- a, e, f, g
       		when others =>
         		report "Ungueltiger HexVal";
+				return ("0110000");
     	end case;
 	end function HexTo7SegB;
 
