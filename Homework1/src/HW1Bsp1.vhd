@@ -41,18 +41,12 @@ P1: process
 	function PowOfTwo(pow: NATURAL) return NATURAL is
 		variable nResult : NATURAL := 1;
 	begin
-		if pow = 0 then
-			return 1;
-		elsif pow = 1 then
-			return 2;
-		end if;
-
 		for i in 1 to pow loop
 			nResult := nResult * 2;
 		end loop;
 
 		return nResult;
-	end;
+	end function PowOfTwo;
 
 	function BinToInt(vBVector : bit_vector; bTwosComplement : boolean) return integer is
 		variable vResult : integer := 0;
@@ -71,7 +65,7 @@ P1: process
 			vResult := vResult - vHighestBitVal - vHighestBitVal;
 		end if;
 		return vResult;
-	end;
+	end function BinToInt;
 	
 	-- =============== Ende des zu editierenden Bereiches ==================
 		
