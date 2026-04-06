@@ -52,14 +52,26 @@ begin
 	
 	procedure my_sra (vector: in aBVector; shamt: in ashamt; result: out aBVector) is
 	begin
- 	    result := (others => '0');			-- to be replaced
+		if vector(vector'left) = '1' then
+			result := (others => '1');			-- to be replaced
+		else
+			result := (others => '0');			-- to be replaced
+		end if;
+ 	    
+		for i in vector'left to vector'right - shamt loop
+			result(i+shamt) := vector(i);
+		end loop;
 	end procedure my_sra;
 	
 	--------- ROR ---------------------------------------------------------------
 	
 	procedure my_ror (vector: in aBVector; shamt: in ashamt; result: out aBVector) is
 	begin
- 	    result := (others => '0');			-- to be replaced	
+ 	    result := (others => '0');			-- to be replaced
+
+		for i in vector'left to vector'right - shamt loop
+			result(i+shamt mod vector'length) := vector(i);
+		end loop;
 	end procedure my_ror;
 	
 	-- ================== Ende des zu editierenden Bereiches ====================
