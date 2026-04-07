@@ -1,5 +1,11 @@
+entity uebung2_2 is
+end entity uebung2_2;
 
+architecture behav of uebung2_2 is
 
+  shared variable r, s : bit;
+
+begin
   Stimul: process
   begin
     wait for 100 ns;                    -- reset
@@ -20,3 +26,4 @@
     wait;
   end process Stimul;
 
+end architecture behav;
