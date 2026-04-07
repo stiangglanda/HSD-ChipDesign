@@ -1,7 +1,7 @@
 entity uebung2_2 is
 end entity uebung2_2;
 
-architecture behav of uebung2_2 is
+architecture behav2 of uebung2_2 is
 
   shared variable r, s : bit;
   shared variable Q : bit := '1';
@@ -9,17 +9,17 @@ architecture behav of uebung2_2 is
 
 begin
 
-  Nor1: process is
-  begin
-    Q := R nor Qn;
-    wait for 20 ns;
-  end process Nor1;
-
   Nor2: process is
   begin
     Q := S nor Q;
     wait for 20 ns;
   end process Nor2;
+
+  Nor1: process is
+  begin
+    Q := R nor Qn;
+    wait for 20 ns;
+  end process Nor1;
 
   Stimul: process
   begin
@@ -41,4 +41,4 @@ begin
     wait;
   end process Stimul;
 
-end architecture behav;
+end architecture behav2;
