@@ -11,7 +11,7 @@ begin
 
   Nor2: process is
   begin
-    Q := S nor Q;
+    Qn := S nor Q;
     wait for 20 ns;
   end process Nor2;
 
