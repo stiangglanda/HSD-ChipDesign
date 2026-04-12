@@ -43,10 +43,11 @@ begin
 	
 	procedure my_srl (vector: in aBVector; shamt: in ashamt; result: out aBVector) is
 	begin
- 	    result := (others => '0');			-- to be replaced
-		for i in vector'left to vector'right - shamt loop
-			result(i+shamt) := vector(i);
-		end loop;
+ 	    result := (others => '0');
+		
+		if shamt < vector'length then
+        	result(vector'left + shamt to vector'right) := vector(vector'left to vector'right - shamt);
+    	end if;
 	end procedure my_srl;
 
 	--------- SRA ---------------------------------------------------------------
@@ -54,25 +55,27 @@ begin
 	procedure my_sra (vector: in aBVector; shamt: in ashamt; result: out aBVector) is
 	begin
 		if vector(vector'left) = '1' then
-			result := (others => '1');			-- to be replaced
+			result := (others => '1');
 		else
-			result := (others => '0');			-- to be replaced
+			result := (others => '0');
 		end if;
- 	    
-		for i in vector'left to vector'right - shamt loop
-			result(i+shamt) := vector(i);
-		end loop;
+
+		if shamt < vector'length then
+        	result(vector'left + shamt to vector'right) := vector(vector'left to vector'right - shamt);
+    	end if;
 	end procedure my_sra;
 	
 	--------- ROR ---------------------------------------------------------------
 	
 	procedure my_ror (vector: in aBVector; shamt: in ashamt; result: out aBVector) is
 	begin
- 	    result := (others => '0');			-- to be replaced
+		if shamt > 0 and shamt < vector'length then
+			result(vector'left + shamt to vector'right) := vector(vector'left to vector'right - shamt);
 
-		for i in vector'left to vector'right loop
-			result(((i+shamt-vector'left) mod vector'length)+vector'left) := vector(i); -- mod vector'length
-		end loop;
+			result(vector'left to vector'left + shamt - 1) := vector(vector'right - shamt + 1 to vector'right);
+		else
+			result := vector;
+		end if;
 	end procedure my_ror;
 	
 	-- ================== Ende des zu editierenden Bereiches ====================
