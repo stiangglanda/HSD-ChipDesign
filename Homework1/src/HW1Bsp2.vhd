@@ -32,10 +32,11 @@ begin
 
 	procedure my_sll (vector: in aBVector; shamt: in ashamt; result: out aBVector) is
 	begin
-		result := (others => '0');			-- to be replaced
-		for i in vector'right downto vector'left + shamt loop
-			result(i-shamt) := vector(i);
-		end loop;
+		result := (others => '0');
+		
+		if shamt < vector'length then
+        	result(vector'left to vector'right - shamt) := vector(vector'left + shamt to vector'right);
+    	end if;
 	end procedure my_sll;
 
 	--------- SRL ---------------------------------------------------------------
