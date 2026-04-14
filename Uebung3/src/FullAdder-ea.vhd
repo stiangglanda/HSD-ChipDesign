@@ -1,15 +1,18 @@
 entity FullAdder is
   port (
-    A, B, Cin : in bit;
-    Sum, Cout : out bit
-  );
+    ia : in bit;
+    ib : in bit;
+    icin : in bit;
+    os : out bit;
+    ocout : out bit);
 end entity FullAdder;
 
-architecture Behavioral of FullAdder is
+architecture behave of FullAdder is
 begin
-    process (A, B, Cin)
+    process
     begin
-        Sum <= (A xor B) xor Cin after 20 ns;
-        Cout <= (A and B) or (Cin and (A xor B)) after 15 ns;
+        os <= ia xor ib xor icin after 20 ns;
+        ocout <= (ia and ib) or (icin and (ia xor ib)) after 15 ns;
+        wait on ia, ib, icin;
     end process;
-end architecture Behavioral;
+end architecture behave;

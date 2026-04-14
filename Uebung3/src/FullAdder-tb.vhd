@@ -7,11 +7,11 @@ architecture Testbench of TB_FullAdder is
 begin
     uut: entity work.FullAdder
         port map (
-            A => A,
-            B => B,
-            Cin => Cin,
-            Sum => Sum,
-            Cout => Cout
+            ia => A,
+            ib => B,
+            icin => Cin,
+            os => Sum,
+            ocout => Cout
         );
     
     Stimuli: process        
