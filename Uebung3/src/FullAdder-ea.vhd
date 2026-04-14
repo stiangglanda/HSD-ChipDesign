@@ -9,7 +9,7 @@ end entity FullAdder;
 
 architecture behave of FullAdder is
 begin
-    process
+    process -- what is the diffrence between wait on ia, ib, icin and process(ia, ib, icin)
     begin
         os <= ia xor ib xor icin after 20 ns;
         ocout <= (ia and ib) or (icin and (ia xor ib)) after 15 ns;
