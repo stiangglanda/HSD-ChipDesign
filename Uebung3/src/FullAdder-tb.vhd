@@ -3,7 +3,6 @@ end entity ;
 
 architecture struct of FullAdderTB is
     signal a, b, cin : bit := '0';
-
     signal s, cout : bit;
 begin
     uut: entity work.FullAdder(behave)
@@ -13,99 +12,105 @@ begin
             icin => cin,
             os => s,
             ocout => cout);
-    
-    Stimuli: process is
-    begin
-        a<='0' after 100 ns,
-            '1' after 200 ns;
 
-        
-        b <= '0' after 100 ns,
-             '1' after 200 ns;
+    Stimul: process is
+   begin
+      a <=  '0' after 100 ns, 
+            '0' after 200 ns, 
+            '0' after 300 ns, 
+            '0' after 400 ns, 
+            '1' after 500 ns, 
+            '1' after 600 ns, 
+            '1' after 700 ns, 
+            '1' after 800 ns;
 
-        cin <= '0' after 100 ns,
-               '1' after 200 ns;
+      b <=  '0' after 100 ns, 
+            '0' after 200 ns, 
+            '1' after 300 ns, 
+            '1' after 400 ns, 
+            '0' after 500 ns, 
+            '0' after 600 ns, 
+            '1' after 700 ns, 
+            '1' after 800 ns;
 
-        -- Test case 1: 0 + 0 + 0
-        a <= '0'; b <= '0'; cin <= '0';
-        wait for 25 ns;
+      cin <='0' after 100 ns, 
+            '1' after 200 ns, 
+            '0' after 300 ns, 
+            '1' after 400 ns, 
+            '0' after 500 ns, 
+            '1' after 600 ns, 
+            '0' after 700 ns, 
+            '1' after 800 ns;
+      wait;
+   end process Stimul;
 
-        if s /= '0' or cout /= '0' then
-            report "Test case 1 failed: Expected s=0, cout=0" severity error;
-        else
-            report "Test case 1 passed: s=0, cout=0" severity note;
-        end if;
-        
-        -- Test case 2: 0 + 0 + 1
-        a <= '0'; b <= '0'; cin <= '1';
-        wait for 25 ns;
+   Tests: process is
+   begin
+      -- Test 1
+      wait for 130 ns;
+      if s = '0' and cout = '0' then
+         report "++Test 1 passed++";
+      else
+         report "--Test 1 failed--";
+      end if;
 
-        if s /= '1' or cout /= '0' then
-            report "Test case 2 failed: Expected s=1, cout=0" severity error;
-        else
-            report "Test case 2 passed: s=1, cout=0" severity note;
-        end if;
-        
-        -- Test case 3: 0 + 1 + 0
-        a <= '0'; b <= '1'; cin <= '0';
-        wait for 25 ns;
+      -- Test 2
+      wait for 100 ns;
+      if s = '1' and cout = '0' then
+         report "++Test 2 passed++";
+      else
+         report "--Test 2 failed--";
+      end if;
 
-        if s /= '1' or cout /= '0' then
-            report "Test case 3 failed: Expected s=1, cout=0" severity error;
-        else
-            report "Test case 3 passed: s=1, cout=0" severity note;
-        end if;
-        
-        -- Test case 4: 0 + 1 + 1
-        a <= '0'; b <= '1'; cin <= '1';
-        wait for 25 ns;
+      -- Test 3
+      wait for 100 ns;
+      if s = '1' and cout = '0' then
+         report "++Test 3 passed++";
+      else
+         report "--Test 3 failed--";
+      end if;
 
-        if s /= '0' or cout /= '1' then
-            report "Test case 4 failed: Expected s=0, cout=1" severity error;
-        else
-            report "Test case 4 passed: s=0, cout=1" severity note;
-        end if;
-        
-        -- Test case 5: 1 + 0 + 0
-        a <= '1'; b <= '0'; cin <= '0';
-        wait for 25 ns;
+      -- Test 4
+      wait for 100 ns;
+      if s = '0' and cout = '1' then
+         report "++Test 4 passed++";
+      else
+         report "--Test 4 failed--";
+      end if;
 
-        if s /= '1' or cout /= '0' then
-            report "Test case 5 failed: Expected s=1, cout=0" severity error;
-        else
-            report "Test case 5 passed: s=1, cout=0" severity note;
-        end if;
-        
-        -- Test case 6: 1 + 0 + 1
-        a <= '1'; b <= '0'; cin <= '1';
-        wait for 25 ns;
+      -- Test 5
+      wait for 100 ns;
+      if s = '1' and cout = '0' then
+         report "++Test 5 passed++";
+      else
+         report "--Test 5 failed--";
+      end if;
 
-        if s /= '0' or cout /= '1' then
-            report "Test case 6 failed: Expected s=0, cout=1" severity error;
-        else
-            report "Test case 6 passed: s=0, cout=1" severity note;
-        end if;
-        
-        -- Test case 7: 1 + 1 + 0
-        a <= '1'; b <= '1'; cin <= '0';
-        wait for 25 ns;
+      -- Test 6
+      wait for 100 ns;
+      if s = '0' and cout = '1' then
+         report "++Test 6 passed++";
+      else
+         report "--Test 6 failed--";
+      end if;
 
-        if s /= '0' or cout /= '1' then
-            report "Test case 7 failed: Expected s=0, cout=1" severity error;
-        else
-            report "Test case 7 passed: s=0, cout=1" severity note;
-        end if;
-        
-        -- Test case 8: 1 + 1 + 1
-        a <= '1'; b <= '1'; cin <= '1';
-        wait for 25 ns;
+      -- Test 7
+      wait for 100 ns;
+      if s = '0' and cout = '1' then
+         report "++Test 7 passed++";
+      else
+         report "--Test 7 failed--";
+      end if;
 
-        if s /= '1' or cout /= '1' then
-            report "Test case 8 failed: Expected s=1, cout=1" severity error;
-        else
-            report "Test case 8 passed: s=1, cout=1" severity note;
-        end if;
+      -- Test 8
+      wait for 100 ns;
+      if s = '1' and cout = '1' then
+         report "++Test 8 passed++";
+      else
+         report "--Test 8 failed--";
+      end if;
 
-        wait; -- End of simulation
-    end process Stimuli;
-end architecture;
+      report "End of Simulation!";
+      wait;
+   end process Tests;
+end architecture struct;

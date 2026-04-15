@@ -12,15 +12,15 @@ architecture behav of uebung3 is
 
 begin
 
-  Nor2: process is
+  Nor2: process is -- s = 1 R = 0
   begin
-    Qn <= Q nor S after 0 ns;
+    Qn <= Q nor S after 0 ns; -- 20 ns Qn= 0 
     wait on Q, S;
   end process Nor2;
 
   Nor1: process is
   begin
-    Q <= Qn nor R after 0 ns;
+    Q <= Qn nor R after 0 ns; -- 20 ns Q= 1
     wait on Qn, R;
   end process Nor1;
 
