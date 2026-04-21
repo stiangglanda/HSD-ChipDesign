@@ -25,7 +25,7 @@ begin
     Z:= B;
     -- c) Bitte jetzt A, Z und den driver von A aufzeichnen
   
-    D <= 7.9 after 71 ns;
+    D <= reject 61 ns inertial 3.0 after 71 ns; --71 - 61 = 10 ns
     C <= reject 63 ns inertial 2.3 after 89 ns;
     -- d) Bitte jetzt C, D und zugehoerige driver aufzeichnen
   
