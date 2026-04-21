@@ -1,15 +1,15 @@
 [libraries]
 
 lib.files = [
+"Uebung4/src/Uebung4_2.vhd",
 "Uebung3/src/Uebung3_1.vhd",
 "Uebung3/src/FullAdder-ea.vhd",
 "Uebung3/src/FullAdder-tb.vhd",
-"Uebung4/src/Uebung4_2.vhd",
 "Homework1/src/HW1Bsp1.vhd",
 "Homework1/src/HW1Bsp2.vhd",
 "Homework1/src/HW1Bsp3.vhd",
-"Uebung1/src/HelloVHDL.vhd",
 "Uebung2/src/Uebung2_2b.vhd",
 "Uebung2/src/Uebung2_2.vhd",
 "Uebung2/src/Uebung2_1.vhd",
+"Uebung1/src/HelloVHDL.vhd",
 ]
