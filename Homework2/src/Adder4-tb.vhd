@@ -26,9 +26,24 @@ architecture Stimulate of Adder4Testbench is
 	-- ===== Editierbereich Beginn ========================
    
     -- Adder4 instanziieren -------------------------------
+	uut : entity work.Adder4(Struct)
+		port map (
+			ia => a,
+			ib => b,
+			icin => '0',
+			ocout => carry,
+			os => s	
+		);
 	
 	-- Adder4Report instanziieren -------------------------
-
+	a4r : entity work.Adder4Report(Behave)
+   		port map (
+     		iDataA => a,
+	 		iDataB => b,
+	 		iDataSum => s,
+	 		iCarry => carry
+		);
+		
 	-- ===== Editierbereich Ende ===========================
 		
 	
