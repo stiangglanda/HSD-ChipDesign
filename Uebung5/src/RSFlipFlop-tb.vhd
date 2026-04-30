@@ -1,5 +1,5 @@
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
+library ieee;
+use ieee.std_logic_1164.all;
 
 entity RSFlipFlop_tb is
 end entity;
@@ -10,7 +10,7 @@ architecture struct of RSFlipFlop_tb is
     signal Q    : std_ulogic;
     signal Qn   : std_ulogic;
 begin
-    uut : entity work.RSFlipFlop(struct)
+    uut : entity work.RSFlipFlop(Struct)
         port map(
             iSet => Set,
             iR => R,
