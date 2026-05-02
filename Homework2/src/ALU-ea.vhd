@@ -61,8 +61,12 @@ begin
 		end case;
 
 		oALUResult <= result after 10 ns;
-		oZero <= '1' when result = (result'range => '0') else
-			'0' after 15 ns;
+		
+		if result = (result'range => '0') then
+    		oZero <= '1' after 15 ns;
+		else
+    		oZero <= '0' after 15 ns;
+		end if;
 
 		wait on iSrcA, iSrcB, iALUControl;
 	end process;
