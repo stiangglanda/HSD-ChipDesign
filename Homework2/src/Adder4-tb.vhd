@@ -3,8 +3,8 @@
 -- 					: Thomas Mueller-W.
 -----------------------------------------------------------
 -- Aufgabe        	: Testbench f. Adder4
--- StudentIn      	: 
--- Matrikelnummer 	: 
+-- StudentIn      	: Leander Kieweg
+-- Matrikelnummer 	: 52511155
 -----------------------------------------------------------
 
 library work;
