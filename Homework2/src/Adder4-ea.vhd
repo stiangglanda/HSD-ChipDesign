@@ -1,3 +1,12 @@
+-----------------------------------------------------------
+-- Titel      	  	: Homework 2 - Sommersemester 26
+-- 					: Thomas Mueller-W.
+-----------------------------------------------------------
+-- Aufgabe        	: Adder4 entity/architecture
+-- StudentIn      	: Leander Kieweg
+-- Matrikelnummer 	: 52511155
+-----------------------------------------------------------
+
 entity Adder4 is
     port(
         ia : in bit_vector(3 downto 0);
