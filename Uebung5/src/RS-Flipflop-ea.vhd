@@ -14,7 +14,12 @@ architecture Struct of RSFlipFlop is
     signal Q  : std_ulogic := '0';
     signal Qn : std_ulogic := '0';
 begin
-    oQ  <= Q;
+    process is
+    begin
+        oQ  <= Q;
+        wait on Q;
+    end process;
+
     oQn <= Qn;
 
     Nor1: process is
