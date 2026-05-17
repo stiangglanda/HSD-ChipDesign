@@ -37,10 +37,20 @@ begin
     begin
         vIndex1 := toNat(iA1);
         vIndex2 := toNat(iA2);
-        oRD1 <= iR15 when vIndex1 = cMaxRegAdr else vReg_array(vIndex1) after cRegReadTpd;
-        oRD2 <= iR15 when vIndex2 = cMaxRegAdr else vReg_array(vIndex2) after cRegReadTpd;
 
-        wait on iA1, iA2;
+        if vIndex1 = cMaxRegAdr then
+            oRD1 <= iR15 after cRegReadTpd;
+        else
+            oRD1 <= vReg_array(vIndex1) after cRegReadTpd;
+        end if;
+
+        if vIndex2 = cMaxRegAdr then
+            oRD2 <= iR15 after cRegReadTpd;
+        else
+            oRD2 <= vReg_array(vIndex2) after cRegReadTpd;
+        end if;
+
+        wait on iA1, iA2, vReg_array, iR15;
     end process;
 
     WriteReg: process
