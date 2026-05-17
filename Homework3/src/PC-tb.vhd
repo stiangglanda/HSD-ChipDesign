@@ -4,8 +4,8 @@
 -- 				 : Thomas Mueller-W.
 --------------------------------------------------------
 -- Aufgabe       : Aufgabe 1 - Testbench Program Counter
--- Student:in    : 
--- Matrikelnummer: 
+-- Student:in    : Leander Kieweg
+-- Matrikelnummer: 52511155
 --------------------------------------------------------
 
 library ieee;
@@ -14,17 +14,16 @@ use ieee.std_logic_1164.all;
 library work;
 use work.SingleCycleCPUPack.all;
 
-entity PCTenstbench is
-end PCTenstbench;
+entity PCTestbench is
+end PCTestbench;
 
-architecture Stimulate of PCTenstbench is
+architecture Stimulate of PCTestbench is
    		signal Clk : std_ulogic := '0';
-    	signal nRST : std_ulogic;
-    	signal PCnext : aPCvalue;
+    	signal nRST : std_ulogic := '0';
+    	signal PCnext : aPCvalue := (others => '0');
     	signal PCcurr : aPCvalue;
 	begin
       uut: entity work.PC(Bhv) port map(
-		 --> port map einfügen
 	    iClk => Clk,
 		inRST => nRST,
 		iPCnext => PCnext,
@@ -33,24 +32,35 @@ architecture Stimulate of PCTenstbench is
 
 	Stimuli : process
     begin
-        wait for 50 ns;
-        PCnext <= "10101010101010101010101010101010";
-        
-        wait for 25 ns;
-		nRST <= '0';
-		wait for 25 ns;
-		nRST <= '1';
-		
-		wait for 50 ns;
-        PCnext <= "00000000000000000000000000000000";
+		nRST   <= '0';
+    	PCnext <= (others => '0');
+		wait for 15 ns;
 
-		wait for 50 ns;
-        PCnext <= "11111111111111111111111111111111";
+		nRST   <= '1';
+        PCnext <= x"00000004";
+        wait for 20 ns;
 
-		wait for 25 ns;
-		nRST <= '0';
-		wait for 25 ns;
+		PCnext <= x"AABBCCDD";
+        wait for 20 ns;
+
+		PCnext <= x"FFFFFFFF";
+        wait for 20 ns;
+
+		PCnext <= x"12345678";
+        wait for 10 ns;
+        nRST <= '0';
+        wait for 5 ns;
+
 		nRST <= '1';
+        wait for 15 ns;
+
+        PCnext <= x"00000008";
+        wait for 20 ns;
+
+		PCnext <= x"DEADBEEF";
+        wait for 5 ns;
+        PCnext <= x"CAFEBABE";
+
         wait;
     end process;
 	

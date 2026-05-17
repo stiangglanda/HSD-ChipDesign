@@ -30,10 +30,10 @@ architecture Bhv of PC is
    begin
       if inRST = '0' then
          oPCcurr <= (others => '0')  after cnRSTToPCcurrTpd;
-      elsif iCLK'event and iCLK = '1' then
+      elsif iClk'event and iClk = '1' then
          oPCcurr <= iPCnext after cClkToPCcurrTpd;
       end if;
-      wait on iCLK, inRST;
+      wait on iClk, inRST;
    end process;
 end architecture Bhv;
 
