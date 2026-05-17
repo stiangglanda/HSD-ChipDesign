@@ -33,21 +33,24 @@ architecture Stimulate of PCTenstbench is
 
 	Stimuli : process
     begin
-        wait for 55 ns;
+        wait for 50 ns;
         PCnext <= "10101010101010101010101010101010";
-        wait for 80 ns;
+        
+        wait for 25 ns;
+		nRST <= '0';
+		wait for 25 ns;
+		nRST <= '1';
+		
+		wait for 50 ns;
         PCnext <= "00000000000000000000000000000000";
-        wait for 70 ns;
+
+		wait for 50 ns;
         PCnext <= "11111111111111111111111111111111";
 
+		wait for 25 ns;
 		nRST <= '0';
-        wait for 30 ns;
-        nRST <= '1';
-
-        wait for 90 ns;
-        nRST <= '0';
-        wait for 25 ns;
-        nRST <= '1';
+		wait for 25 ns;
+		nRST <= '1';
         wait;
     end process;
 	
