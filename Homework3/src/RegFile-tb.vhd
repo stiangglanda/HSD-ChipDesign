@@ -4,8 +4,8 @@
 -- 				 : Thomas Mueller-W.
 --------------------------------------------------------
 -- Aufgabe       : Aufgabe 2 - Testbench RegisterFile
--- Student:in    : 
--- Matrikelnummer: 
+-- Student:in    : Leander Kieweg
+-- Matrikelnummer: 52511155
 --------------------------------------------------------
 
 library ieee;
@@ -65,7 +65,38 @@ begin
 				"0101" after 140 ns,
 				"1000" after 160 ns,
 				"1111" after 180 ns;
-	   wait; 
+
+	   wait for 200 ns;
+ 
+        -- Pflichttest laut Angabe
+        -- Frage: Welchen Wert hat oRD1 nach Ablauf aller Verzoegerungszeiten?
+        -- Antwort: oRD1 zeigt den neuen Wert (iWD3).
+ 
+        A3  <= "0001";
+        WD3 <= x"AAAAAAAA";
+        WE3 <= '1';
+        wait for 30 ns;
+ 
+        A1  <= "0001";
+        A3  <= "0001";
+        WD3 <= x"BBBBBBBB";
+        WE3 <= '1';
+        wait for 20 ns;
+ 
+        WE3 <= '0';
+        wait for 30 ns;
+ 
+        -- Test Schreibschutz fuer r15
+        A3  <= "1111";
+        A1  <= "1111";
+        WD3 <= x"DEADBEEF";
+        WE3 <= '1';
+        wait for 20 ns;
+ 
+        WE3 <= '0';
+        wait for 20 ns;
+ 
+        wait;
 	end process Stimuli;
 	
 	ClkGen: process is
