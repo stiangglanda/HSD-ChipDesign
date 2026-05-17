@@ -4,8 +4,8 @@
 --               : Thomas Mueller-W.
 --------------------------------------------------------
 -- Aufgabe       : Aufgabe 2 - RegFile
--- Student:in    : 
--- Matrikelnummer: 
+-- Student:in    : Leander Kieweg
+-- Matrikelnummer: 52511155
 --------------------------------------------------------
 
 library ieee;
@@ -37,8 +37,8 @@ begin
     begin
         vIndex1 := toNat(iA1);
         vIndex2 := toNat(iA2);
-        oRD1 <= iR15 when vIndex1 = cMaxRegAdr else vReg_array(vIndex1);
-        oRD2 <= iR15 when vIndex2 = cMaxRegAdr else vReg_array(vIndex2);
+        oRD1 <= iR15 when vIndex1 = cMaxRegAdr else vReg_array(vIndex1) after cRegReadTpd;
+        oRD2 <= iR15 when vIndex2 = cMaxRegAdr else vReg_array(vIndex2) after cRegReadTpd;
 
         wait on iA1, iA2;
     end process;
@@ -49,7 +49,7 @@ begin
         if iClk'event and iClk = '1' and iWE3 = '1' then
             vIndex := toNat(iA3);
             if vIndex /= cMaxRegAdr then 
-                vReg_array(vIndex) <= iWD3;
+                vReg_array(vIndex) <= iWD3 after cClkToRegisterTpd;
             end if;
         end if;
         wait on iClk;

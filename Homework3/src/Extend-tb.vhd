@@ -4,8 +4,8 @@
 -- 				 : Thomas Mueller-W.
 --------------------------------------------------------
 -- Aufgabe       : Aufgabe 1 - Testbench Program Counter
--- Student:in    : 
--- Matrikelnummer: 
+-- Student:in    : Leander Kieweg
+-- Matrikelnummer: 52511155
 --------------------------------------------------------
 
 library ieee;

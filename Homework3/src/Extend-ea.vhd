@@ -4,8 +4,8 @@
 --               : Thomas Mueller-W.
 --------------------------------------------------------
 -- Aufgabe       : Aufgabe 3 - Extension Unit
--- Student:in    : 
--- Matrikelnummer: 
+-- Student:in    : Leander Kieweg
+-- Matrikelnummer: 52511155
 --------------------------------------------------------
 
 library ieee;
@@ -28,14 +28,14 @@ begin
         case iSrc is
             when cDOpCode => 
                 oImm <= (others => '0');
-                oImm(7 downto 0) <= iImm(7 downto 0);
+                oImm(7 downto 0) <= iImm(7 downto 0) after cExtendTpd;
             when cMOpCode => 
                 oImm <= (others => '0');
-                oImm(11 downto 0) <= iImm(11 downto 0);
+                oImm(11 downto 0) <= iImm(11 downto 0) after cExtendTpd;
             when cBOpCode =>
                 oImm <= (others => iImm(23));
-                oImm(25 downto 0) <= iImm(23 downto 0) & "00";
-            when others => oImm <= (others => '0');
+                oImm(25 downto 0) <= iImm(23 downto 0) & "00" after cExtendTpd;
+            when others => oImm <= (others => '0') after cExtendTpd;
         end case;
         wait on iSrc, iImm;
     end process;
