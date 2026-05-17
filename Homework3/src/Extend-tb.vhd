@@ -1,9 +1,9 @@
 --------------------------------------------------------
--- File          : PC-tb.vhd
+-- File          : Extend-tb.vhd
 -- Titel      	 : CHD2 Sommersemester 2026 - Homework 3 
 -- 				 : Thomas Mueller-W.
 --------------------------------------------------------
--- Aufgabe       : Aufgabe 1 - Testbench Program Counter
+-- Aufgabe       : Aufgabe 3 - Testbench Extension Unit
 -- Student:in    : Leander Kieweg
 -- Matrikelnummer: 52511155
 --------------------------------------------------------

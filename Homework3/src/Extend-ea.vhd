@@ -24,19 +24,20 @@ end entity Extend;
 architecture Bhv of Extend is
 begin
     process
+        variable vResult : aData;
     begin
+        vResult := (others => '0');
         case iSrc is
-            when cDOpCode => 
-                oImm <= (others => '0');
-                oImm(7 downto 0) <= iImm(7 downto 0) after cExtendTpd;
-            when cMOpCode => 
-                oImm <= (others => '0');
-                oImm(11 downto 0) <= iImm(11 downto 0) after cExtendTpd;
+            when cDOpCode =>
+                vResult(7 downto 0) := iImm(7 downto 0);
+            when cMOpCode =>
+                vResult(11 downto 0) := iImm(11 downto 0);
             when cBOpCode =>
-                oImm <= (others => iImm(23));
-                oImm(25 downto 0) <= iImm(23 downto 0) & "00" after cExtendTpd;
-            when others => oImm <= (others => '0') after cExtendTpd;
+                vResult := (others => iImm(23));
+                vResult(25 downto 0) := iImm(23 downto 0) & "00";
+            when others => null;
         end case;
+        oImm <= vResult after cExtendTpd;
         wait on iSrc, iImm;
     end process;
 end architecture Bhv;
