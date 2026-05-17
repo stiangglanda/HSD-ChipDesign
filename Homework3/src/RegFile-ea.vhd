@@ -48,7 +48,9 @@ begin
     begin
         if iClk'event and iClk = '1' and iWE3 = '1' then
             vIndex := toNat(iA3);
-            vReg_array(vIndex) <= iWD3;
+            if vIndex /= cMaxRegAdr then 
+                vReg_array(vIndex) <= iWD3;
+            end if;
         end if;
         wait on iClk;
     end process;
