@@ -16,7 +16,6 @@ use work.SingleCycleCPUPack.all;
 
 entity PC is
    port (
-		-- Hier die Ports ergänzen.
         iClk : in  std_ulogic;
         inRST : in  std_ulogic;
         iPCnext : in aPCvalue;
@@ -25,7 +24,6 @@ end entity PC;
 
 architecture Bhv of PC is
    begin
-   -- siehe flankengesteuertes DFF
    process
    begin
       if inRST = '0' then
