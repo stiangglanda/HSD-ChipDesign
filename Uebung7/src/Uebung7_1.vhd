@@ -32,7 +32,7 @@ begin
         D <= transport 'Z' after 4 ns;
         B <= transport 19 after 1 ns;
 
-        wait for 0 ns;
+        wait for 0 ns; -- delta zyklus erzwingen!!
 
         -- c) Bitte jetzt D,B sowie driver von D und B aufzeichnen.
         C <= 4 after 67 ns;
