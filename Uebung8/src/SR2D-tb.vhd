@@ -11,18 +11,21 @@
 library ieee;
 use ieee.std_logic_1164.all;
 
-entity TestbenchSR1n is
-end entity TestbenchSR1n;
+entity TestbenchSR2D is
+end entity TestbenchSR2D;
 
-architecture Struct of TestbenchSR1n is
+architecture Struct of TestbenchSR2D is
+   constant cWidth : natural := 16;
+   constant cStages : natural := 8;
+
    signal Clk 	: std_ulogic := '0';
    signal nRst 	: std_ulogic := '0';
-   signal D 	: std_ulogic := '0';
-   signal Q 	: std_ulogic;
-   
+   signal D 	: std_ulogic_vector(0 to cWidth-1);
+   signal Q 	: std_ulogic_vector(0 to cWidth-1);
 begin
-    DUT: entity work.SR1_n(Struct)
-            generic map (gLength => 8)
+    DUT: entity work.SR2D(Struct)
+            generic map (gLength => cStages, 
+                         gWidth => cWidth)
             port map (iClock => clk,
                       inReset => nRst,
                       iData => D,
@@ -32,8 +35,8 @@ begin
 	 
    Stimul: process is
       begin
-		D	<= 	'1' after 45 ns,
-				'0' after 55 ns;
+		D	<=  (others => '1') after 45 ns,
+				 (others => '0') after 55 ns;
 		nRst <= '1' after 5 ns;
 		wait;
    end process Stimul;

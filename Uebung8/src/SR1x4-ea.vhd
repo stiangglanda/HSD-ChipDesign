@@ -23,7 +23,7 @@ end entity SR1_4;
 
 architecture struct of SR1_4 is 
     constant cLength : natural := 4;
-    signal   connectthem : std_ulogic_vector(0 to 4);  
+    signal   connectthem : std_ulogic_vector(0 to cLength);  
 begin
     SR: for i in 0 to cLength-1 generate 
         begin   
