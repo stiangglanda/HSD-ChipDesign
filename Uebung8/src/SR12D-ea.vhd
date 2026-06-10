@@ -32,13 +32,13 @@ architecture struct of SR2D is
 begin
     Stages: for s in 0 to gLength-1 generate 
       Width: for w in 0 to gWidth-1 generate 
-                begin   
                 FF: entity work.DFF(BHV)
                     port map (iClk => iClock,
 				        	  inRst => inReset,
 					          iD => connectThem(s) (w),
 					          oQ => connectThem(s+1) (w));                          
-    end generate SR;
+        end generate Width;
+    end generate Stages;
   
    connectThem(0) <= iData;
    oQ <= ConnectThem(gLength);
