@@ -1,0 +1,9 @@
+Synthesis Status : Successful - Wed Oct 14 10:42:14 2026
+Revision Name : HelloOnDE23Lite
+Top-level Entity Name : HelloOnDE23Lite
+Family : Agilex 3
+Quartus Prime Version : 26.1.1 Build 130 08/06/2026 SC Pro Edition
+Device : A3CZ135BB18AE7S
+Logic utilization estimate (in ALMs) : 33 / 45,800 ( < 1 % )
+Total dedicated logic registers : 29
+Estimated DSP Blocks Post-Merging : 0
