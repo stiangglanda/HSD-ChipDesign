@@ -1,5 +1,5 @@
 Design Assistant report for HelloOnDE23Lite
-Sun Oct 18 16:17:19 2026
+Sun Oct 18 17:27:43 2026
 Quartus Prime Version 26.1.1 Build 130 08/06/2026 SC Pro Edition
 
 
@@ -7,31 +7,31 @@ Quartus Prime Version 26.1.1 Build 130 08/06/2026 SC Pro Edition
 ; Table of Contents ;
 ---------------------
   1. Legal Notice
-  2. Design Assistant (Elaborated) Results - 0 of 29 Rules Failed
-  3. IPC-40021 - Undriven Reference Clock port of protocol IP
-  4. IPC-40022 - Reference Clock input of protocol IP not driven by top level clock ports
-  5. IPC-40023 - Reference clock frequency mismatch
-  6. IPC-40024 - Undriven System Clock port of protocol IP
-  7. IPC-40025 - System Clock ports of protocol IP not driven by System Clock IP
-  8. IPC-40026 - System clock frequency mismatch
-  9. IPC-40027 - Undriven Control Unit Clock port of protocol IP
- 10. IPC-40028 - The Control Unit Clock port of protocol IP is not driven by GTS Reset Sequencer IP
- 11. IPC-40029 - An individual bit of Control Unit clock port of Reset Sequencer IP can drive up to a cumulative 4 channels of Protocol IP.
- 12. IPC-40030 - Reset Request and Grant connectivity checks for protocol IPs
- 13. IPC-40031 - The individual Request and Grant bus bits of GTS Reset Sequencer IP to handle the same bits of request and grant ports protocol IP
- 14. IPC-40032 - The lock input of the Protocol IP needs to be driven by the lock output of the System Clock IPs
- 15. IPC-40034 - A single Reference clock port can drive up to 12 channels
- 16. IPC-40035 - Reset Sequencer needed for Transceiver IPs
- 17. IPC-40036 - Single Reset Sequencer for every IP on each shoreline
- 18. IPC-40037 - Exclusive usage of the System Clock by PCIE IP
- 19. IPC-40038 - Individual bit of Control Unit clock of Reset Sequencer IP can drive only a single instance of Ethernet or PCIE IP.
- 20. IPC-40039 - One or more input or output ports of GTS Reset Sequencer IP not connected to Protocol IPs
- 21. IPC-40041 - Transceiver IPs used in design with a device without any transceiver
- 22. RES-10204 - Reset Release Instance Count Check
- 23. RES-50005 - RAM Control Signals Driven by Flip-Flops with Asynchronous Clears
- 24. FLP-10100 - Large Multipliers are Decomposed
- 25. LNT-30020 - Same Signal Source Drives Synchronous and Asynchronous Ports of the Same Register
- 26. LNT-30021 - Same Signal Source Drives More Than One Asynchronous Port of a Register
+  2. Design Assistant (Elaborated) Results - 2 of 29 Rules Failed
+  3. LNT-30020 - Same Signal Source Drives Synchronous and Asynchronous Ports of the Same Register
+  4. LNT-30021 - Same Signal Source Drives More Than One Asynchronous Port of a Register
+  5. IPC-40021 - Undriven Reference Clock port of protocol IP
+  6. IPC-40022 - Reference Clock input of protocol IP not driven by top level clock ports
+  7. IPC-40023 - Reference clock frequency mismatch
+  8. IPC-40024 - Undriven System Clock port of protocol IP
+  9. IPC-40025 - System Clock ports of protocol IP not driven by System Clock IP
+ 10. IPC-40026 - System clock frequency mismatch
+ 11. IPC-40027 - Undriven Control Unit Clock port of protocol IP
+ 12. IPC-40028 - The Control Unit Clock port of protocol IP is not driven by GTS Reset Sequencer IP
+ 13. IPC-40029 - An individual bit of Control Unit clock port of Reset Sequencer IP can drive up to a cumulative 4 channels of Protocol IP.
+ 14. IPC-40030 - Reset Request and Grant connectivity checks for protocol IPs
+ 15. IPC-40031 - The individual Request and Grant bus bits of GTS Reset Sequencer IP to handle the same bits of request and grant ports protocol IP
+ 16. IPC-40032 - The lock input of the Protocol IP needs to be driven by the lock output of the System Clock IPs
+ 17. IPC-40034 - A single Reference clock port can drive up to 12 channels
+ 18. IPC-40035 - Reset Sequencer needed for Transceiver IPs
+ 19. IPC-40036 - Single Reset Sequencer for every IP on each shoreline
+ 20. IPC-40037 - Exclusive usage of the System Clock by PCIE IP
+ 21. IPC-40038 - Individual bit of Control Unit clock of Reset Sequencer IP can drive only a single instance of Ethernet or PCIE IP.
+ 22. IPC-40039 - One or more input or output ports of GTS Reset Sequencer IP not connected to Protocol IPs
+ 23. IPC-40041 - Transceiver IPs used in design with a device without any transceiver
+ 24. RES-10204 - Reset Release Instance Count Check
+ 25. RES-50005 - RAM Control Signals Driven by Flip-Flops with Asynchronous Clears
+ 26. FLP-10100 - Large Multipliers are Decomposed
  27. LNT-30022 - Same Signal Source Drives Clock Port and Another Port of a Register
  28. RES-10201 - Power Up Don't Care Setting May Prevent Retiming
  29. TMC-10115 - High Fan-out Signal
@@ -61,10 +61,12 @@ on the Quartus Prime software download page.
 
 
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Design Assistant (Elaborated) Results - 0 of 29 Rules Failed                                                                                                                                           ;
+; Design Assistant (Elaborated) Results - 2 of 29 Rules Failed                                                                                                                                           ;
 +------------------------------------------------------------------------------------------------------------------------------------------------+----------+------------+--------+----------------------+
 ; Rule                                                                                                                                           ; Severity ; Violations ; Waived ; Tags                 ;
 +------------------------------------------------------------------------------------------------------------------------------------------------+----------+------------+--------+----------------------+
+; LNT-30020 - Same Signal Source Drives Synchronous and Asynchronous Ports of the Same Register                                                  ; Low      ; 1          ; 0      ; nonstandard-timing   ;
+; LNT-30021 - Same Signal Source Drives More Than One Asynchronous Port of a Register                                                            ; Low      ; 1          ; 0      ; nonstandard-timing   ;
 ; IPC-40021 - Undriven Reference Clock port of protocol IP                                                                                       ; Critical ; 0          ; 0      ; system               ;
 ; IPC-40022 - Reference Clock input of protocol IP not driven by top level clock ports                                                           ; Critical ; 0          ; 0      ; system               ;
 ; IPC-40023 - Reference clock frequency mismatch                                                                                                 ; Critical ; 0          ; 0      ; system               ;
@@ -87,14 +89,38 @@ on the Quartus Prime software download page.
 ; RES-10204 - Reset Release Instance Count Check                                                                                                 ; High     ; 0          ; 0      ; system               ;
 ; RES-50005 - RAM Control Signals Driven by Flip-Flops with Asynchronous Clears                                                                  ; Medium   ; 0          ; 0      ; ram, reset-usage     ;
 ; FLP-10100 - Large Multipliers are Decomposed                                                                                                   ; Low      ; 0          ; 0      ; dsp, synthesis       ;
-; LNT-30020 - Same Signal Source Drives Synchronous and Asynchronous Ports of the Same Register                                                  ; Low      ; 0          ; 0      ; nonstandard-timing   ;
-; LNT-30021 - Same Signal Source Drives More Than One Asynchronous Port of a Register                                                            ; Low      ; 0          ; 0      ; nonstandard-timing   ;
 ; LNT-30022 - Same Signal Source Drives Clock Port and Another Port of a Register                                                                ; Low      ; 0          ; 0      ; nonstandard-timing   ;
 ; RES-10201 - Power Up Don't Care Setting May Prevent Retiming                                                                                   ; Low      ; 0          ; 0      ; reset-usage, retime  ;
 ; TMC-10115 - High Fan-out Signal                                                                                                                ; Low      ; 0          ; 0      ; register-duplication ;
 ; TMC-20050 - RAM Control Signals Driven by LUTs or ALMs instead of DFFs                                                                         ; Low      ; 0          ; 0      ; ram                  ;
 ; TMC-20051 - RAM Control Signals Driven by High Fan-Out Net                                                                                     ; Low      ; 0          ; 0      ; ram                  ;
 +------------------------------------------------------------------------------------------------------------------------------------------------+----------+------------+--------+----------------------+
+
+
+Status:		FAIL
+Severity:		Low
+Number of violations: 	1
+Rule Parameters:      	max_violations = 5000
++-----------------------------------------------------------------------------------------------+
+; LNT-30020 - Same Signal Source Drives Synchronous and Asynchronous Ports of the Same Register ;
++---------------------+--------+----------------------------------------------------------------+
+; Register            ; Signal ; Waived                                                         ;
++---------------------+--------+----------------------------------------------------------------+
+; TheHelloDE23|sw_old ; SW[0]  ;                                                                ;
++---------------------+--------+----------------------------------------------------------------+
+
+
+Status:		FAIL
+Severity:		Low
+Number of violations: 	1
+Rule Parameters:      	max_violations = 5000
++-------------------------------------------------------------------------------------+
+; LNT-30021 - Same Signal Source Drives More Than One Asynchronous Port of a Register ;
++---------------------+--------+------------------------------------------------------+
+; Register            ; Signal ; Waived                                               ;
++---------------------+--------+------------------------------------------------------+
+; TheHelloDE23|sw_old ; SW[0]  ;                                                      ;
++---------------------+--------+------------------------------------------------------+
 
 
 Status:		PASS
@@ -293,24 +319,6 @@ Rule Parameters:      	max_violations = 5000
 +----------------------------------------------+
 ; FLP-10100 - Large Multipliers are Decomposed ;
 +----------------------------------------------+
-
-
-Status:		PASS
-Severity:		Low
-Number of violations: 	0
-Rule Parameters:      	max_violations = 5000
-+-----------------------------------------------------------------------------------------------+
-; LNT-30020 - Same Signal Source Drives Synchronous and Asynchronous Ports of the Same Register ;
-+-----------------------------------------------------------------------------------------------+
-
-
-Status:		PASS
-Severity:		Low
-Number of violations: 	0
-Rule Parameters:      	max_violations = 5000
-+-------------------------------------------------------------------------------------+
-; LNT-30021 - Same Signal Source Drives More Than One Asynchronous Port of a Register ;
-+-------------------------------------------------------------------------------------+
 
 
 Status:		PASS

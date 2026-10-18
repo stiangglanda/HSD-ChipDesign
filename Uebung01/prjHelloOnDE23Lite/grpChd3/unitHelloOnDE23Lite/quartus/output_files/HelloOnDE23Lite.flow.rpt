@@ -1,5 +1,5 @@
 Flow report for HelloOnDE23Lite
-Sun Oct 18 16:20:16 2026
+Sun Oct 18 17:29:59 2026
 Quartus Prime Version 26.1.1 Build 130 08/06/2026 SC Pro Edition
 
 
@@ -19,7 +19,7 @@ Quartus Prime Version 26.1.1 Build 130 08/06/2026 SC Pro Edition
 +------------------------------------------------------------------------------+
 ; Flow Summary                                                                 ;
 +---------------------------------+--------------------------------------------+
-; Flow Status                     ; Successful - Sun Oct 18 16:20:16 2026      ;
+; Flow Status                     ; Successful - Sun Oct 18 17:29:59 2026      ;
 ; Quartus Prime Version           ; 26.1.1 Build 130 08/06/2026 SC Pro Edition ;
 ; Revision Name                   ; HelloOnDE23Lite                            ;
 ; Top-level Entity Name           ; HelloOnDE23Lite                            ;
@@ -28,8 +28,8 @@ Quartus Prime Version 26.1.1 Build 130 08/06/2026 SC Pro Edition
 ; Timing Models                   ; Final                                      ;
 ; Power Models                    ; Final                                      ;
 ; Device Status                   ; Final                                      ;
-; Logic utilization (in ALMs)     ; 25 / 45,800 ( < 1 % )                      ;
-; Total dedicated logic registers ; 31                                         ;
+; Logic utilization (in ALMs)     ; 30 / 45,800 ( < 1 % )                      ;
+; Total dedicated logic registers ; 41                                         ;
 ; Total pins                      ; 50 / 208 ( 24 % )                          ;
 ; Total block memory bits         ; 0 / 7,229,440 ( 0 % )                      ;
 ; Total RAM Blocks                ; 0 / 353 ( 0 % )                            ;
@@ -44,7 +44,7 @@ Quartus Prime Version 26.1.1 Build 130 08/06/2026 SC Pro Edition
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/18/2026 16:16:48 ;
+; Start date & time ; 10/18/2026 17:27:14 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; HelloOnDE23Lite     ;
 +-------------------+---------------------+
@@ -55,16 +55,16 @@ Quartus Prime Version 26.1.1 Build 130 08/06/2026 SC Pro Edition
 +----------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------+-------------+------------+
 ; Assignment Name            ; Value                                                                                                                                                                                           ; Default Value ; Entity Name ; Section Id ;
 +----------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID      ; 62489531182533.179233300834395                                                                                                                                                                  ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID      ; 62489531182533.179233723448991                                                                                                                                                                  ; --            ; --          ; --         ;
 ; MISC_FILE                  ; /home/stiangglanda/dev/HSD-ChipDesign/Uebung01/prjHelloOnDE23Lite/grpChd3/unitResetReleaseIP/quartus/reset_release_ip/reset_release_ip.cmp                                                      ; --            ; --          ; --         ;
 ; MISC_FILE                  ; /home/stiangglanda/dev/HSD-ChipDesign/Uebung01/prjHelloOnDE23Lite/grpChd3/unitResetReleaseIP/quartus/reset_release_ip.ip                                                                        ; --            ; --          ; --         ;
-; MISC_FILE                  ; /home/stiangglanda/dev/HSD-ChipDesign/Uebung01/prjHelloOnDE23Lite/grpChd3/unitHelloOnDE23Lite/quartus/dni/sandboxes/stiangglanda-IdeaPad_34395_0/sld/ipgen/alt_sld_fab_0/alt_sld_fab_0.cmp      ; --            ; --          ; --         ;
-; MISC_FILE                  ; /home/stiangglanda/dev/HSD-ChipDesign/Uebung01/prjHelloOnDE23Lite/grpChd3/unitHelloOnDE23Lite/quartus/dni/sandboxes/stiangglanda-IdeaPad_34395_0/sld/ipgen/alt_sld_fab_0.ip                     ; --            ; --          ; --         ;
+; MISC_FILE                  ; /home/stiangglanda/dev/HSD-ChipDesign/Uebung01/prjHelloOnDE23Lite/grpChd3/unitHelloOnDE23Lite/quartus/dni/sandboxes/stiangglanda-IdeaPad_48991_0/sld/ipgen/alt_sld_fab_0/alt_sld_fab_0.cmp      ; --            ; --          ; --         ;
+; MISC_FILE                  ; /home/stiangglanda/dev/HSD-ChipDesign/Uebung01/prjHelloOnDE23Lite/grpChd3/unitHelloOnDE23Lite/quartus/dni/sandboxes/stiangglanda-IdeaPad_48991_0/sld/ipgen/alt_sld_fab_0.ip                     ; --            ; --          ; --         ;
 ; NUM_PARALLEL_PROCESSORS    ; All                                                                                                                                                                                             ; --            ; --          ; --         ;
 ; POWER_APPLY_THERMAL_MARGIN ; ADDITIONAL                                                                                                                                                                                      ; Off           ; --          ; --         ;
 ; PROJECT_OUTPUT_DIRECTORY   ; /home/stiangglanda/dev/HSD-ChipDesign/Uebung01/prjHelloOnDE23Lite/grpChd3/unitHelloOnDE23Lite/quartus/output_files                                                                              ; --            ; --          ; --         ;
 ; SOPCINFO_FILE              ; /home/stiangglanda/dev/HSD-ChipDesign/Uebung01/prjHelloOnDE23Lite/grpChd3/unitResetReleaseIP/quartus/reset_release_ip/reset_release_ip.sopcinfo                                                 ; --            ; --          ; --         ;
-; SOPCINFO_FILE              ; /home/stiangglanda/dev/HSD-ChipDesign/Uebung01/prjHelloOnDE23Lite/grpChd3/unitHelloOnDE23Lite/quartus/dni/sandboxes/stiangglanda-IdeaPad_34395_0/sld/ipgen/alt_sld_fab_0/alt_sld_fab_0.sopcinfo ; --            ; --          ; --         ;
+; SOPCINFO_FILE              ; /home/stiangglanda/dev/HSD-ChipDesign/Uebung01/prjHelloOnDE23Lite/grpChd3/unitHelloOnDE23Lite/quartus/dni/sandboxes/stiangglanda-IdeaPad_48991_0/sld/ipgen/alt_sld_fab_0/alt_sld_fab_0.sopcinfo ; --            ; --          ; --         ;
 +----------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------+-------------+------------+
 
 
@@ -73,11 +73,11 @@ Quartus Prime Version 26.1.1 Build 130 08/06/2026 SC Pro Edition
 +-----------------+--------------+---------------------+
 ; Module Name     ; Elapsed Time ; Peak Virtual Memory ;
 +-----------------+--------------+---------------------+
-; Synthesis       ; 00:00:33     ; 2312 MB             ;
-; Fitter          ; 00:02:21     ; 6695 MB             ;
-; Timing Analyzer ; 00:00:07     ; 2424 MB             ;
-; Assembler       ; 00:00:19     ; 4185 MB             ;
-; Total           ; 00:03:20     ; --                  ;
+; Synthesis       ; 00:00:32     ; 2312 MB             ;
+; Fitter          ; 00:01:44     ; 6651 MB             ;
+; Timing Analyzer ; 00:00:07     ; 2423 MB             ;
+; Assembler       ; 00:00:17     ; 4185 MB             ;
+; Total           ; 00:02:40     ; --                  ;
 +-----------------+--------------+---------------------+
 
 

@@ -19,7 +19,8 @@ architecture Rtl of Hello is
   signal cnt        : aHeartBeatCnt;
   constant cCnt_max : aHeartBeatCnt := gClockRateHz/5;
   signal led_status : boolean;
-
+  signal led_shift : std_ulogic_vector(7 downto 0);
+  signal sw_old : std_ulogic;
 begin  -- Rtl
 
 -- ---------------------------------------------------------------------------
@@ -58,12 +59,26 @@ begin  -- Rtl
   end process;
 
   oLed(9) <= '1';
-  oLed(8) <= '1' when led_status and iSW(9) = '0' else '0';
+  oLed(8) <= '0' when led_status and iSW(9) = '0' else '1';
 
+  LedShift : process (iClock, inReset) is
+  begin
+    if inReset = not('1') then
+      led_shift <= "00000001";
+      sw_old    <= iSW(0);
+    elsif rising_edge(iClock) then
+      sw_old <= iSW(0);
+      if iSW(0) /= sw_old then
+        led_shift <= led_shift(6 downto 0) & led_shift(7);
+      end if;
+    end if;
+  end process;
+
+  oLed(7 downto 0) <= not led_shift;
 -- ---------------------------------------------------------------------------
 -- LEDS (0) to LEDS(7) show status of switches SW0-SW7
 -- ---------------------------------------------------------------------------
-  oLed(3 downto 0) <= nibble0;
-  oLed(7 downto 4) <= nibble1;
+  -- oLed(3 downto 0) <= nibble0;
+  -- oLed(7 downto 4) <= nibble1;
 
 end Rtl;

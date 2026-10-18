@@ -1,5 +1,5 @@
 Fitter Plan Stage Report for HelloOnDE23Lite
-Sun Oct 18 16:18:57 2026
+Sun Oct 18 17:28:44 2026
 Quartus Prime Version 26.1.1 Build 130 08/06/2026 SC Pro Edition
 
 
@@ -78,16 +78,16 @@ The pin-out file can be found in /home/stiangglanda/dev/HSD-ChipDesign/Uebung01/
 +-----------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+-----------+
 ; Name      ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination ; Termination Control Block ; Location assigned by ; Slew Rate ;
 +-----------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+-----------+
-; CLOCK0_50 ; K43   ; 3A_T     ; 62           ; 53           ; 120          ; 29                    ; 0                  ; yes    ; no             ; no       ; Off          ; 1.2-V        ; Off         ; --                        ; User                 ; no        ;
+; CLOCK0_50 ; K43   ; 3A_T     ; 62           ; 53           ; 120          ; 38                    ; 0                  ; yes    ; no             ; no       ; Off          ; 1.2-V        ; Off         ; --                        ; User                 ; no        ;
 ; KEY0      ; K26   ; 6D       ; 107          ; 53           ; 1484         ; 1                     ; 0                  ; no     ; no             ; no       ; Off          ; 3.3-V LVCMOS ; Off         ; --                        ; User                 ; no        ;
-; SW[0]     ; A37   ; 3A_T     ; 62           ; 53           ; 264          ; 8                     ; 0                  ; no     ; no             ; no       ; Off          ; 1.2-V        ; Off         ; --                        ; User                 ; no        ;
-; SW[1]     ; B37   ; 3A_T     ; 62           ; 53           ; 261          ; 8                     ; 0                  ; no     ; no             ; no       ; Off          ; 1.2-V        ; Off         ; --                        ; User                 ; no        ;
-; SW[2]     ; B26   ; 3A_T     ; 62           ; 53           ; 356          ; 8                     ; 0                  ; no     ; no             ; no       ; Off          ; 1.2-V        ; Off         ; --                        ; User                 ; no        ;
-; SW[3]     ; A42   ; 3A_T     ; 62           ; 53           ; 257          ; 8                     ; 0                  ; no     ; no             ; no       ; Off          ; 1.2-V        ; Off         ; --                        ; User                 ; no        ;
-; SW[4]     ; K32   ; 3A_T     ; 62           ; 53           ; 151          ; 8                     ; 0                  ; no     ; no             ; no       ; Off          ; 1.2-V        ; Off         ; --                        ; User                 ; no        ;
-; SW[5]     ; A26   ; 3A_T     ; 62           ; 53           ; 353          ; 8                     ; 0                  ; no     ; no             ; no       ; Off          ; 1.2-V        ; Off         ; --                        ; User                 ; no        ;
-; SW[6]     ; B27   ; 3A_T     ; 62           ; 53           ; 349          ; 8                     ; 0                  ; no     ; no             ; no       ; Off          ; 1.2-V        ; Off         ; --                        ; User                 ; no        ;
-; SW[7]     ; A29   ; 3A_T     ; 62           ; 53           ; 346          ; 8                     ; 0                  ; no     ; no             ; no       ; Off          ; 1.2-V        ; Off         ; --                        ; User                 ; no        ;
+; SW[0]     ; A37   ; 3A_T     ; 62           ; 53           ; 264          ; 11                    ; 0                  ; no     ; no             ; no       ; Off          ; 1.2-V        ; Off         ; --                        ; User                 ; no        ;
+; SW[1]     ; B37   ; 3A_T     ; 62           ; 53           ; 261          ; 7                     ; 0                  ; no     ; no             ; no       ; Off          ; 1.2-V        ; Off         ; --                        ; User                 ; no        ;
+; SW[2]     ; B26   ; 3A_T     ; 62           ; 53           ; 356          ; 7                     ; 0                  ; no     ; no             ; no       ; Off          ; 1.2-V        ; Off         ; --                        ; User                 ; no        ;
+; SW[3]     ; A42   ; 3A_T     ; 62           ; 53           ; 257          ; 7                     ; 0                  ; no     ; no             ; no       ; Off          ; 1.2-V        ; Off         ; --                        ; User                 ; no        ;
+; SW[4]     ; K32   ; 3A_T     ; 62           ; 53           ; 151          ; 7                     ; 0                  ; no     ; no             ; no       ; Off          ; 1.2-V        ; Off         ; --                        ; User                 ; no        ;
+; SW[5]     ; A26   ; 3A_T     ; 62           ; 53           ; 353          ; 7                     ; 0                  ; no     ; no             ; no       ; Off          ; 1.2-V        ; Off         ; --                        ; User                 ; no        ;
+; SW[6]     ; B27   ; 3A_T     ; 62           ; 53           ; 349          ; 7                     ; 0                  ; no     ; no             ; no       ; Off          ; 1.2-V        ; Off         ; --                        ; User                 ; no        ;
+; SW[7]     ; A29   ; 3A_T     ; 62           ; 53           ; 346          ; 7                     ; 0                  ; no     ; no             ; no       ; Off          ; 1.2-V        ; Off         ; --                        ; User                 ; no        ;
 ; SW[8]     ; D32   ; 3A_T     ; 62           ; 53           ; 155          ; 0                     ; 0                  ; no     ; no             ; no       ; Off          ; 1.2-V        ; Off         ; --                        ; User                 ; no        ;
 ; SW[9]     ; A34   ; 3A_T     ; 62           ; 53           ; 339          ; 1                     ; 0                  ; no     ; no             ; no       ; Off          ; 1.2-V        ; Off         ; --                        ; User                 ; no        ;
 +-----------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+-----------+
@@ -1150,9 +1150,10 @@ Note: User assignments will override these defaults. The user specified values a
 +--------------------------------+------------+---------+--------------+
 ; Name                           ; Location   ; Fan-Out ; Usage        ;
 +--------------------------------+------------+---------+--------------+
-; CLOCK0_50                      ; PIN_K43    ; 29      ; Clock        ;
-; ResetReleaseIpInst|onResetSync ; Unassigned ; 27      ; Async. clear ;
+; CLOCK0_50                      ; PIN_K43    ; 38      ; Clock        ;
+; ResetReleaseIpInst|onResetSync ; Unassigned ; 38      ; Async. clear ;
 ; TheHelloDE23|LessThan_0~5      ; Unassigned ; 27      ; Sync. clear  ;
+; TheHelloDE23|i73               ; Unassigned ; 8       ; Clock enable ;
 +--------------------------------+------------+---------+--------------+
 
 
@@ -1164,7 +1165,7 @@ Make sure the file exists and is up to date, and you have permission to read and
 Info (16677): Loading synthesized database.
 Info (16734): Loading "synthesized" snapshot for partition "root_partition".
 Info (16734): Loading "synthesized" snapshot for partition "auto_fab_0".
-Info (16678): Successfully loaded synthesized database: elapsed time is 00:00:04.
+Info (16678): Successfully loaded synthesized database: elapsed time is 00:00:03.
 Info (119006): Selected device A3CZ135BB18AE7S for design "HelloOnDE23Lite"
 Info (21076): High junction temperature operating condition is not set. Assuming a default value of '100'.
 Info (21076): Low junction temperature operating condition is not set. Assuming a default value of '0'.
@@ -1173,7 +1174,7 @@ Info (21076): High junction temperature operating condition is not set. Assuming
 Info (21076): Low junction temperature operating condition is not set. Assuming a default value of '0'.
 Info (12262): Starting Fitter periphery placement operations
 Info (12290): Loading the periphery placement data.
-Info (12291): Periphery placement data loaded: elapsed time is 00:00:24
+Info (12291): Periphery placement data loaded: elapsed time is 00:00:18
 Info (12627): Pin ~ALTERA_OSC_CLK_1~ is reserved at location BB44
 Info (12627): Pin ~ALTERA_AS_DATA1~ is reserved at location T48
 Info (12627): Pin ~ALTERA_AS_nCSO0,ALTERA_MSEL0~ is reserved at location AH44
@@ -1189,6 +1190,7 @@ Info (12627): Pin ~ALTERA_AS_nRST~ is reserved at location BA51
 Warning (25315): Some pins are missing drive strength (current strength), termination and/or slew rate assignments. Refer to the I/O Assignment Warnings report for details.
 Info (16210): Plan updated with currently enabled project assignments.
 Info (12295): Periphery placement of all unplaced cells complete: elapsed time is 00:00:00
+Info (22793): The Timing Analyzer is analyzing 1 combinational loops as latches. To see the list of latches that were not entered as explicit comb loops in design files, view the "User-Specified and Inferred Latches" table in the Synthesis report.
 Info (19539): Reading the HDL-embedded SDC files elapsed 00:00:00.
 Info (332104): Reading SDC File: '../../unitResetReleaseIP/quartus/reset_release_ip/altera_s10_user_rst_clkgate_1949/synth/altera_s10_user_rst_clkgate_fm.sdc'
 Info (332104): Reading SDC File: 'HelloOnDE23Lite.sdc'
@@ -1205,5 +1207,6 @@ Info (176233): Starting register packing
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
 Info (20273): Intermediate fitter snapshots will not be committed because ENABLE_INTERMEDIATE_SNAPSHOTS QSF assignment is disabled during compilation.
+Info (22793): The Timing Analyzer is analyzing 1 combinational loops as latches. To see the list of latches that were not entered as explicit comb loops in design files, view the "User-Specified and Inferred Latches" table in the Synthesis report.
 
 

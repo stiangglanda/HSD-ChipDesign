@@ -1,5 +1,5 @@
 SDC Constraints report for HelloOnDE23Lite
-Sun Oct 18 16:20:16 2026
+Sun Oct 18 17:29:59 2026
 Quartus Prime Version 26.1.1 Build 130 08/06/2026 SC Pro Edition
 
 
@@ -16,7 +16,7 @@ Quartus Prime Version 26.1.1 Build 130 08/06/2026 SC Pro Edition
 +---------------+--------------------------+--------------------------------------------------------------------------------------------------+-----------+
 ; Constraint ID ; Command                  ; Value and Target Options                                                                         ; File Name ;
 +---------------+--------------------------+--------------------------------------------------------------------------------------------------+-----------+
-; 0             ; SDC::stmt_of_source_file ; [-qip] { dni/sandboxes/stiangglanda-IdeaPad_34395_0/sld/ipgen/alt_sld_fab_0/alt_sld_fab_0.qip }  ; :0        ;
+; 0             ; SDC::stmt_of_source_file ; [-qip] { dni/sandboxes/stiangglanda-IdeaPad_48991_0/sld/ipgen/alt_sld_fab_0/alt_sld_fab_0.qip }  ; :0        ;
 +---------------+--------------------------+--------------------------------------------------------------------------------------------------+-----------+
 
 
@@ -25,7 +25,7 @@ Quartus Prime Version 26.1.1 Build 130 08/06/2026 SC Pro Edition
 +---------------+--------------------------+--------------------------------------------------------------------------------------------------+-----------+
 ; Constraint ID ; Command                  ; Value and Target Options                                                                         ; File Name ;
 +---------------+--------------------------+--------------------------------------------------------------------------------------------------+-----------+
-; 0             ; SDC::stmt_of_source_file ; [-qip] { dni/sandboxes/stiangglanda-IdeaPad_34395_0/sld/ipgen/alt_sld_fab_0/alt_sld_fab_0.qip }  ; :0        ;
+; 0             ; SDC::stmt_of_source_file ; [-qip] { dni/sandboxes/stiangglanda-IdeaPad_48991_0/sld/ipgen/alt_sld_fab_0/alt_sld_fab_0.qip }  ; :0        ;
 +---------------+--------------------------+--------------------------------------------------------------------------------------------------+-----------+
 
 

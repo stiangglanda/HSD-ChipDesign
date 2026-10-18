@@ -1,5 +1,5 @@
 Assembler report for HelloOnDE23Lite
-Sun Oct 18 16:20:16 2026
+Sun Oct 18 17:29:59 2026
 Quartus Prime Version 26.1.1 Build 130 08/06/2026 SC Pro Edition
 
 
@@ -40,7 +40,7 @@ on the Quartus Prime software download page.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Sun Oct 18 16:20:16 2026 ;
+; Assembler Status      ; Successful - Sun Oct 18 17:29:59 2026 ;
 ; Revision Name         ; HelloOnDE23Lite                       ;
 ; Top-level Entity Name ; HelloOnDE23Lite                       ;
 ; Family                ; Agilex 3                              ;
@@ -158,20 +158,20 @@ on the Quartus Prime software download page.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 26.1.1 Build 130 08/06/2026 SC Pro Edition
-    Info: Processing started: Sun Oct 18 16:19:57 2026
-    Info: System process ID: 35715
+    Info: Processing started: Sun Oct 18 17:29:43 2026
+    Info: System process ID: 50138
 Info: Command: quartus_asm --read_settings_files=on --write_settings_files=off HelloOnDE23Lite -c HelloOnDE23Lite
 Info (16677): Loading final database.
 Info (16734): Loading "final" snapshot for partition "root_partition".
 Info (16734): Loading "final" snapshot for partition "auto_fab_0".
-Info (16678): Successfully loaded final database: elapsed time is 00:00:04.
+Info (16678): Successfully loaded final database: elapsed time is 00:00:03.
 Info (20553): Using CVP Hash 90d641ed69a3e99d878663fe4818a42d313c451cbc5eeb210c3236ca4dfdef57
 Info (20553): Using HPS IO Hash 0000111122223333444455556666777788889999AAAABBBBCCCCDDDDEEEEFFFF
 Info: Quartus Prime Assembler was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 4185 megabytes
-    Info: Processing ended: Sun Oct 18 16:20:16 2026
-    Info: Elapsed time: 00:00:19
-    Info: System process ID: 35715
+    Info: Processing ended: Sun Oct 18 17:29:59 2026
+    Info: Elapsed time: 00:00:16
+    Info: System process ID: 50138
 
 
 +------------------------------------------------+
@@ -199,8 +199,8 @@ Info: Quartus Prime Assembler was successful. 0 errors, 0 warnings
 ; Option         ; Setting                                                           ;
 +----------------+-------------------------------------------------------------------+
 ; JTAG usercode  ; 0xFFFFFFFF                                                        ;
-; Checksum       ; 0x06140934                                                        ;
-; Design hash    ; D6EE0D05D436BEBBF5F9D788B55AEE11777B30BC87FA5AFC00319D31B9A8D34B  ;
+; Checksum       ; 0x06142BBB                                                        ;
+; Design hash    ; 3CAED496A75CB85176F12D400A5F60A84F425DBC71702B27333B634D6FFBC3FB  ;
 ; HPS IO hash    ; 0000111122223333444455556666777788889999AAAABBBBCCCCDDDDEEEEFFFF  ;
 +----------------+-------------------------------------------------------------------+
 

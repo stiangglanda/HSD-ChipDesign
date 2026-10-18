@@ -1,5 +1,5 @@
 Synthesis report
-Sun Oct 18 16:17:20 2026
+Sun Oct 18 17:27:45 2026
 Quartus Prime Version 26.1.1 Build 130 08/06/2026 SC Pro Edition
 
 
@@ -19,15 +19,18 @@ Quartus Prime Version 26.1.1 Build 130 08/06/2026 SC Pro Edition
       10. Top Causes of Logic Optimized Away During Sweep
 ---- Logic Synthesis Stage Reports ----
       11. Partition "root_partition" Resource Utilization by Entity
-      12. General Register Statistics for Partition "root_partition"
-      13. Post-Synthesis Netlist Statistics for Partition "root_partition"
-      14. Synthesis Resource Usage Summary for Partition "root_partition"
-      15. Partition "auto_fab_0" Resource Utilization by Entity
-      16. General Register Statistics for Partition "auto_fab_0"
-      17. Post-Synthesis Netlist Statistics for Partition "auto_fab_0"
-      18. Synthesis Resource Usage Summary for Partition "auto_fab_0"
- 19. Warnings for ../hdl/HelloOnDE23Lite-e.vhd
- 20. Synthesis Messages
+      12. User-Specified and Inferred Latches
+      13. General Register Statistics for Partition "root_partition"
+      14. Inverted Register Statistics
+      15. Post-Synthesis Netlist Statistics for Partition "root_partition"
+      16. Synthesis Resource Usage Summary for Partition "root_partition"
+      17. Partition "auto_fab_0" Resource Utilization by Entity
+      18. General Register Statistics for Partition "auto_fab_0"
+      19. Post-Synthesis Netlist Statistics for Partition "auto_fab_0"
+      20. Synthesis Resource Usage Summary for Partition "auto_fab_0"
+ 21. Warnings for ../../unitHello/hdl/Hello-Rtl-a.vhd
+ 22. Warnings for ../hdl/HelloOnDE23Lite-e.vhd
+ 23. Synthesis Messages
 
 
 
@@ -54,14 +57,14 @@ on the Quartus Prime software download page.
 +-----------------------------------------------------------------------------------+
 ; Synthesis Summary                                                                 ;
 +--------------------------------------+--------------------------------------------+
-; Synthesis Status                     ; Successful - Sun Oct 18 16:17:20 2026      ;
+; Synthesis Status                     ; Successful - Sun Oct 18 17:27:45 2026      ;
 ; Revision Name                        ; HelloOnDE23Lite                            ;
 ; Top-level Entity Name                ; HelloOnDE23Lite                            ;
 ; Family                               ; Agilex 3                                   ;
 ; Quartus Prime Version                ; 26.1.1 Build 130 08/06/2026 SC Pro Edition ;
 ; Device                               ; A3CZ135BB18AE7S                            ;
-; Logic utilization estimate (in ALMs) ; 34 / 45,800 ( < 1 % )                      ;
-; Total dedicated logic registers      ; 29                                         ;
+; Logic utilization estimate (in ALMs) ; 38 / 45,800 ( < 1 % )                      ;
+; Total dedicated logic registers      ; 38                                         ;
 ; Estimated DSP Blocks Post-Merging    ; 0                                          ;
 +--------------------------------------+--------------------------------------------+
 
@@ -189,17 +192,17 @@ on the Quartus Prime software download page.
 ; ../hdl/HelloOnDE23Lite-e.vhd                                                                                                                                                     ; User-Specified VHDL File                                                    ; /home/stiangglanda/dev/HSD-ChipDesign/Uebung01/prjHelloOnDE23Lite/grpChd3/unitHelloOnDE23Lite/hdl/HelloOnDE23Lite-e.vhd                                                                                                                                                                ;                                         ;                                                                                      ;               ; 6b7dfb909ed0e8bafd56fe773d3bc165 ;
 ; ../../unitResetReleaseIP/hdl/ResetReleaseIP-e.vhd                                                                                                                                ; User-Specified VHDL File                                                    ; /home/stiangglanda/dev/HSD-ChipDesign/Uebung01/prjHelloOnDE23Lite/grpChd3/unitResetReleaseIP/hdl/ResetReleaseIP-e.vhd                                                                                                                                                                  ;                                         ;                                                                                      ;               ; 77f1b856bf99d65290dcda8f68f00a15 ;
 ; ../../unitResetReleaseIP/hdl/ResetReleaseIP-Rtl-a.vhd                                                                                                                            ; User-Specified VHDL File                                                    ; /home/stiangglanda/dev/HSD-ChipDesign/Uebung01/prjHelloOnDE23Lite/grpChd3/unitResetReleaseIP/hdl/ResetReleaseIP-Rtl-a.vhd                                                                                                                                                              ;                                         ;                                                                                      ;               ; 69ab84c8f6728adc018aea83df3b6c74 ;
-; ../../unitHello/hdl/Hello-Rtl-a.vhd                                                                                                                                              ; User-Specified VHDL File                                                    ; /home/stiangglanda/dev/HSD-ChipDesign/Uebung01/prjHelloOnDE23Lite/grpChd3/unitHello/hdl/Hello-Rtl-a.vhd                                                                                                                                                                                ;                                         ;                                                                                      ;               ; 29c36b2f58b6b1e890eca53920d4c654 ;
+; ../../unitHello/hdl/Hello-Rtl-a.vhd                                                                                                                                              ; User-Specified VHDL File                                                    ; /home/stiangglanda/dev/HSD-ChipDesign/Uebung01/prjHelloOnDE23Lite/grpChd3/unitHello/hdl/Hello-Rtl-a.vhd                                                                                                                                                                                ;                                         ;                                                                                      ;               ; 1c765b04b2b7cfe1621f81a40bac8312 ;
 ; ../../unitHello/hdl/Hello-e.vhd                                                                                                                                                  ; User-Specified VHDL File                                                    ; /home/stiangglanda/dev/HSD-ChipDesign/Uebung01/prjHelloOnDE23Lite/grpChd3/unitHello/hdl/Hello-e.vhd                                                                                                                                                                                    ;                                         ;                                                                                      ;               ; 66a98f080df4320247b7732e3c5453a6 ;
 ; ../../unitHex2SevenSegment/hdl/Hex2SevenSegment-Rtl-a.vhd                                                                                                                        ; User-Specified VHDL File                                                    ; /home/stiangglanda/dev/HSD-ChipDesign/Uebung01/prjHelloOnDE23Lite/grpChd3/unitHex2SevenSegment/hdl/Hex2SevenSegment-Rtl-a.vhd                                                                                                                                                          ;                                         ;                                                                                      ;               ; 526bd18f8d0a219754d6570e00cb06c5 ;
 ; ../../unitHex2SevenSegment/hdl/Hex2SevenSegment-e.vhd                                                                                                                            ; User-Specified VHDL File                                                    ; /home/stiangglanda/dev/HSD-ChipDesign/Uebung01/prjHelloOnDE23Lite/grpChd3/unitHex2SevenSegment/hdl/Hex2SevenSegment-e.vhd                                                                                                                                                              ;                                         ;                                                                                      ;               ; ba4fb14b17f2afecbe283234e625d213 ;
-; dni/sandboxes/stiangglanda-IdeaPad_34395_0/sld/ipgen/alt_sld_fab_0/alt_sld_fab_0.qip                                                                                             ; User-Specified IP File                                                      ; /home/stiangglanda/dev/HSD-ChipDesign/Uebung01/prjHelloOnDE23Lite/grpChd3/unitHelloOnDE23Lite/quartus/dni/sandboxes/stiangglanda-IdeaPad_34395_0/sld/ipgen/alt_sld_fab_0/alt_sld_fab_0.qip                                                                                             ;                                         ;                                                                                      ;               ; 994e8e5c14cd3a83b8fea8c01742f1fa ;
-; qdb/_compiler/HelloOnDE23Lite/_flat/26.1.1/source/1/.temp/cpt_proxy/alt_sld_fab_0_altera_sld_splitter_1920_tbvre7y.sv                                                            ; Encrypted Auto-Generated Megafunction                                       ; /home/stiangglanda/dev/HSD-ChipDesign/Uebung01/prjHelloOnDE23Lite/grpChd3/unitHelloOnDE23Lite/quartus/qdb/_compiler/HelloOnDE23Lite/_flat/26.1.1/source/1/.temp/cpt_proxy/alt_sld_fab_0_altera_sld_splitter_1920_tbvre7y.sv                                                            ; altera_sld_splitter_1920                ; dni/sandboxes/stiangglanda-IdeaPad_34395_0/sld/ipgen/alt_sld_fab_0/alt_sld_fab_0.qip ;               ;                                  ;
-; dni/sandboxes/stiangglanda-IdeaPad_34395_0/sld/ipgen/alt_sld_fab_0/intel_agilex_reset_release_from_sdm_203/synth/alt_sld_fab_0_intel_agilex_reset_release_from_sdm_203_poqcpxq.v ; Auto-Generated Megafunction                                                 ; /home/stiangglanda/dev/HSD-ChipDesign/Uebung01/prjHelloOnDE23Lite/grpChd3/unitHelloOnDE23Lite/quartus/dni/sandboxes/stiangglanda-IdeaPad_34395_0/sld/ipgen/alt_sld_fab_0/intel_agilex_reset_release_from_sdm_203/synth/alt_sld_fab_0_intel_agilex_reset_release_from_sdm_203_poqcpxq.v ; intel_agilex_reset_release_from_sdm_203 ; dni/sandboxes/stiangglanda-IdeaPad_34395_0/sld/ipgen/alt_sld_fab_0/alt_sld_fab_0.qip ;               ;                                  ;
-; dni/sandboxes/stiangglanda-IdeaPad_34395_0/sld/ipgen/alt_sld_fab_0/intel_agilex_reset_release_from_sdm_203/synth/intel_agilex_reset_release_from_sdm_atom.v                      ; Auto-Generated Megafunction                                                 ; /home/stiangglanda/dev/HSD-ChipDesign/Uebung01/prjHelloOnDE23Lite/grpChd3/unitHelloOnDE23Lite/quartus/dni/sandboxes/stiangglanda-IdeaPad_34395_0/sld/ipgen/alt_sld_fab_0/intel_agilex_reset_release_from_sdm_203/synth/intel_agilex_reset_release_from_sdm_atom.v                      ; intel_agilex_reset_release_from_sdm_203 ; dni/sandboxes/stiangglanda-IdeaPad_34395_0/sld/ipgen/alt_sld_fab_0/alt_sld_fab_0.qip ;               ;                                  ;
-; qdb/_compiler/HelloOnDE23Lite/_flat/26.1.1/source/1/.temp/cpt_proxy/alt_sld_fab_0_alt_sld_fab_1920_rwbiqrq.v                                                                     ; Encrypted Auto-Generated Megafunction                                       ; /home/stiangglanda/dev/HSD-ChipDesign/Uebung01/prjHelloOnDE23Lite/grpChd3/unitHelloOnDE23Lite/quartus/qdb/_compiler/HelloOnDE23Lite/_flat/26.1.1/source/1/.temp/cpt_proxy/alt_sld_fab_0_alt_sld_fab_1920_rwbiqrq.v                                                                     ; alt_sld_fab_1920                        ; dni/sandboxes/stiangglanda-IdeaPad_34395_0/sld/ipgen/alt_sld_fab_0/alt_sld_fab_0.qip ;               ;                                  ;
-; qdb/_compiler/HelloOnDE23Lite/_flat/26.1.1/source/1/.temp/cpt_proxy/alt_sld_fab_0_alt_sld_fab_0_10_fkimwiy.v                                                                     ; Encrypted Auto-Generated Megafunction                                       ; /home/stiangglanda/dev/HSD-ChipDesign/Uebung01/prjHelloOnDE23Lite/grpChd3/unitHelloOnDE23Lite/quartus/qdb/_compiler/HelloOnDE23Lite/_flat/26.1.1/source/1/.temp/cpt_proxy/alt_sld_fab_0_alt_sld_fab_0_10_fkimwiy.v                                                                     ; alt_sld_fab_0_10                        ; dni/sandboxes/stiangglanda-IdeaPad_34395_0/sld/ipgen/alt_sld_fab_0/alt_sld_fab_0.qip ;               ;                                  ;
-; dni/sandboxes/stiangglanda-IdeaPad_34395_0/sld/ipgen/alt_sld_fab_0/synth/alt_sld_fab_0.v                                                                                         ; Auto-Generated Megafunction                                                 ; /home/stiangglanda/dev/HSD-ChipDesign/Uebung01/prjHelloOnDE23Lite/grpChd3/unitHelloOnDE23Lite/quartus/dni/sandboxes/stiangglanda-IdeaPad_34395_0/sld/ipgen/alt_sld_fab_0/synth/alt_sld_fab_0.v                                                                                         ; alt_sld_fab_0                           ; dni/sandboxes/stiangglanda-IdeaPad_34395_0/sld/ipgen/alt_sld_fab_0/alt_sld_fab_0.qip ;               ;                                  ;
+; dni/sandboxes/stiangglanda-IdeaPad_48991_0/sld/ipgen/alt_sld_fab_0/alt_sld_fab_0.qip                                                                                             ; User-Specified IP File                                                      ; /home/stiangglanda/dev/HSD-ChipDesign/Uebung01/prjHelloOnDE23Lite/grpChd3/unitHelloOnDE23Lite/quartus/dni/sandboxes/stiangglanda-IdeaPad_48991_0/sld/ipgen/alt_sld_fab_0/alt_sld_fab_0.qip                                                                                             ;                                         ;                                                                                      ;               ; 994e8e5c14cd3a83b8fea8c01742f1fa ;
+; qdb/_compiler/HelloOnDE23Lite/_flat/26.1.1/source/1/.temp/cpt_proxy/alt_sld_fab_0_altera_sld_splitter_1920_tbvre7y.sv                                                            ; Encrypted Auto-Generated Megafunction                                       ; /home/stiangglanda/dev/HSD-ChipDesign/Uebung01/prjHelloOnDE23Lite/grpChd3/unitHelloOnDE23Lite/quartus/qdb/_compiler/HelloOnDE23Lite/_flat/26.1.1/source/1/.temp/cpt_proxy/alt_sld_fab_0_altera_sld_splitter_1920_tbvre7y.sv                                                            ; altera_sld_splitter_1920                ; dni/sandboxes/stiangglanda-IdeaPad_48991_0/sld/ipgen/alt_sld_fab_0/alt_sld_fab_0.qip ;               ;                                  ;
+; dni/sandboxes/stiangglanda-IdeaPad_48991_0/sld/ipgen/alt_sld_fab_0/intel_agilex_reset_release_from_sdm_203/synth/alt_sld_fab_0_intel_agilex_reset_release_from_sdm_203_poqcpxq.v ; Auto-Generated Megafunction                                                 ; /home/stiangglanda/dev/HSD-ChipDesign/Uebung01/prjHelloOnDE23Lite/grpChd3/unitHelloOnDE23Lite/quartus/dni/sandboxes/stiangglanda-IdeaPad_48991_0/sld/ipgen/alt_sld_fab_0/intel_agilex_reset_release_from_sdm_203/synth/alt_sld_fab_0_intel_agilex_reset_release_from_sdm_203_poqcpxq.v ; intel_agilex_reset_release_from_sdm_203 ; dni/sandboxes/stiangglanda-IdeaPad_48991_0/sld/ipgen/alt_sld_fab_0/alt_sld_fab_0.qip ;               ;                                  ;
+; dni/sandboxes/stiangglanda-IdeaPad_48991_0/sld/ipgen/alt_sld_fab_0/intel_agilex_reset_release_from_sdm_203/synth/intel_agilex_reset_release_from_sdm_atom.v                      ; Auto-Generated Megafunction                                                 ; /home/stiangglanda/dev/HSD-ChipDesign/Uebung01/prjHelloOnDE23Lite/grpChd3/unitHelloOnDE23Lite/quartus/dni/sandboxes/stiangglanda-IdeaPad_48991_0/sld/ipgen/alt_sld_fab_0/intel_agilex_reset_release_from_sdm_203/synth/intel_agilex_reset_release_from_sdm_atom.v                      ; intel_agilex_reset_release_from_sdm_203 ; dni/sandboxes/stiangglanda-IdeaPad_48991_0/sld/ipgen/alt_sld_fab_0/alt_sld_fab_0.qip ;               ;                                  ;
+; qdb/_compiler/HelloOnDE23Lite/_flat/26.1.1/source/1/.temp/cpt_proxy/alt_sld_fab_0_alt_sld_fab_1920_rwbiqrq.v                                                                     ; Encrypted Auto-Generated Megafunction                                       ; /home/stiangglanda/dev/HSD-ChipDesign/Uebung01/prjHelloOnDE23Lite/grpChd3/unitHelloOnDE23Lite/quartus/qdb/_compiler/HelloOnDE23Lite/_flat/26.1.1/source/1/.temp/cpt_proxy/alt_sld_fab_0_alt_sld_fab_1920_rwbiqrq.v                                                                     ; alt_sld_fab_1920                        ; dni/sandboxes/stiangglanda-IdeaPad_48991_0/sld/ipgen/alt_sld_fab_0/alt_sld_fab_0.qip ;               ;                                  ;
+; qdb/_compiler/HelloOnDE23Lite/_flat/26.1.1/source/1/.temp/cpt_proxy/alt_sld_fab_0_alt_sld_fab_0_10_fkimwiy.v                                                                     ; Encrypted Auto-Generated Megafunction                                       ; /home/stiangglanda/dev/HSD-ChipDesign/Uebung01/prjHelloOnDE23Lite/grpChd3/unitHelloOnDE23Lite/quartus/qdb/_compiler/HelloOnDE23Lite/_flat/26.1.1/source/1/.temp/cpt_proxy/alt_sld_fab_0_alt_sld_fab_0_10_fkimwiy.v                                                                     ; alt_sld_fab_0_10                        ; dni/sandboxes/stiangglanda-IdeaPad_48991_0/sld/ipgen/alt_sld_fab_0/alt_sld_fab_0.qip ;               ;                                  ;
+; dni/sandboxes/stiangglanda-IdeaPad_48991_0/sld/ipgen/alt_sld_fab_0/synth/alt_sld_fab_0.v                                                                                         ; Auto-Generated Megafunction                                                 ; /home/stiangglanda/dev/HSD-ChipDesign/Uebung01/prjHelloOnDE23Lite/grpChd3/unitHelloOnDE23Lite/quartus/dni/sandboxes/stiangglanda-IdeaPad_48991_0/sld/ipgen/alt_sld_fab_0/synth/alt_sld_fab_0.v                                                                                         ; alt_sld_fab_0                           ; dni/sandboxes/stiangglanda-IdeaPad_48991_0/sld/ipgen/alt_sld_fab_0/alt_sld_fab_0.qip ;               ;                                  ;
 ; /home/stiangglanda/altera_pro/26.1.1/quartus/libraries/megafunctions/altera_agilex_config_reset_release_endpoint.vhd                                                             ; Megafunction                                                                ; /home/stiangglanda/altera_pro/26.1.1/quartus/libraries/megafunctions/altera_agilex_config_reset_release_endpoint.vhd                                                                                                                                                                   ; altera_work                             ;                                                                                      ;               ; 75f0bd49a26d0a68c2db962e95c62836 ;
 ; /home/stiangglanda/altera_pro/26.1.1/quartus/libraries/megafunctions/altera_fabric_endpoint.vhd                                                                                  ; Encrypted Megafunction                                                      ; /home/stiangglanda/altera_pro/26.1.1/quartus/libraries/megafunctions/altera_fabric_endpoint.vhd                                                                                                                                                                                        ; altera_work                             ;                                                                                      ;               ; 6256b5d6e0a120264bd8e7a62ecef4fb ;
 ; /home/stiangglanda/altera_pro/26.1.1/quartus/libraries/megafunctions/sld_hub.vhd                                                                                                 ; Encrypted Auto-Generated Megafunction                                       ; /home/stiangglanda/altera_pro/26.1.1/quartus/libraries/megafunctions/sld_hub.vhd                                                                                                                                                                                                       ; altera_sld                              ;                                                                                      ;               ; 68759eb5d76202b5fda623823c10253c ;
@@ -214,10 +217,10 @@ on the Quartus Prime software download page.
 +-------------------+-------------------------------------+--------------+------------+-------------------------------------+---------+--------------+--------------+----------------------------------------------------------+-----------------------------------------------------------------------+
 ; Vendor            ; IP Name                             ; Product Name ; Product ID ; IP Core Name                        ; Version ; Release Date ; License Type ; Entity Instance                                          ; IP Include File                                                       ;
 +-------------------+-------------------------------------+--------------+------------+-------------------------------------+---------+--------------+--------------+----------------------------------------------------------+-----------------------------------------------------------------------+
-; Intel Corporation ; alt_sld_fab                         ; N/A          ; N/A        ; alt_sld_fab                         ; 19.2.0  ; N/A          ; N/A          ; auto_fab_0                                               ; dni/sandboxes/stiangglanda-IdeaPad_34395_0/sld/ipgen/alt_sld_fab_0.ip ;
+; Intel Corporation ; alt_sld_fab                         ; N/A          ; N/A        ; alt_sld_fab                         ; 19.2.0  ; N/A          ; N/A          ; auto_fab_0                                               ; dni/sandboxes/stiangglanda-IdeaPad_48991_0/sld/ipgen/alt_sld_fab_0.ip ;
 ; Intel Corporation ; Signal Tap                          ; Signal Tap   ; 6AF7_BCEC  ; Signal Tap                          ; N/A     ; N/A          ; Licensed     ; auto_fab_0|alt_sld_fab_0                                 ;                                                                       ;
 ; Intel Corporation ; Signal Tap                          ; Signal Tap   ; 6AF7_BCEC  ; Signal Tap                          ; N/A     ; N/A          ; Licensed     ; auto_fab_0|alt_sld_fab_0|alt_sld_fab_0                   ;                                                                       ;
-; Intel Corporation ; intel_agilex_reset_release_from_sdm ; N/A          ; N/A        ; intel_agilex_reset_release_from_sdm ; 20.3    ; N/A          ; N/A          ; auto_fab_0|alt_sld_fab_0|alt_sld_fab_0|agilexconfigreset ; dni/sandboxes/stiangglanda-IdeaPad_34395_0/sld/ipgen/alt_sld_fab_0.ip ;
+; Intel Corporation ; intel_agilex_reset_release_from_sdm ; N/A          ; N/A        ; intel_agilex_reset_release_from_sdm ; 20.3    ; N/A          ; N/A          ; auto_fab_0|alt_sld_fab_0|alt_sld_fab_0|agilexconfigreset ; dni/sandboxes/stiangglanda-IdeaPad_48991_0/sld/ipgen/alt_sld_fab_0.ip ;
 ; Intel Corporation ; Signal Tap                          ; Signal Tap   ; 6AF7_BCEC  ; Signal Tap                          ; N/A     ; N/A          ; Licensed     ; auto_fab_0|alt_sld_fab_0|alt_sld_fab_0|splitter          ;                                                                       ;
 ; Intel Corporation ; Reset Release IP                    ; N/A          ; N/A        ; altera_s10_user_rst_clkgate         ; 19.4.9  ; N/A          ; N/A          ; ResetReleaseIpInst|ip_inst                               ; ../../unitResetReleaseIP/quartus/reset_release_ip.ip                  ;
 +-------------------+-------------------------------------+--------------+------------+-------------------------------------+---------+--------------+--------------+----------------------------------------------------------+-----------------------------------------------------------------------+
@@ -342,13 +345,24 @@ Top root causes of logic optimization that have been identified during sweep. Fo
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+-----------+----------------------+------------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Max Depth ; Full Hierarchy Name  ; Entity Name      ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+-----------+----------------------+------------------+--------------+
-; |                          ; 50 (1)              ; 29 (0)                    ; 0                 ; 0          ; 50   ; 3.5 (1.0) ; |                    ; HelloOnDE23Lite  ; altera_work  ;
-;    |ResetReleaseIpInst|    ; 1 (1)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 1.0 (1.0) ; ResetReleaseIpInst   ; ResetReleaseIP   ; altera_work  ;
-;    |TheHelloDE23|          ; 48 (34)             ; 27 (27)                   ; 0                 ; 0          ; 0    ; 3.5 (3.5) ; TheHelloDE23         ; Hello            ; altera_work  ;
+; |                          ; 63 (1)              ; 38 (0)                    ; 0                 ; 0          ; 50   ; 3.5 (3.0) ; |                    ; HelloOnDE23Lite  ; altera_work  ;
+;    |ResetReleaseIpInst|    ; 1 (1)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 3.0 (3.0) ; ResetReleaseIpInst   ; ResetReleaseIP   ; altera_work  ;
+;    |TheHelloDE23|          ; 61 (47)             ; 36 (36)                   ; 0                 ; 0          ; 0    ; 3.5 (3.5) ; TheHelloDE23         ; Hello            ; altera_work  ;
 ;       |TheHex0|            ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 1.0 (1.0) ; TheHelloDE23|TheHex0 ; Hex2SevenSegment ; altera_work  ;
 ;       |TheHex1|            ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 1.0 (1.0) ; TheHelloDE23|TheHex1 ; Hex2SevenSegment ; altera_work  ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+-----------+----------------------+------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++---------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                               ;
++----------------------------------------------------+---------------------+------------------------+
+; Latch Name                                         ; Latch Enable Signal ; Free of Timing Hazards ;
++----------------------------------------------------+---------------------+------------------------+
+; TheHelloDE23|sw_old~1                              ; TheHelloDE23|sw_old ; yes                    ;
+; Number of user-specified and inferred latches = 1  ;                     ;                        ;
++----------------------------------------------------+---------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
 +------------------------------------------------------------+
@@ -356,14 +370,24 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------------+
 ; Statistic                                    ; Value       ;
 +----------------------------------------------+-------------+
-; Total registers                              ; 29          ;
+; Total registers                              ; 38          ;
 ; Number of registers using Synchronous Clear  ; 26          ;
 ; Number of registers using Synchronous Load   ; 0           ;
-; Number of registers using Asynchronous Clear ; 27          ;
+; Number of registers using Asynchronous Clear ; 36          ;
 ; Number of registers using Asynchronous Load  ; 0           ;
-; Number of registers using Clock Enable       ; 0           ;
+; Number of registers using Clock Enable       ; 8           ;
 ; Number of registers using Preset             ; 0           ;
 +----------------------------------------------+-------------+
+
+
++--------------------------------------------------+
+; Inverted Register Statistics                     ;
++----------------------------------------+---------+
+; Inverted Register                      ; Fan out ;
++----------------------------------------+---------+
+; TheHelloDE23|led_shift[0]              ; 2       ;
+; Total number of inverted registers = 1 ;         ;
++----------------------------------------+---------+
 
 
 +------------------------------------------------------------------+
@@ -374,17 +398,20 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; blackbox               ; 1                                       ;
 ;     auto_fab_0         ; 1                                       ;
 ; boundary_port          ; 50                                      ;
-; tennm_ff               ; 29                                      ;
-;     CLR                ; 1                                       ;
+; tennm_ff               ; 38                                      ;
+;     CLR                ; 2                                       ;
 ;     CLR SCLR           ; 26                                      ;
+;     ENA CLR            ; 8                                       ;
 ;     plain              ; 2                                       ;
-; tennm_lcell_comb       ; 50                                      ;
+; tennm_lcell_comb       ; 63                                      ;
 ;     arith              ; 26                                      ;
 ;         1 data inputs  ; 26                                      ;
-;     normal             ; 24                                      ;
+;     normal             ; 37                                      ;
 ;         0 data inputs  ; 1                                       ;
-;         2 data inputs  ; 5                                       ;
-;         4 data inputs  ; 14                                      ;
+;         1 data inputs  ; 9                                       ;
+;         2 data inputs  ; 7                                       ;
+;         3 data inputs  ; 1                                       ;
+;         4 data inputs  ; 15                                      ;
 ;         5 data inputs  ; 1                                       ;
 ;         6 data inputs  ; 3                                       ;
 ;                        ;                                         ;
@@ -392,7 +419,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Max carry chain length ; 26                                      ;
 ;                        ;                                         ;
 ; Max LUT depth          ; 3.50                                    ;
-; Average LUT depth      ; 2.36                                    ;
+; Average LUT depth      ; 2.23                                    ;
 +------------------------+-----------------------------------------+
 
 
@@ -401,17 +428,17 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------------+-------------------+
 ; Resource                                    ; Usage             ;
 +---------------------------------------------+-------------------+
-; Estimate of Logic utilization (ALMs needed) ; 34                ;
+; Estimate of Logic utilization (ALMs needed) ; 38                ;
 ;                                             ;                   ;
-; Combinational ALUT usage for logic          ; 50                ;
+; Combinational ALUT usage for logic          ; 63                ;
 ;     -- 8 input functions                    ; 0                 ;
 ;     -- 7 input functions                    ; 0                 ;
 ;     -- 6 input functions                    ; 3                 ;
 ;     -- 5 input functions                    ; 1                 ;
-;     -- 4 input functions                    ; 14                ;
-;     -- <=3 input functions                  ; 32                ;
+;     -- 4 input functions                    ; 15                ;
+;     -- <=3 input functions                  ; 44                ;
 ;                                             ;                   ;
-; Dedicated logic registers                   ; 29                ;
+; Dedicated logic registers                   ; 38                ;
 ;                                             ;                   ;
 ; I/O pins                                    ; 50                ;
 ;                                             ;                   ;
@@ -421,9 +448,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;     -- [C] Total DSP_PRIME Blocks           ; 0                 ;
 ;                                             ;                   ;
 ; Maximum fan-out node                        ; CLOCK0_50         ;
-; Maximum fan-out                             ; 29                ;
-; Total fan-out                               ; 288               ;
-; Average fan-out                             ; 2.23              ;
+; Maximum fan-out                             ; 38                ;
+; Total fan-out                               ; 343               ;
+; Average fan-out                             ; 2.27              ;
 +---------------------------------------------+-------------------+
 
 
@@ -504,6 +531,17 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------------+--------------------------------------------------------------------------------+
 
 
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Warnings for ../../unitHello/hdl/Hello-Rtl-a.vhd                                                                                                                                                                                                                                                                                                                                ;
++-------------+----------+-------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Message ID  ; Severity ; Count ; Sample Warning                                                                                                                                                                                                                                                                                                                                 ;
++-------------+----------+-------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; 13004:13310 ; Warning  ; 1     ; Presettable and clearable registers converted to equivalent circuits with latches. Registers power-up to an undefined state, and DEVCLRn places the registers in an undefined state. : Register "TheHelloDE23|sw_old" is converted into an equivalent circuit using register "TheHelloDE23|sw_old~_emulated" and latch "TheHelloDE23|sw_old~1" ;
+; 13796       ; Warning  ; 1     ; VHDL Process Statement warning at Hello-Rtl-a.vhd(68): signal "isw" is read inside the Process Statement but isn't in the Process Statement's sensitivity list                                                                                                                                                                                 ;
+; 16764       ; Warning  ; 1     ; VHDL warning at Hello-Rtl-a.vhd(75): incomplete sensitivity list specified; assuming completeness                                                                                                                                                                                                                                              ;
++-------------+----------+-------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
 +------------------------------------------------------------------------------------------------------+
 ; Warnings for ../hdl/HelloOnDE23Lite-e.vhd                                                            ;
 +-------------+----------+-------+---------------------------------------------------------------------+
@@ -519,8 +557,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Synthesis
     Info: Version 26.1.1 Build 130 08/06/2026 SC Pro Edition
-    Info: Processing started: Sun Oct 18 16:16:47 2026
-    Info: System process ID: 34395
+    Info: Processing started: Sun Oct 18 17:27:13 2026
+    Info: System process ID: 48991
 Info: Command: quartus_syn --read_settings_files=on --write_settings_files=off HelloOnDE23Lite -c HelloOnDE23Lite
 Info: qis_default_flow_script.tcl version: #1
 Info: Initializing Synthesis...
@@ -537,6 +575,8 @@ Info (19337): VHDL info at altera_agilex_config_reset_release_endpoint.vhd(122):
 Info (19337): VHDL info at altera_fabric_endpoint.vhd(126): executing entity "altera_fabric_endpoint(send_width=0,receive_width=1,settings="{fabric agilex_config_reset_release dir agent psig 142e1a3c}")(1,60)" with architecture "rtl" File: /home/stiangglanda/altera_pro/26.1.1/quartus/libraries/megafunctions/altera_fabric_endpoint.vhd Line: 126
 Info (19337): VHDL info at Hello-e.vhd(16): executing entity "Hello(gclockratehz=50000000)" with architecture "Rtl" File: /home/stiangglanda/dev/HSD-ChipDesign/Uebung01/prjHelloOnDE23Lite/grpChd3/unitHello/hdl/Hello-e.vhd Line: 16
 Info (19337): VHDL info at Hex2SevenSegment-e.vhd(16): executing entity "Hex2SevenSegment" with architecture "Rtl" File: /home/stiangglanda/dev/HSD-ChipDesign/Uebung01/prjHelloOnDE23Lite/grpChd3/unitHex2SevenSegment/hdl/Hex2SevenSegment-e.vhd Line: 16
+Warning (13796): VHDL Process Statement warning at Hello-Rtl-a.vhd(68): signal "isw" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/stiangglanda/dev/HSD-ChipDesign/Uebung01/prjHelloOnDE23Lite/grpChd3/unitHello/hdl/Hello-Rtl-a.vhd Line: 68
+Warning (16764): VHDL warning at Hello-Rtl-a.vhd(75): incomplete sensitivity list specified; assuming completeness File: /home/stiangglanda/dev/HSD-ChipDesign/Uebung01/prjHelloOnDE23Lite/grpChd3/unitHello/hdl/Hello-Rtl-a.vhd Line: 75
 Info (17555): VHDL info at reset_release_ip.vhd(16): re-analyze unit rtl since unit altera_s10_user_rst_clkgate is overwritten or removed File: /home/stiangglanda/dev/HSD-ChipDesign/Uebung01/prjHelloOnDE23Lite/grpChd3/unitResetReleaseIP/quartus/reset_release_ip/synth/reset_release_ip.vhd Line: 16
 Info: Found 8 design entities
 Info: There are 9 partitions after elaboration.
@@ -567,7 +607,7 @@ Info (11172): Set_instance_parameter_value agilexconfigreset COUNT 1
 Info (11172): Set_instance_parameter_value splitter FRAGMENTS {{{name conf_reset type reset dir end ports { {conf_reset reset in 1 0} } properties { {synchronousEdges {None} } } } } }
 Info (11172): Add_connection agilexconfigreset.conf_reset_0 splitter.conf_reset_0 reset
 Info (11172): Set_parameter_value COMPOSED_SETTINGS {{fabric agilex_config_reset_release dir agent type_name 0 instance_name 0} }
-Info (11172): Deploying alt_sld_fab_0 to /home/stiangglanda/dev/HSD-ChipDesign/Uebung01/prjHelloOnDE23Lite/grpChd3/unitHelloOnDE23Lite/quartus/dni/sandboxes/stiangglanda-IdeaPad_34395_0/sld/ipgen/alt_sld_fab_0.ip
+Info (11172): Deploying alt_sld_fab_0 to /home/stiangglanda/dev/HSD-ChipDesign/Uebung01/prjHelloOnDE23Lite/grpChd3/unitHelloOnDE23Lite/quartus/dni/sandboxes/stiangglanda-IdeaPad_48991_0/sld/ipgen/alt_sld_fab_0.ip
 Info (11172): ***************************************************************
 Info (11172): Quartus is a registered trademark of Altera Corporation in the
 Info (11172): US and other countries.  Portions of the Quartus Prime software
@@ -593,10 +633,10 @@ Info (11172): Set_instance_parameter_value agilexconfigreset COUNT 1
 Info (11172): Set_instance_parameter_value splitter FRAGMENTS {{{name conf_reset type reset dir end ports { {conf_reset reset in 1 0} } properties { {synchronousEdges {None} } } } } }
 Info (11172): Add_connection agilexconfigreset.conf_reset_0 splitter.conf_reset_0 reset
 Info (11172): Set_parameter_value COMPOSED_SETTINGS {{fabric agilex_config_reset_release dir agent type_name 0 instance_name 0} }
-Info (11172): Saving generation log to /home/stiangglanda/dev/HSD-ChipDesign/Uebung01/prjHelloOnDE23Lite/grpChd3/unitHelloOnDE23Lite/quartus/dni/sandboxes/stiangglanda-IdeaPad_34395_0/sld/ipgen/alt_sld_fab_0/alt_sld_fab_0_generation.rpt
+Info (11172): Saving generation log to /home/stiangglanda/dev/HSD-ChipDesign/Uebung01/prjHelloOnDE23Lite/grpChd3/unitHelloOnDE23Lite/quartus/dni/sandboxes/stiangglanda-IdeaPad_48991_0/sld/ipgen/alt_sld_fab_0/alt_sld_fab_0_generation.rpt
 Info (11172): Generated by version: 26.1.1 build 130
 Info (11172): Starting: Create HDL design files for synthesis
-Info (11172): Qsys-generate /home/stiangglanda/dev/HSD-ChipDesign/Uebung01/prjHelloOnDE23Lite/grpChd3/unitHelloOnDE23Lite/quartus/dni/sandboxes/stiangglanda-IdeaPad_34395_0/sld/ipgen/alt_sld_fab_0.ip --synthesis=VERILOG --output-directory=/home/stiangglanda/dev/HSD-ChipDesign/Uebung01/prjHelloOnDE23Lite/grpChd3/unitHelloOnDE23Lite/quartus/dni/sandboxes/stiangglanda-IdeaPad_34395_0/sld/ipgen/alt_sld_fab_0 --family="Agilex 3" --part=A3CZ135BB18AE7S
+Info (11172): Qsys-generate /home/stiangglanda/dev/HSD-ChipDesign/Uebung01/prjHelloOnDE23Lite/grpChd3/unitHelloOnDE23Lite/quartus/dni/sandboxes/stiangglanda-IdeaPad_48991_0/sld/ipgen/alt_sld_fab_0.ip --synthesis=VERILOG --output-directory=/home/stiangglanda/dev/HSD-ChipDesign/Uebung01/prjHelloOnDE23Lite/grpChd3/unitHelloOnDE23Lite/quartus/dni/sandboxes/stiangglanda-IdeaPad_48991_0/sld/ipgen/alt_sld_fab_0 --family="Agilex 3" --part=A3CZ135BB18AE7S
 Info (11172): Add_instance splitter altera_sld_splitter
 Info (11172): Set_instance_parameter_value splitter ADD_INTERFACE_ASGN 1
 Info (11172): Add_instance agilexconfigreset intel_agilex_reset_release_from_sdm
@@ -623,23 +663,25 @@ Info (11172): Alt_sld_fab_0: "Generating: alt_sld_fab_0_altera_sld_splitter_1920
 Info (11172): Alt_sld_fab_0: "Generating: alt_sld_fab_0_intel_agilex_reset_release_from_sdm_203_poqcpxq"
 Info (11172): Alt_sld_fab_0: Done "alt_sld_fab_0" with 5 modules, 6 files
 Info (11172): Finished: Create HDL design files for synthesis
-Info (11172): Generation of /home/stiangglanda/dev/HSD-ChipDesign/Uebung01/prjHelloOnDE23Lite/grpChd3/unitHelloOnDE23Lite/quartus/dni/sandboxes/stiangglanda-IdeaPad_34395_0/sld/ipgen/alt_sld_fab_0.ip (alt_sld_fab_0) took 420 ms
+Info (11172): Generation of /home/stiangglanda/dev/HSD-ChipDesign/Uebung01/prjHelloOnDE23Lite/grpChd3/unitHelloOnDE23Lite/quartus/dni/sandboxes/stiangglanda-IdeaPad_48991_0/sld/ipgen/alt_sld_fab_0.ip (alt_sld_fab_0) took 492 ms
 Info (11171): Finished IP generation for the debug fabric: alt_sld_fab_0.
 Info: DA report generation in native DNI mode
 Info (21615): Running Design Assistant Rules for snapshot 'partitioned'
 Info: No waiver waived any violations
-Info (22360): Design Assistant Results: 29 of 29 enabled rules passed, and 1 rules was disabled, in snapshot 'partitioned'
+Info (22360): Design Assistant Results: 27 of 29 enabled rules passed, and 1 rules was disabled, in snapshot 'partitioned'
 Info (21660): Design Assistant Results: 0 of 19 Critical severity rules issued violations in snapshot 'partitioned'
 Info (21661): Design Assistant Results: 0 of 1 High severity rules issued violations in snapshot 'partitioned'
 Info (21621): Design Assistant Results: 0 of 1 Medium severity rules issued violations in snapshot 'partitioned'
-Info (21622): Design Assistant Results: 0 of 8 Low severity rules issued violations in snapshot 'partitioned'
+Info (21622): Design Assistant Results: 2 of 8 Low severity rules issued violations in snapshot 'partitioned'. Please refer to DRC report '/home/stiangglanda/dev/HSD-ChipDesign/Uebung01/prjHelloOnDE23Lite/grpChd3/unitHelloOnDE23Lite/quartus/output_files/HelloOnDE23Lite.drc.partitioned.rpt' for more information
 Info: Synthesizing partition "root_partition"
+Warning (13004): Presettable and clearable registers converted to equivalent circuits with latches. Registers power-up to an undefined state, and DEVCLRn places the registers in an undefined state.
+    Warning (13310): Register "TheHelloDE23|sw_old" is converted into an equivalent circuit using register "TheHelloDE23|sw_old~_emulated" and latch "TheHelloDE23|sw_old~1" File: /home/stiangglanda/dev/HSD-ChipDesign/Uebung01/prjHelloOnDE23Lite/grpChd3/unitHello/hdl/Hello-Rtl-a.vhd Line: 74
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "LEDR[9]" is stuck at VCC File: /home/stiangglanda/dev/HSD-ChipDesign/Uebung01/prjHelloOnDE23Lite/grpChd3/unitHelloOnDE23Lite/hdl/HelloOnDE23Lite-e.vhd Line: 25
-Info (21057): Implemented 103 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 122 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 12 input pins
     Info (21059): Implemented 38 output pins
-    Info (21061): Implemented 52 logic cells
+    Info (21061): Implemented 71 logic cells
     Info (21071): Implemented 1 partitions
 Info: Successfully synthesized partition
 Info: Synthesizing partition "auto_fab_0"
@@ -650,14 +692,14 @@ Info: Successfully synthesized partition
 Info: Saving post-synthesis snapshots for 2 partition(s)
 Info (21615): Running Design Assistant Rules for snapshot 'synthesized'
 Info: No waiver waived any violations
-Info (22360): Design Assistant Results: 12 of 13 enabled rules passed, and 7 rules was disabled, in snapshot 'synthesized'
+Info (22360): Design Assistant Results: 11 of 13 enabled rules passed, and 7 rules was disabled, in snapshot 'synthesized'
 Info (21661): Design Assistant Results: 0 of 1 High severity rules issued violations in snapshot 'synthesized'
-Info (21621): Design Assistant Results: 0 of 6 Medium severity rules issued violations in snapshot 'synthesized'
+Info (21621): Design Assistant Results: 1 of 6 Medium severity rules issued violations in snapshot 'synthesized'. Please refer to DRC report '/home/stiangglanda/dev/HSD-ChipDesign/Uebung01/prjHelloOnDE23Lite/grpChd3/unitHelloOnDE23Lite/quartus/output_files/HelloOnDE23Lite.drc.synthesized.rpt' for more information
 Info (21622): Design Assistant Results: 1 of 6 Low severity rules issued violations in snapshot 'synthesized'. Please refer to DRC report '/home/stiangglanda/dev/HSD-ChipDesign/Uebung01/prjHelloOnDE23Lite/grpChd3/unitHelloOnDE23Lite/quartus/output_files/HelloOnDE23Lite.drc.synthesized.rpt' for more information
-Info: Quartus Prime Synthesis was successful. 0 errors, 2 warnings
+Info: Quartus Prime Synthesis was successful. 0 errors, 4 warnings
     Info: Peak virtual memory: 2312 megabytes
-    Info: Processing ended: Sun Oct 18 16:17:20 2026
-    Info: Elapsed time: 00:00:33
-    Info: System process ID: 34395
+    Info: Processing ended: Sun Oct 18 17:27:45 2026
+    Info: Elapsed time: 00:00:32
+    Info: System process ID: 48991
 
 

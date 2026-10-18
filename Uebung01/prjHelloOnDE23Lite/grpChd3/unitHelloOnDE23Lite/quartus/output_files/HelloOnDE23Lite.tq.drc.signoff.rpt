@@ -1,5 +1,5 @@
 Design Assistant report for HelloOnDE23Lite
-Sun Oct 18 16:19:54 2026
+Sun Oct 18 17:29:39 2026
 Quartus Prime Version 26.1.1 Build 130 08/06/2026 SC Pro Edition
 
 
@@ -7,9 +7,9 @@ Quartus Prime Version 26.1.1 Build 130 08/06/2026 SC Pro Edition
 ; Table of Contents ;
 ---------------------
   1. Legal Notice
-  2. Design Assistant (Signoff) Results - 1 of 73 Rules Failed
-  3. RES-50001 - Asynchronous Reset Is Not Synchronized
-  4. CDC-50001 - 1-Bit Asynchronous Transfer Not Synchronized
+  2. Design Assistant (Signoff) Results - 2 of 73 Rules Failed
+  3. CDC-50001 - 1-Bit Asynchronous Transfer Not Synchronized
+  4. RES-50001 - Asynchronous Reset Is Not Synchronized
   5. CDC-50002 - 1-Bit Asynchronous Transfer with Insufficient Constraints
   6. CDC-50003 - CE-Type CDC Transfer with Insufficient Constraints
   7. CDC-50004 - MUX-type CDC Transfer with Insufficient Constraints
@@ -105,12 +105,12 @@ on the Quartus Prime software download page.
 
 
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Design Assistant (Signoff) Results - 1 of 73 Rules Failed                                                                                                                                  ;
+; Design Assistant (Signoff) Results - 2 of 73 Rules Failed                                                                                                                                  ;
 +----------------------------------------------------------------------------------------------------------+----------+------------+--------+------------------------------------------------+
 ; Rule                                                                                                     ; Severity ; Violations ; Waived ; Tags                                           ;
 +----------------------------------------------------------------------------------------------------------+----------+------------+--------+------------------------------------------------+
+; CDC-50001 - 1-Bit Asynchronous Transfer Not Synchronized                                                 ; High     ; 9          ; 0      ; synchronizer                                   ;
 ; RES-50001 - Asynchronous Reset Is Not Synchronized                                                       ; High     ; 1          ; 0      ; synchronizer                                   ;
-; CDC-50001 - 1-Bit Asynchronous Transfer Not Synchronized                                                 ; High     ; 0          ; 0      ; synchronizer                                   ;
 ; CDC-50002 - 1-Bit Asynchronous Transfer with Insufficient Constraints                                    ; High     ; 0          ; 0      ; synchronizer                                   ;
 ; CDC-50003 - CE-Type CDC Transfer with Insufficient Constraints                                           ; High     ; 0          ; 0      ; cdc-bus                                        ;
 ; CDC-50004 - MUX-type CDC Transfer with Insufficient Constraints                                          ; High     ; 0          ; 0      ; cdc-bus                                        ;
@@ -187,6 +187,27 @@ on the Quartus Prime software download page.
 
 Status:		FAIL
 Severity:		High
+Number of violations: 	9
+Rule Parameters:      	max_violations = 500
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; CDC-50001 - 1-Bit Asynchronous Transfer Not Synchronized                                                                                                                                                                                                         ;
++--------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------+----------------------------------------+-----------+-----------------------+--------+
+; From                                                                                                                                       ; To                            ; From Clock                             ; To Clock  ; Reason                ; Waived ;
++--------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------+----------------------------------------+-----------+-----------------------+--------+
+; TheHelloDE23|sw_old~1                                                                                                                      ; TheHelloDE23|sw_old~_emulated ; internal_clk   internal_clk (INVERTED) ; CLOCK0_50 ; Asynchronous transfer ;        ;
+; auto_fab_0|alt_sld_fab_0|alt_sld_fab_0|agilexconfigreset|user_reset|sdm_gpo_out_user_reset~internal_ctrl_clock.reg   TheHelloDE23|sw_old~1 ; TheHelloDE23|led_shift[0]     ; internal_clk   internal_clk (INVERTED) ; CLOCK0_50 ; Asynchronous transfer ;        ;
+; auto_fab_0|alt_sld_fab_0|alt_sld_fab_0|agilexconfigreset|user_reset|sdm_gpo_out_user_reset~internal_ctrl_clock.reg   TheHelloDE23|sw_old~1 ; TheHelloDE23|led_shift[1]     ; internal_clk   internal_clk (INVERTED) ; CLOCK0_50 ; Asynchronous transfer ;        ;
+; auto_fab_0|alt_sld_fab_0|alt_sld_fab_0|agilexconfigreset|user_reset|sdm_gpo_out_user_reset~internal_ctrl_clock.reg   TheHelloDE23|sw_old~1 ; TheHelloDE23|led_shift[2]     ; internal_clk   internal_clk (INVERTED) ; CLOCK0_50 ; Asynchronous transfer ;        ;
+; auto_fab_0|alt_sld_fab_0|alt_sld_fab_0|agilexconfigreset|user_reset|sdm_gpo_out_user_reset~internal_ctrl_clock.reg   TheHelloDE23|sw_old~1 ; TheHelloDE23|led_shift[3]     ; internal_clk   internal_clk (INVERTED) ; CLOCK0_50 ; Asynchronous transfer ;        ;
+; auto_fab_0|alt_sld_fab_0|alt_sld_fab_0|agilexconfigreset|user_reset|sdm_gpo_out_user_reset~internal_ctrl_clock.reg   TheHelloDE23|sw_old~1 ; TheHelloDE23|led_shift[4]     ; internal_clk   internal_clk (INVERTED) ; CLOCK0_50 ; Asynchronous transfer ;        ;
+; auto_fab_0|alt_sld_fab_0|alt_sld_fab_0|agilexconfigreset|user_reset|sdm_gpo_out_user_reset~internal_ctrl_clock.reg   TheHelloDE23|sw_old~1 ; TheHelloDE23|led_shift[5]     ; internal_clk   internal_clk (INVERTED) ; CLOCK0_50 ; Asynchronous transfer ;        ;
+; auto_fab_0|alt_sld_fab_0|alt_sld_fab_0|agilexconfigreset|user_reset|sdm_gpo_out_user_reset~internal_ctrl_clock.reg   TheHelloDE23|sw_old~1 ; TheHelloDE23|led_shift[6]     ; internal_clk   internal_clk (INVERTED) ; CLOCK0_50 ; Asynchronous transfer ;        ;
+; auto_fab_0|alt_sld_fab_0|alt_sld_fab_0|agilexconfigreset|user_reset|sdm_gpo_out_user_reset~internal_ctrl_clock.reg   TheHelloDE23|sw_old~1 ; TheHelloDE23|led_shift[7]     ; internal_clk   internal_clk (INVERTED) ; CLOCK0_50 ; Asynchronous transfer ;        ;
++--------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------+----------------------------------------+-----------+-----------------------+--------+
+
+
+Status:		FAIL
+Severity:		High
 Number of violations: 	1
 Rule Parameters:      	max_violations = 500
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -194,17 +215,8 @@ Rule Parameters:      	max_violations = 500
 +--------------------------------------------------------------------------------------------------------------------+----------------------------------------+----------------+---------------------------------+-----------------------------+--------+
 ; Reset Source                                                                                                       ; Reset Source Clock                     ; Register Clock ; Number of Registers Being Reset ; Sample Register Being Reset ; Waived ;
 +--------------------------------------------------------------------------------------------------------------------+----------------------------------------+----------------+---------------------------------+-----------------------------+--------+
-; auto_fab_0|alt_sld_fab_0|alt_sld_fab_0|agilexconfigreset|user_reset|sdm_gpo_out_user_reset~internal_ctrl_clock.reg ; internal_clk   internal_clk (INVERTED) ; CLOCK0_50      ; 29                              ; TheHelloDE23|cnt[23]        ;        ;
+; auto_fab_0|alt_sld_fab_0|alt_sld_fab_0|agilexconfigreset|user_reset|sdm_gpo_out_user_reset~internal_ctrl_clock.reg ; internal_clk   internal_clk (INVERTED) ; CLOCK0_50      ; 39                              ; TheHelloDE23|cnt[23]        ;        ;
 +--------------------------------------------------------------------------------------------------------------------+----------------------------------------+----------------+---------------------------------+-----------------------------+--------+
-
-
-Status:		PASS
-Severity:		High
-Number of violations: 	0
-Rule Parameters:      	max_violations = 500
-+----------------------------------------------------------+
-; CDC-50001 - 1-Bit Asynchronous Transfer Not Synchronized ;
-+----------------------------------------------------------+
 
 
 Status:		PASS

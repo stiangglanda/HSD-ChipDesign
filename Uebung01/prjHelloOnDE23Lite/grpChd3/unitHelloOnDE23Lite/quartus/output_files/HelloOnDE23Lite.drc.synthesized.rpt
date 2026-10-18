@@ -1,5 +1,5 @@
 Design Assistant report for HelloOnDE23Lite
-Sun Oct 18 16:17:20 2026
+Sun Oct 18 17:27:45 2026
 Quartus Prime Version 26.1.1 Build 130 08/06/2026 SC Pro Edition
 
 
@@ -7,15 +7,15 @@ Quartus Prime Version 26.1.1 Build 130 08/06/2026 SC Pro Edition
 ; Table of Contents ;
 ---------------------
   1. Legal Notice
-  2. Design Assistant (Synthesized) Results - 1 of 13 Rules Failed
-  3. FLP-10500 - Non Driving Top Level Inputs Found
-  4. LNT-30011 - Design Contains Combinational Loops
-  5. LNT-30017 - Register Output Driving Its Own Asynchronous Control Signal Directly or Through Combinational Logic
-  6. LNT-30023 - Reset Nets with Polarity Conflict
-  7. RES-30132 - Registers May Not Be Properly Reset
-  8. RES-30133 - Embedded Memory Blocks with Initialized Content That Might be Modified Before the FPGA Enters User Mode
-  9. RES-30134 - Registers Not Reachable from Reset Release IP
- 10. TMC-20052 - Paths with Post Synthesis Inferred Latches
+  2. Design Assistant (Synthesized) Results - 2 of 13 Rules Failed
+  3. TMC-20052 - Paths with Post Synthesis Inferred Latches
+  4. FLP-10500 - Non Driving Top Level Inputs Found
+  5. LNT-30011 - Design Contains Combinational Loops
+  6. LNT-30017 - Register Output Driving Its Own Asynchronous Control Signal Directly or Through Combinational Logic
+  7. LNT-30023 - Reset Nets with Polarity Conflict
+  8. RES-30132 - Registers May Not Be Properly Reset
+  9. RES-30133 - Embedded Memory Blocks with Initialized Content That Might be Modified Before the FPGA Enters User Mode
+ 10. RES-30134 - Registers Not Reachable from Reset Release IP
  11. LNT-30010 - Nets Driving both Reset and Clock Enable Signals
  12. LNT-50006 - DSP Control Signal Registers Reset Mode Mismatch
  13. TMC-20053 - DSP Inputs Driven by High Fan-Out Net
@@ -45,10 +45,11 @@ on the Quartus Prime software download page.
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Design Assistant (Synthesized) Results - 1 of 13 Rules Failed                                                                                                                          ;
+; Design Assistant (Synthesized) Results - 2 of 13 Rules Failed                                                                                                                          ;
 +---------------------------------------------------------------------------------------------------------------------+----------+------------+--------+---------------------------------+
 ; Rule                                                                                                                ; Severity ; Violations ; Waived ; Tags                            ;
 +---------------------------------------------------------------------------------------------------------------------+----------+------------+--------+---------------------------------+
+; TMC-20052 - Paths with Post Synthesis Inferred Latches                                                              ; Medium   ; 1          ; 0      ; nonstandard-timing, latch       ;
 ; FLP-10500 - Non Driving Top Level Inputs Found                                                                      ; Low      ; 1          ; 0      ; system                          ;
 ; LNT-30011 - Design Contains Combinational Loops                                                                     ; High     ; 0          ; 0      ; nonstandard-timing              ;
 ; LNT-30017 - Register Output Driving Its Own Asynchronous Control Signal Directly or Through Combinational Logic     ; Medium   ; 0          ; 0      ; nonstandard-timing              ;
@@ -56,13 +57,25 @@ on the Quartus Prime software download page.
 ; RES-30132 - Registers May Not Be Properly Reset                                                                     ; Medium   ; 0          ; 0      ; reset-usage, reset-reachability ;
 ; RES-30133 - Embedded Memory Blocks with Initialized Content That Might be Modified Before the FPGA Enters User Mode ; Medium   ; 0          ; 0      ; ram, reset-usage                ;
 ; RES-30134 - Registers Not Reachable from Reset Release IP                                                           ; Medium   ; 0          ; 0      ; reset-usage, reset-reachability ;
-; TMC-20052 - Paths with Post Synthesis Inferred Latches                                                              ; Medium   ; 0          ; 0      ; nonstandard-timing, latch       ;
 ; LNT-30010 - Nets Driving both Reset and Clock Enable Signals                                                        ; Low      ; 0          ; 0      ; reset-usage                     ;
 ; LNT-50006 - DSP Control Signal Registers Reset Mode Mismatch                                                        ; Low      ; 0          ; 0      ; dsp, reset-usage                ;
 ; TMC-20053 - DSP Inputs Driven by High Fan-Out Net                                                                   ; Low      ; 0          ; 0      ; dsp                             ;
 ; TMC-20500 - Hierarchical Tree Duplication was Shallower than Possible                                               ; Low      ; 0          ; 0      ; register-duplication, synthesis ;
 ; TMC-20501 - Hierarchical Tree Duplication was Shallower than Requested                                              ; Low      ; 0          ; 0      ; register-duplication, synthesis ;
 +---------------------------------------------------------------------------------------------------------------------+----------+------------+--------+---------------------------------+
+
+
+Status:		FAIL
+Severity:		Medium
+Number of violations: 	1
+Rule Parameters:      	max_violations = 5000
++--------------------------------------------------------+
+; TMC-20052 - Paths with Post Synthesis Inferred Latches ;
++-----------------------+--------------------------------+
+; Path                  ; Waived                         ;
++-----------------------+--------------------------------+
+; TheHelloDE23|sw_old~1 ;                                ;
++-----------------------+--------------------------------+
 
 
 Status:		FAIL
@@ -132,15 +145,6 @@ Rule Parameters:      	max_violations = 5000
 +-----------------------------------------------------------+
 ; RES-30134 - Registers Not Reachable from Reset Release IP ;
 +-----------------------------------------------------------+
-
-
-Status:		PASS
-Severity:		Medium
-Number of violations: 	0
-Rule Parameters:      	max_violations = 5000
-+--------------------------------------------------------+
-; TMC-20052 - Paths with Post Synthesis Inferred Latches ;
-+--------------------------------------------------------+
 
 
 Status:		PASS
