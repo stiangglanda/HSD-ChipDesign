@@ -1,5 +1,5 @@
 Design Assistant report for HelloOnDE23Lite
-Wed Oct 14 10:44:11 2026
+Sun Oct 18 16:19:54 2026
 Quartus Prime Version 26.1.1 Build 130 08/06/2026 SC Pro Edition
 
 
@@ -194,7 +194,7 @@ Rule Parameters:      	max_violations = 500
 +--------------------------------------------------------------------------------------------------------------------+----------------------------------------+----------------+---------------------------------+-----------------------------+--------+
 ; Reset Source                                                                                                       ; Reset Source Clock                     ; Register Clock ; Number of Registers Being Reset ; Sample Register Being Reset ; Waived ;
 +--------------------------------------------------------------------------------------------------------------------+----------------------------------------+----------------+---------------------------------+-----------------------------+--------+
-; auto_fab_0|alt_sld_fab_0|alt_sld_fab_0|agilexconfigreset|user_reset|sdm_gpo_out_user_reset~internal_ctrl_clock.reg ; internal_clk   internal_clk (INVERTED) ; CLOCK0_50      ; 30                              ; TheHelloDE23|cnt[23]        ;        ;
+; auto_fab_0|alt_sld_fab_0|alt_sld_fab_0|agilexconfigreset|user_reset|sdm_gpo_out_user_reset~internal_ctrl_clock.reg ; internal_clk   internal_clk (INVERTED) ; CLOCK0_50      ; 29                              ; TheHelloDE23|cnt[23]        ;        ;
 +--------------------------------------------------------------------------------------------------------------------+----------------------------------------+----------------+---------------------------------+-----------------------------+--------+
 
 

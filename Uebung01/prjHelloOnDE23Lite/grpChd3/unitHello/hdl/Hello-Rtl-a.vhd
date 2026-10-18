@@ -39,7 +39,7 @@ begin  -- Rtl
               o7SegCode => o7SegCode1);
 
 -- ---------------------------------------------------------------------------
--- Heartbeat : LED(9)
+-- Heartbeat : LED(8)
 -- ---------------------------------------------------------------------------
 
   Heartbeat : process (iClock, inReset) is
@@ -57,8 +57,8 @@ begin  -- Rtl
     end if;
   end process;
 
-  oLed(8) <= '1';
-  oLed(9) <= '1' when led_status else '0';
+  oLed(9) <= '1';
+  oLed(8) <= '1' when led_status and iSW(9) = '0' else '0';
 
 -- ---------------------------------------------------------------------------
 -- LEDS (0) to LEDS(7) show status of switches SW0-SW7

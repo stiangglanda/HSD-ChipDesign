@@ -197,7 +197,7 @@ RESERVED_INPUT_WITHOUT_WEAK_PULLUP : AN1       :        :                   : 3.
 GND                          : AN2       : gnd    :                   :         :           :                 : --           
 VSIGP_1                      : AN51      :        :                   :         : SDM       :                 : 96ps         
 GND                          : AN52      : gnd    :                   :         :           :                 : --           
-RESERVED_INPUT_WITHOUT_WEAK_PULLUP : AP9       :        :                   : 3.3V    : 6E        :                 : 56ps         
+HEX4[2]                      : AP9       : output : 3.3-V LVCMOS      : 3.3V    : 6E        : Y               : 56ps         
 GND                          : AP12      : gnd    :                   :         :           :                 : --           
 VCCIO_HVIO_6E                : AP15      : power  :                   : 3.3V    : 6E        :                 : --           
 GND                          : AP17      : gnd    :                   :         :           :                 : --           
@@ -215,8 +215,8 @@ RESERVED_INPUT_WITHOUT_WEAK_PULLUP : AR1       :        :                   : 3.
 RESERVED_INPUT_WITHOUT_WEAK_PULLUP : AR2       :        :                   : 3.3V    : 6G        :                 : 55ps         
 GND                          : AR51      : gnd    :                   :         :           :                 : --           
 VSIGN_1                      : AR52      :        :                   :         : SDM       :                 : 100ps        
-RESERVED_INPUT_WITHOUT_WEAK_PULLUP : AT9       :        :                   : 3.3V    : 6E        :                 : 62ps         
-RESERVED_INPUT_WITHOUT_WEAK_PULLUP : AT12      :        :                   : 3.3V    : 6E        :                 : 67ps         
+HEX4[0]                      : AT9       : output : 3.3-V LVCMOS      : 3.3V    : 6E        : Y               : 62ps         
+HEX4[1]                      : AT12      : output : 3.3-V LVCMOS      : 3.3V    : 6E        : Y               : 67ps         
 GND                          : AT15      : gnd    :                   :         :           :                 : --           
 VCCIO_HVIO_6E                : AT17      : power  :                   : 3.3V    : 6E        :                 : --           
 VCCPT_HVIO                   : AT20      : power  :                   : 1.8V    :           :                 : --           
@@ -284,8 +284,8 @@ GND                          : BA1       : gnd    :                   :         
 RESERVED_INPUT_WITHOUT_WEAK_PULLUP : BA2       :        :                   : 3.3V    : 6F        :                 : 55ps         
 ~ALTERA_AS_nRST~             : BA51      : output : 1.8-V             :         : SDM       : N               : 100ps        
 ~ALTERA_AS_nCSO3~            : BA52      : output : 1.8-V             :         : SDM       : N               : 102ps        
-RESERVED_INPUT_WITHOUT_WEAK_PULLUP : BB9       :        :                   : 3.3V    : 6E        :                 : 70ps         
-RESERVED_INPUT_WITHOUT_WEAK_PULLUP : BB12      :        :                   : 3.3V    : 6E        :                 : 84ps         
+HEX5[4]                      : BB9       : output : 3.3-V LVCMOS      : 3.3V    : 6E        : Y               : 70ps         
+HEX5[3]                      : BB12      : output : 3.3-V LVCMOS      : 3.3V    : 6E        : Y               : 84ps         
 VCCIO_HVIO_6B                : BB15      : power  :                   : 3.3V    : 6B        :                 : --           
 GND                          : BB17      : gnd    :                   :         :           :                 : --           
 VCCPT_HVIO                   : BB20      : power  :                   : 1.8V    :           :                 : --           
@@ -310,8 +310,8 @@ RESERVED_INPUT_WITHOUT_WEAK_PULLUP : BE4       :        :                   : 3.
 RESERVED_INPUT_WITHOUT_WEAK_PULLUP : BE6       :        :                   : 3.3V    : 6F        :                 : 79ps         
 ~ALTERA_AS_nCSO1,ALTERA_MSEL2~ : BE48      : output, input : 1.8-V             :         : SDM       : N               : 78ps         
 ~CONF_DONE~                  : BE49      : output : 1.8-V             :         : SDM       : N               : 76ps         
-RESERVED_INPUT_WITHOUT_WEAK_PULLUP : BF9       :        :                   : 3.3V    : 6E        :                 : 75ps         
-RESERVED_INPUT_WITHOUT_WEAK_PULLUP : BF12      :        :                   : 3.3V    : 6E        :                 : 81ps         
+HEX5[2]                      : BF9       : output : 3.3-V LVCMOS      : 3.3V    : 6E        : Y               : 75ps         
+HEX5[1]                      : BF12      : output : 3.3-V LVCMOS      : 3.3V    : 6E        : Y               : 81ps         
 VCCIO_HVIO_6A                : BF15      : power  :                   : 3.3V    : 6A        :                 : --           
 VCCIO_HVIO_6A                : BF17      : power  :                   : 3.3V    : 6A        :                 : --           
 GND                          : BF20      : gnd    :                   :         :           :                 : --           
@@ -328,8 +328,8 @@ RESERVED_INPUT_WITHOUT_WEAK_PULLUP : BG1       :        :                   : 3.
 RESERVED_INPUT_WITHOUT_WEAK_PULLUP : BG2       :        :                   : 3.3V    : 6F        :                 : 70ps         
 nCONFIG                      : BG51      :        :                   :         : SDM       :                 : 89ps         
 SDM_IO11                     : BG52      :        :                   :         : SDM       :                 : 92ps         
-RESERVED_INPUT_WITHOUT_WEAK_PULLUP : BH3       :        :                   : 3.3V    : 6E        :                 : 63ps         
-RESERVED_INPUT_WITHOUT_WEAK_PULLUP : BH7       :        :                   : 3.3V    : 6E        :                 : 90ps         
+HEX5[0]                      : BH3       : output : 3.3-V LVCMOS      : 3.3V    : 6E        : Y               : 63ps         
+HEX4[6]                      : BH7       : output : 3.3-V LVCMOS      : 3.3V    : 6E        : Y               : 90ps         
 RESERVED_INPUT_WITHOUT_WEAK_PULLUP : BH10      :        :                   : 3.3V    : 6E        :                 : 73ps         
 RESERVED_INPUT_WITHOUT_WEAK_PULLUP : BH13      :        :                   : 3.3V    : 6E        :                 : 123ps        
 RESERVED_INPUT_WITHOUT_WEAK_PULLUP : BH18      :        :                   : 3.3V    : 6A        :                 : 163ps        
@@ -347,7 +347,7 @@ RESERVED_INPUT_WITHOUT_WEAK_PULLUP : BJ2       :        :                   : 3.
 GND                          : BJ51      : gnd    :                   :         :           :                 : --           
 SDM_IO0                      : BJ52      :        :                   :         : SDM       :                 : 90ps         
 GND                          : BK3       : gnd    :                   :         :           :                 : --           
-RESERVED_INPUT_WITHOUT_WEAK_PULLUP : BK7       :        :                   : 3.3V    : 6E        :                 : 84ps         
+HEX4[3]                      : BK7       : output : 3.3-V LVCMOS      : 3.3V    : 6E        : Y               : 84ps         
 RESERVED_INPUT_WITHOUT_WEAK_PULLUP : BK10      :        :                   : 3.3V    : 6E        :                 : 71ps         
 GND                          : BK13      : gnd    :                   :         :           :                 : --           
 RESERVED_INPUT_WITHOUT_WEAK_PULLUP : BK18      :        :                   : 3.3V    : 6A        :                 : 169ps        
@@ -361,11 +361,11 @@ GND                          : BK43      : gnd    :                   :         
 GND                          : BK46      : gnd    :                   :         :           :                 : --           
 RESERVED_INPUT_WITHOUT_WEAK_PULLUP : BK50      :        :                   : 3.3V    : 6B        :                 : 129ps        
 GND                          : BL1       : gnd    :                   :         :           :                 : --           
-RESERVED_INPUT_WITHOUT_WEAK_PULLUP : BL2       :        :                   : 3.3V    : 6E        :                 : 91ps         
+HEX4[5]                      : BL2       : output : 3.3-V LVCMOS      : 3.3V    : 6E        : Y               : 91ps         
 RESERVED_INPUT_WITHOUT_WEAK_PULLUP : BL51      :        :                   : 3.3V    : 6B        :                 : 129ps        
 GND                          : BL52      : gnd    :                   :         :           :                 : --           
 GND                          : BM1       : gnd    :                   :         :           :                 : --           
-RESERVED_INPUT_WITHOUT_WEAK_PULLUP : BM2       :        :                   : 3.3V    : 6E        :                 : 87ps         
+HEX4[4]                      : BM2       : output : 3.3-V LVCMOS      : 3.3V    : 6E        : Y               : 87ps         
 RESERVED_INPUT_WITHOUT_WEAK_PULLUP : BM3       :        :                   : 3.3V    : 6E        :                 : 79ps         
 GND                          : BM5       : gnd    :                   :         :           :                 : --           
 RESERVED_INPUT_WITHOUT_WEAK_PULLUP : BM8       :        :                   : 3.3V    : 6F        :                 : 80ps         
@@ -433,7 +433,7 @@ GND                          : D43       : gnd    :                   :         
 DNU                          : D46       :        :                   :         :           :                 : --           
 GND                          : D50       : gnd    :                   :         :           :                 : --           
 GND                          : E1        : gnd    :                   :         :           :                 : --           
-RESERVED_INPUT_WITHOUT_WEAK_PULLUP : E2        :        :                   : 3.3V    : 6H        :                 : 85ps         
+HEX5[5]                      : E2        : output : 3.3-V LVCMOS      : 3.3V    : 6H        : Y               : 85ps         
 RESERVED_INPUT_WITHOUT_WEAK_PULLUP : F3        :        :                   : 3.3V    : 6C        :                 : 82ps         
 RESERVED_INPUT_WITHOUT_WEAK_PULLUP : F7        :        :                   : 3.3V    : 6D        :                 : 89ps         
 RESERVED_INPUT_WITHOUT_WEAK_PULLUP : F10       :        :                   : 3.3V    : 6D        :                 : 89ps         
@@ -468,7 +468,7 @@ RESERVED_INPUT_WITHOUT_WEAK_PULLUP : J1        :        :                   : 3.
 RESERVED_INPUT_WITHOUT_WEAK_PULLUP : J2        :        :                   : 3.3V    : 6H        :                 : 78ps         
 HEX0[1]                      : J51       : output : 1.2-V             : 1.2V    : 3A_T      : Y               : 105ps        
 HEX0[3]                      : J52       : output : 1.2-V             : 1.2V    : 3A_T      : Y               : 106ps        
-RESERVED_INPUT_WITHOUT_WEAK_PULLUP : K3        :        :                   : 3.3V    : 6H        :                 : 96ps         
+HEX5[6]                      : K3        : output : 3.3-V LVCMOS      : 3.3V    : 6H        : Y               : 96ps         
 RESERVED_INPUT_WITHOUT_WEAK_PULLUP : K7        :        :                   : 3.3V    : 6C        :                 : 75ps         
 RESERVED_INPUT_WITHOUT_WEAK_PULLUP : K10       :        :                   : 3.3V    : 6D        :                 : 73ps         
 RESERVED_INPUT_WITHOUT_WEAK_PULLUP : K13       :        :                   : 3.3V    : 6D        :                 : 79ps         

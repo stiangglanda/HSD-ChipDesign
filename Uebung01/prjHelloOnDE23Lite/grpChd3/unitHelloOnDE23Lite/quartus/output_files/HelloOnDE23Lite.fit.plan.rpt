@@ -1,5 +1,5 @@
 Fitter Plan Stage Report for HelloOnDE23Lite
-Wed Oct 14 10:43:20 2026
+Sun Oct 18 16:18:57 2026
 Quartus Prime Version 26.1.1 Build 130 08/06/2026 SC Pro Edition
 
 
@@ -89,7 +89,7 @@ The pin-out file can be found in /home/stiangglanda/dev/HSD-ChipDesign/Uebung01/
 ; SW[6]     ; B27   ; 3A_T     ; 62           ; 53           ; 349          ; 8                     ; 0                  ; no     ; no             ; no       ; Off          ; 1.2-V        ; Off         ; --                        ; User                 ; no        ;
 ; SW[7]     ; A29   ; 3A_T     ; 62           ; 53           ; 346          ; 8                     ; 0                  ; no     ; no             ; no       ; Off          ; 1.2-V        ; Off         ; --                        ; User                 ; no        ;
 ; SW[8]     ; D32   ; 3A_T     ; 62           ; 53           ; 155          ; 0                     ; 0                  ; no     ; no             ; no       ; Off          ; 1.2-V        ; Off         ; --                        ; User                 ; no        ;
-; SW[9]     ; A34   ; 3A_T     ; 62           ; 53           ; 339          ; 0                     ; 0                  ; no     ; no             ; no       ; Off          ; 1.2-V        ; Off         ; --                        ; User                 ; no        ;
+; SW[9]     ; A34   ; 3A_T     ; 62           ; 53           ; 339          ; 1                     ; 0                  ; no     ; no             ; no       ; Off          ; 1.2-V        ; Off         ; --                        ; User                 ; no        ;
 +-----------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+-----------+
 
 
@@ -112,6 +112,20 @@ The pin-out file can be found in /home/stiangglanda/dev/HSD-ChipDesign/Uebung01/
 ; HEX1[4] ; R52   ; 3A_T     ; 62           ; 53           ; 17           ; no              ; no                     ; 1         ; no         ; no            ; no       ; Off          ; 1.2-V        ; --               ; Series 40 Ohm without Calibration ; --                        ; 0                          ; 2                           ; User                 ; 0 pF ; -                    ; -                   ;
 ; HEX1[5] ; V52   ; 3A_T     ; 62           ; 53           ; 24           ; no              ; no                     ; 1         ; no         ; no            ; no       ; Off          ; 1.2-V        ; --               ; Series 40 Ohm without Calibration ; --                        ; 0                          ; 2                           ; User                 ; 0 pF ; -                    ; -                   ;
 ; HEX1[6] ; G52   ; 3A_T     ; 62           ; 53           ; 49           ; no              ; no                     ; 1         ; no         ; no            ; no       ; Off          ; 1.2-V        ; --               ; Series 40 Ohm without Calibration ; --                        ; 0                          ; 2                           ; User                 ; 0 pF ; -                    ; -                   ;
+; HEX4[0] ; AT9   ; 6E       ; 121          ; 8            ; 1278         ; no              ; no                     ; 2         ; no         ; no            ; no       ; Off          ; 3.3-V LVCMOS ; --               ; Series 30 Ohm without Calibration ; --                        ; 0                          ; no                          ; User                 ; 0 pF ; -                    ; -                   ;
+; HEX4[1] ; AT12  ; 6E       ; 121          ; 8            ; 806          ; no              ; no                     ; 2         ; no         ; no            ; no       ; Off          ; 3.3-V LVCMOS ; --               ; Series 30 Ohm without Calibration ; --                        ; 0                          ; no                          ; User                 ; 0 pF ; -                    ; -                   ;
+; HEX4[2] ; AP9   ; 6E       ; 121          ; 8            ; 650          ; no              ; no                     ; 2         ; no         ; no            ; no       ; Off          ; 3.3-V LVCMOS ; --               ; Series 30 Ohm without Calibration ; --                        ; 0                          ; no                          ; User                 ; 0 pF ; -                    ; -                   ;
+; HEX4[3] ; BK7   ; 6E       ; 121          ; 8            ; 886          ; no              ; no                     ; 2         ; no         ; no            ; no       ; Off          ; 3.3-V LVCMOS ; --               ; Series 30 Ohm without Calibration ; --                        ; 0                          ; no                          ; User                 ; 0 pF ; -                    ; -                   ;
+; HEX4[4] ; BM2   ; 6E       ; 121          ; 8            ; 1906         ; no              ; no                     ; 2         ; no         ; no            ; no       ; Off          ; 3.3-V LVCMOS ; --               ; Series 30 Ohm without Calibration ; --                        ; 0                          ; no                          ; User                 ; 0 pF ; -                    ; -                   ;
+; HEX4[5] ; BL2   ; 6E       ; 121          ; 8            ; 572          ; no              ; no                     ; 2         ; no         ; no            ; no       ; Off          ; 3.3-V LVCMOS ; --               ; Series 30 Ohm without Calibration ; --                        ; 0                          ; no                          ; User                 ; 0 pF ; -                    ; -                   ;
+; HEX4[6] ; BH7   ; 6E       ; 121          ; 8            ; 1042         ; no              ; no                     ; 2         ; no         ; no            ; no       ; Off          ; 3.3-V LVCMOS ; --               ; Series 30 Ohm without Calibration ; --                        ; 0                          ; no                          ; User                 ; 0 pF ; -                    ; -                   ;
+; HEX5[0] ; BH3   ; 6E       ; 121          ; 8            ; 1514         ; no              ; no                     ; 2         ; no         ; no            ; no       ; Off          ; 3.3-V LVCMOS ; --               ; Series 30 Ohm without Calibration ; --                        ; 0                          ; no                          ; User                 ; 0 pF ; -                    ; -                   ;
+; HEX5[1] ; BF12  ; 6E       ; 121          ; 8            ; 1748         ; no              ; no                     ; 2         ; no         ; no            ; no       ; Off          ; 3.3-V LVCMOS ; --               ; Series 30 Ohm without Calibration ; --                        ; 0                          ; no                          ; User                 ; 0 pF ; -                    ; -                   ;
+; HEX5[2] ; BF9   ; 6E       ; 121          ; 8            ; 1670         ; no              ; no                     ; 2         ; no         ; no            ; no       ; Off          ; 3.3-V LVCMOS ; --               ; Series 30 Ohm without Calibration ; --                        ; 0                          ; no                          ; User                 ; 0 pF ; -                    ; -                   ;
+; HEX5[3] ; BB12  ; 6E       ; 121          ; 8            ; 1592         ; no              ; no                     ; 2         ; no         ; no            ; no       ; Off          ; 3.3-V LVCMOS ; --               ; Series 30 Ohm without Calibration ; --                        ; 0                          ; no                          ; User                 ; 0 pF ; -                    ; -                   ;
+; HEX5[4] ; BB9   ; 6E       ; 121          ; 8            ; 1120         ; no              ; no                     ; 2         ; no         ; no            ; no       ; Off          ; 3.3-V LVCMOS ; --               ; Series 30 Ohm without Calibration ; --                        ; 0                          ; no                          ; User                 ; 0 pF ; -                    ; -                   ;
+; HEX5[5] ; E2    ; 6H       ; 121          ; 32           ; 1984         ; no              ; no                     ; 2         ; no         ; no            ; no       ; Off          ; 3.3-V LVCMOS ; --               ; Series 30 Ohm without Calibration ; --                        ; 0                          ; no                          ; User                 ; 0 pF ; -                    ; -                   ;
+; HEX5[6] ; K3    ; 6H       ; 121          ; 32           ; 2062         ; no              ; no                     ; 2         ; no         ; no            ; no       ; Off          ; 3.3-V LVCMOS ; --               ; Series 30 Ohm without Calibration ; --                        ; 0                          ; no                          ; User                 ; 0 pF ; -                    ; -                   ;
 ; LEDR[0] ; B39   ; 3A_T     ; 62           ; 53           ; 254          ; no              ; no                     ; 1         ; no         ; no            ; no       ; Off          ; 1.2-V        ; --               ; Series 40 Ohm without Calibration ; --                        ; 0                          ; 2                           ; User                 ; 0 pF ; -                    ; -                   ;
 ; LEDR[1] ; B42   ; 3A_T     ; 62           ; 53           ; 247          ; no              ; no                     ; 1         ; no         ; no            ; no       ; Off          ; 1.2-V        ; --               ; Series 40 Ohm without Calibration ; --                        ; 0                          ; 2                           ; User                 ; 0 pF ; -                    ; -                   ;
 ; LEDR[2] ; K35   ; 3A_T     ; 62           ; 53           ; 148          ; no              ; no                     ; 1         ; no         ; no            ; no       ; Off          ; 1.2-V        ; --               ; Series 40 Ohm without Calibration ; --                        ; 0                          ; 2                           ; User                 ; 0 pF ; -                    ; -                   ;
@@ -137,10 +151,10 @@ The pin-out file can be found in /home/stiangglanda/dev/HSD-ChipDesign/Uebung01/
 ; 6B       ; 0 / 20 ( 0 % )   ; 3.3V          ; --           ;
 ; 6C       ; 0 / 20 ( 0 % )   ; 3.3V          ; --           ;
 ; 6D       ; 1 / 20 ( 5 % )   ; 3.3V          ; --           ;
-; 6E       ; 0 / 20 ( 0 % )   ; 3.3V          ; --           ;
+; 6E       ; 12 / 20 ( 60 % ) ; 3.3V          ; --           ;
 ; 6F       ; 0 / 20 ( 0 % )   ; 3.3V          ; --           ;
 ; 6G       ; 0 / 20 ( 0 % )   ; 3.3V          ; --           ;
-; 6H       ; 0 / 20 ( 0 % )   ; 3.3V          ; --           ;
+; 6H       ; 2 / 20 ( 10 % )  ; 3.3V          ; --           ;
 ; 1A       ; 0 / 0 ( -- )     ; --            ; --           ;
 +----------+------------------+---------------+--------------+
 
@@ -473,24 +487,24 @@ The pin-out file can be found in /home/stiangglanda/dev/HSD-ChipDesign/Uebung01/
 ;     --   ; 0          ; K26   ; KEY0       ; User                 ;
 ;     --   ; 0          ; K27   ;            ;                      ;
 ; 6E       ;            ;       ;            ;                      ;
-;     --   ; 0          ; BL2   ;            ;                      ;
-;     --   ; 0          ; AP9   ;            ;                      ;
+;     --   ; 0          ; BL2   ; HEX4[5]    ; User                 ;
+;     --   ; 0          ; AP9   ; HEX4[2]    ; User                 ;
 ;     --   ; 0          ; BH13  ;            ;                      ;
-;     --   ; 0          ; AT12  ;            ;                      ;
-;     --   ; 0          ; BK7   ;            ;                      ;
+;     --   ; 0          ; AT12  ; HEX4[1]    ; User                 ;
+;     --   ; 0          ; BK7   ; HEX4[3]    ; User                 ;
 ;     --   ; 0          ; AW12  ;            ;                      ;
-;     --   ; 0          ; BH7   ;            ;                      ;
-;     --   ; 0          ; BB9   ;            ;                      ;
+;     --   ; 0          ; BH7   ; HEX4[6]    ; User                 ;
+;     --   ; 0          ; BB9   ; HEX5[4]    ; User                 ;
 ;     --   ; 0          ; AU4   ;            ;                      ;
-;     --   ; 0          ; AT9   ;            ;                      ;
+;     --   ; 0          ; AT9   ; HEX4[0]    ; User                 ;
 ;     --   ; 0          ; AU6   ;            ;                      ;
 ;     --   ; 0          ; AY6   ;            ;                      ;
-;     --   ; 0          ; BH3   ;            ;                      ;
-;     --   ; 0          ; BB12  ;            ;                      ;
-;     --   ; 0          ; BF9   ;            ;                      ;
-;     --   ; 0          ; BF12  ;            ;                      ;
+;     --   ; 0          ; BH3   ; HEX5[0]    ; User                 ;
+;     --   ; 0          ; BB12  ; HEX5[3]    ; User                 ;
+;     --   ; 0          ; BF9   ; HEX5[2]    ; User                 ;
+;     --   ; 0          ; BF12  ; HEX5[1]    ; User                 ;
 ;     --   ; 0          ; BM3   ;            ;                      ;
-;     --   ; 0          ; BM2   ;            ;                      ;
+;     --   ; 0          ; BM2   ; HEX4[4]    ; User                 ;
 ;     --   ; 0          ; BK10  ;            ;                      ;
 ;     --   ; 0          ; BH10  ;            ;                      ;
 ; 6F       ;            ;       ;            ;                      ;
@@ -554,8 +568,8 @@ The pin-out file can be found in /home/stiangglanda/dev/HSD-ChipDesign/Uebung01/
 ;     --   ; 0          ; L1    ;            ;                      ;
 ;     --   ; 0          ; J2    ;            ;                      ;
 ;     --   ; 0          ; J1    ;            ;                      ;
-;     --   ; 0          ; E2    ;            ;                      ;
-;     --   ; 0          ; K3    ;            ;                      ;
+;     --   ; 0          ; E2    ; HEX5[5]    ; User                 ;
+;     --   ; 0          ; K3    ; HEX5[6]    ; User                 ;
 +----------+------------+-------+------------+----------------------+
 
 
@@ -679,7 +693,7 @@ The pin-out file can be found in /home/stiangglanda/dev/HSD-ChipDesign/Uebung01/
 ; AN2      ;            ;          ; GND                                ; gnd           ;              ;         ; --       ;                 ; --       ; --           ; --            ;
 ; AN51     ; 38         ; SDM      ; ^VSIGP_1                           ;               ;              ;         ; --       ;                 ; --       ; --           ; 96ps          ;
 ; AN52     ;            ;          ; GND                                ; gnd           ;              ;         ; --       ;                 ; --       ; --           ; --            ;
-; AP9      ; 420        ; 6E       ; RESERVED_INPUT_WITHOUT_WEAK_PULLUP ;               ;              ; 3.3V    ; --       ;                 ; no       ; On           ; 56ps          ;
+; AP9      ; 420        ; 6E       ; HEX4[2]                            ; output        ; 3.3-V LVCMOS ; 3.3V    ; --       ; Y               ; no       ; Off          ; 56ps          ;
 ; AP12     ;            ;          ; GND                                ; gnd           ;              ;         ; --       ;                 ; --       ; --           ; --            ;
 ; AP15     ;            ; 6E       ; VCCIO_HVIO_6E                      ; power         ;              ; 3.3V    ; --       ;                 ; --       ; --           ; --            ;
 ; AP17     ;            ;          ; GND                                ; gnd           ;              ;         ; --       ;                 ; --       ; --           ; --            ;
@@ -697,8 +711,8 @@ The pin-out file can be found in /home/stiangglanda/dev/HSD-ChipDesign/Uebung01/
 ; AR2      ; 474        ; 6G       ; RESERVED_INPUT_WITHOUT_WEAK_PULLUP ;               ;              ; 3.3V    ; --       ;                 ; no       ; On           ; 55ps          ;
 ; AR51     ;            ;          ; GND                                ; gnd           ;              ;         ; --       ;                 ; --       ; --           ; --            ;
 ; AR52     ; 39         ; SDM      ; ^VSIGN_1                           ;               ;              ;         ; --       ;                 ; --       ; --           ; 100ps         ;
-; AT9      ; 428        ; 6E       ; RESERVED_INPUT_WITHOUT_WEAK_PULLUP ;               ;              ; 3.3V    ; --       ;                 ; no       ; On           ; 62ps          ;
-; AT12     ; 422        ; 6E       ; RESERVED_INPUT_WITHOUT_WEAK_PULLUP ;               ;              ; 3.3V    ; --       ;                 ; no       ; On           ; 67ps          ;
+; AT9      ; 428        ; 6E       ; HEX4[0]                            ; output        ; 3.3-V LVCMOS ; 3.3V    ; --       ; Y               ; no       ; Off          ; 62ps          ;
+; AT12     ; 422        ; 6E       ; HEX4[1]                            ; output        ; 3.3-V LVCMOS ; 3.3V    ; --       ; Y               ; no       ; Off          ; 67ps          ;
 ; AT15     ;            ;          ; GND                                ; gnd           ;              ;         ; --       ;                 ; --       ; --           ; --            ;
 ; AT17     ;            ; 6E       ; VCCIO_HVIO_6E                      ; power         ;              ; 3.3V    ; --       ;                 ; --       ; --           ; --            ;
 ; AT20     ;            ; --       ; VCCPT_HVIO                         ; power         ;              ; 1.8V    ; --       ;                 ; --       ; --           ; --            ;
@@ -766,8 +780,8 @@ The pin-out file can be found in /home/stiangglanda/dev/HSD-ChipDesign/Uebung01/
 ; BA2      ; 456        ; 6F       ; RESERVED_INPUT_WITHOUT_WEAK_PULLUP ;               ;              ; 3.3V    ; --       ;                 ; no       ; On           ; 55ps          ;
 ; BA51     ; 22         ; SDM      ; ~ALTERA_AS_nRST~                   ; output        ; 1.8-V        ;         ; --       ; N               ; no       ; Off          ; 100ps         ;
 ; BA52     ; 20         ; SDM      ; ~ALTERA_AS_nCSO3~                  ; output        ; 1.8-V        ;         ; --       ; N               ; no       ; Off          ; 102ps         ;
-; BB9      ; 426        ; 6E       ; RESERVED_INPUT_WITHOUT_WEAK_PULLUP ;               ;              ; 3.3V    ; --       ;                 ; no       ; On           ; 70ps          ;
-; BB12     ; 432        ; 6E       ; RESERVED_INPUT_WITHOUT_WEAK_PULLUP ;               ;              ; 3.3V    ; --       ;                 ; no       ; On           ; 84ps          ;
+; BB9      ; 426        ; 6E       ; HEX5[4]                            ; output        ; 3.3-V LVCMOS ; 3.3V    ; --       ; Y               ; no       ; Off          ; 70ps          ;
+; BB12     ; 432        ; 6E       ; HEX5[3]                            ; output        ; 3.3-V LVCMOS ; 3.3V    ; --       ; Y               ; no       ; Off          ; 84ps          ;
 ; BB15     ;            ; 6B       ; VCCIO_HVIO_6B                      ; power         ;              ; 3.3V    ; --       ;                 ; --       ; --           ; --            ;
 ; BB17     ;            ;          ; GND                                ; gnd           ;              ;         ; --       ;                 ; --       ; --           ; --            ;
 ; BB20     ;            ; --       ; VCCPT_HVIO                         ; power         ;              ; 1.8V    ; --       ;                 ; --       ; --           ; --            ;
@@ -792,8 +806,8 @@ The pin-out file can be found in /home/stiangglanda/dev/HSD-ChipDesign/Uebung01/
 ; BE6      ; 458        ; 6F       ; RESERVED_INPUT_WITHOUT_WEAK_PULLUP ;               ;              ; 3.3V    ; --       ;                 ; no       ; On           ; 79ps          ;
 ; BE48     ; 17         ; SDM      ; ~ALTERA_AS_nCSO1,ALTERA_MSEL2~     ; output, input ; 1.8-V        ;         ; --       ; N               ; no       ; Off          ; 78ps          ;
 ; BE49     ; 14         ; SDM      ; ~CONF_DONE~                        ; output        ; 1.8-V        ;         ; --       ; N               ; no       ; Off          ; 76ps          ;
-; BF9      ; 433        ; 6E       ; RESERVED_INPUT_WITHOUT_WEAK_PULLUP ;               ;              ; 3.3V    ; --       ;                 ; no       ; On           ; 75ps          ;
-; BF12     ; 434        ; 6E       ; RESERVED_INPUT_WITHOUT_WEAK_PULLUP ;               ;              ; 3.3V    ; --       ;                 ; no       ; On           ; 81ps          ;
+; BF9      ; 433        ; 6E       ; HEX5[2]                            ; output        ; 3.3-V LVCMOS ; 3.3V    ; --       ; Y               ; no       ; Off          ; 75ps          ;
+; BF12     ; 434        ; 6E       ; HEX5[1]                            ; output        ; 3.3-V LVCMOS ; 3.3V    ; --       ; Y               ; no       ; Off          ; 81ps          ;
 ; BF15     ;            ; 6A       ; VCCIO_HVIO_6A                      ; power         ;              ; 3.3V    ; --       ;                 ; --       ; --           ; --            ;
 ; BF17     ;            ; 6A       ; VCCIO_HVIO_6A                      ; power         ;              ; 3.3V    ; --       ;                 ; --       ; --           ; --            ;
 ; BF20     ;            ;          ; GND                                ; gnd           ;              ;         ; --       ;                 ; --       ; --           ; --            ;
@@ -810,8 +824,8 @@ The pin-out file can be found in /home/stiangglanda/dev/HSD-ChipDesign/Uebung01/
 ; BG2      ; 452        ; 6F       ; RESERVED_INPUT_WITHOUT_WEAK_PULLUP ;               ;              ; 3.3V    ; --       ;                 ; no       ; On           ; 70ps          ;
 ; BG51     ; 8          ; SDM      ; ^nCONFIG                           ;               ;              ;         ; --       ;                 ; --       ; --           ; 89ps          ;
 ; BG52     ; 12         ; SDM      ; SDM_IO11, AVSTx8_VALID             ;               ;              ;         ; --       ;                 ; --       ; --           ; 92ps          ;
-; BH3      ; 431        ; 6E       ; RESERVED_INPUT_WITHOUT_WEAK_PULLUP ;               ;              ; 3.3V    ; --       ;                 ; no       ; On           ; 63ps          ;
-; BH7      ; 425        ; 6E       ; RESERVED_INPUT_WITHOUT_WEAK_PULLUP ;               ;              ; 3.3V    ; --       ;                 ; no       ; On           ; 90ps          ;
+; BH3      ; 431        ; 6E       ; HEX5[0]                            ; output        ; 3.3-V LVCMOS ; 3.3V    ; --       ; Y               ; no       ; Off          ; 63ps          ;
+; BH7      ; 425        ; 6E       ; HEX4[6]                            ; output        ; 3.3-V LVCMOS ; 3.3V    ; --       ; Y               ; no       ; Off          ; 90ps          ;
 ; BH10     ; 438        ; 6E       ; RESERVED_INPUT_WITHOUT_WEAK_PULLUP ;               ;              ; 3.3V    ; --       ;                 ; no       ; On           ; 73ps          ;
 ; BH13     ; 421        ; 6E       ; RESERVED_INPUT_WITHOUT_WEAK_PULLUP ;               ;              ; 3.3V    ; --       ;                 ; no       ; On           ; 123ps         ;
 ; BH18     ; 336        ; 6A       ; RESERVED_INPUT_WITHOUT_WEAK_PULLUP ;               ;              ; 3.3V    ; --       ;                 ; no       ; On           ; 163ps         ;
@@ -829,7 +843,7 @@ The pin-out file can be found in /home/stiangglanda/dev/HSD-ChipDesign/Uebung01/
 ; BJ51     ;            ;          ; GND                                ; gnd           ;              ;         ; --       ;                 ; --       ; --           ; --            ;
 ; BJ52     ; 15         ; SDM      ; SDM_IO0                            ;               ;              ;         ; --       ;                 ; --       ; --           ; 90ps          ;
 ; BK3      ;            ;          ; GND                                ; gnd           ;              ;         ; --       ;                 ; --       ; --           ; --            ;
-; BK7      ; 423        ; 6E       ; RESERVED_INPUT_WITHOUT_WEAK_PULLUP ;               ;              ; 3.3V    ; --       ;                 ; no       ; On           ; 84ps          ;
+; BK7      ; 423        ; 6E       ; HEX4[3]                            ; output        ; 3.3-V LVCMOS ; 3.3V    ; --       ; Y               ; no       ; Off          ; 84ps          ;
 ; BK10     ; 437        ; 6E       ; RESERVED_INPUT_WITHOUT_WEAK_PULLUP ;               ;              ; 3.3V    ; --       ;                 ; no       ; On           ; 71ps          ;
 ; BK13     ;            ;          ; GND                                ; gnd           ;              ;         ; --       ;                 ; --       ; --           ; --            ;
 ; BK18     ; 334        ; 6A       ; RESERVED_INPUT_WITHOUT_WEAK_PULLUP ;               ;              ; 3.3V    ; --       ;                 ; no       ; On           ; 169ps         ;
@@ -843,11 +857,11 @@ The pin-out file can be found in /home/stiangglanda/dev/HSD-ChipDesign/Uebung01/
 ; BK46     ;            ;          ; GND                                ; gnd           ;              ;         ; --       ;                 ; --       ; --           ; --            ;
 ; BK50     ; 362        ; 6B       ; RESERVED_INPUT_WITHOUT_WEAK_PULLUP ;               ;              ; 3.3V    ; --       ;                 ; no       ; On           ; 129ps         ;
 ; BL1      ;            ;          ; GND                                ; gnd           ;              ;         ; --       ;                 ; --       ; --           ; --            ;
-; BL2      ; 419        ; 6E       ; RESERVED_INPUT_WITHOUT_WEAK_PULLUP ;               ;              ; 3.3V    ; --       ;                 ; no       ; On           ; 91ps          ;
+; BL2      ; 419        ; 6E       ; HEX4[5]                            ; output        ; 3.3-V LVCMOS ; 3.3V    ; --       ; Y               ; no       ; Off          ; 91ps          ;
 ; BL51     ; 364        ; 6B       ; RESERVED_INPUT_WITHOUT_WEAK_PULLUP ;               ;              ; 3.3V    ; --       ;                 ; no       ; On           ; 129ps         ;
 ; BL52     ;            ;          ; GND                                ; gnd           ;              ;         ; --       ;                 ; --       ; --           ; --            ;
 ; BM1      ;            ;          ; GND                                ; gnd           ;              ;         ; --       ;                 ; --       ; --           ; --            ;
-; BM2      ; 436        ; 6E       ; RESERVED_INPUT_WITHOUT_WEAK_PULLUP ;               ;              ; 3.3V    ; --       ;                 ; no       ; On           ; 87ps          ;
+; BM2      ; 436        ; 6E       ; HEX4[4]                            ; output        ; 3.3-V LVCMOS ; 3.3V    ; --       ; Y               ; no       ; Off          ; 87ps          ;
 ; BM3      ; 435        ; 6E       ; RESERVED_INPUT_WITHOUT_WEAK_PULLUP ;               ;              ; 3.3V    ; --       ;                 ; no       ; On           ; 79ps          ;
 ; BM5      ;            ;          ; GND                                ; gnd           ;              ;         ; --       ;                 ; --       ; --           ; --            ;
 ; BM8      ; 446        ; 6F       ; RESERVED_INPUT_WITHOUT_WEAK_PULLUP ;               ;              ; 3.3V    ; --       ;                 ; no       ; On           ; 80ps          ;
@@ -915,7 +929,7 @@ The pin-out file can be found in /home/stiangglanda/dev/HSD-ChipDesign/Uebung01/
 ; D46      ;            ;          ; DNU                                ;               ;              ;         ; --       ;                 ; --       ; --           ; --            ;
 ; D50      ;            ;          ; GND                                ; gnd           ;              ;         ; --       ;                 ; --       ; --           ; --            ;
 ; E1       ;            ;          ; GND                                ; gnd           ;              ;         ; --       ;                 ; --       ; --           ; --            ;
-; E2       ; 497        ; 6H       ; RESERVED_INPUT_WITHOUT_WEAK_PULLUP ;               ;              ; 3.3V    ; --       ;                 ; no       ; On           ; 85ps          ;
+; E2       ; 497        ; 6H       ; HEX5[5]                            ; output        ; 3.3-V LVCMOS ; 3.3V    ; --       ; Y               ; no       ; Off          ; 85ps          ;
 ; F3       ; 387        ; 6C       ; RESERVED_INPUT_WITHOUT_WEAK_PULLUP ;               ;              ; 3.3V    ; --       ;                 ; no       ; On           ; 82ps          ;
 ; F7       ; 394        ; 6D       ; RESERVED_INPUT_WITHOUT_WEAK_PULLUP ;               ;              ; 3.3V    ; --       ;                 ; no       ; On           ; 89ps          ;
 ; F10      ; 397        ; 6D       ; RESERVED_INPUT_WITHOUT_WEAK_PULLUP ;               ;              ; 3.3V    ; --       ;                 ; no       ; On           ; 89ps          ;
@@ -950,7 +964,7 @@ The pin-out file can be found in /home/stiangglanda/dev/HSD-ChipDesign/Uebung01/
 ; J2       ; 495        ; 6H       ; RESERVED_INPUT_WITHOUT_WEAK_PULLUP ;               ;              ; 3.3V    ; --       ;                 ; no       ; On           ; 78ps          ;
 ; J51      ; 226        ; 3A_T     ; HEX0[1]                            ; output        ; 1.2-V        ; 1.2V    ; --       ; Y               ; no       ; Off          ; 105ps         ;
 ; J52      ; 225        ; 3A_T     ; HEX0[3]                            ; output        ; 1.2-V        ; 1.2V    ; --       ; Y               ; no       ; Off          ; 106ps         ;
-; K3       ; 498        ; 6H       ; RESERVED_INPUT_WITHOUT_WEAK_PULLUP ;               ;              ; 3.3V    ; --       ;                 ; no       ; On           ; 96ps          ;
+; K3       ; 498        ; 6H       ; HEX5[6]                            ; output        ; 3.3-V LVCMOS ; 3.3V    ; --       ; Y               ; no       ; Off          ; 96ps          ;
 ; K7       ; 386        ; 6C       ; RESERVED_INPUT_WITHOUT_WEAK_PULLUP ;               ;              ; 3.3V    ; --       ;                 ; no       ; On           ; 75ps          ;
 ; K10      ; 401        ; 6D       ; RESERVED_INPUT_WITHOUT_WEAK_PULLUP ;               ;              ; 3.3V    ; --       ;                 ; no       ; On           ; 73ps          ;
 ; K13      ; 400        ; 6D       ; RESERVED_INPUT_WITHOUT_WEAK_PULLUP ;               ;              ; 3.3V    ; --       ;                 ; no       ; On           ; 79ps          ;
@@ -1104,6 +1118,20 @@ Note: User assignments will override these defaults. The user specified values a
 ; HEX1[4]  ; Missing termination setting and slew rate on output pin, a default slew rate of 1 has been used ;
 ; HEX1[5]  ; Missing termination setting and slew rate on output pin, a default slew rate of 1 has been used ;
 ; HEX1[6]  ; Missing termination setting and slew rate on output pin, a default slew rate of 1 has been used ;
+; HEX4[0]  ; Missing termination setting on output pin                                                       ;
+; HEX4[1]  ; Missing termination setting on output pin                                                       ;
+; HEX4[2]  ; Missing termination setting on output pin                                                       ;
+; HEX4[3]  ; Missing termination setting on output pin                                                       ;
+; HEX4[4]  ; Missing termination setting on output pin                                                       ;
+; HEX4[5]  ; Missing termination setting on output pin                                                       ;
+; HEX4[6]  ; Missing termination setting on output pin                                                       ;
+; HEX5[0]  ; Missing termination setting on output pin                                                       ;
+; HEX5[1]  ; Missing termination setting on output pin                                                       ;
+; HEX5[2]  ; Missing termination setting on output pin                                                       ;
+; HEX5[3]  ; Missing termination setting on output pin                                                       ;
+; HEX5[4]  ; Missing termination setting on output pin                                                       ;
+; HEX5[5]  ; Missing termination setting on output pin                                                       ;
+; HEX5[6]  ; Missing termination setting on output pin                                                       ;
 ; LEDR[0]  ; Missing termination setting and slew rate on output pin, a default slew rate of 1 has been used ;
 ; LEDR[1]  ; Missing termination setting and slew rate on output pin, a default slew rate of 1 has been used ;
 ; LEDR[2]  ; Missing termination setting and slew rate on output pin, a default slew rate of 1 has been used ;
@@ -1137,7 +1165,6 @@ Info (16677): Loading synthesized database.
 Info (16734): Loading "synthesized" snapshot for partition "root_partition".
 Info (16734): Loading "synthesized" snapshot for partition "auto_fab_0".
 Info (16678): Successfully loaded synthesized database: elapsed time is 00:00:04.
-Info (24849): Successfully acquired license for quartus_agilex3.
 Info (119006): Selected device A3CZ135BB18AE7S for design "HelloOnDE23Lite"
 Info (21076): High junction temperature operating condition is not set. Assuming a default value of '100'.
 Info (21076): Low junction temperature operating condition is not set. Assuming a default value of '0'.
@@ -1146,7 +1173,7 @@ Info (21076): High junction temperature operating condition is not set. Assuming
 Info (21076): Low junction temperature operating condition is not set. Assuming a default value of '0'.
 Info (12262): Starting Fitter periphery placement operations
 Info (12290): Loading the periphery placement data.
-Info (12291): Periphery placement data loaded: elapsed time is 00:00:20
+Info (12291): Periphery placement data loaded: elapsed time is 00:00:24
 Info (12627): Pin ~ALTERA_OSC_CLK_1~ is reserved at location BB44
 Info (12627): Pin ~ALTERA_AS_DATA1~ is reserved at location T48
 Info (12627): Pin ~ALTERA_AS_nCSO0,ALTERA_MSEL0~ is reserved at location AH44

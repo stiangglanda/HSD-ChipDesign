@@ -50,4 +50,6 @@ begin
   HEX0 <= not HexA;
   HEX1 <= not HexB;
 
+  HEX4 <= not HexA;
+  HEX5 <= not HexB;
 end Struct;

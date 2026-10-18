@@ -1,5 +1,5 @@
 Fitter Route Stage Report for HelloOnDE23Lite
-Wed Oct 14 10:43:47 2026
+Sun Oct 18 16:19:26 2026
 Quartus Prime Version 26.1.1 Build 130 08/06/2026 SC Pro Edition
 
 
@@ -44,7 +44,6 @@ on the Quartus Prime software download page.
 ; Name      ; Pin Type ; Input Delay Chain 0 ; Output Delay Chain ; OE Delay Chain ; IO_12_LANE Input Data Delay Chain ; IO_12_LANE Input Strobe Delay Chain ;
 +-----------+----------+---------------------+--------------------+----------------+-----------------------------------+-------------------------------------+
 ; SW[8]     ; Input    ; --                  ; --                 ; --             ; --                                ; --                                  ;
-; SW[9]     ; Input    ; --                  ; --                 ; --             ; --                                ; --                                  ;
 ; HEX0[0]   ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
 ; HEX0[1]   ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
 ; HEX0[2]   ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
@@ -59,6 +58,20 @@ on the Quartus Prime software download page.
 ; HEX1[4]   ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
 ; HEX1[5]   ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
 ; HEX1[6]   ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; HEX4[0]   ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; HEX4[1]   ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; HEX4[2]   ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; HEX4[3]   ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; HEX4[4]   ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; HEX4[5]   ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; HEX4[6]   ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; HEX5[0]   ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; HEX5[1]   ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; HEX5[2]   ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; HEX5[3]   ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; HEX5[4]   ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; HEX5[5]   ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; HEX5[6]   ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
 ; LEDR[0]   ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
 ; LEDR[1]   ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
 ; LEDR[2]   ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
@@ -77,6 +90,7 @@ on the Quartus Prime software download page.
 ; SW[5]     ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
 ; SW[6]     ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
 ; SW[7]     ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; SW[9]     ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
 ; CLOCK0_50 ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
 ; KEY0      ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
 +-----------+----------+---------------------+--------------------+----------------+-----------------------------------+-------------------------------------+
@@ -87,12 +101,12 @@ on the Quartus Prime software download page.
 +--------------------------------------+-------------------------+
 ; Routing Resource Type                ; Usage                   ;
 +--------------------------------------+-------------------------+
-; Block Input Mux Wrapbacks            ; 0 / 43,616 ( 0 % )      ;
-; Block Input Muxes                    ; 168 / 500,456 ( < 1 % ) ;
-; Block interconnects                  ; 102 / 526,400 ( < 1 % ) ;
-; C1 interconnects                     ; 49 / 234,240 ( < 1 % )  ;
-; C4 interconnects                     ; 12 / 229,360 ( < 1 % )  ;
-; C8 interconnects                     ; 0 / 22,936 ( 0 % )      ;
+; Block Input Mux Wrapbacks            ; 9 / 43,616 ( < 1 % )    ;
+; Block Input Muxes                    ; 191 / 500,456 ( < 1 % ) ;
+; Block interconnects                  ; 139 / 526,400 ( < 1 % ) ;
+; C1 interconnects                     ; 42 / 234,240 ( < 1 % )  ;
+; C4 interconnects                     ; 133 / 229,360 ( < 1 % ) ;
+; C8 interconnects                     ; 2 / 22,936 ( < 1 % )    ;
 ; DCM_muxes                            ; 1 / 216 ( < 1 % )       ;
 ; DELAY_CHAINs                         ; 0 / 1,262 ( 0 % )       ;
 ; Direct links                         ; 35 / 526,400 ( < 1 % )  ;
@@ -108,18 +122,18 @@ on the Quartus Prime software download page.
 ; IOFBRADAPT_P2C_BUF_INPUTs            ; 0 / 142 ( 0 % )         ;
 ; IOFBRADAPT_P2C_BUF_OUTPUTs           ; 0 / 142 ( 0 % )         ;
 ; Programmable Invert Buffers          ; 0 / 208 ( 0 % )         ;
-; Programmable Invert Inputs           ; 27 / 57,078 ( < 1 % )   ;
-; Programmable Inverts                 ; 27 / 57,078 ( < 1 % )   ;
-; R0 interconnects                     ; 43 / 401,380 ( < 1 % )  ;
-; R1 interconnects                     ; 29 / 229,360 ( < 1 % )  ;
-; R12 interconnects                    ; 2 / 34,404 ( < 1 % )    ;
-; R2 interconnects                     ; 13 / 115,620 ( < 1 % )  ;
-; R4 interconnects                     ; 14 / 117,500 ( < 1 % )  ;
-; R6 interconnects                     ; 32 / 118,440 ( < 1 % )  ;
-; Redundancy Muxes                     ; 1 / 20,728 ( < 1 % )    ;
-; Row Clock Tap-Offs                   ; 2 / 34,404 ( < 1 % )    ;
+; Programmable Invert Inputs           ; 42 / 57,078 ( < 1 % )   ;
+; Programmable Inverts                 ; 42 / 57,078 ( < 1 % )   ;
+; R0 interconnects                     ; 65 / 401,380 ( < 1 % )  ;
+; R1 interconnects                     ; 56 / 229,360 ( < 1 % )  ;
+; R12 interconnects                    ; 0 / 34,404 ( 0 % )      ;
+; R2 interconnects                     ; 8 / 115,620 ( < 1 % )   ;
+; R4 interconnects                     ; 24 / 117,500 ( < 1 % )  ;
+; R6 interconnects                     ; 44 / 118,440 ( < 1 % )  ;
+; Redundancy Muxes                     ; 15 / 20,728 ( < 1 % )   ;
+; Row Clock Tap-Offs                   ; 3 / 34,404 ( < 1 % )    ;
 ; Switchbox_clock_muxes                ; 2 / 1,920 ( < 1 % )     ;
-; VIO Buffers                          ; 9 / 8,320 ( < 1 % )     ;
+; VIO Buffers                          ; 10 / 8,320 ( < 1 % )    ;
 ; Vertical_seam_tap_muxes              ; 2 / 576 ( < 1 % )       ;
 +--------------------------------------+-------------------------+
 
@@ -131,8 +145,8 @@ Info (20030): Parallel compilation is enabled and will use 12 of the 12 processo
 Info: *******************************************************************
 Info: Running Quartus Prime Fitter
     Info: Version 26.1.1 Build 130 08/06/2026 SC Pro Edition
-    Info: Processing started: Wed Oct 14 10:42:17 2026
-    Info: System process ID: 31739
+    Info: Processing started: Sun Oct 18 16:17:22 2026
+    Info: System process ID: 34650
 Info: Command: quartus_fit --read_settings_files=on --write_settings_files=off HelloOnDE23Lite -c HelloOnDE23Lite
 Info: qfit2_default_script.tcl version: #1
 Info: Project  = HelloOnDE23Lite
@@ -144,15 +158,15 @@ Info (20215): Router estimated peak short interconnect demand : 0% of right dire
     Info (20265): Estimated peak short left directional wire demand : 0% in region X0_Y0 to X11_Y7
     Info (20265): Estimated peak short up directional wire demand : 0% in region X0_Y0 to X11_Y7
     Info (20265): Estimated peak short down directional wire demand : 0% in region X0_Y0 to X11_Y7
-Info (20215): Router estimated peak long high speed interconnect demand : 20% of left directional wire in region X120_Y48 to X122_Y54
-    Info (20265): Estimated peak long high speed right directional wire demand : 8% in region X108_Y48 to X119_Y54
+Info (20215): Router estimated peak long high speed interconnect demand : 42% of down directional wire in region X120_Y24 to X122_Y31
+    Info (20265): Estimated peak long high speed right directional wire demand : 25% in region X108_Y48 to X119_Y54
     Info (20265): Estimated peak long high speed left directional wire demand : 20% in region X120_Y48 to X122_Y54
-    Info (20265): Estimated peak long high speed up directional wire demand : 4% in region X96_Y40 to X107_Y47
-    Info (20265): Estimated peak long high speed down directional wire demand : 14% in region X96_Y48 to X107_Y54
+    Info (20265): Estimated peak long high speed up directional wire demand : 16% in region X108_Y40 to X119_Y47
+    Info (20265): Estimated peak long high speed down directional wire demand : 42% in region X120_Y24 to X122_Y31
     Info (20315): Note that the router may use short wires to implement long connections at higher delay
-Info (170239): Router is attempting to preserve 1.69 percent of routes from an earlier compilation, a user specified Routing Constraints File, or internal routing requirements.
+Info (170239): Router is attempting to preserve 1.64 percent of routes from an earlier compilation, a user specified Routing Constraints File, or internal routing requirements.
 Info (11888): Total time spent on timing analysis during Routing is 0.07 seconds.
-Info (16607): Fitter routing operations ending: elapsed time is 00:00:07
+Info (16607): Fitter routing operations ending: elapsed time is 00:00:08
 
 
 --------------------------------------
@@ -166,108 +180,114 @@ This report is unavailable in plain text report export.
 +-----------------+-----------+-----------------------------------+-------------+
 ; Wire            ; Direction ; Grid [(Xmin, Ymin), (Xmax, Ymax)] ; Peak Demand ;
 +-----------------+-----------+-----------------------------------+-------------+
-; long high speed ; right     ; [(108, 48), (119, 54)]            ; 8.333 %     ;
+; long high speed ; right     ; [(108, 48), (119, 54)]            ; 25.000 %    ;
 ; long high speed ; left      ; [(120, 48), (122, 54)]            ; 20.833 %    ;
-; long high speed ; up        ; [(96, 40), (107, 47)]             ; 4.167 %     ;
-; long high speed ; down      ; [(96, 48), (107, 54)]             ; 14.894 %    ;
+; long high speed ; up        ; [(108, 40), (119, 47)]            ; 16.667 %    ;
+; long high speed ; down      ; [(120, 24), (122, 31)]            ; 42.857 %    ;
 +-----------------+-----------+-----------------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------+
-; Peak Wire Demand Details                                                                                       ;
-+-----------------+-----------+-----------------------------------+-------------+--------------------------------+
-; Wire            ; Direction ; Grid [(Xmin, Ymin), (Xmax, Ymax)] ; Peak Demand ; Net Names                      ;
-+-----------------+-----------+-----------------------------------+-------------+--------------------------------+
-; long high speed ; right     ; [(108, 48), (119, 54)]            ; 8.333 %     ;    High Routing Fan-Out        ;
-;     --          ;           ;                                   ;             ; SW[4]~input                    ;
-; long high speed ; right     ; [(108, 48), (119, 54)]            ; 8.333 %     ;    Long Distance               ;
-;     --          ;           ;                                   ;             ; SW[4]~input                    ;
-; long high speed ; left      ; [(120, 48), (122, 54)]            ; 20.833 %    ;    High Routing Fan-Out        ;
-;     --          ;           ;                                   ;             ; SW[2]~input                    ;
-;     --          ;           ;                                   ;             ; SW[5]~input                    ;
-;     --          ;           ;                                   ;             ; SW[6]~input                    ;
-;     --          ;           ;                                   ;             ; SW[7]~input                    ;
-;     --          ;           ;                                   ;             ; KEY0~input                     ;
-; long high speed ; left      ; [(120, 48), (122, 54)]            ; 20.833 %    ;    Long Distance               ;
-;     --          ;           ;                                   ;             ; KEY0~input                     ;
-;     --          ;           ;                                   ;             ; SW[2]~input                    ;
-;     --          ;           ;                                   ;             ; SW[5]~input                    ;
-;     --          ;           ;                                   ;             ; SW[6]~input                    ;
-;     --          ;           ;                                   ;             ; SW[7]~input                    ;
-; long high speed ; up        ; [(96, 40), (107, 47)]             ; 4.167 %     ;    High Routing Fan-Out        ;
-;     --          ;           ;                                   ;             ; TheHelloDE23|LessThan_0~5xsyn  ;
-;     --          ;           ;                                   ;             ; TheHelloDE23|led_status        ;
-;     --          ;           ;                                   ;             ; ResetReleaseIpInst|onResetSync ;
-; long high speed ; up        ; [(96, 40), (107, 47)]             ; 4.167 %     ;    Long Distance               ;
-;     --          ;           ;                                   ;             ; TheHelloDE23|LessThan_0~5xsyn  ;
-;     --          ;           ;                                   ;             ; TheHelloDE23|led_status        ;
-;     --          ;           ;                                   ;             ; ResetReleaseIpInst|onResetSync ;
-; long high speed ; down      ; [(96, 48), (107, 54)]             ; 14.894 %    ;    High Routing Fan-Out        ;
-;     --          ;           ;                                   ;             ; TheHelloDE23|cnt[18]           ;
-;     --          ;           ;                                   ;             ; TheHelloDE23|cnt[17]           ;
-;     --          ;           ;                                   ;             ; TheHelloDE23|cnt[16]           ;
-;     --          ;           ;                                   ;             ; TheHelloDE23|cnt[11]           ;
-;     --          ;           ;                                   ;             ; TheHelloDE23|cnt[10]           ;
-;     --          ;           ;                                   ;             ; TheHelloDE23|cnt[12]           ;
-;     --          ;           ;                                   ;             ; TheHelloDE23|cnt[9]            ;
-;     --          ;           ;                                   ;             ; TheHelloDE23|cnt[14]           ;
-;     --          ;           ;                                   ;             ; TheHelloDE23|cnt[8]            ;
-;     --          ;           ;                                   ;             ; TheHelloDE23|cnt[13]           ;
-; long high speed ; down      ; [(96, 48), (107, 54)]             ; 14.894 %    ;    Long Distance               ;
-;     --          ;           ;                                   ;             ; KEY0~input                     ;
-;     --          ;           ;                                   ;             ; TheHelloDE23|cnt[18]           ;
-;     --          ;           ;                                   ;             ; TheHelloDE23|cnt[17]           ;
-;     --          ;           ;                                   ;             ; TheHelloDE23|cnt[16]           ;
-;     --          ;           ;                                   ;             ; TheHelloDE23|cnt[11]           ;
-;     --          ;           ;                                   ;             ; TheHelloDE23|cnt[10]           ;
-;     --          ;           ;                                   ;             ; TheHelloDE23|cnt[12]           ;
-;     --          ;           ;                                   ;             ; TheHelloDE23|cnt[9]            ;
-;     --          ;           ;                                   ;             ; TheHelloDE23|cnt[14]           ;
-;     --          ;           ;                                   ;             ; TheHelloDE23|cnt[8]            ;
-+-----------------+-----------+-----------------------------------+-------------+--------------------------------+
++--------------------------------------------------------------------------------------------------------------+
+; Peak Wire Demand Details                                                                                     ;
++-----------------+-----------+-----------------------------------+-------------+------------------------------+
+; Wire            ; Direction ; Grid [(Xmin, Ymin), (Xmax, Ymax)] ; Peak Demand ; Net Names                    ;
++-----------------+-----------+-----------------------------------+-------------+------------------------------+
+; long high speed ; right     ; [(108, 48), (119, 54)]            ; 25.000 %    ;    High Routing Fan-Out      ;
+;     --          ;           ;                                   ;             ; SW[4]~input                  ;
+;     --          ;           ;                                   ;             ; TheHelloDE23|TheHex0|Mux_2~0 ;
+;     --          ;           ;                                   ;             ; TheHelloDE23|TheHex0|Mux_0~0 ;
+; long high speed ; right     ; [(108, 48), (119, 54)]            ; 25.000 %    ;    Long Distance             ;
+;     --          ;           ;                                   ;             ; TheHelloDE23|TheHex0|Mux_2~0 ;
+;     --          ;           ;                                   ;             ; TheHelloDE23|TheHex0|Mux_0~0 ;
+;     --          ;           ;                                   ;             ; SW[4]~input                  ;
+; long high speed ; left      ; [(120, 48), (122, 54)]            ; 20.833 %    ;    High Routing Fan-Out      ;
+;     --          ;           ;                                   ;             ; SW[2]~input                  ;
+;     --          ;           ;                                   ;             ; SW[5]~input                  ;
+;     --          ;           ;                                   ;             ; SW[6]~input                  ;
+;     --          ;           ;                                   ;             ; SW[7]~input                  ;
+;     --          ;           ;                                   ;             ; KEY0~input                   ;
+; long high speed ; left      ; [(120, 48), (122, 54)]            ; 20.833 %    ;    Long Distance             ;
+;     --          ;           ;                                   ;             ; SW[2]~input                  ;
+;     --          ;           ;                                   ;             ; SW[5]~input                  ;
+;     --          ;           ;                                   ;             ; SW[6]~input                  ;
+;     --          ;           ;                                   ;             ; SW[7]~input                  ;
+;     --          ;           ;                                   ;             ; KEY0~input                   ;
+; long high speed ; up        ; [(108, 40), (119, 47)]            ; 16.667 %    ;    High Routing Fan-Out      ;
+;     --          ;           ;                                   ;             ; TheHelloDE23|TheHex0|Mux_6~0 ;
+;     --          ;           ;                                   ;             ; TheHelloDE23|TheHex0|Mux_5~0 ;
+;     --          ;           ;                                   ;             ; TheHelloDE23|TheHex0|Mux_4~0 ;
+;     --          ;           ;                                   ;             ; TheHelloDE23|TheHex0|Mux_3~0 ;
+;     --          ;           ;                                   ;             ; TheHelloDE23|TheHex0|Mux_1~0 ;
+;     --          ;           ;                                   ;             ; TheHelloDE23|TheHex1|Mux_6~0 ;
+;     --          ;           ;                                   ;             ; TheHelloDE23|TheHex1|Mux_5~0 ;
+;     --          ;           ;                                   ;             ; TheHelloDE23|TheHex1|Mux_4~0 ;
+;     --          ;           ;                                   ;             ; TheHelloDE23|TheHex1|Mux_3~0 ;
+;     --          ;           ;                                   ;             ; TheHelloDE23|TheHex1|Mux_2~0 ;
+; long high speed ; up        ; [(108, 40), (119, 47)]            ; 16.667 %    ;    Long Distance             ;
+;     --          ;           ;                                   ;             ; TheHelloDE23|TheHex0|Mux_6~0 ;
+;     --          ;           ;                                   ;             ; TheHelloDE23|TheHex0|Mux_5~0 ;
+;     --          ;           ;                                   ;             ; TheHelloDE23|TheHex0|Mux_4~0 ;
+;     --          ;           ;                                   ;             ; TheHelloDE23|TheHex0|Mux_3~0 ;
+;     --          ;           ;                                   ;             ; TheHelloDE23|TheHex0|Mux_1~0 ;
+;     --          ;           ;                                   ;             ; TheHelloDE23|TheHex1|Mux_6~0 ;
+;     --          ;           ;                                   ;             ; TheHelloDE23|TheHex1|Mux_5~0 ;
+;     --          ;           ;                                   ;             ; TheHelloDE23|TheHex1|Mux_4~0 ;
+;     --          ;           ;                                   ;             ; TheHelloDE23|TheHex1|Mux_3~0 ;
+;     --          ;           ;                                   ;             ; TheHelloDE23|TheHex1|Mux_2~0 ;
+; long high speed ; down      ; [(120, 24), (122, 31)]            ; 42.857 %    ;    High Routing Fan-Out      ;
+;     --          ;           ;                                   ;             ; TheHelloDE23|TheHex0|Mux_6~0 ;
+;     --          ;           ;                                   ;             ; TheHelloDE23|TheHex0|Mux_5~0 ;
+;     --          ;           ;                                   ;             ; TheHelloDE23|TheHex0|Mux_4~0 ;
+;     --          ;           ;                                   ;             ; TheHelloDE23|TheHex0|Mux_3~0 ;
+;     --          ;           ;                                   ;             ; TheHelloDE23|TheHex0|Mux_2~0 ;
+;     --          ;           ;                                   ;             ; TheHelloDE23|TheHex0|Mux_1~0 ;
+;     --          ;           ;                                   ;             ; TheHelloDE23|TheHex0|Mux_0~0 ;
+;     --          ;           ;                                   ;             ; TheHelloDE23|TheHex1|Mux_6~0 ;
+;     --          ;           ;                                   ;             ; TheHelloDE23|TheHex1|Mux_5~0 ;
+;     --          ;           ;                                   ;             ; TheHelloDE23|TheHex1|Mux_4~0 ;
+; long high speed ; down      ; [(120, 24), (122, 31)]            ; 42.857 %    ;    Long Distance             ;
+;     --          ;           ;                                   ;             ; TheHelloDE23|TheHex0|Mux_2~0 ;
+;     --          ;           ;                                   ;             ; TheHelloDE23|TheHex0|Mux_6~0 ;
+;     --          ;           ;                                   ;             ; TheHelloDE23|TheHex0|Mux_0~0 ;
+;     --          ;           ;                                   ;             ; TheHelloDE23|TheHex0|Mux_5~0 ;
+;     --          ;           ;                                   ;             ; TheHelloDE23|TheHex0|Mux_4~0 ;
+;     --          ;           ;                                   ;             ; TheHelloDE23|TheHex0|Mux_3~0 ;
+;     --          ;           ;                                   ;             ; TheHelloDE23|TheHex0|Mux_1~0 ;
+;     --          ;           ;                                   ;             ; TheHelloDE23|TheHex1|Mux_6~0 ;
+;     --          ;           ;                                   ;             ; TheHelloDE23|TheHex1|Mux_5~0 ;
+;     --          ;           ;                                   ;             ; TheHelloDE23|TheHex1|Mux_4~0 ;
++-----------------+-----------+-----------------------------------+-------------+------------------------------+
 
 
-+-------------------------------------------------------+
-; Peak Total Grid Crossings                             ;
-+--------------------------------+----------------------+
-; Net Name                       ; Total Grid Crossings ;
-+--------------------------------+----------------------+
-; KEY0~input                     ; 3                    ;
-; TheHelloDE23|cnt[15]           ; 1                    ;
-; TheHelloDE23|cnt[7]            ; 1                    ;
-; TheHelloDE23|cnt[19]           ; 1                    ;
-; TheHelloDE23|cnt[13]           ; 1                    ;
-; TheHelloDE23|cnt[8]            ; 1                    ;
-; TheHelloDE23|cnt[14]           ; 1                    ;
-; TheHelloDE23|cnt[9]            ; 1                    ;
-; TheHelloDE23|cnt[12]           ; 1                    ;
-; TheHelloDE23|cnt[16]           ; 1                    ;
-; TheHelloDE23|cnt[10]           ; 1                    ;
-; TheHelloDE23|cnt[17]           ; 1                    ;
-; TheHelloDE23|cnt[11]           ; 1                    ;
-; TheHelloDE23|cnt[18]           ; 1                    ;
-; TheHelloDE23|LessThan_0~5xsyn  ; 1                    ;
-; ResetReleaseIpInst|onResetSync ; 1                    ;
-; TheHelloDE23|led_status        ; 1                    ;
-; SW[7]~input                    ; 1                    ;
-; SW[6]~input                    ; 1                    ;
-; SW[5]~input                    ; 1                    ;
-; SW[4]~input                    ; 1                    ;
-; SW[2]~input                    ; 1                    ;
-; TheHelloDE23|TheHex1|Mux_0~0   ; 1                    ;
-; TheHelloDE23|TheHex1|Mux_1~0   ; 1                    ;
-; TheHelloDE23|TheHex1|Mux_2~0   ; 1                    ;
-; TheHelloDE23|TheHex1|Mux_3~0   ; 1                    ;
-; TheHelloDE23|TheHex1|Mux_4~0   ; 1                    ;
-; TheHelloDE23|TheHex1|Mux_5~0   ; 1                    ;
-; TheHelloDE23|TheHex0|Mux_0~0   ; 1                    ;
-; TheHelloDE23|TheHex0|Mux_1~0   ; 1                    ;
-; TheHelloDE23|TheHex0|Mux_2~0   ; 1                    ;
-; TheHelloDE23|TheHex0|Mux_3~0   ; 1                    ;
-; TheHelloDE23|TheHex0|Mux_4~0   ; 1                    ;
-; TheHelloDE23|TheHex0|Mux_5~0   ; 1                    ;
-; TheHelloDE23|TheHex0|Mux_6~0   ; 1                    ;
-+--------------------------------+----------------------+
++-----------------------------------------------------+
+; Peak Total Grid Crossings                           ;
++------------------------------+----------------------+
+; Net Name                     ; Total Grid Crossings ;
++------------------------------+----------------------+
+; TheHelloDE23|TheHex1|Mux_2~0 ; 7                    ;
+; TheHelloDE23|TheHex1|Mux_3~0 ; 7                    ;
+; TheHelloDE23|TheHex1|Mux_4~0 ; 7                    ;
+; TheHelloDE23|TheHex1|Mux_5~0 ; 7                    ;
+; TheHelloDE23|TheHex0|Mux_2~0 ; 7                    ;
+; TheHelloDE23|TheHex0|Mux_6~0 ; 7                    ;
+; TheHelloDE23|TheHex1|Mux_6~0 ; 6                    ;
+; TheHelloDE23|TheHex0|Mux_0~0 ; 6                    ;
+; TheHelloDE23|TheHex0|Mux_1~0 ; 6                    ;
+; TheHelloDE23|TheHex0|Mux_3~0 ; 6                    ;
+; TheHelloDE23|TheHex0|Mux_4~0 ; 6                    ;
+; TheHelloDE23|TheHex0|Mux_5~0 ; 6                    ;
+; TheHelloDE23|TheHex1|Mux_0~0 ; 3                    ;
+; TheHelloDE23|TheHex1|Mux_1~0 ; 3                    ;
+; SW[7]~input                  ; 2                    ;
+; SW[6]~input                  ; 2                    ;
+; SW[5]~input                  ; 2                    ;
+; SW[4]~input                  ; 2                    ;
+; SW[2]~input                  ; 2                    ;
+; KEY0~input                   ; 1                    ;
+; SW[3]~input                  ; 1                    ;
+; SW[1]~input                  ; 1                    ;
+; SW[0]~input                  ; 1                    ;
++------------------------------+----------------------+
 
 
 --------------------------------------------
