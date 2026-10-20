@@ -1,0 +1,38 @@
+Specification of the SwellLed application for the MEMO game board, the
+SpartanIIprotoBoard, the SandboxXBoard, the terasic DE1 or the DE1-SoC.
+
+created: mp, 8Mar00
+
+Function
+********
+The user has two keys at hand to influence the brightness of an LED. 
+One of the keys will dimm the LED and is named DimmKey the other will
+brighten the LED and is named BrightenKey. 
+
+Pressing one of these keys will continually dimm or brighten the LED
+as long as the key is being pressed. The speed with which dimming
+or brightening occurs shall be reasonable.
+
+The oLed is the LED whose bightness can be influenced with the
+keys. The LED shall not flicker, but glow steadily  measured by the
+perception capabilities of the human eye.
+
+The most dimmed state of the oLed is Dark. The most brightened state
+is FullBright. Pressing the DimmKey when the state of the LED is Dark 
+will not change the state. The same with the BrightenKey and the state
+FullBright.
+
+Pressing no key will not alter the state of the LED. The behaviour
+resulting from pressing both keys at the same time is the same as
+pressing one key arbitrarily or pressing no key.
+
+Reset
+*****
+The key named R will be used to give a reset to the application. The
+reset state of the oLed (its brightness after a reset) can be any
+state depending on ease of design.
+
+Clock 
+*****
+A 50MHz oscillator shall be used to provide the clock for the system.
+

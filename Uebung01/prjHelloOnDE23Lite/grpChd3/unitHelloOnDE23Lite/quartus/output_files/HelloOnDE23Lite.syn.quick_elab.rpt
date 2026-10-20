@@ -1,0 +1,126 @@
+Synthesis report
+Sun Oct 18 22:29:16 2026
+Quartus Prime Version 26.1.1 Build 130 08/06/2026 SC Pro Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Design Analysis Summary
+  3. Design Analysis Source Files Read
+  4. Parameter Settings for User Entity Hello Instance: TheHelloDE23
+  5. Warnings for ../../unitHello/hdl/Hello-Rtl-a.vhd
+  6. Design Analysis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2026  Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Altera and sold by Altera or its authorized distributors.  Please
+refer to the Altera Software License Subscription Agreements 
+on the Quartus Prime software download page.
+
+
+
++----------------------------------------------------------------+
+; Design Analysis Summary                                        ;
++------------------------+---------------------------------------+
+; Design Analysis Status ; Successful - Sun Oct 18 22:29:15 2026 ;
+; Revision Name          ; HelloOnDE23Lite                       ;
+; Top-level Entity Name  ; HelloOnDE23Lite                       ;
+; Family                 ; Agilex 3                              ;
++------------------------+---------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Design Analysis Source Files Read                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ;
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+------------------------------------------------------+---------------+----------------------------------+
+; File Name with User-Entered Path                                                                                                                                                            ; File Type                                                                   ; File Name with Absolute Path                                                                                                                                                                ; Library                          ; IP Source                                            ; Include Files ; MD5                              ;
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+------------------------------------------------------+---------------+----------------------------------+
+; /home/stiangglanda/dev/HSD-ChipDesign/Uebung01/prjHelloOnDE23Lite/grpChd3/unitResetReleaseIP/quartus/reset_release_ip.ip                                                                    ; User-Specified IP File                                                      ; /home/stiangglanda/dev/HSD-ChipDesign/Uebung01/prjHelloOnDE23Lite/grpChd3/unitResetReleaseIP/quartus/reset_release_ip.ip                                                                    ;                                  ;                                                      ;               ; 1d7e36eb5dfecfb142bde857b5c95855 ;
+; /home/stiangglanda/dev/HSD-ChipDesign/Uebung01/prjHelloOnDE23Lite/grpChd3/unitResetReleaseIP/quartus/reset_release_ip/altera_s10_user_rst_clkgate_1949/synth/altera_s10_user_rst_clkgate.sv ; User-Specified SystemVerilog HDL File                                       ; /home/stiangglanda/dev/HSD-ChipDesign/Uebung01/prjHelloOnDE23Lite/grpChd3/unitResetReleaseIP/quartus/reset_release_ip/altera_s10_user_rst_clkgate_1949/synth/altera_s10_user_rst_clkgate.sv ; altera_s10_user_rst_clkgate_1949 ; ../../unitResetReleaseIP/quartus/reset_release_ip.ip ;               ; 91d02bb4d3e38328397bebeb5115a872 ;
+; /home/stiangglanda/dev/HSD-ChipDesign/Uebung01/prjHelloOnDE23Lite/grpChd3/unitResetReleaseIP/quartus/reset_release_ip/synth/reset_release_ip.vhd                                            ; User-Specified VHDL File                                                    ; /home/stiangglanda/dev/HSD-ChipDesign/Uebung01/prjHelloOnDE23Lite/grpChd3/unitResetReleaseIP/quartus/reset_release_ip/synth/reset_release_ip.vhd                                            ; reset_release_ip                 ; ../../unitResetReleaseIP/quartus/reset_release_ip.ip ;               ; fa02561bead38a7d68d8424b2ffd811a ;
+; HelloOnDE23Lite.sdc                                                                                                                                                                         ; User-Specified SDC File (Read by the Timing Analyzer at each fitter stage)  ; /home/stiangglanda/dev/HSD-ChipDesign/Uebung01/prjHelloOnDE23Lite/grpChd3/unitHelloOnDE23Lite/quartus/HelloOnDE23Lite.sdc                                                                   ;                                  ;                                                      ;               ; ec9b18161daaf962c516534395ba943f ;
+; /home/stiangglanda/dev/HSD-ChipDesign/Uebung01/prjHelloOnDE23Lite/grpChd3/unitHelloOnDE23Lite/hdl/HelloOnDE23Lite-Struct-a.vhd                                                              ; User-Specified VHDL File                                                    ; /home/stiangglanda/dev/HSD-ChipDesign/Uebung01/prjHelloOnDE23Lite/grpChd3/unitHelloOnDE23Lite/hdl/HelloOnDE23Lite-Struct-a.vhd                                                              ;                                  ;                                                      ;               ; ccc24e880e07405b83df3ad02b35d215 ;
+; /home/stiangglanda/dev/HSD-ChipDesign/Uebung01/prjHelloOnDE23Lite/grpChd3/unitHelloOnDE23Lite/hdl/HelloOnDE23Lite-e.vhd                                                                     ; User-Specified VHDL File                                                    ; /home/stiangglanda/dev/HSD-ChipDesign/Uebung01/prjHelloOnDE23Lite/grpChd3/unitHelloOnDE23Lite/hdl/HelloOnDE23Lite-e.vhd                                                                     ;                                  ;                                                      ;               ; 6b7dfb909ed0e8bafd56fe773d3bc165 ;
+; /home/stiangglanda/dev/HSD-ChipDesign/Uebung01/prjHelloOnDE23Lite/grpChd3/unitResetReleaseIP/hdl/ResetReleaseIP-e.vhd                                                                       ; User-Specified VHDL File                                                    ; /home/stiangglanda/dev/HSD-ChipDesign/Uebung01/prjHelloOnDE23Lite/grpChd3/unitResetReleaseIP/hdl/ResetReleaseIP-e.vhd                                                                       ;                                  ;                                                      ;               ; 77f1b856bf99d65290dcda8f68f00a15 ;
+; /home/stiangglanda/dev/HSD-ChipDesign/Uebung01/prjHelloOnDE23Lite/grpChd3/unitResetReleaseIP/hdl/ResetReleaseIP-Rtl-a.vhd                                                                   ; User-Specified VHDL File                                                    ; /home/stiangglanda/dev/HSD-ChipDesign/Uebung01/prjHelloOnDE23Lite/grpChd3/unitResetReleaseIP/hdl/ResetReleaseIP-Rtl-a.vhd                                                                   ;                                  ;                                                      ;               ; 69ab84c8f6728adc018aea83df3b6c74 ;
+; /home/stiangglanda/dev/HSD-ChipDesign/Uebung01/prjHelloOnDE23Lite/grpChd3/unitHello/hdl/Hello-Rtl-a.vhd                                                                                     ; User-Specified VHDL File                                                    ; /home/stiangglanda/dev/HSD-ChipDesign/Uebung01/prjHelloOnDE23Lite/grpChd3/unitHello/hdl/Hello-Rtl-a.vhd                                                                                     ;                                  ;                                                      ;               ; 1c765b04b2b7cfe1621f81a40bac8312 ;
+; /home/stiangglanda/dev/HSD-ChipDesign/Uebung01/prjHelloOnDE23Lite/grpChd3/unitHello/hdl/Hello-e.vhd                                                                                         ; User-Specified VHDL File                                                    ; /home/stiangglanda/dev/HSD-ChipDesign/Uebung01/prjHelloOnDE23Lite/grpChd3/unitHello/hdl/Hello-e.vhd                                                                                         ;                                  ;                                                      ;               ; 66a98f080df4320247b7732e3c5453a6 ;
+; /home/stiangglanda/dev/HSD-ChipDesign/Uebung01/prjHelloOnDE23Lite/grpChd3/unitHex2SevenSegment/hdl/Hex2SevenSegment-Rtl-a.vhd                                                               ; User-Specified VHDL File                                                    ; /home/stiangglanda/dev/HSD-ChipDesign/Uebung01/prjHelloOnDE23Lite/grpChd3/unitHex2SevenSegment/hdl/Hex2SevenSegment-Rtl-a.vhd                                                               ;                                  ;                                                      ;               ; 526bd18f8d0a219754d6570e00cb06c5 ;
+; /home/stiangglanda/dev/HSD-ChipDesign/Uebung01/prjHelloOnDE23Lite/grpChd3/unitHex2SevenSegment/hdl/Hex2SevenSegment-e.vhd                                                                   ; User-Specified VHDL File                                                    ; /home/stiangglanda/dev/HSD-ChipDesign/Uebung01/prjHelloOnDE23Lite/grpChd3/unitHex2SevenSegment/hdl/Hex2SevenSegment-e.vhd                                                                   ;                                  ;                                                      ;               ; ba4fb14b17f2afecbe283234e625d213 ;
+; /home/stiangglanda/altera_pro/26.1.1/quartus/libraries/megafunctions/altera_agilex_config_reset_release_endpoint.vhd                                                                        ; Megafunction                                                                ; /home/stiangglanda/altera_pro/26.1.1/quartus/libraries/megafunctions/altera_agilex_config_reset_release_endpoint.vhd                                                                        ; altera_work                      ;                                                      ;               ; 75f0bd49a26d0a68c2db962e95c62836 ;
+; /home/stiangglanda/altera_pro/26.1.1/quartus/libraries/megafunctions/altera_fabric_endpoint.vhd                                                                                             ; Encrypted Megafunction                                                      ; /home/stiangglanda/altera_pro/26.1.1/quartus/libraries/megafunctions/altera_fabric_endpoint.vhd                                                                                             ; altera_work                      ;                                                      ;               ; 6256b5d6e0a120264bd8e7a62ecef4fb ;
+; ../../unitResetReleaseIP/quartus/reset_release_ip/altera_s10_user_rst_clkgate_1949/synth/altera_s10_user_rst_clkgate_fm.sdc                                                                 ; User-Specified Synopsys Design Constraints File                             ; ../../unitResetReleaseIP/quartus/reset_release_ip/altera_s10_user_rst_clkgate_1949/synth/altera_s10_user_rst_clkgate_fm.sdc                                                                 ;                                  ; ../../unitResetReleaseIP/quartus/reset_release_ip.ip ;               ; cec25a0d0a18a35005ed8a57ab21cefb ;
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+------------------------------------------------------+---------------+----------------------------------+
+
+
++-----------------------------------------------------------------+
+; Parameter Settings for User Entity Hello Instance: TheHelloDE23 ;
++----------------+----------+-------------------------------------+
+; Parameter Name ; Value    ; Type                                ;
++----------------+----------+-------------------------------------+
+; gClockRateHz   ; 50000000 ; Signed Integer                      ;
++----------------+----------+-------------------------------------+
+All Instances:
+TheHelloDE23
+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Warnings for ../../unitHello/hdl/Hello-Rtl-a.vhd                                                                                                                                               ;
++------------+----------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Message ID ; Severity ; Count ; Sample Warning                                                                                                                                                 ;
++------------+----------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; 13796      ; Warning  ; 1     ; VHDL Process Statement warning at Hello-Rtl-a.vhd(68): signal "isw" is read inside the Process Statement but isn't in the Process Statement's sensitivity list ;
+; 16764      ; Warning  ; 1     ; VHDL warning at Hello-Rtl-a.vhd(75): incomplete sensitivity list specified; assuming completeness                                                              ;
++------------+----------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------+
+; Design Analysis Messages ;
++--------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Synthesis
+    Info: Version 26.1.1 Build 130 08/06/2026 SC Pro Edition
+    Info: Processing started: Sun Oct 18 22:28:57 2026
+    Info: System process ID: 16022
+Info: Command: quartus_syn --read_settings_files=on --write_settings_files=off HelloOnDE23Lite -c HelloOnDE23Lite --design_analysis
+Info: qis_default_flow_script.tcl version: #1
+Info: Initializing Synthesis...
+Info: Project = "HelloOnDE23Lite"
+Info: Revision = "HelloOnDE23Lite"
+Info: Running Design Analysis
+Info: Analyzing source files for Design Analysis mode
+Info (21958): Initialized Quartus Message Database
+Info (18235): Library search order is as follows: "altera_s10_user_rst_clkgate_1949; reset_release_ip". Quartus will look for undefined design units in your libraries in that order. To modify the ordering, please specify a semi-colon separated library list using the assignment LIBRARY_SEARCH_ORDER.
+Info (19337): VHDL info at HelloOnDE23Lite-e.vhd(16): executing entity "HelloOnDE23Lite" with architecture "Struct" File: /home/stiangglanda/dev/HSD-ChipDesign/Uebung01/prjHelloOnDE23Lite/grpChd3/unitHelloOnDE23Lite/hdl/HelloOnDE23Lite-e.vhd Line: 16
+Info (19337): VHDL info at ResetReleaseIP-e.vhd(16): executing entity "ResetReleaseIP" with architecture "Rtl" File: /home/stiangglanda/dev/HSD-ChipDesign/Uebung01/prjHelloOnDE23Lite/grpChd3/unitResetReleaseIP/hdl/ResetReleaseIP-e.vhd Line: 16
+Info (19337): VHDL info at reset_release_ip.vhd(10): executing entity "reset_release_ip" with architecture "rtl" File: /home/stiangglanda/dev/HSD-ChipDesign/Uebung01/prjHelloOnDE23Lite/grpChd3/unitResetReleaseIP/quartus/reset_release_ip/synth/reset_release_ip.vhd Line: 10
+Info (19337): VHDL info at altera_agilex_config_reset_release_endpoint.vhd(122): executing entity "altera_agilex_config_reset_release_endpoint" with architecture "rtl" File: /home/stiangglanda/altera_pro/26.1.1/quartus/libraries/megafunctions/altera_agilex_config_reset_release_endpoint.vhd Line: 122
+Info (19337): VHDL info at altera_fabric_endpoint.vhd(126): executing entity "altera_fabric_endpoint(send_width=0,receive_width=1,settings="{fabric agilex_config_reset_release dir agent psig 142e1a3c}")(1,60)" with architecture "rtl" File: /home/stiangglanda/altera_pro/26.1.1/quartus/libraries/megafunctions/altera_fabric_endpoint.vhd Line: 126
+Info (19337): VHDL info at Hello-e.vhd(16): executing entity "Hello(gclockratehz=50000000)" with architecture "Rtl" File: /home/stiangglanda/dev/HSD-ChipDesign/Uebung01/prjHelloOnDE23Lite/grpChd3/unitHello/hdl/Hello-e.vhd Line: 16
+Info (19337): VHDL info at Hex2SevenSegment-e.vhd(16): executing entity "Hex2SevenSegment" with architecture "Rtl" File: /home/stiangglanda/dev/HSD-ChipDesign/Uebung01/prjHelloOnDE23Lite/grpChd3/unitHex2SevenSegment/hdl/Hex2SevenSegment-e.vhd Line: 16
+Warning (13796): VHDL Process Statement warning at Hello-Rtl-a.vhd(68): signal "isw" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/stiangglanda/dev/HSD-ChipDesign/Uebung01/prjHelloOnDE23Lite/grpChd3/unitHello/hdl/Hello-Rtl-a.vhd Line: 68
+Warning (16764): VHDL warning at Hello-Rtl-a.vhd(75): incomplete sensitivity list specified; assuming completeness File: /home/stiangglanda/dev/HSD-ChipDesign/Uebung01/prjHelloOnDE23Lite/grpChd3/unitHello/hdl/Hello-Rtl-a.vhd Line: 75
+Info (17555): VHDL info at reset_release_ip.vhd(16): re-analyze unit rtl since unit altera_s10_user_rst_clkgate is overwritten or removed File: /home/stiangglanda/dev/HSD-ChipDesign/Uebung01/prjHelloOnDE23Lite/grpChd3/unitResetReleaseIP/quartus/reset_release_ip/synth/reset_release_ip.vhd Line: 16
+Info: Quartus Prime Synthesis was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 1624 megabytes
+    Info: Processing ended: Sun Oct 18 22:29:16 2026
+    Info: Elapsed time: 00:00:19
+    Info: System process ID: 16022
+
+

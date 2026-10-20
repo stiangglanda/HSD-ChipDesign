@@ -1,0 +1,44 @@
+Info: Start Simulation process
+Info: RTL Simulation is invoked (generate script)
+Info: Generating simulation script only. Third-party simulator tool is not launched at this moment.
+Info: Using absolute paths for ip-setup-simulation.
+Info: Running ip-setup-simulation --quartus-project=/home/stiangglanda/dev/HSD-ChipDesign/Uebung01/prjHelloOnDE23Lite/grpChd3/unitHelloOnDE23Lite/quartus/HelloOnDE23Lite --revision=HelloOnDE23Lite --output-directory=HelloOnDE23Lite_iputf_input
+Error: Failed to run ip-setup-simulation: ***************************************************************
+Error: Quartus is a registered trademark of Altera Corporation in the
+Error: US and other countries.  Portions of the Quartus Prime software
+Error: code, and other portions of the code included in this download
+Error: or on this DVD, are licensed to Altera Corporation and are the
+Error: copyrighted property of third parties. For license details,
+Error: refer to the Altera Software License Subscription Agreements 
+Error: on the Quartus Prime software download page.
+Error: ***************************************************************
+Error: 2026.10.18.22:29:23 Error: SPD file /home/stiangglanda/dev/HSD-ChipDesign/Uebung01/prjHelloOnDE23Lite/grpChd3/unitResetReleaseIP/quartus/reset_release_ip/reset_release_ip.spd not found. Please generate simulation files for IP file /home/stiangglanda/dev/HSD-ChipDesign/Uebung01/prjHelloOnDE23Lite/grpChd3/unitResetReleaseIP/quartus/reset_release_ip.ip before generating simulator setup scripts.
+Error: 2026.10.18.22:29:23 Error: No spd files are included in quartus project /home/stiangglanda/dev/HSD-ChipDesign/Uebung01/prjHelloOnDE23Lite/grpChd3/unitHelloOnDE23Lite/quartus/HelloOnDE23Lite.qpf, revision HelloOnDE23Lite.
+Error: Failed to run ip-setup-simulation: ***************************************************************
+Quartus is a registered trademark of Altera Corporation in the
+US and other countries.  Portions of the Quartus Prime software
+code, and other portions of the code included in this download
+or on this DVD, are licensed to Altera Corporation and are the
+copyrighted property of third parties. For license details,
+refer to the Altera Software License Subscription Agreements 
+on the Quartus Prime software download page.
+***************************************************************
+
+2026.10.18.22:29:23 Error: SPD file /home/stiangglanda/dev/HSD-ChipDesign/Uebung01/prjHelloOnDE23Lite/grpChd3/unitResetReleaseIP/quartus/reset_release_ip/reset_release_ip.spd not found. Please generate simulation files for IP file /home/stiangglanda/dev/HSD-ChipDesign/Uebung01/prjHelloOnDE23Lite/grpChd3/unitResetReleaseIP/quartus/reset_release_ip.ip before generating simulator setup scripts.
+2026.10.18.22:29:23 Error: No spd files are included in quartus project /home/stiangglanda/dev/HSD-ChipDesign/Uebung01/prjHelloOnDE23Lite/grpChd3/unitHelloOnDE23Lite/quartus/HelloOnDE23Lite.qpf, revision HelloOnDE23Lite.
+Error: Simulation flow failed
+
+
+
+================The following additional information is provided to help identify the cause of error while running Simulation scripts=================
+Simulation TCL script failed with errorCode:  1
+Simulation TCL script failed with errorInfo:  1
+    (procedure "iputf_call_script_gen" line 1)
+    invoked from within
+"iputf_call_script_gen"
+    (procedure "iputf_setup_info" line 58)
+    invoked from within
+"iputf_setup_info"
+    (procedure "run_eda_simulation_tool" line 371)
+    invoked from within
+"run_eda_simulation_tool eda_opts_hash"

@@ -1,0 +1,61 @@
+Implementation ideas
+********************
+The LED can only be switched on and off by the FPGA. There's no
+possibility to steer the voltage applied to it. 
+
+A method to control the brightness of the LED is pulse width
+modulation. This method uses the inertia of optical perception by
+humans in that it switches the LED fully on for a very short time and
+switches it off for another short time. On and off phases are repeated
+in a cyclyc manner. The brightness is determined then by the relation
+of on to off time spans.
+
+A simple (but probably not the most efficient in terms of silicon area)
+implementation will use a counter which counts from 0 to some value of
+the form 2**n-1 and begins from 0 again. The LED is switched on for
+the time span in which the counter value is below a certain number and
+switched off otherwise. This number can be called Brightness because
+the actual brightness of the LED will be closely coupled to the value
+of Brightness.
+
+To make the brightness of the LED user controllable the value of
+Brightness has to be controllable. Thus the DimmKey will decrement
+this value and the BrightenKey will increment it. For this application
+it will be sufficient to test for the values of both keys in a cyclic
+manner.
+
+Constraints
+***********
+How often should the on/off cycle for the LED run per second?
+
+The current through the LED is considerably large (about 5 mA). Thus
+the frequency should not be in the range of radio frequencies making
+the application a radio transmitter using the leads to the led as
+antenna. Another reason for an upper limit to the frequency is the
+capacitance shown by the LED and the leads to it. This has to be
+loaded and unloaded every cycle consuming energy.
+The area under 100 KHz will clearly be usable.
+
+On the other side the frequency shall clearly stay beyond the lower
+limit set by the eye's inertia. Using 200 Hz as a minimum is a secure
+bet.
+
+
+How long should it take to dimm the LED from being fully bright?
+
+A range from about 2 to 4 seconds seams to be reasonable to run
+through the full range.
+
+Example for a clock frequency of 2MHz:
+
+Taking both of these constraints we can determine a counter depth of
+11 bit for the proposed implementation:
+
+2 MHz : 2**11 = 976.5625 Hz (LED on/off cycles per second)
+
+If the Brightness is decremented or incremented once per cycle it will
+take
+
+1/976,5625 Hz * 2**11 = 2.097152 seconds
+
+to go through the full range of Brightness.

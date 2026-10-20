@@ -22,3 +22,6 @@ _vmake
 # OS files
 .DS_Store
 Thumbs.db
+
+dni/
+qdb/
