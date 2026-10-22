@@ -1,4 +1,43 @@
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		HelloOnDE23Lite_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
 
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 2026  Altera Corporation. All rights reserved.
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and any partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, the Altera Quartus Prime License Agreement,
+# the Altera IP License Agreement, or other applicable license
+# agreement, including, without limitation, that your use is for
+# the sole purpose of programming logic devices manufactured by
+# Altera and sold by Altera or its authorized distributors.  Please
+# refer to the Altera Software License Subscription Agreements 
+# on the Quartus Prime software download page.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 26.1.1 Build 130 08/06/2026 SC Pro Edition
+# Date created = 15:28:01  October 20, 2026
+#
+# -------------------------------------------------------------------------- #
+# Project-Wide Assignments
+# ========================
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION "25.1.0 PRO EDITION"
 set_global_assignment -name LAST_QUARTUS_VERSION "26.1.1 Pro Edition"
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "MON AUG 18 13:47:53 2025"
@@ -13,6 +52,8 @@ set_global_assignment -name VHDL_FILE "../../unitHello/hdl/Hello-e.vhd"
 set_global_assignment -name VHDL_FILE "../../unitHex2SevenSegment/hdl/Hex2SevenSegment-Rtl-a.vhd"
 set_global_assignment -name VHDL_FILE "../../unitHex2SevenSegment/hdl/Hex2SevenSegment-e.vhd"
 
+# Pin & Location Assignments
+# ==========================
 set_location_assignment PIN_K43 -to CLOCK0_50
 set_location_assignment PIN_A8 -to CLOCK1_50
 set_location_assignment PIN_K26 -to KEY0
@@ -212,220 +253,69 @@ set_location_assignment PIN_H21 -to GPIO_D[33]
 set_location_assignment PIN_K18 -to GPIO_D[34]
 set_location_assignment PIN_F27 -to GPIO_D[35]
 
+# Analysis & Synthesis Assignments
+# ================================
 set_global_assignment -name FAMILY "Agilex 3"
 set_global_assignment -name TOP_LEVEL_ENTITY HelloOnDE23Lite
 set_global_assignment -name DEVICE_FILTER_PACKAGE VPBGA
 set_global_assignment -name BOARD default
 
+# Fitter Assignments
+# ==================
 set_global_assignment -name DEVICE A3CZ135BB18AE7S
 set_global_assignment -name USE_CONF_DONE SDM_IO16
 set_global_assignment -name STRATIXV_CONFIGURATION_SCHEME "ACTIVE SERIAL X4"
 set_global_assignment -name ACTIVE_SERIAL_CLOCK AS_FREQ_100MHZ
 set_global_assignment -name DEVICE_INITIALIZATION_CLOCK OSC_CLK_1_125MHZ
 
+# Assembler Assignments
+# =====================
 set_global_assignment -name PWRMGT_VOLTAGE_OUTPUT_FORMAT "LINEAR FORMAT"
 set_global_assignment -name PWRMGT_LINEAR_FORMAT_N "-12"
 
+# Power Estimation Assignments
+# ============================
 set_global_assignment -name POWER_APPLY_THERMAL_MARGIN ADDITIONAL
 
-set_instance_assignment -name IO_STANDARD "1.2-V" -to CLOCK0_50 -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to CLOCK1_50 -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to KEY0 -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to KEY1 -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to KEY2 -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to KEY3 -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "1.2-V" -to SW[0] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "1.2-V" -to SW[1] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "1.2-V" -to SW[2] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "1.2-V" -to SW[3] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "1.2-V" -to SW[4] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "1.2-V" -to SW[5] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "1.2-V" -to SW[6] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "1.2-V" -to SW[7] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "1.2-V" -to SW[8] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "1.2-V" -to SW[9] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "1.2-V" -to LEDR[0] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "1.2-V" -to LEDR[1] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "1.2-V" -to LEDR[2] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "1.2-V" -to LEDR[3] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "1.2-V" -to LEDR[4] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "1.2-V" -to LEDR[5] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "1.2-V" -to LEDR[6] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "1.2-V" -to LEDR[7] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "1.2-V" -to LEDR[8] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "1.2-V" -to LEDR[9] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "1.2-V" -to HEX0[0] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "1.2-V" -to HEX0[1] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "1.2-V" -to HEX0[2] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "1.2-V" -to HEX0[3] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "1.2-V" -to HEX0[4] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "1.2-V" -to HEX0[5] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "1.2-V" -to HEX0[6] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "1.2-V" -to HEX1[0] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "1.2-V" -to HEX1[1] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "1.2-V" -to HEX1[2] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "1.2-V" -to HEX1[3] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "1.2-V" -to HEX1[4] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "1.2-V" -to HEX1[5] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "1.2-V" -to HEX1[6] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "1.2-V" -to HEX2[0] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "1.2-V" -to HEX2[1] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "1.2-V" -to HEX2[2] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "1.2-V" -to HEX2[3] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "1.2-V" -to HEX2[4] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "1.8-V LVCMOS" -to HEX2[5] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "1.8-V LVCMOS" -to HEX2[6] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "1.8-V LVCMOS" -to HEX3[0] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to HEX3[1] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to HEX3[2] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to HEX3[3] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to HEX3[4] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to HEX3[5] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to HEX3[6] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to HEX4[0] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to HEX4[1] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to HEX4[2] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to HEX4[3] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to HEX4[4] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to HEX4[5] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to HEX4[6] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to HEX5[0] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to HEX5[1] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to HEX5[2] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to HEX5[3] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to HEX5[4] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to HEX5[5] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to HEX5[6] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "1.8-V LVCMOS" -to DRAM_CLK -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "1.8-V LVCMOS" -to DRAM_CKE -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "1.8-V LVCMOS" -to DRAM_ADDR[0] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "1.8-V LVCMOS" -to DRAM_ADDR[1] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "1.8-V LVCMOS" -to DRAM_ADDR[2] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "1.8-V LVCMOS" -to DRAM_ADDR[3] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "1.8-V LVCMOS" -to DRAM_ADDR[4] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "1.8-V LVCMOS" -to DRAM_ADDR[5] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "1.8-V LVCMOS" -to DRAM_ADDR[6] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "1.8-V LVCMOS" -to DRAM_ADDR[7] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "1.8-V LVCMOS" -to DRAM_ADDR[8] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "1.8-V LVCMOS" -to DRAM_ADDR[9] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "1.8-V LVCMOS" -to DRAM_ADDR[10] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "1.8-V LVCMOS" -to DRAM_ADDR[11] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "1.8-V LVCMOS" -to DRAM_ADDR[12] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "1.8-V LVCMOS" -to DRAM_BA[0] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "1.8-V LVCMOS" -to DRAM_BA[1] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "1.8-V LVCMOS" -to DRAM_DQ[0] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "1.8-V LVCMOS" -to DRAM_DQ[1] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "1.8-V LVCMOS" -to DRAM_DQ[2] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "1.8-V LVCMOS" -to DRAM_DQ[3] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "1.8-V LVCMOS" -to DRAM_DQ[4] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "1.8-V LVCMOS" -to DRAM_DQ[5] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "1.8-V LVCMOS" -to DRAM_DQ[6] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "1.8-V LVCMOS" -to DRAM_DQ[7] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "1.8-V LVCMOS" -to DRAM_DQ[8] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "1.8-V LVCMOS" -to DRAM_DQ[9] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "1.8-V LVCMOS" -to DRAM_DQ[10] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "1.8-V LVCMOS" -to DRAM_DQ[11] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "1.8-V LVCMOS" -to DRAM_DQ[12] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "1.8-V LVCMOS" -to DRAM_DQ[13] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "1.8-V LVCMOS" -to DRAM_DQ[14] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "1.8-V LVCMOS" -to DRAM_DQ[15] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "1.8-V LVCMOS" -to DRAM_DQ[16] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "1.8-V LVCMOS" -to DRAM_DQ[17] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "1.8-V LVCMOS" -to DRAM_DQ[18] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "1.8-V LVCMOS" -to DRAM_DQ[19] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "1.8-V LVCMOS" -to DRAM_DQ[20] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "1.8-V LVCMOS" -to DRAM_DQ[21] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "1.8-V LVCMOS" -to DRAM_DQ[22] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "1.8-V LVCMOS" -to DRAM_DQ[23] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "1.8-V LVCMOS" -to DRAM_DQ[24] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "1.8-V LVCMOS" -to DRAM_DQ[25] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "1.8-V LVCMOS" -to DRAM_DQ[26] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "1.8-V LVCMOS" -to DRAM_DQ[27] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "1.8-V LVCMOS" -to DRAM_DQ[28] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "1.8-V LVCMOS" -to DRAM_DQ[29] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "1.8-V LVCMOS" -to DRAM_DQ[30] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "1.8-V LVCMOS" -to DRAM_DQ[31] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "1.8-V LVCMOS" -to DRAM_CS_n -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "1.8-V LVCMOS" -to DRAM_WE_n -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "1.8-V LVCMOS" -to DRAM_CAS_n -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "1.8-V LVCMOS" -to DRAM_RAS_n -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "1.8-V LVCMOS" -to DRAM_DQM[0] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "1.8-V LVCMOS" -to DRAM_DQM[1] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "1.8-V LVCMOS" -to DRAM_DQM[2] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "1.8-V LVCMOS" -to DRAM_DQM[3] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "1.2-V" -to HDMI_TX_CLK -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to HDMI_TX_HS -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to HDMI_TX_VS -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to HDMI_TX_D[0] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to HDMI_TX_D[1] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to HDMI_TX_D[2] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to HDMI_TX_D[3] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to HDMI_TX_D[4] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to HDMI_TX_D[5] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to HDMI_TX_D[6] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to HDMI_TX_D[7] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to HDMI_TX_D[8] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to HDMI_TX_D[9] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to HDMI_TX_D[10] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to HDMI_TX_D[11] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to HDMI_TX_D[12] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to HDMI_TX_D[13] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to HDMI_TX_D[14] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to HDMI_TX_D[15] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to HDMI_TX_D[16] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to HDMI_TX_D[17] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to HDMI_TX_D[18] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to HDMI_TX_D[19] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to HDMI_TX_D[20] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to HDMI_TX_D[21] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to HDMI_TX_D[22] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to HDMI_TX_D[23] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to HDMI_TX_DE -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to HDMI_TX_INT -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to HDMI_LRCLK -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to HDMI_MCLK -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to HDMI_SCLK -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to HDMI_I2S0 -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to UART_TX -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to UART_RX -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to I2C_SCL -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to I2C_SDA -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to GPIO_D[0] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to GPIO_D[1] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to GPIO_D[2] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to GPIO_D[3] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to GPIO_D[4] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to GPIO_D[5] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to GPIO_D[6] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to GPIO_D[7] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to GPIO_D[8] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to GPIO_D[9] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to GPIO_D[10] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to GPIO_D[11] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to GPIO_D[12] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to GPIO_D[13] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to GPIO_D[14] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to GPIO_D[15] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to GPIO_D[16] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to GPIO_D[17] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to GPIO_D[18] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to GPIO_D[19] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to GPIO_D[20] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to GPIO_D[21] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to GPIO_D[22] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to GPIO_D[23] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to GPIO_D[24] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to GPIO_D[25] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to GPIO_D[26] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to GPIO_D[27] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to GPIO_D[28] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to GPIO_D[29] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to GPIO_D[30] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to GPIO_D[31] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to GPIO_D[32] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to GPIO_D[33] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to GPIO_D[34] -entity HelloOnDE23Lite
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to GPIO_D[35] -entity HelloOnDE23Lite
+# -----------------------------
+# start ENTITY(HelloOnDE23Lite)
 
+	# Fitter Assignments
+	# ==================
+
+# end ENTITY(HelloOnDE23Lite)
+# ---------------------------
+
+# -----------------------------------------
+# start ENTITY(altera_s10_user_rst_clkgate)
+
+	# Project-Wide Assignments
+	# ========================
+
+# end ENTITY(altera_s10_user_rst_clkgate)
+# ---------------------------------------
+
+# ------------------------------
+# start ENTITY(reset_release_ip)
+
+	# Project-Wide Assignments
+	# ========================
+
+	# Signal Tap Assignments
+	# ======================
+
+# end ENTITY(reset_release_ip)
+# ----------------------------
+
+# Ordering Sensitive Assignments
+# ==============================
 set_global_assignment -name IP_FILE ../../unitResetReleaseIP/quartus/reset_release_ip.ip
 set_global_assignment -name SDC_FILE HelloOnDE23Lite.sdc
+set_instance_assignment -name IO_STANDARD "1.2-V" -to *
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MINIMUM CURRENT" -to HEX0
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MINIMUM CURRENT" -to HEX1
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MINIMUM CURRENT" -to LEDR
+set_instance_assignment -name SLEW_RATE 0 -to HEX0
+set_instance_assignment -name SLEW_RATE 0 -to HEX1
+set_instance_assignment -name SLEW_RATE 0 -to LEDR
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to KEY0

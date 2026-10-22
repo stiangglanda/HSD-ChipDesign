@@ -1,0 +1,137 @@
+Flow report for HelloOnDE23Lite
+Thu Oct 22 21:43:43 2026
+Quartus Prime Version 26.1.1 Build 130 08/06/2026 SC Pro Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Flow Summary
+  2. Flow Settings
+  3. Flow Non-Default Global Settings
+  4. Flow Elapsed Time
+  5. Flow OS Summary
+  6. Flow Log
+  7. Legal Notice
+
+
+
++------------------------------------------------------------------------------+
+; Flow Summary                                                                 ;
++---------------------------------+--------------------------------------------+
+; Flow Status                     ; Successful - Thu Oct 22 21:43:43 2026      ;
+; Quartus Prime Version           ; 26.1.1 Build 130 08/06/2026 SC Pro Edition ;
+; Revision Name                   ; HelloOnDE23Lite                            ;
+; Top-level Entity Name           ; HelloOnDE23Lite                            ;
+; Family                          ; Agilex 3                                   ;
+; Device                          ; A3CZ135BB18AE7S                            ;
+; Timing Models                   ; Final                                      ;
+; Power Models                    ; Final                                      ;
+; Device Status                   ; Final                                      ;
+; Total dedicated logic registers ; 36                                         ;
+; Total pins                      ; 36 / 208 ( 17 % )                          ;
+; Total block memory bits         ; 0 / 7,229,440 ( 0 % )                      ;
+; Total RAM Blocks                ; 0 / 353 ( 0 % )                            ;
+; Total DSP Blocks                ; 0 / 368 ( 0 % )                            ;
+; Total HSSI HPS                  ; 0 / 1 ( 0 % )                              ;
+; Total PLLs                      ; 0 / 11 ( 0 % )                             ;
+; Logic utilization (in ALMs)     ; 27 / 45,800 ( < 1 % )                      ;
++---------------------------------+--------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 10/20/2026 16:10:53 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; HelloOnDE23Lite     ;
++-------------------+---------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                                                                                                                                        ;
++----------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------+-------------+------------+
+; Assignment Name            ; Value                                                                                                                                                                                           ; Default Value ; Entity Name ; Section Id ;
++----------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------+-------------+------------+
+; COMPILER_SIGNATURE_ID      ; 62489531182533.179250545335570                                                                                                                                                                  ; --            ; --          ; --         ;
+; MISC_FILE                  ; /home/stiangglanda/dev/HSD-ChipDesign/Uebung02/prjHelloOnDE23Lite/grpChd3/unitResetReleaseIP/quartus/reset_release_ip/reset_release_ip.cmp                                                      ; --            ; --          ; --         ;
+; MISC_FILE                  ; /home/stiangglanda/dev/HSD-ChipDesign/Uebung02/prjHelloOnDE23Lite/grpChd3/unitResetReleaseIP/quartus/reset_release_ip.ip                                                                        ; --            ; --          ; --         ;
+; MISC_FILE                  ; /home/stiangglanda/dev/HSD-ChipDesign/Uebung02/prjHelloOnDE23Lite/grpChd3/unitHelloOnDE23Lite/quartus/dni/sandboxes/stiangglanda-IdeaPad_35570_0/sld/ipgen/alt_sld_fab_0/alt_sld_fab_0.cmp      ; --            ; --          ; --         ;
+; MISC_FILE                  ; /home/stiangglanda/dev/HSD-ChipDesign/Uebung02/prjHelloOnDE23Lite/grpChd3/unitHelloOnDE23Lite/quartus/dni/sandboxes/stiangglanda-IdeaPad_35570_0/sld/ipgen/alt_sld_fab_0.ip                     ; --            ; --          ; --         ;
+; NUM_PARALLEL_PROCESSORS    ; All                                                                                                                                                                                             ; --            ; --          ; --         ;
+; POWER_APPLY_THERMAL_MARGIN ; ADDITIONAL                                                                                                                                                                                      ; Off           ; --          ; --         ;
+; PROJECT_OUTPUT_DIRECTORY   ; /home/stiangglanda/dev/HSD-ChipDesign/Uebung02/prjHelloOnDE23Lite/grpChd3/unitHelloOnDE23Lite/quartus/output_files                                                                              ; --            ; --          ; --         ;
+; SOPCINFO_FILE              ; /home/stiangglanda/dev/HSD-ChipDesign/Uebung02/prjHelloOnDE23Lite/grpChd3/unitResetReleaseIP/quartus/reset_release_ip/reset_release_ip.sopcinfo                                                 ; --            ; --          ; --         ;
+; SOPCINFO_FILE              ; /home/stiangglanda/dev/HSD-ChipDesign/Uebung02/prjHelloOnDE23Lite/grpChd3/unitHelloOnDE23Lite/quartus/dni/sandboxes/stiangglanda-IdeaPad_35570_0/sld/ipgen/alt_sld_fab_0/alt_sld_fab_0.sopcinfo ; --            ; --          ; --         ;
++----------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------+-------------+------------+
+
+
++------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                  ;
++-----------------------------------------------+--------------+---------------------+
+; Module Name                                   ; Elapsed Time ; Peak Virtual Memory ;
++-----------------------------------------------+--------------+---------------------+
+; Synthesis                                     ; 00:00:29     ; 2312 MB             ;
+; Fitter                                        ; 00:00:37     ; 4597 MB             ;
+; Fitter (Plan, Place, Route, Retime, Finalize) ; 00:00:36     ; 4599 MB             ;
+; Fitter (Plan, Place, Route, Retime, Finalize) ; 00:00:34     ; 4589 MB             ;
+; Fitter (Plan, Place, Route, Retime, Finalize) ; 00:00:34     ; 4586 MB             ;
+; Fitter (Plan, Place, Route, Retime, Finalize) ; 00:01:28     ; 6543 MB             ;
+; Timing Analyzer                               ; 00:00:08     ; 2423 MB             ;
+; Assembler                                     ; 00:00:18     ; 4185 MB             ;
+; Total                                         ; 00:04:44     ; --                  ;
++-----------------------------------------------+--------------+---------------------+
+
+
++--------------------------------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                                              ;
++-----------------------------------------------+----------------------+---------+------------+----------------+
+; Module Name                                   ; Machine Hostname     ; OS Name ; OS Version ; Processor type ;
++-----------------------------------------------+----------------------+---------+------------+----------------+
+; Synthesis                                     ; stiangglanda-IdeaPad ; Ubuntu  ; 26         ; x86_64         ;
+; Fitter                                        ; stiangglanda-IdeaPad ; Ubuntu  ; 26         ; x86_64         ;
+; Fitter (Plan, Place, Route, Retime, Finalize) ; stiangglanda-IdeaPad ; Ubuntu  ; 26         ; x86_64         ;
+; Fitter (Plan, Place, Route, Retime, Finalize) ; stiangglanda-IdeaPad ; Ubuntu  ; 26         ; x86_64         ;
+; Fitter (Plan, Place, Route, Retime, Finalize) ; stiangglanda-IdeaPad ; Ubuntu  ; 26         ; x86_64         ;
+; Fitter (Plan, Place, Route, Retime, Finalize) ; stiangglanda-IdeaPad ; Ubuntu  ; 26         ; x86_64         ;
+; Timing Analyzer                               ; stiangglanda-IdeaPad ; Ubuntu  ; 26         ; x86_64         ;
+; Assembler                                     ; stiangglanda-IdeaPad ; Ubuntu  ; 26         ; x86_64         ;
++-----------------------------------------------+----------------------+---------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_syn --read_settings_files=on --write_settings_files=off HelloOnDE23Lite -c HelloOnDE23Lite
+quartus_fit --read_settings_files=on --write_settings_files=off HelloOnDE23Lite -c HelloOnDE23Lite
+quartus_fit --read_settings_files=on --write_settings_files=off HelloOnDE23Lite -c HelloOnDE23Lite --plan --place --route --retime --finalize
+quartus_fit --read_settings_files=on --write_settings_files=off HelloOnDE23Lite -c HelloOnDE23Lite --plan --place --route --retime --finalize
+quartus_fit --read_settings_files=on --write_settings_files=off HelloOnDE23Lite -c HelloOnDE23Lite --plan --place --route --retime --finalize
+quartus_fit --read_settings_files=on --write_settings_files=off HelloOnDE23Lite -c HelloOnDE23Lite --plan --place --route --retime --finalize
+quartus_sta HelloOnDE23Lite -c HelloOnDE23Lite --mode=finalize
+quartus_asm --read_settings_files=on --write_settings_files=off HelloOnDE23Lite -c HelloOnDE23Lite
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2026  Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Altera and sold by Altera or its authorized distributors.  Please
+refer to the Altera Software License Subscription Agreements 
+on the Quartus Prime software download page.
+
+
+
