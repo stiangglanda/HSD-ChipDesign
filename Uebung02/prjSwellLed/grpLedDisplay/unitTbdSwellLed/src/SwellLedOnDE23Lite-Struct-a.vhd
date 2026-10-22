@@ -18,7 +18,7 @@ begin
   -- -------------------------------------------------------------------------
   -- SwellLed Instanziierung
   -- -------------------------------------------------------------------------
-  TheSwellLed : entity work.SwellLed
+  TheSwellLed : entity work.SwellLed(Rtl)
     generic map (
       gClkFrequency => 50E6,
       gPwmRate      => 2E3

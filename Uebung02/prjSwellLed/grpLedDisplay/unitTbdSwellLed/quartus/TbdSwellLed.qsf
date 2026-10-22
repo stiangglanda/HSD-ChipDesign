@@ -4,7 +4,7 @@
 
 set_global_assignment -name FAMILY "Agilex 3"
 set_global_assignment -name DEVICE A3CZ135BB18AE7S
-set_global_assignment -name TOP_LEVEL_ENTITY "SwellLedOnDE23Lite"
+set_global_assignment -name TOP_LEVEL_ENTITY SwellLedOnDE23Lite
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION "25.1.0 Pro Edition"
 set_global_assignment -name LAST_QUARTUS_VERSION "26.1.1 Pro Edition"
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "Mon Aug 18 13:47:53 2025"
@@ -23,6 +23,7 @@ set_global_assignment -name PWRMGT_LINEAR_FORMAT_N "-12"
 
 #============================================================
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name VHDL_FILE "../../../grpPackages/pkgGlobal/src/Global-p.vhd"
 set_global_assignment -name VHDL_FILE "../../unitSwellLed/src/SwellLed-e.vhd"
 set_global_assignment -name VHDL_FILE "../../unitSwellLed/src/SwellLed-Rtl-a.vhd"
 set_global_assignment -name VHDL_FILE "../../unitResetReleaseIP/hdl/ResetReleaseIP-Rtl-a.vhd"
@@ -32,18 +33,18 @@ set_global_assignment -name SDC_FILE TbdSwellLed.sdc
 #============================================================
 # CLOCK
 #============================================================
-set_instance_assignment -name IO_STANDARD "1.2-V" -to CLOCK0_50
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to CLOCK1_50
+set_instance_assignment -name IO_STANDARD "1.2-V" -to CLOCK0_50 -entity SwellLedOnDE23Lite
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to CLOCK1_50 -entity SwellLedOnDE23Lite
 set_location_assignment PIN_K43  -to CLOCK0_50
 set_location_assignment PIN_A8   -to CLOCK1_50
 
 #============================================================
 # KEY
 #============================================================
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to KEY[0]
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to KEY[1]
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to KEY[2]
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to KEY[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to KEY[0] -entity SwellLedOnDE23Lite
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to KEY[1] -entity SwellLedOnDE23Lite
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to KEY[2] -entity SwellLedOnDE23Lite
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to KEY[3] -entity SwellLedOnDE23Lite
 set_location_assignment PIN_K26  -to KEY[0]
 set_location_assignment PIN_K27  -to KEY[1]
 set_location_assignment PIN_BK10 -to KEY[2]
@@ -52,16 +53,16 @@ set_location_assignment PIN_W12  -to KEY[3]
 #============================================================
 # LED
 #============================================================
-set_instance_assignment -name IO_STANDARD "1.2-V" -to LEDR[0]
-set_instance_assignment -name IO_STANDARD "1.2-V" -to LEDR[1]
-set_instance_assignment -name IO_STANDARD "1.2-V" -to LEDR[2]
-set_instance_assignment -name IO_STANDARD "1.2-V" -to LEDR[3]
-set_instance_assignment -name IO_STANDARD "1.2-V" -to LEDR[4]
-set_instance_assignment -name IO_STANDARD "1.2-V" -to LEDR[5]
-set_instance_assignment -name IO_STANDARD "1.2-V" -to LEDR[6]
-set_instance_assignment -name IO_STANDARD "1.2-V" -to LEDR[7]
-set_instance_assignment -name IO_STANDARD "1.2-V" -to LEDR[8]
-set_instance_assignment -name IO_STANDARD "1.2-V" -to LEDR[9]
+set_instance_assignment -name IO_STANDARD "1.2-V" -to LEDR[0] -entity SwellLedOnDE23Lite
+set_instance_assignment -name IO_STANDARD "1.2-V" -to LEDR[1] -entity SwellLedOnDE23Lite
+set_instance_assignment -name IO_STANDARD "1.2-V" -to LEDR[2] -entity SwellLedOnDE23Lite
+set_instance_assignment -name IO_STANDARD "1.2-V" -to LEDR[3] -entity SwellLedOnDE23Lite
+set_instance_assignment -name IO_STANDARD "1.2-V" -to LEDR[4] -entity SwellLedOnDE23Lite
+set_instance_assignment -name IO_STANDARD "1.2-V" -to LEDR[5] -entity SwellLedOnDE23Lite
+set_instance_assignment -name IO_STANDARD "1.2-V" -to LEDR[6] -entity SwellLedOnDE23Lite
+set_instance_assignment -name IO_STANDARD "1.2-V" -to LEDR[7] -entity SwellLedOnDE23Lite
+set_instance_assignment -name IO_STANDARD "1.2-V" -to LEDR[8] -entity SwellLedOnDE23Lite
+set_instance_assignment -name IO_STANDARD "1.2-V" -to LEDR[9] -entity SwellLedOnDE23Lite
 set_location_assignment PIN_B39  -to LEDR[0]
 set_location_assignment PIN_B42  -to LEDR[1]
 set_location_assignment PIN_K35  -to LEDR[2]
@@ -73,8 +74,10 @@ set_location_assignment PIN_A44  -to LEDR[7]
 set_location_assignment PIN_B34  -to LEDR[8]
 set_location_assignment PIN_D40  -to LEDR[9]
 
+set_global_assignment -name IP_FILE ../../unitResetReleaseIP/quartus/reset_release_ip.ip
 set_global_assignment -name VHDL_FILE "../src/SwellLedOnDE23Lite-Struct-a.vhd"
 set_global_assignment -name VHDL_FILE "../src/SwellLedOnDE23Lite-e.vhd"
 set_global_assignment -name SOURCE_FILE TbdSwellLed.qsf
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 100
+set_global_assignment -name POWER_APPLY_THERMAL_MARGIN ADDITIONAL
