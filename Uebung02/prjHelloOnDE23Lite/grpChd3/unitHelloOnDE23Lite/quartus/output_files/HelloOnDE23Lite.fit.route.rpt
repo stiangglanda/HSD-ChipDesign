@@ -1,5 +1,5 @@
 Fitter Route Stage Report for HelloOnDE23Lite
-Thu Oct 22 21:42:57 2026
+Thu Oct 22 22:13:31 2026
 Quartus Prime Version 26.1.1 Build 130 08/06/2026 SC Pro Edition
 
 
@@ -88,14 +88,14 @@ on the Quartus Prime software download page.
 ; Routing Resource Type                ; Usage                   ;
 +--------------------------------------+-------------------------+
 ; Block Input Mux Wrapbacks            ; 0 / 43,616 ( 0 % )      ;
-; Block Input Muxes                    ; 168 / 500,456 ( < 1 % ) ;
-; Block interconnects                  ; 105 / 526,400 ( < 1 % ) ;
-; C1 interconnects                     ; 44 / 234,240 ( < 1 % )  ;
+; Block Input Muxes                    ; 170 / 500,456 ( < 1 % ) ;
+; Block interconnects                  ; 106 / 526,400 ( < 1 % ) ;
+; C1 interconnects                     ; 47 / 234,240 ( < 1 % )  ;
 ; C4 interconnects                     ; 11 / 229,360 ( < 1 % )  ;
 ; C8 interconnects                     ; 0 / 22,936 ( 0 % )      ;
 ; DCM_muxes                            ; 1 / 216 ( < 1 % )       ;
 ; DELAY_CHAINs                         ; 0 / 1,262 ( 0 % )       ;
-; Direct links                         ; 35 / 526,400 ( < 1 % )  ;
+; Direct links                         ; 34 / 526,400 ( < 1 % )  ;
 ; HIO Buffers                          ; 1 / 10,528 ( < 1 % )    ;
 ; IO75XDDRFMXCKTREE_CLKDRV_BIG_VCO_REs ; 0 / 8 ( 0 % )           ;
 ; IO75XDDRFMXCKTREE_CLKDRV_GM0_REs     ; 0 / 8 ( 0 % )           ;
@@ -108,14 +108,14 @@ on the Quartus Prime software download page.
 ; IOFBRADAPT_P2C_BUF_INPUTs            ; 0 / 142 ( 0 % )         ;
 ; IOFBRADAPT_P2C_BUF_OUTPUTs           ; 0 / 142 ( 0 % )         ;
 ; Programmable Invert Buffers          ; 0 / 208 ( 0 % )         ;
-; Programmable Invert Inputs           ; 27 / 57,078 ( < 1 % )   ;
-; Programmable Inverts                 ; 27 / 57,078 ( < 1 % )   ;
+; Programmable Invert Inputs           ; 28 / 57,078 ( < 1 % )   ;
+; Programmable Inverts                 ; 28 / 57,078 ( < 1 % )   ;
 ; R0 interconnects                     ; 38 / 401,380 ( < 1 % )  ;
 ; R1 interconnects                     ; 13 / 229,360 ( < 1 % )  ;
 ; R12 interconnects                    ; 0 / 34,404 ( 0 % )      ;
-; R2 interconnects                     ; 8 / 115,620 ( < 1 % )   ;
-; R4 interconnects                     ; 17 / 117,500 ( < 1 % )  ;
-; R6 interconnects                     ; 27 / 118,440 ( < 1 % )  ;
+; R2 interconnects                     ; 7 / 115,620 ( < 1 % )   ;
+; R4 interconnects                     ; 25 / 117,500 ( < 1 % )  ;
+; R6 interconnects                     ; 24 / 118,440 ( < 1 % )  ;
 ; Redundancy Muxes                     ; 1 / 20,728 ( < 1 % )    ;
 ; Row Clock Tap-Offs                   ; 2 / 34,404 ( < 1 % )    ;
 ; Switchbox_clock_muxes                ; 2 / 1,920 ( < 1 % )     ;
@@ -131,9 +131,9 @@ Info (20030): Parallel compilation is enabled and will use 12 of the 12 processo
 Info: *******************************************************************
 Info: Running Quartus Prime Fitter
     Info: Version 26.1.1 Build 130 08/06/2026 SC Pro Edition
-    Info: Processing started: Thu Oct 22 21:41:43 2026
-    Info: System process ID: 42099
-Info: Command: quartus_fit --read_settings_files=on --write_settings_files=off HelloOnDE23Lite -c HelloOnDE23Lite --plan --place --route --retime --finalize
+    Info: Processing started: Thu Oct 22 22:12:13 2026
+    Info: System process ID: 47280
+Info: Command: quartus_fit --read_settings_files=on --write_settings_files=off HelloOnDE23Lite -c HelloOnDE23Lite
 Info: qfit2_default_script.tcl version: #1
 Info: Project  = HelloOnDE23Lite
 Info: Revision = HelloOnDE23Lite
@@ -188,10 +188,10 @@ This report is unavailable in plain text report export.
 ;     --          ;           ;                                   ;             ; KEY0~input              ;
 ; long high speed ; left      ; [(120, 48), (122, 54)]            ; 20.833 %    ;    Long Distance        ;
 ;     --          ;           ;                                   ;             ; SW[2]~input             ;
-;     --          ;           ;                                   ;             ; KEY0~input              ;
 ;     --          ;           ;                                   ;             ; SW[5]~input             ;
 ;     --          ;           ;                                   ;             ; SW[6]~input             ;
 ;     --          ;           ;                                   ;             ; SW[7]~input             ;
+;     --          ;           ;                                   ;             ; KEY0~input              ;
 +-----------------+-----------+-----------------------------------+-------------+-------------------------+
 
 
@@ -200,8 +200,9 @@ This report is unavailable in plain text report export.
 +------------------------------+----------------------+
 ; Net Name                     ; Total Grid Crossings ;
 +------------------------------+----------------------+
-; KEY0~input                   ; 2                    ;
 ; SW[2]~input                  ; 2                    ;
+; KEY0~input                   ; 1                    ;
+; TheHelloDE23|led_status      ; 1                    ;
 ; SW[7]~input                  ; 1                    ;
 ; SW[6]~input                  ; 1                    ;
 ; SW[5]~input                  ; 1                    ;

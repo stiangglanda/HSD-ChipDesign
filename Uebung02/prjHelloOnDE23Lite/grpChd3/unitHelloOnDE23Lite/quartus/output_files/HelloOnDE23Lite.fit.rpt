@@ -1,5 +1,5 @@
 Fitter report for HelloOnDE23Lite
-Thu Oct 22 21:43:11 2026
+Thu Oct 22 22:13:44 2026
 Quartus Prime Version 26.1.1 Build 130 08/06/2026 SC Pro Edition
 
 
@@ -73,7 +73,7 @@ on the Quartus Prime software download page.
 +------------------------------------------------------------------------------+
 ; Fitter Summary                                                               ;
 +---------------------------------+--------------------------------------------+
-; Fitter Status                   ; Successful - Thu Oct 22 21:43:11 2026      ;
+; Fitter Status                   ; Successful - Thu Oct 22 22:13:44 2026      ;
 ; Quartus Prime Version           ; 26.1.1 Build 130 08/06/2026 SC Pro Edition ;
 ; Revision Name                   ; HelloOnDE23Lite                            ;
 ; Top-level Entity Name           ; HelloOnDE23Lite                            ;
@@ -82,7 +82,7 @@ on the Quartus Prime software download page.
 ; Timing Models                   ; Final                                      ;
 ; Power Models                    ; Final                                      ;
 ; Device Status                   ; Final                                      ;
-; Logic utilization (in ALMs)     ; 27 / 45,800 ( < 1 % )                      ;
+; Logic utilization (in ALMs)     ; 25 / 45,800 ( < 1 % )                      ;
 ; Total dedicated logic registers ; 36                                         ;
 ; Total pins                      ; 36 / 208 ( 17 % )                          ;
 ; Total block memory bits         ; 0 / 7,229,440 ( 0 % )                      ;
@@ -1252,12 +1252,12 @@ Note: User assignments will override these defaults. The user specified values a
 +-------------------------------------------------------+------------------------+---------------------+
 ; Statistic                                             ; |                      ; auto_fab_0          ;
 +-------------------------------------------------------+------------------------+---------------------+
-; ALMs needed [=A-B+C]                                  ; 26.5 / 45800 ( < 1 % ) ; 0.0 / 45800 ( 0 % ) ;
-;     [A] ALMs used in final placement                  ; 26.5 / 45800 ( < 1 % ) ; 0.0 / 45800 ( 0 % ) ;
-;     [B] Estimate of ALMs recoverable by dense packing ; 0.0 / 45800 ( 0 % )    ; 0.0 / 45800 ( 0 % ) ;
+; ALMs needed [=A-B+C]                                  ; 25.0 / 45800 ( < 1 % ) ; 0.0 / 45800 ( 0 % ) ;
+;     [A] ALMs used in final placement                  ; 26.0 / 45800 ( < 1 % ) ; 0.0 / 45800 ( 0 % ) ;
+;     [B] Estimate of ALMs recoverable by dense packing ; 1.0 / 45800 ( < 1 % )  ; 0.0 / 45800 ( 0 % ) ;
 ;     [C] Estimate of ALMs unavailable                  ; 0.0 / 45800 ( 0 % )    ; 0.0 / 45800 ( 0 % ) ;
 ; ALMs used for memory                                  ; 0.0                    ; 0.0                 ;
-; Combinational ALUTs                                   ; 48                     ; 0                   ;
+; Combinational ALUTs                                   ; 47                     ; 0                   ;
 ; Dedicated Logic Registers                             ; 29 / 183200 ( < 1 % )  ; 0 / 183200 ( 0 % )  ;
 ; I/O Registers                                         ; 0                      ; 0                   ;
 ; Block Memory Bits                                     ; 0                      ; 0                   ;
@@ -1281,8 +1281,8 @@ Note: User assignments will override these defaults. The user specified values a
 ;     -- Registered Output Connections                  ; 0                      ; 0                   ;
 ;                                                       ;                        ;                     ;
 ; Internal Connections                                  ;                        ;                     ;
-;     -- Total Connections                              ; 359                    ; 1                   ;
-;     -- Registered Connections                         ; 52                     ; 0                   ;
+;     -- Total Connections                              ; 360                    ; 1                   ;
+;     -- Registered Connections                         ; 53                     ; 0                   ;
 ;                                                       ;                        ;                     ;
 ; External Connections                                  ;                        ;                     ;
 ;     -- |                                              ; 0                      ; 1                   ;
@@ -1337,14 +1337,14 @@ To manually specify the size and placement of these signals, use the Assignment 
 +-------------------------------------------------------------+--------------------+-------+
 ; Usage Report Generated after: Finalize                      ;                    ;       ;
 ;                                                             ;                    ;       ;
-; Logic utilization (ALMs needed / total ALMs on device)      ; 27 / 45,800        ; < 1 % ;
-; ALMs needed [=A-B+C]                                        ; 27                 ;       ;
+; Logic utilization (ALMs needed / total ALMs on device)      ; 25 / 45,800        ; < 1 % ;
+; ALMs needed [=A-B+C]                                        ; 25                 ;       ;
 ;     [A] ALMs used in final placement [=a+b+c+d]             ; 27 / 45,800        ; < 1 % ;
 ;         [a] ALMs used for LUT logic and register circuitry  ; 14                 ;       ;
 ;         [b] ALMs used for LUT logic                         ; 12                 ;       ;
 ;         [c] ALMs used for register circuitry                ; 1                  ;       ;
 ;         [d] ALMs used for memory (up to half of total ALMs) ; 0                  ;       ;
-;     [B] Estimate of ALMs recoverable by dense packing       ; 0 / 45,800         ; 0 %   ;
+;     [B] Estimate of ALMs recoverable by dense packing       ; 2 / 45,800         ; < 1 % ;
 ;     [C] Estimate of ALMs unavailable [=a+b+c+d]             ; 0 / 45,800         ; 0 %   ;
 ;         [a] Due to location constrained logic               ; 0                  ;       ;
 ;         [b] Due to LAB-wide signal conflicts                ; 0                  ;       ;
@@ -1353,17 +1353,17 @@ To manually specify the size and placement of these signals, use the Assignment 
 ;                                                             ;                    ;       ;
 ; Difficulty packing design                                   ; Low                ;       ;
 ;                                                             ;                    ;       ;
-; Total LABs:  partially or completely used                   ; 5 / 4,580          ; < 1 % ;
-;     -- Logic LABs                                           ; 5                  ;       ;
+; Total LABs:  partially or completely used                   ; 4 / 4,580          ; < 1 % ;
+;     -- Logic LABs                                           ; 4                  ;       ;
 ;     -- Memory LABs (up to half of total LABs)               ; 0                  ;       ;
 ;                                                             ;                    ;       ;
-; Combinational ALUT usage for logic                          ; 48                 ;       ;
+; Combinational ALUT usage for logic                          ; 47                 ;       ;
 ;     -- 8 input functions                                    ; 0                  ;       ;
 ;     -- 7 input functions                                    ; 0                  ;       ;
 ;     -- 6 input functions                                    ; 2                  ;       ;
 ;     -- 5 input functions                                    ; 2                  ;       ;
 ;     -- 4 input functions                                    ; 15                 ;       ;
-;     -- <=3 input functions                                  ; 29                 ;       ;
+;     -- <=3 input functions                                  ; 28                 ;       ;
 ; Combinational ALUT usage for route-throughs                 ; 1                  ;       ;
 ;                                                             ;                    ;       ;
 ; Dedicated logic registers                                   ; 36                 ;       ;
@@ -1375,7 +1375,7 @@ To manually specify the size and placement of these signals, use the Assignment 
 ;                                                             ;                    ;       ;
 ; Register control circuitry for power estimation             ; 14                 ;       ;
 ;                                                             ;                    ;       ;
-; ALMs adjustment for power estimation                        ; 8                  ;       ;
+; ALMs adjustment for power estimation                        ; 7                  ;       ;
 ;                                                             ;                    ;       ;
 ; I/O pins                                                    ; 36 / 208           ; 17 %  ;
 ;     -- Clock pins                                           ; 4 / 4              ; 100 % ;
@@ -1396,11 +1396,11 @@ To manually specify the size and placement of these signals, use the Assignment 
 ; LVDS_RX blocks                                              ; 0 / 96             ; 0 %   ;
 ; HMC blocks                                                  ; 0 / 4              ; 0 %   ;
 ; Average interconnect usage (total/H/V)                      ; 0.0% / 0.0% / 0.0% ;       ;
-; Peak interconnect usage (total/H/V)                         ; 0.2% / 0.3% / 0.2% ;       ;
+; Peak interconnect usage (total/H/V)                         ; 0.3% / 0.3% / 0.2% ;       ;
 ; Maximum fan-out                                             ; 36                 ;       ;
 ; Highest non-global fan-out                                  ; 34                 ;       ;
-; Total fan-out                                               ; 387                ;       ;
-; Average fan-out                                             ; 1.75               ;       ;
+; Total fan-out                                               ; 388                ;       ;
+; Average fan-out                                             ; 1.76               ;       ;
 +-------------------------------------------------------------+--------------------+-------+
 The Fitter Resource Usage Summary report displays a detailed analysis of logic utilization based on calculations of ALM usage. Refer to <a class="xref" href="https://www.intel.com/content/www/us/en/programmable/quartushelp/current/index.htm#mapIdTopics/mwh1465496451103.htm" target="_blank">Fitter Resource Usage Summary Report</a> in the <i>Intel® Quartus® Prime Pro Edition Help</i> for more information.
 
@@ -1410,9 +1410,9 @@ The Fitter Resource Usage Summary report displays a detailed analysis of logic u
 +---------------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+--------------------------+----------------------------------------+---------------------------------------------------+------+--------+---------------------------------------------------------------------+---------------------------------------------------------------+---------------+
 ; Compilation Hierarchy Node      ; ALMs needed [=A-B+C] ; [A] ALMs used in final placement ; [B] Estimate of ALMs recoverable by dense packing ; [C] Estimate of ALMs unavailable ; ALMs used for memory ; Combinational ALUTs ; Dedicated Logic Registers ; I/O Registers ; Block Memory Bits ; M20Ks ; DSP Blocks needed [=A-B] ; [A] DSP Blocks used in final placement ; [B] Estimate of DSPs recoverable by dense merging ; Pins ; IOPLLs ; Full Hierarchy Name                                                 ; Entity Name                                                   ; Library Name  ;
 +---------------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+--------------------------+----------------------------------------+---------------------------------------------------+------+--------+---------------------------------------------------------------------+---------------------------------------------------------------+---------------+
-; |                               ; 26.5 (0.5)           ; 26.5 (0.5)                       ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 48 (1)              ; 36 (0)                    ; 0 (0)         ; 0                 ; 0     ; 0                        ; 0                                      ; 0                                                 ; 72   ; 0 (0)  ; |                                                                   ; HelloOnDE23Lite                                               ; altera_work   ;
+; |                               ; 25.0 (0.0)           ; 26.0 (0.0)                       ; 1.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 47 (0)              ; 36 (0)                    ; 0 (0)         ; 0                 ; 0     ; 0                        ; 0                                      ; 0                                                 ; 72   ; 0 (0)  ; |                                                                   ; HelloOnDE23Lite                                               ; altera_work   ;
 ;    |ResetReleaseIpInst|         ; 1.0 (1.0)            ; 1.0 (1.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 2 (2)                     ; 0 (0)         ; 0                 ; 0     ; 0                        ; 0                                      ; 0                                                 ; 0    ; 0 (0)  ; ResetReleaseIpInst                                                  ; ResetReleaseIP                                                ; altera_work   ;
-;    |TheHelloDE23|               ; 24.7 (17.7)          ; 25.0 (18.0)                      ; 0.3 (0.3)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 46 (32)             ; 34 (34)                   ; 0 (0)         ; 0                 ; 0     ; 0                        ; 0                                      ; 0                                                 ; 0    ; 0 (0)  ; TheHelloDE23                                                        ; Hello                                                         ; altera_work   ;
+;    |TheHelloDE23|               ; 23.7 (16.7)          ; 25.0 (18.0)                      ; 1.3 (1.3)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 46 (32)             ; 34 (34)                   ; 0 (0)         ; 0                 ; 0     ; 0                        ; 0                                      ; 0                                                 ; 0    ; 0 (0)  ; TheHelloDE23                                                        ; Hello                                                         ; altera_work   ;
 ;       |TheHex0|                 ; 3.5 (3.5)            ; 3.5 (3.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (7)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0                        ; 0                                      ; 0                                                 ; 0    ; 0 (0)  ; TheHelloDE23|TheHex0                                                ; Hex2SevenSegment                                              ; altera_work   ;
 ;       |TheHex1|                 ; 3.5 (3.5)            ; 3.5 (3.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (7)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0                        ; 0                                      ; 0                                                 ; 0    ; 0 (0)  ; TheHelloDE23|TheHex1                                                ; Hex2SevenSegment                                              ; altera_work   ;
 ;    |auto_fab_0|                 ; 0.0 (0.0)            ; 0.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0                        ; 0                                      ; 0                                                 ; 0    ; 0 (0)  ; auto_fab_0                                                          ; alt_sld_fab_0                                                 ; alt_sld_fab_0 ;
@@ -1429,8 +1429,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------+------------+---------------------------------------------------+--------------------------+-----------+--------------------------------+------------------+
 ; Node                 ; Action     ; Operation                                         ; Reason                   ; Node Port ; Destination Node               ; Destination Port ;
 +----------------------+------------+---------------------------------------------------+--------------------------+-----------+--------------------------------+------------------+
-; TheHelloDE23|cnt[10] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization ;           ; TheHelloDE23|cnt[10]~DUPLICATE ;                  ;
-; TheHelloDE23|cnt[11] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization ;           ; TheHelloDE23|cnt[11]~DUPLICATE ;                  ;
+; TheHelloDE23|cnt[12] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization ;           ; TheHelloDE23|cnt[12]~DUPLICATE ;                  ;
+; TheHelloDE23|cnt[13] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization ;           ; TheHelloDE23|cnt[13]~DUPLICATE ;                  ;
 ; TheHelloDE23|cnt[14] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization ;           ; TheHelloDE23|cnt[14]~DUPLICATE ;                  ;
 ; TheHelloDE23|cnt[16] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization ;           ; TheHelloDE23|cnt[16]~DUPLICATE ;                  ;
 ; TheHelloDE23|cnt[18] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization ;           ; TheHelloDE23|cnt[18]~DUPLICATE ;                  ;
@@ -1490,14 +1490,14 @@ Note: Retiming optimizations are not included in this table.
 ; Routing Resource Type                ; Usage                   ;
 +--------------------------------------+-------------------------+
 ; Block Input Mux Wrapbacks            ; 0 / 43,616 ( 0 % )      ;
-; Block Input Muxes                    ; 168 / 500,456 ( < 1 % ) ;
-; Block interconnects                  ; 105 / 526,400 ( < 1 % ) ;
-; C1 interconnects                     ; 44 / 234,240 ( < 1 % )  ;
+; Block Input Muxes                    ; 170 / 500,456 ( < 1 % ) ;
+; Block interconnects                  ; 106 / 526,400 ( < 1 % ) ;
+; C1 interconnects                     ; 47 / 234,240 ( < 1 % )  ;
 ; C4 interconnects                     ; 11 / 229,360 ( < 1 % )  ;
 ; C8 interconnects                     ; 0 / 22,936 ( 0 % )      ;
 ; DCM_muxes                            ; 1 / 216 ( < 1 % )       ;
 ; DELAY_CHAINs                         ; 0 / 1,262 ( 0 % )       ;
-; Direct links                         ; 35 / 526,400 ( < 1 % )  ;
+; Direct links                         ; 34 / 526,400 ( < 1 % )  ;
 ; HIO Buffers                          ; 1 / 10,528 ( < 1 % )    ;
 ; IO75XDDRFMXCKTREE_CLKDRV_BIG_VCO_REs ; 0 / 8 ( 0 % )           ;
 ; IO75XDDRFMXCKTREE_CLKDRV_GM0_REs     ; 0 / 8 ( 0 % )           ;
@@ -1510,14 +1510,14 @@ Note: Retiming optimizations are not included in this table.
 ; IOFBRADAPT_P2C_BUF_INPUTs            ; 0 / 142 ( 0 % )         ;
 ; IOFBRADAPT_P2C_BUF_OUTPUTs           ; 0 / 142 ( 0 % )         ;
 ; Programmable Invert Buffers          ; 0 / 208 ( 0 % )         ;
-; Programmable Invert Inputs           ; 27 / 57,078 ( < 1 % )   ;
-; Programmable Inverts                 ; 27 / 57,078 ( < 1 % )   ;
+; Programmable Invert Inputs           ; 28 / 57,078 ( < 1 % )   ;
+; Programmable Inverts                 ; 28 / 57,078 ( < 1 % )   ;
 ; R0 interconnects                     ; 38 / 401,380 ( < 1 % )  ;
 ; R1 interconnects                     ; 13 / 229,360 ( < 1 % )  ;
 ; R12 interconnects                    ; 0 / 34,404 ( 0 % )      ;
-; R2 interconnects                     ; 8 / 115,620 ( < 1 % )   ;
-; R4 interconnects                     ; 17 / 117,500 ( < 1 % )  ;
-; R6 interconnects                     ; 27 / 118,440 ( < 1 % )  ;
+; R2 interconnects                     ; 7 / 115,620 ( < 1 % )   ;
+; R4 interconnects                     ; 25 / 117,500 ( < 1 % )  ;
+; R6 interconnects                     ; 24 / 118,440 ( < 1 % )  ;
 ; Redundancy Muxes                     ; 1 / 20,728 ( < 1 % )    ;
 ; Row Clock Tap-Offs                   ; 2 / 34,404 ( < 1 % )    ;
 ; Switchbox_clock_muxes                ; 2 / 1,920 ( < 1 % )     ;
@@ -1559,10 +1559,10 @@ This report is unavailable in plain text report export.
 ;     --          ;           ;                                   ;             ; KEY0~input              ;
 ; long high speed ; left      ; [(120, 48), (122, 54)]            ; 20.833 %    ;    Long Distance        ;
 ;     --          ;           ;                                   ;             ; SW[2]~input             ;
-;     --          ;           ;                                   ;             ; KEY0~input              ;
 ;     --          ;           ;                                   ;             ; SW[5]~input             ;
 ;     --          ;           ;                                   ;             ; SW[6]~input             ;
 ;     --          ;           ;                                   ;             ; SW[7]~input             ;
+;     --          ;           ;                                   ;             ; KEY0~input              ;
 +-----------------+-----------+-----------------------------------+-------------+-------------------------+
 
 
@@ -1571,8 +1571,9 @@ This report is unavailable in plain text report export.
 +------------------------------+----------------------+
 ; Net Name                     ; Total Grid Crossings ;
 +------------------------------+----------------------+
-; KEY0~input                   ; 2                    ;
 ; SW[2]~input                  ; 2                    ;
+; KEY0~input                   ; 1                    ;
+; TheHelloDE23|led_status      ; 1                    ;
 ; SW[7]~input                  ; 1                    ;
 ; SW[6]~input                  ; 1                    ;
 ; SW[5]~input                  ; 1                    ;
@@ -1635,14 +1636,14 @@ Clock Domain CLOCK0_50 (Meets timing requirements: No further analysis performed
 ; Routing Resource Type                ; Usage                   ;
 +--------------------------------------+-------------------------+
 ; Block Input Mux Wrapbacks            ; 0 / 43,616 ( 0 % )      ;
-; Block Input Muxes                    ; 168 / 500,456 ( < 1 % ) ;
-; Block interconnects                  ; 105 / 526,400 ( < 1 % ) ;
-; C1 interconnects                     ; 44 / 234,240 ( < 1 % )  ;
+; Block Input Muxes                    ; 170 / 500,456 ( < 1 % ) ;
+; Block interconnects                  ; 106 / 526,400 ( < 1 % ) ;
+; C1 interconnects                     ; 47 / 234,240 ( < 1 % )  ;
 ; C4 interconnects                     ; 11 / 229,360 ( < 1 % )  ;
 ; C8 interconnects                     ; 0 / 22,936 ( 0 % )      ;
 ; DCM_muxes                            ; 1 / 216 ( < 1 % )       ;
 ; DELAY_CHAINs                         ; 0 / 1,262 ( 0 % )       ;
-; Direct links                         ; 35 / 526,400 ( < 1 % )  ;
+; Direct links                         ; 34 / 526,400 ( < 1 % )  ;
 ; HIO Buffers                          ; 1 / 10,528 ( < 1 % )    ;
 ; IO75XDDRFMXCKTREE_CLKDRV_BIG_VCO_REs ; 0 / 8 ( 0 % )           ;
 ; IO75XDDRFMXCKTREE_CLKDRV_GM0_REs     ; 0 / 8 ( 0 % )           ;
@@ -1655,14 +1656,14 @@ Clock Domain CLOCK0_50 (Meets timing requirements: No further analysis performed
 ; IOFBRADAPT_P2C_BUF_INPUTs            ; 0 / 142 ( 0 % )         ;
 ; IOFBRADAPT_P2C_BUF_OUTPUTs           ; 0 / 142 ( 0 % )         ;
 ; Programmable Invert Buffers          ; 0 / 208 ( 0 % )         ;
-; Programmable Invert Inputs           ; 27 / 57,078 ( < 1 % )   ;
-; Programmable Inverts                 ; 27 / 57,078 ( < 1 % )   ;
+; Programmable Invert Inputs           ; 28 / 57,078 ( < 1 % )   ;
+; Programmable Inverts                 ; 28 / 57,078 ( < 1 % )   ;
 ; R0 interconnects                     ; 38 / 401,380 ( < 1 % )  ;
 ; R1 interconnects                     ; 13 / 229,360 ( < 1 % )  ;
 ; R12 interconnects                    ; 0 / 34,404 ( 0 % )      ;
-; R2 interconnects                     ; 8 / 115,620 ( < 1 % )   ;
-; R4 interconnects                     ; 17 / 117,500 ( < 1 % )  ;
-; R6 interconnects                     ; 27 / 118,440 ( < 1 % )  ;
+; R2 interconnects                     ; 7 / 115,620 ( < 1 % )   ;
+; R4 interconnects                     ; 25 / 117,500 ( < 1 % )  ;
+; R6 interconnects                     ; 24 / 118,440 ( < 1 % )  ;
 ; Redundancy Muxes                     ; 1 / 20,728 ( < 1 % )    ;
 ; Row Clock Tap-Offs                   ; 2 / 34,404 ( < 1 % )    ;
 ; Switchbox_clock_muxes                ; 2 / 1,920 ( < 1 % )     ;
@@ -1850,7 +1851,7 @@ Make sure the file exists and is up to date, and you have permission to read and
 Info (16677): Loading synthesized database.
 Info (16734): Loading "synthesized" snapshot for partition "root_partition".
 Info (16734): Loading "synthesized" snapshot for partition "auto_fab_0".
-Info (16678): Successfully loaded synthesized database: elapsed time is 00:00:05.
+Info (16678): Successfully loaded synthesized database: elapsed time is 00:00:04.
 Info (119006): Selected device A3CZ135BB18AE7S for design "HelloOnDE23Lite"
 Info (21076): High junction temperature operating condition is not set. Assuming a default value of '100'.
 Info (21076): Low junction temperature operating condition is not set. Assuming a default value of '0'.
@@ -1859,7 +1860,7 @@ Info (21076): High junction temperature operating condition is not set. Assuming
 Info (21076): Low junction temperature operating condition is not set. Assuming a default value of '0'.
 Info (12262): Starting Fitter periphery placement operations
 Info (12290): Loading the periphery placement data.
-Info (12291): Periphery placement data loaded: elapsed time is 00:00:16
+Info (12291): Periphery placement data loaded: elapsed time is 00:00:17
 Info (12627): Pin ~ALTERA_OSC_CLK_1~ is reserved at location BB44
 Info (12627): Pin ~ALTERA_AS_DATA1~ is reserved at location T48
 Info (12627): Pin ~ALTERA_AS_nCSO0,ALTERA_MSEL0~ is reserved at location AH44
@@ -1889,9 +1890,9 @@ Info (332111): Found 2 clocks
 Info (176233): Starting register packing
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
-Info (20274): Successfully committed planned database.
+Info (20273): Intermediate fitter snapshots will not be committed because ENABLE_INTERMEDIATE_SNAPSHOTS QSF assignment is disabled during compilation.
 Info (21624): Not running Design Assistant in plan stage because there is no enabled rule to check
-Info (12517): Periphery placement operations ending: elapsed time is 00:00:51
+Info (12517): Periphery placement operations ending: elapsed time is 00:00:53
 Warning (15705): Ignored locations or region assignments to the following nodes
     Warning (15706): Node "CLOCK1_50" is assigned to location or region, but does not exist in design
     Warning (15706): Node "DRAM_ADDR[0]" is assigned to location or region, but does not exist in design
@@ -2055,7 +2056,7 @@ Warning (15705): Ignored locations or region assignments to the following nodes
     Warning (15706): Node "KEY3" is assigned to location or region, but does not exist in design
     Warning (15706): Node "UART_RX" is assigned to location or region, but does not exist in design
     Warning (15706): Node "UART_TX" is assigned to location or region, but does not exist in design
-Info (11165): Fitter preparation operations ending: elapsed time is 00:00:32
+Info (11165): Fitter preparation operations ending: elapsed time is 00:00:35
 Info (18252): The Fitter is using Physical Synthesis.
 Info (18258): Fitter Physical Synthesis operations beginning
 Info (18259): Fitter Physical Synthesis operations ending: elapsed time is 00:00:00
@@ -2069,7 +2070,6 @@ Info (170191): Fitter placement operations beginning
 Info (170137): Fitter placement was successful
 Info (170192): Fitter placement operations ending: elapsed time is 00:00:01
 Info (11888): Total time spent on timing analysis during Placement is 0.00 seconds.
-Info (20274): Successfully committed placed database.
 Info (21624): Not running Design Assistant in place stage because there is no enabled rule to check
 Info (22300): Design uses Placement Effort Multiplier = 0.8.
 Info (170193): Fitter routing operations beginning
@@ -2087,25 +2087,23 @@ Info (20215): Router estimated peak long high speed interconnect demand : 20% of
 Info (170239): Router is attempting to preserve 1.67 percent of routes from an earlier compilation, a user specified Routing Constraints File, or internal routing requirements.
 Info (11888): Total time spent on timing analysis during Routing is 0.03 seconds.
 Info (16607): Fitter routing operations ending: elapsed time is 00:00:06
-Info (20274): Successfully committed routed database.
 Info (17966): Starting Hyper-Retimer operations.
 Info (18914): The Hyper-Retimer was unable to optimize the design due to retiming restrictions. Run Fast Forward Timing Closure Recommendations to see step-by-step suggestions for design changes and show the estimated performance improvement from making these changes.
 Info (17968): Completed Hyper-Retimer operations.
-Info (18821): Fitter Hyper-Retimer operations ending: elapsed time is 00:00:01
-Info (20274): Successfully committed retimed database.
+Info (18821): Fitter Hyper-Retimer operations ending: elapsed time is 00:00:00
 Info (21076): High junction temperature operating condition is not set. Assuming a default value of '100'.
 Info (21076): Low junction temperature operating condition is not set. Assuming a default value of '0'.
 Info (18258): Fitter Physical Synthesis operations beginning
 Info (18259): Fitter Physical Synthesis operations ending: elapsed time is 00:00:00
 Info (24604): Global preservation of unused transceiver channels is enabled. All unused transceiver channels will be preserved.
-Info (16557): Fitter post-fit operations ending: elapsed time is 00:00:10
+Info (16557): Fitter post-fit operations ending: elapsed time is 00:00:09
 Info (20274): Successfully committed final database.
 Info (21624): Not running Design Assistant in finalize stage because there is no enabled rule to check
 Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
 Info: Quartus Prime Fitter was successful. 0 errors, 164 warnings
-    Info: Peak virtual memory: 6543 megabytes
-    Info: Processing ended: Thu Oct 22 21:43:11 2026
-    Info: Elapsed time: 00:01:28
-    Info: System process ID: 42099
+    Info: Peak virtual memory: 6471 megabytes
+    Info: Processing ended: Thu Oct 22 22:13:44 2026
+    Info: Elapsed time: 00:01:31
+    Info: System process ID: 47280
 
 

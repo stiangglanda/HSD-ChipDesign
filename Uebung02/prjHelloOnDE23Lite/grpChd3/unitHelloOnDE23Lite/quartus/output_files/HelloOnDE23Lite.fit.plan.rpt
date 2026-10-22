@@ -1,5 +1,5 @@
 Fitter Plan Stage Report for HelloOnDE23Lite
-Thu Oct 22 21:42:35 2026
+Thu Oct 22 22:13:07 2026
 Quartus Prime Version 26.1.1 Build 130 08/06/2026 SC Pro Edition
 
 
@@ -1103,7 +1103,7 @@ Make sure the file exists and is up to date, and you have permission to read and
 Info (16677): Loading synthesized database.
 Info (16734): Loading "synthesized" snapshot for partition "root_partition".
 Info (16734): Loading "synthesized" snapshot for partition "auto_fab_0".
-Info (16678): Successfully loaded synthesized database: elapsed time is 00:00:05.
+Info (16678): Successfully loaded synthesized database: elapsed time is 00:00:04.
 Info (119006): Selected device A3CZ135BB18AE7S for design "HelloOnDE23Lite"
 Info (21076): High junction temperature operating condition is not set. Assuming a default value of '100'.
 Info (21076): Low junction temperature operating condition is not set. Assuming a default value of '0'.
@@ -1112,7 +1112,7 @@ Info (21076): High junction temperature operating condition is not set. Assuming
 Info (21076): Low junction temperature operating condition is not set. Assuming a default value of '0'.
 Info (12262): Starting Fitter periphery placement operations
 Info (12290): Loading the periphery placement data.
-Info (12291): Periphery placement data loaded: elapsed time is 00:00:16
+Info (12291): Periphery placement data loaded: elapsed time is 00:00:17
 Info (12627): Pin ~ALTERA_OSC_CLK_1~ is reserved at location BB44
 Info (12627): Pin ~ALTERA_AS_DATA1~ is reserved at location T48
 Info (12627): Pin ~ALTERA_AS_nCSO0,ALTERA_MSEL0~ is reserved at location AH44
@@ -1142,6 +1142,6 @@ Info (332111): Found 2 clocks
 Info (176233): Starting register packing
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
-Info (20274): Successfully committed planned database.
+Info (20273): Intermediate fitter snapshots will not be committed because ENABLE_INTERMEDIATE_SNAPSHOTS QSF assignment is disabled during compilation.
 
 

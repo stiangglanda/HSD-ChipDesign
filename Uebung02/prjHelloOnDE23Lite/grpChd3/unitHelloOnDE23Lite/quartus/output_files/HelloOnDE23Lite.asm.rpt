@@ -1,5 +1,5 @@
 Assembler report for HelloOnDE23Lite
-Thu Oct 22 21:43:43 2026
+Thu Oct 22 22:14:16 2026
 Quartus Prime Version 26.1.1 Build 130 08/06/2026 SC Pro Edition
 
 
@@ -40,7 +40,7 @@ on the Quartus Prime software download page.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Thu Oct 22 21:43:43 2026 ;
+; Assembler Status      ; Successful - Thu Oct 22 22:14:16 2026 ;
 ; Revision Name         ; HelloOnDE23Lite                       ;
 ; Top-level Entity Name ; HelloOnDE23Lite                       ;
 ; Family                ; Agilex 3                              ;
@@ -158,8 +158,8 @@ on the Quartus Prime software download page.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 26.1.1 Build 130 08/06/2026 SC Pro Edition
-    Info: Processing started: Thu Oct 22 21:43:25 2026
-    Info: System process ID: 43095
+    Info: Processing started: Thu Oct 22 22:13:58 2026
+    Info: System process ID: 48348
 Info: Command: quartus_asm --read_settings_files=on --write_settings_files=off HelloOnDE23Lite -c HelloOnDE23Lite
 Info (16677): Loading final database.
 Info (16734): Loading "final" snapshot for partition "root_partition".
@@ -169,9 +169,9 @@ Info (20553): Using CVP Hash 90d641ed69a3e99d878663fe4818a42d313c451cbc5eeb210c3
 Info (20553): Using HPS IO Hash 0000111122223333444455556666777788889999AAAABBBBCCCCDDDDEEEEFFFF
 Info: Quartus Prime Assembler was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 4185 megabytes
-    Info: Processing ended: Thu Oct 22 21:43:43 2026
+    Info: Processing ended: Thu Oct 22 22:14:16 2026
     Info: Elapsed time: 00:00:18
-    Info: System process ID: 43095
+    Info: System process ID: 48348
 
 
 +------------------------------------------------+
@@ -199,8 +199,8 @@ Info: Quartus Prime Assembler was successful. 0 errors, 0 warnings
 ; Option         ; Setting                                                           ;
 +----------------+-------------------------------------------------------------------+
 ; JTAG usercode  ; 0xFFFFFFFF                                                        ;
-; Checksum       ; 0x0613A6AA                                                        ;
-; Design hash    ; 836AB5ECEF1055D21485AB003F23CFFABE55D3C2780C2FDBD54F59B51308B94E  ;
+; Checksum       ; 0x0613A8FC                                                        ;
+; Design hash    ; 77875547A1CC90F8D1A291F5B4CEFE96DEEAB25F48B51D5C83E2EC7AB404A3A8  ;
 ; HPS IO hash    ; 0000111122223333444455556666777788889999AAAABBBBCCCCDDDDEEEEFFFF  ;
 +----------------+-------------------------------------------------------------------+
 

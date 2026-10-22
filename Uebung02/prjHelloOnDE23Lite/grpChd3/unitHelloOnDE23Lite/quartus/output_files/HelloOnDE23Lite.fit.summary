@@ -1,4 +1,4 @@
-Fitter Status : Successful - Thu Oct 22 21:43:11 2026
+Fitter Status : Successful - Thu Oct 22 22:13:44 2026
 Quartus Prime Version : 26.1.1 Build 130 08/06/2026 SC Pro Edition
 Revision Name : HelloOnDE23Lite
 Top-level Entity Name : HelloOnDE23Lite
@@ -7,7 +7,7 @@ Device : A3CZ135BB18AE7S
 Timing Models : Final
 Power Models : Final
 Device Status : Final
-Logic utilization (in ALMs) : 27 / 45,800 ( < 1 % )
+Logic utilization (in ALMs) : 25 / 45,800 ( < 1 % )
 Total dedicated logic registers : 36
 Total pins : 36 / 208 ( 17 % )
 Total block memory bits : 0 / 7,229,440 ( 0 % )

@@ -1,5 +1,5 @@
 Fitter Place Stage Report for HelloOnDE23Lite
-Thu Oct 22 21:42:51 2026
+Thu Oct 22 22:13:24 2026
 Quartus Prime Version 26.1.1 Build 130 08/06/2026 SC Pro Edition
 
 
@@ -44,14 +44,14 @@ on the Quartus Prime software download page.
 +-------------------------------------------------------------+---------------+-------+
 ; Usage Report Generated after: Place                         ;               ;       ;
 ;                                                             ;               ;       ;
-; Logic utilization (ALMs needed / total ALMs on device)      ; 27 / 45,800   ; < 1 % ;
-; ALMs needed [=A-B+C]                                        ; 27            ;       ;
+; Logic utilization (ALMs needed / total ALMs on device)      ; 25 / 45,800   ; < 1 % ;
+; ALMs needed [=A-B+C]                                        ; 25            ;       ;
 ;     [A] ALMs used in final placement [=a+b+c+d]             ; 27 / 45,800   ; < 1 % ;
 ;         [a] ALMs used for LUT logic and register circuitry  ; 14            ;       ;
 ;         [b] ALMs used for LUT logic                         ; 12            ;       ;
 ;         [c] ALMs used for register circuitry                ; 1             ;       ;
 ;         [d] ALMs used for memory (up to half of total ALMs) ; 0             ;       ;
-;     [B] Estimate of ALMs recoverable by dense packing       ; 0 / 45,800    ; 0 %   ;
+;     [B] Estimate of ALMs recoverable by dense packing       ; 2 / 45,800    ; < 1 % ;
 ;     [C] Estimate of ALMs unavailable [=a+b+c+d]             ; 0 / 45,800    ; 0 %   ;
 ;         [a] Due to location constrained logic               ; 0             ;       ;
 ;         [b] Due to LAB-wide signal conflicts                ; 0             ;       ;
@@ -60,17 +60,17 @@ on the Quartus Prime software download page.
 ;                                                             ;               ;       ;
 ; Difficulty packing design                                   ; Low           ;       ;
 ;                                                             ;               ;       ;
-; Total LABs:  partially or completely used                   ; 5 / 4,580     ; < 1 % ;
-;     -- Logic LABs                                           ; 5             ;       ;
+; Total LABs:  partially or completely used                   ; 4 / 4,580     ; < 1 % ;
+;     -- Logic LABs                                           ; 4             ;       ;
 ;     -- Memory LABs (up to half of total LABs)               ; 0             ;       ;
 ;                                                             ;               ;       ;
-; Combinational ALUT usage for logic                          ; 48            ;       ;
+; Combinational ALUT usage for logic                          ; 47            ;       ;
 ;     -- 8 input functions                                    ; 0             ;       ;
 ;     -- 7 input functions                                    ; 0             ;       ;
 ;     -- 6 input functions                                    ; 2             ;       ;
 ;     -- 5 input functions                                    ; 2             ;       ;
 ;     -- 4 input functions                                    ; 15            ;       ;
-;     -- <=3 input functions                                  ; 29            ;       ;
+;     -- <=3 input functions                                  ; 28            ;       ;
 ; Combinational ALUT usage for route-throughs                 ; 0             ;       ;
 ;                                                             ;               ;       ;
 ; Dedicated logic registers                                   ; 29            ;       ;
@@ -82,7 +82,7 @@ on the Quartus Prime software download page.
 ;                                                             ;               ;       ;
 ; Register control circuitry for power estimation             ; 0             ;       ;
 ;                                                             ;               ;       ;
-; ALMs adjustment for power estimation                        ; 8             ;       ;
+; ALMs adjustment for power estimation                        ; 7             ;       ;
 ;                                                             ;               ;       ;
 ; I/O pins                                                    ; 36 / 208      ; 17 %  ;
 ;     -- Clock pins                                           ; 4 / 4         ; 100 % ;
@@ -104,8 +104,8 @@ on the Quartus Prime software download page.
 ; HMC blocks                                                  ; 0 / 4         ; 0 %   ;
 ; Maximum fan-out                                             ; 29            ;       ;
 ; Highest non-global fan-out                                  ; 27            ;       ;
-; Total fan-out                                               ; 359           ;       ;
-; Average fan-out                                             ; 1.68          ;       ;
+; Total fan-out                                               ; 360           ;       ;
+; Average fan-out                                             ; 1.69          ;       ;
 +-------------------------------------------------------------+---------------+-------+
 The Fitter Resource Usage Summary report displays a detailed analysis of logic utilization based on calculations of ALM usage. Refer to <a class="xref" href="https://www.intel.com/content/www/us/en/programmable/quartushelp/current/index.htm#mapIdTopics/mwh1465496451103.htm" target="_blank">Fitter Resource Usage Summary Report</a> in the <i>Intel® Quartus® Prime Pro Edition Help</i> for more information.
 
@@ -115,9 +115,9 @@ The Fitter Resource Usage Summary report displays a detailed analysis of logic u
 +---------------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+--------------------------+----------------------------------------+---------------------------------------------------+------+--------+---------------------------------------------------------------------+---------------------------------------------------------------+---------------+
 ; Compilation Hierarchy Node      ; ALMs needed [=A-B+C] ; [A] ALMs used in final placement ; [B] Estimate of ALMs recoverable by dense packing ; [C] Estimate of ALMs unavailable ; ALMs used for memory ; Combinational ALUTs ; Dedicated Logic Registers ; I/O Registers ; Block Memory Bits ; M20Ks ; DSP Blocks needed [=A-B] ; [A] DSP Blocks used in final placement ; [B] Estimate of DSPs recoverable by dense merging ; Pins ; IOPLLs ; Full Hierarchy Name                                                 ; Entity Name                                                   ; Library Name  ;
 +---------------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+--------------------------+----------------------------------------+---------------------------------------------------+------+--------+---------------------------------------------------------------------+---------------------------------------------------------------+---------------+
-; |                               ; 26.5 (0.5)           ; 26.5 (0.5)                       ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 48 (1)              ; 29 (0)                    ; 0 (0)         ; 0                 ; 0     ; 0                        ; 0                                      ; 0                                                 ; 72   ; 0 (0)  ; |                                                                   ; HelloOnDE23Lite                                               ; altera_work   ;
+; |                               ; 25.0 (0.0)           ; 26.0 (0.0)                       ; 1.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 47 (0)              ; 29 (0)                    ; 0 (0)         ; 0                 ; 0     ; 0                        ; 0                                      ; 0                                                 ; 72   ; 0 (0)  ; |                                                                   ; HelloOnDE23Lite                                               ; altera_work   ;
 ;    |ResetReleaseIpInst|         ; 1.0 (1.0)            ; 1.0 (1.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 2 (2)                     ; 0 (0)         ; 0                 ; 0     ; 0                        ; 0                                      ; 0                                                 ; 0    ; 0 (0)  ; ResetReleaseIpInst                                                  ; ResetReleaseIP                                                ; altera_work   ;
-;    |TheHelloDE23|               ; 24.7 (17.7)          ; 25.0 (18.0)                      ; 0.3 (0.3)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 46 (32)             ; 27 (27)                   ; 0 (0)         ; 0                 ; 0     ; 0                        ; 0                                      ; 0                                                 ; 0    ; 0 (0)  ; TheHelloDE23                                                        ; Hello                                                         ; altera_work   ;
+;    |TheHelloDE23|               ; 23.7 (16.7)          ; 25.0 (18.0)                      ; 1.3 (1.3)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 46 (32)             ; 27 (27)                   ; 0 (0)         ; 0                 ; 0     ; 0                        ; 0                                      ; 0                                                 ; 0    ; 0 (0)  ; TheHelloDE23                                                        ; Hello                                                         ; altera_work   ;
 ;       |TheHex0|                 ; 3.5 (3.5)            ; 3.5 (3.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (7)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0                        ; 0                                      ; 0                                                 ; 0    ; 0 (0)  ; TheHelloDE23|TheHex0                                                ; Hex2SevenSegment                                              ; altera_work   ;
 ;       |TheHex1|                 ; 3.5 (3.5)            ; 3.5 (3.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (7)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0                        ; 0                                      ; 0                                                 ; 0    ; 0 (0)  ; TheHelloDE23|TheHex1                                                ; Hex2SevenSegment                                              ; altera_work   ;
 ;    |auto_fab_0|                 ; 0.0 (0.0)            ; 0.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0                        ; 0                                      ; 0                                                 ; 0    ; 0 (0)  ; auto_fab_0                                                          ; alt_sld_fab_0                                                 ; alt_sld_fab_0 ;
@@ -134,12 +134,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------------------------------+------------------------+---------------------+
 ; Statistic                                             ; |                      ; auto_fab_0          ;
 +-------------------------------------------------------+------------------------+---------------------+
-; ALMs needed [=A-B+C]                                  ; 26.5 / 45800 ( < 1 % ) ; 0.0 / 45800 ( 0 % ) ;
-;     [A] ALMs used in final placement                  ; 26.5 / 45800 ( < 1 % ) ; 0.0 / 45800 ( 0 % ) ;
-;     [B] Estimate of ALMs recoverable by dense packing ; 0.0 / 45800 ( 0 % )    ; 0.0 / 45800 ( 0 % ) ;
+; ALMs needed [=A-B+C]                                  ; 25.0 / 45800 ( < 1 % ) ; 0.0 / 45800 ( 0 % ) ;
+;     [A] ALMs used in final placement                  ; 26.0 / 45800 ( < 1 % ) ; 0.0 / 45800 ( 0 % ) ;
+;     [B] Estimate of ALMs recoverable by dense packing ; 1.0 / 45800 ( < 1 % )  ; 0.0 / 45800 ( 0 % ) ;
 ;     [C] Estimate of ALMs unavailable                  ; 0.0 / 45800 ( 0 % )    ; 0.0 / 45800 ( 0 % ) ;
 ; ALMs used for memory                                  ; 0.0                    ; 0.0                 ;
-; Combinational ALUTs                                   ; 48                     ; 0                   ;
+; Combinational ALUTs                                   ; 47                     ; 0                   ;
 ; Dedicated Logic Registers                             ; 29 / 183200 ( < 1 % )  ; 0 / 183200 ( 0 % )  ;
 ; I/O Registers                                         ; 0                      ; 0                   ;
 ; Block Memory Bits                                     ; 0                      ; 0                   ;
@@ -163,8 +163,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;     -- Registered Output Connections                  ; 0                      ; 0                   ;
 ;                                                       ;                        ;                     ;
 ; Internal Connections                                  ;                        ;                     ;
-;     -- Total Connections                              ; 359                    ; 1                   ;
-;     -- Registered Connections                         ; 52                     ; 0                   ;
+;     -- Total Connections                              ; 360                    ; 1                   ;
+;     -- Registered Connections                         ; 53                     ; 0                   ;
 ;                                                       ;                        ;                     ;
 ; External Connections                                  ;                        ;                     ;
 ;     -- |                                              ; 0                      ; 1                   ;
@@ -219,9 +219,9 @@ Info (20030): Parallel compilation is enabled and will use 12 of the 12 processo
 Info: *******************************************************************
 Info: Running Quartus Prime Fitter
     Info: Version 26.1.1 Build 130 08/06/2026 SC Pro Edition
-    Info: Processing started: Thu Oct 22 21:41:43 2026
-    Info: System process ID: 42099
-Info: Command: quartus_fit --read_settings_files=on --write_settings_files=off HelloOnDE23Lite -c HelloOnDE23Lite --plan --place --route --retime --finalize
+    Info: Processing started: Thu Oct 22 22:12:13 2026
+    Info: System process ID: 47280
+Info: Command: quartus_fit --read_settings_files=on --write_settings_files=off HelloOnDE23Lite -c HelloOnDE23Lite
 Info: qfit2_default_script.tcl version: #1
 Info: Project  = HelloOnDE23Lite
 Info: Revision = HelloOnDE23Lite
@@ -388,7 +388,7 @@ Warning (15705): Ignored locations or region assignments to the following nodes
     Warning (15706): Node "KEY3" is assigned to location or region, but does not exist in design
     Warning (15706): Node "UART_RX" is assigned to location or region, but does not exist in design
     Warning (15706): Node "UART_TX" is assigned to location or region, but does not exist in design
-Info (11165): Fitter preparation operations ending: elapsed time is 00:00:32
+Info (11165): Fitter preparation operations ending: elapsed time is 00:00:35
 Info (18252): The Fitter is using Physical Synthesis.
 Info (18258): Fitter Physical Synthesis operations beginning
 Info (18259): Fitter Physical Synthesis operations ending: elapsed time is 00:00:00

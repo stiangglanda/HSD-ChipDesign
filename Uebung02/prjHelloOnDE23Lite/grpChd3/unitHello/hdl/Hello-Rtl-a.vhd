@@ -57,7 +57,7 @@ begin  -- Rtl
     end if;
   end process;
 
-  oLed(8) <= '1';
+  oLed(8) <= '1' when led_status else '0'; -- LED(8) shows heartbeat to avoid warnings
   oLed(9) <= '1' when led_status else '0';
 
 -- ---------------------------------------------------------------------------

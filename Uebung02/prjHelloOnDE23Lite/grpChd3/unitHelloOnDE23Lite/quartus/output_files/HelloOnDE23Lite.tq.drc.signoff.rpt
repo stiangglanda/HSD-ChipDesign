@@ -1,5 +1,5 @@
 Design Assistant report for HelloOnDE23Lite
-Thu Oct 22 21:43:22 2026
+Thu Oct 22 22:13:55 2026
 Quartus Prime Version 26.1.1 Build 130 08/06/2026 SC Pro Edition
 
 
@@ -8,9 +8,9 @@ Quartus Prime Version 26.1.1 Build 130 08/06/2026 SC Pro Edition
 ---------------------
   1. Legal Notice
   2. Design Assistant (Signoff) Results - 3 of 73 Rules Failed
-  3. RES-50001 - Asynchronous Reset Is Not Synchronized
-  4. TMC-20011 - Missing Input Delay Constraint
-  5. TMC-20012 - Missing Output Delay Constraint
+  3. TMC-20012 - Missing Output Delay Constraint
+  4. RES-50001 - Asynchronous Reset Is Not Synchronized
+  5. TMC-20011 - Missing Input Delay Constraint
   6. CDC-50001 - 1-Bit Asynchronous Transfer Not Synchronized
   7. CDC-50002 - 1-Bit Asynchronous Transfer with Insufficient Constraints
   8. CDC-50003 - CE-Type CDC Transfer with Insufficient Constraints
@@ -109,9 +109,9 @@ on the Quartus Prime software download page.
 +----------------------------------------------------------------------------------------------------------+----------+------------+--------+------------------------------------------------+
 ; Rule                                                                                                     ; Severity ; Violations ; Waived ; Tags                                           ;
 +----------------------------------------------------------------------------------------------------------+----------+------------+--------+------------------------------------------------+
+; TMC-20012 - Missing Output Delay Constraint                                                              ; High     ; 2          ; 0      ; sdc, system                                    ;
 ; RES-50001 - Asynchronous Reset Is Not Synchronized                                                       ; High     ; 1          ; 0      ; synchronizer                                   ;
 ; TMC-20011 - Missing Input Delay Constraint                                                               ; High     ; 1          ; 0      ; sdc, system                                    ;
-; TMC-20012 - Missing Output Delay Constraint                                                              ; High     ; 1          ; 0      ; sdc, system                                    ;
 ; CDC-50001 - 1-Bit Asynchronous Transfer Not Synchronized                                                 ; High     ; 0          ; 0      ; synchronizer                                   ;
 ; CDC-50002 - 1-Bit Asynchronous Transfer with Insufficient Constraints                                    ; High     ; 0          ; 0      ; synchronizer                                   ;
 ; CDC-50003 - CE-Type CDC Transfer with Insufficient Constraints                                           ; High     ; 0          ; 0      ; cdc-bus                                        ;
@@ -187,6 +187,20 @@ on the Quartus Prime software download page.
 
 Status:		FAIL
 Severity:		High
+Number of violations: 	2
+Rule Parameters:      	max_violations = 5000
++----------------------------------------------------------------+
+; TMC-20012 - Missing Output Delay Constraint                    ;
++---------+---------------------------------------------+--------+
+; Port    ; Reason                                      ; Waived ;
++---------+---------------------------------------------+--------+
+; LEDR[8] ; No output delay was set on the output port. ;        ;
+; LEDR[9] ; No output delay was set on the output port. ;        ;
++---------+---------------------------------------------+--------+
+
+
+Status:		FAIL
+Severity:		High
 Number of violations: 	1
 Rule Parameters:      	max_violations = 500
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -209,19 +223,6 @@ Rule Parameters:      	max_violations = 5000
 +------+-------------------------------------------+--------+
 ; KEY0 ; No input delay was set on the input port. ;        ;
 +------+-------------------------------------------+--------+
-
-
-Status:		FAIL
-Severity:		High
-Number of violations: 	1
-Rule Parameters:      	max_violations = 5000
-+----------------------------------------------------------------+
-; TMC-20012 - Missing Output Delay Constraint                    ;
-+---------+---------------------------------------------+--------+
-; Port    ; Reason                                      ; Waived ;
-+---------+---------------------------------------------+--------+
-; LEDR[9] ; No output delay was set on the output port. ;        ;
-+---------+---------------------------------------------+--------+
 
 
 Status:		PASS
