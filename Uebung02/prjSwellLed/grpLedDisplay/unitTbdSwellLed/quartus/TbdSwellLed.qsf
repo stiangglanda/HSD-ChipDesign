@@ -41,14 +41,13 @@ set_location_assignment PIN_A8   -to CLOCK1_50
 #============================================================
 # KEY
 #============================================================
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to KEY[0] -entity SwellLedOnDE23Lite
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to KEY[1] -entity SwellLedOnDE23Lite
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to KEY[2] -entity SwellLedOnDE23Lite
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to KEY[3] -entity SwellLedOnDE23Lite
-set_location_assignment PIN_K26  -to KEY[0]
-set_location_assignment PIN_K27  -to KEY[1]
-set_location_assignment PIN_BK10 -to KEY[2]
-set_location_assignment PIN_W12  -to KEY[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to KEY0
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to KEY1
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to KEY2
+
+set_location_assignment PIN_K26  -to KEY0
+set_location_assignment PIN_K27  -to KEY1
+set_location_assignment PIN_BK10 -to KEY2
 
 #============================================================
 # LED
