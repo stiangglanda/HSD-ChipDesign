@@ -1,0 +1,51 @@
+#============================================================
+# Device & Project Settings
+#============================================================
+set_global_assignment -name FAMILY "Agilex 3"
+set_global_assignment -name DEVICE A3CZ135BB18AE7S
+set_global_assignment -name TOP_LEVEL_ENTITY AllMyMuxesOnDE23Lite
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 100
+
+#============================================================
+# Agilex Configuration Settings
+#============================================================
+set_global_assignment -name USE_CONF_DONE SDM_IO16
+set_global_assignment -name STRATIXV_CONFIGURATION_SCHEME "ACTIVE SERIAL X4"
+set_global_assignment -name ACTIVE_SERIAL_CLOCK AS_FREQ_100MHZ
+set_global_assignment -name DEVICE_INITIALIZATION_CLOCK OSC_CLK_1_125MHZ
+set_global_assignment -name PWRMGT_VOLTAGE_OUTPUT_FORMAT "LINEAR FORMAT"
+set_global_assignment -name PWRMGT_LINEAR_FORMAT_N "-12"
+
+#============================================================
+# Source Files
+#============================================================
+set_global_assignment -name VHDL_FILE ../../unitAllMyMuxes/src/Mpx.vhd
+set_global_assignment -name VHDL_FILE ../../unitAllMyMuxes/src/AllMyMuxes.vhd
+set_global_assignment -name VHDL_FILE ../src/AllMyMuxesOnDE23Lite.vhd
+
+#============================================================
+# I/O Standards (Per Wildcard elegant für alle Pins auf 1.2V)
+#============================================================
+set_instance_assignment -name IO_STANDARD "1.2-V" -to *
+
+#============================================================
+# Drive Strength & Slew Rate für die LED-Ausgänge
+#============================================================
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MINIMUM CURRENT" -to LEDR*
+set_instance_assignment -name SLEW_RATE 0 -to LEDR*
+
+#============================================================
+# Pin Locations (Schalter SW und LEDs)
+#============================================================
+# SW(0) = iSel, SW(1) = iB, SW(2) = iA
+set_location_assignment PIN_A37 -to SW[0]
+set_location_assignment PIN_B37 -to SW[1]
+set_location_assignment PIN_B26 -to SW[2]
+
+# LEDR(0) = Minterms, LEDR(1) = PrimeImpl, LEDR(2) = NandOnly
+set_location_assignment PIN_B39 -to LEDR[0]
+set_location_assignment PIN_B42 -to LEDR[1]
+set_location_assignment PIN_K35 -to LEDR[2]
+set_global_assignment -name LAST_QUARTUS_VERSION "26.1.1 Pro Edition"
