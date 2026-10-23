@@ -1,0 +1,236 @@
+# File saved with Nlview 7.9.1 2025-07-03 36fdeb9b55 VDI=45 GEI=38 GUI=QT:6.8.6
+#  -curmodule
+# non-default properties - (restore without -noprops)
+property -colorscheme classic
+property attrcolor #06476f
+property autobundle 129
+property backgroundcolor #ffffff
+property boxcolor0 #2d2d2d
+property boxhierpins 3
+property boxinstcolor #000000
+property boxpincolor #06476f
+property buscolor #2d2d2d
+property buswidthlimit 0
+property createnetattrdsp 1024
+property createvconn 65
+property decorate 1
+property elidetext 1
+property fillcolor1 #73acac
+property fillcolor2 #81bf5f
+property fillcolor3 #dce6dc
+property fillcolor4 #ffff00
+property fillcolor5 #c0c0c0
+property fillcolor6 #b3a9fe
+property fillcolor7 #f0b0d2
+property fillcolor8 #adadad
+property fillcolor9 #a9feff
+property fillcolor10 #e5ffff
+property instattrmax -1
+property netcolor #2d2d2d
+property netindicators 15
+property netindicatorsize 3
+property nohiernegpins 0
+property overlaycolor #2d2d2d
+property pbuscolor #0000ff
+property pbusnamecolor #000000
+property pinattrmax -1
+property portcolor #0000ff
+property portnamecolor #000000
+property ripattrmax -1
+property rippercolor #000000
+property rubberbandcolor #00aaff
+property selectionappearance 6
+property selectioncolor #aa1027
+property shadowstyle 1
+property sheetheight 34
+property sheetwidth 44
+property showpagenumbers 1
+property showripindex 1
+property showvconn 1
+#
+module new _1 {}
+load symbol TheAllMyMuxes_2 {} HIERBOX pinBus SW[0..2]~input_117 input.left 3 SW[0]~input_109 SW[1]~input_113 SW[2]~input_111 pin MpxMintermsInst:oY~0_107 output.right fillcolor 2 fillregion 3
+load symbol LEDR[0]~output_11 {} BOX pin I_13 input.left pin O_14 output.right fillcolor 6
+load symbol LEDR[1]~output_16 {} BOX pin I_18 input.left pin O_19 output.right fillcolor 6
+load symbol LEDR[2]~output_21 {} BOX pin I_23 input.left pin O_24 output.right fillcolor 6
+load symbol SW[0]~input_26 {} BOX pin I_28 input.left pin O_29 output.right fillcolor 6
+load symbol SW[2]~input_31 {} BOX pin I_33 input.left pin O_34 output.right fillcolor 6
+load symbol SW[1]~input_36 {} BOX pin I_38 input.left pin O_39 output.right fillcolor 6
+load symbol ~ALTERA_AS_DATA1~~obuf_44 {} BOX pin I_46 input.left pin OE_47 input.left pin O_48 output.right fillcolor 6
+load symbol ~ALTERA_AS_nCSO0,ALTERA_MSEL0~~obuf_51 {} BOX pin I_53 input.left pin O_54 output.right fillcolor 6
+load symbol ~ALTERA_AS_DATA2~~obuf_56 {} BOX pin I_58 input.left pin OE_59 input.left pin O_60 output.right fillcolor 6
+load symbol ~ALTERA_AS_DATA0~~obuf_63 {} BOX pin I_65 input.left pin OE_66 input.left pin O_67 output.right fillcolor 6
+load symbol ~ALTERA_AS_CLK~~obuf_70 {} BOX pin I_72 input.left pin O_73 output.right fillcolor 6
+load symbol ~ALTERA_AS_nCSO2,ALTERA_MSEL1~~obuf_75 {} BOX pin I_77 input.left pin O_78 output.right fillcolor 6
+load symbol ~CONF_DONE~~obuf_80 {} BOX pin I_82 input.left pin O_83 output.right fillcolor 6
+load symbol ~ALTERA_AS_nCSO1,ALTERA_MSEL2~~obuf_85 {} BOX pin I_87 input.left pin O_88 output.right fillcolor 6
+load symbol ~ALTERA_AS_DATA3~~obuf_90 {} BOX pin I_92 input.left pin OE_93 input.left pin O_94 output.right fillcolor 6
+load symbol ~ALTERA_AS_nCSO3~~obuf_97 {} BOX pin I_99 input.left pin O_100 output.right fillcolor 6
+load symbol ~ALTERA_AS_nRST~~obuf_102 {} BOX pin I_104 input.left pin O_105 output.right fillcolor 6
+load symbol LEDR(0)~pad_15 {} BOX pin PADIN_10 input.left pin SIMOUT_8 output.right fillcolor 1
+load symbol LEDR(1)~pad_20 {} BOX pin PADIN_14 input.left pin SIMOUT_12 output.right fillcolor 1
+load symbol LEDR(2)~pad_25 {} BOX pin PADIN_18 input.left pin SIMOUT_16 output.right fillcolor 1
+load symbol SW(0)~pad_30 {} BOX pin SIMIN_22 input.left pin PADOUT_20 output.right fillcolor 1
+load symbol SW(2)~pad_35 {} BOX pin SIMIN_26 input.left pin PADOUT_24 output.right fillcolor 1
+load symbol SW(1)~pad_40 {} BOX pin SIMIN_30 input.left pin PADOUT_28 output.right fillcolor 1
+load symbol ~ALTERA_OSC_CLK_1~~ibuf_42 {} BOX pin I_31 input.left fillcolor 1
+load symbol ~ALTERA_AS_DATA1~_43 {} BOX pin PADIN_32 input.left pin PADOUT_30 output.right fillcolor 1
+load symbol ~ALTERA_AS_DATA1~~ibuf_49 {} BOX pin I_38 input.left fillcolor 1
+load symbol ~ALTERA_AS_DATA2~_55 {} BOX pin PADIN_43 input.left pin PADOUT_38 output.right fillcolor 1
+load symbol ~ALTERA_AS_DATA2~~ibuf_61 {} BOX pin I_49 input.left fillcolor 1
+load symbol ~ALTERA_AS_DATA0~_62 {} BOX pin PADIN_50 input.left pin PADOUT_43 output.right fillcolor 1
+load symbol ~ALTERA_AS_DATA0~~ibuf_68 {} BOX pin I_56 input.left fillcolor 1
+load symbol ~ALTERA_AS_DATA3~_89 {} BOX pin PADIN_73 input.left pin PADOUT_60 output.right fillcolor 1
+load symbol ~ALTERA_AS_DATA3~~ibuf_95 {} BOX pin I_79 input.left fillcolor 1
+load symbol MpxMintermsInst_3 {} HIERBOX pinBus SW[0..2]~input_114 input.left 3 SW[0]~input_108 SW[1]~input_112 SW[2]~input_110 pin oY~0_106 output.right fillcolor 2 fillregion 3
+load symbol oY~0_4 {} BOX pin DATAB_1 input.left pin DATAC_2 input.left pin DATAF_3 input.left pin COMBOUT_1 output.right fillcolor 6
+load port ~ALTERA_AS_CLK~_69 output -attr @name ~ALTERA_AS_CLK~ -pg 1 -lvl 6 -x 1480 -y 470
+load port ~ALTERA_AS_nCSO0,ALTERA_MSEL0~_50 output -attr @name ~ALTERA_AS_nCSO0,ALTERA_MSEL0~ -pg 1 -lvl 6 -x 1480 -y 170
+load port ~ALTERA_AS_nCSO1,ALTERA_MSEL2~_84 output -attr @name ~ALTERA_AS_nCSO1,ALTERA_MSEL2~ -pg 1 -lvl 6 -x 1480 -y 590
+load port ~ALTERA_AS_nCSO2,ALTERA_MSEL1~_74 output -attr @name ~ALTERA_AS_nCSO2,ALTERA_MSEL1~ -pg 1 -lvl 6 -x 1480 -y 650
+load port ~ALTERA_AS_nCSO3~_96 output -attr @name ~ALTERA_AS_nCSO3~ -pg 1 -lvl 6 -x 1480 -y 710
+load port ~ALTERA_AS_nRST~_101 output -attr @name ~ALTERA_AS_nRST~ -pg 1 -lvl 6 -x 1480 -y 770
+load port ~ALTERA_OSC_CLK_1~_41 input -attr @name ~ALTERA_OSC_CLK_1~ -pg 1 -lvl 0 -x 0 -y 390
+load port ~CONF_DONE~_79 output -attr @name ~CONF_DONE~ -pg 1 -lvl 6 -x 1480 -y 830
+load portBus LEDR[0..2]_115 output 3 LEDR[0]_5 LEDR[1]_6 LEDR[2]_7 -attr @name LEDR[0..2] -portAttr LEDR[0]_5 @name LEDR[0] -portAttr LEDR[1]_6 @name LEDR[1] -portAttr LEDR[2]_7 @name LEDR[2] -pg 1 -lvl 6 -x 1480 -y 290
+load portBus SW[0..2]_116 input 3 SW[0]_8 SW[1]_10 SW[2]_9 -attr @name SW[0..2] -portAttr SW[0]_8 @name SW[0] -portAttr SW[1]_10 @name SW[1] -portAttr SW[2]_9 @name SW[2] -pg 1 -lvl 0 -x 0 -y 210
+load inst TheAllMyMuxes_2 TheAllMyMuxes_2 {} -unfold -autohide -attr @name TheAllMyMuxes -attr @cell (AllMyMuxes) -pinBusAttr SW[0..2]~input_117 @name SW[0..2]~input -pinAttr SW[0]~input_109 @name SW[0]~input -pinAttr SW[1]~input_113 @name SW[1]~input -pinAttr SW[2]~input_111 @name SW[2]~input -pinAttr MpxMintermsInst:oY~0_107 @name MpxMintermsInst:oY~0 -hierPinBusAttr SW[0..2]~input_117 @name SW[0..2]~input -hierPinAttr SW[0]~input_109 @name SW[0]~input -hierPinAttr SW[1]~input_113 @name SW[1]~input -hierPinAttr SW[2]~input_111 @name SW[2]~input -hierPinAttr MpxMintermsInst:oY~0_107 @name MpxMintermsInst:oY~0 -pg 1 -lvl 3 -x 460 -y 320
+load inst LEDR[0]~output_11 LEDR[0]~output_11 {} -attr @name LEDR[0]~output -attr @cell IO_OBUF -pinAttr I_13 @name I -pinAttr O_14 @name O -pg 1 -lvl 4 -x 1050 -y 280
+load inst LEDR[1]~output_16 LEDR[1]~output_16 {} -attr @name LEDR[1]~output -attr @cell IO_OBUF -pinAttr I_18 @name I -pinAttr O_19 @name O -pg 1 -lvl 4 -x 1050 -y 340
+load inst LEDR[2]~output_21 LEDR[2]~output_21 {} -attr @name LEDR[2]~output -attr @cell IO_OBUF -pinAttr I_23 @name I -pinAttr O_24 @name O -pg 1 -lvl 4 -x 1050 -y 400
+load inst SW[0]~input_26 SW[0]~input_26 {} -attr @name SW[0]~input -attr @cell IO_IBUF -pinAttr I_28 @name I -pinAttr O_29 @name O -pg 1 -lvl 2 -x 250 -y 200
+load inst SW[2]~input_31 SW[2]~input_31 {} -attr @name SW[2]~input -attr @cell IO_IBUF -pinAttr I_33 @name I -pinAttr O_34 @name O -pg 1 -lvl 2 -x 250 -y 320
+load inst SW[1]~input_36 SW[1]~input_36 {} -attr @name SW[1]~input -attr @cell IO_IBUF -pinAttr I_38 @name I -pinAttr O_39 @name O -pg 1 -lvl 2 -x 250 -y 260
+load inst ~ALTERA_AS_DATA1~~obuf_44 ~ALTERA_AS_DATA1~~obuf_44 {} -attr @name ~ALTERA_AS_DATA1~~obuf -attr @cell IO_OBUF -pinAttr I_46 @name I -pinAttr I_46 @vconn 1'h0 -pinAttr OE_47 @name OE -pinAttr OE_47 @vconn 1'h1 -pinAttr O_48 @name O -pg 1 -lvl 3 -x 460 -y 20
+load inst ~ALTERA_AS_nCSO0,ALTERA_MSEL0~~obuf_51 ~ALTERA_AS_nCSO0,ALTERA_MSEL0~~obuf_51 {} -attr @name ~ALTERA_AS_nCSO0,ALTERA_MSEL0~~obuf -attr @cell IO_OBUF -pinAttr I_53 @name I -pinAttr I_53 @vconn 1'h0 -pinAttr O_54 @name O -pg 1 -lvl 5 -x 1280 -y 160
+load inst ~ALTERA_AS_DATA2~~obuf_56 ~ALTERA_AS_DATA2~~obuf_56 {} -attr @name ~ALTERA_AS_DATA2~~obuf -attr @cell IO_OBUF -pinAttr I_58 @name I -pinAttr I_58 @vconn 1'h0 -pinAttr OE_59 @name OE -pinAttr OE_59 @vconn 1'h1 -pinAttr O_60 @name O -pg 1 -lvl 3 -x 460 -y 100
+load inst ~ALTERA_AS_DATA0~~obuf_63 ~ALTERA_AS_DATA0~~obuf_63 {} -attr @name ~ALTERA_AS_DATA0~~obuf -attr @cell IO_OBUF -pinAttr I_65 @name I -pinAttr I_65 @vconn 1'h0 -pinAttr OE_66 @name OE -pinAttr OE_66 @vconn 1'h1 -pinAttr O_67 @name O -pg 1 -lvl 3 -x 460 -y 520
+load inst ~ALTERA_AS_CLK~~obuf_70 ~ALTERA_AS_CLK~~obuf_70 {} -attr @name ~ALTERA_AS_CLK~~obuf -attr @cell IO_OBUF -pinAttr I_72 @name I -pinAttr I_72 @vconn 1'h0 -pinAttr O_73 @name O -pg 1 -lvl 5 -x 1280 -y 460
+load inst ~ALTERA_AS_nCSO2,ALTERA_MSEL1~~obuf_75 ~ALTERA_AS_nCSO2,ALTERA_MSEL1~~obuf_75 {} -attr @name ~ALTERA_AS_nCSO2,ALTERA_MSEL1~~obuf -attr @cell IO_OBUF -pinAttr I_77 @name I -pinAttr I_77 @vconn 1'h0 -pinAttr O_78 @name O -pg 1 -lvl 5 -x 1280 -y 640
+load inst ~CONF_DONE~~obuf_80 ~CONF_DONE~~obuf_80 {} -attr @name ~CONF_DONE~~obuf -attr @cell IO_OBUF -pinAttr I_82 @name I -pinAttr I_82 @vconn 1'h0 -pinAttr O_83 @name O -pg 1 -lvl 5 -x 1280 -y 820
+load inst ~ALTERA_AS_nCSO1,ALTERA_MSEL2~~obuf_85 ~ALTERA_AS_nCSO1,ALTERA_MSEL2~~obuf_85 {} -attr @name ~ALTERA_AS_nCSO1,ALTERA_MSEL2~~obuf -attr @cell IO_OBUF -pinAttr I_87 @name I -pinAttr I_87 @vconn 1'h0 -pinAttr O_88 @name O -pg 1 -lvl 5 -x 1280 -y 580
+load inst ~ALTERA_AS_DATA3~~obuf_90 ~ALTERA_AS_DATA3~~obuf_90 {} -attr @name ~ALTERA_AS_DATA3~~obuf -attr @cell IO_OBUF -pinAttr I_92 @name I -pinAttr I_92 @vconn 1'h0 -pinAttr OE_93 @name OE -pinAttr OE_93 @vconn 1'h1 -pinAttr O_94 @name O -pg 1 -lvl 3 -x 460 -y 210
+load inst ~ALTERA_AS_nCSO3~~obuf_97 ~ALTERA_AS_nCSO3~~obuf_97 {} -attr @name ~ALTERA_AS_nCSO3~~obuf -attr @cell IO_OBUF -pinAttr I_99 @name I -pinAttr I_99 @vconn 1'h0 -pinAttr O_100 @name O -pg 1 -lvl 5 -x 1280 -y 700
+load inst ~ALTERA_AS_nRST~~obuf_102 ~ALTERA_AS_nRST~~obuf_102 {} -attr @name ~ALTERA_AS_nRST~~obuf -attr @cell IO_OBUF -pinAttr I_104 @name I -pinAttr I_104 @vconn 1'h0 -pinAttr O_105 @name O -pg 1 -lvl 5 -x 1280 -y 760
+load inst LEDR(0)~pad_15 LEDR(0)~pad_15 {} -attr @name LEDR(0)~pad -attr @cell OUTPUT -pinAttr PADIN_10 @name PADIN -pinAttr SIMOUT_8 @name SIMOUT -pg 1 -lvl 5 -x 1280 -y 280
+load inst LEDR(1)~pad_20 LEDR(1)~pad_20 {} -attr @name LEDR(1)~pad -attr @cell OUTPUT -pinAttr PADIN_14 @name PADIN -pinAttr SIMOUT_12 @name SIMOUT -pg 1 -lvl 5 -x 1280 -y 340
+load inst LEDR(2)~pad_25 LEDR(2)~pad_25 {} -attr @name LEDR(2)~pad -attr @cell OUTPUT -pinAttr PADIN_18 @name PADIN -pinAttr SIMOUT_16 @name SIMOUT -pg 1 -lvl 5 -x 1280 -y 400
+load inst SW(0)~pad_30 SW(0)~pad_30 {} -attr @name SW(0)~pad -attr @cell INPUT -pinAttr SIMIN_22 @name SIMIN -pinAttr PADOUT_20 @name PADOUT -pg 1 -lvl 1 -x 100 -y 200
+load inst SW(2)~pad_35 SW(2)~pad_35 {} -attr @name SW(2)~pad -attr @cell INPUT -pinAttr SIMIN_26 @name SIMIN -pinAttr PADOUT_24 @name PADOUT -pg 1 -lvl 1 -x 100 -y 320
+load inst SW(1)~pad_40 SW(1)~pad_40 {} -attr @name SW(1)~pad -attr @cell INPUT -pinAttr SIMIN_30 @name SIMIN -pinAttr PADOUT_28 @name PADOUT -pg 1 -lvl 1 -x 100 -y 260
+load inst ~ALTERA_OSC_CLK_1~~ibuf_42 ~ALTERA_OSC_CLK_1~~ibuf_42 {} -attr @name ~ALTERA_OSC_CLK_1~~ibuf -attr @cell IO_IBUF -pinAttr I_31 @name I -pg 1 -lvl 1 -x 100 -y 380
+load inst ~ALTERA_AS_DATA1~_43 ~ALTERA_AS_DATA1~_43 {} -attr @name ~ALTERA_AS_DATA1~ -attr @cell BIDIR -pinAttr PADIN_32 @name PADIN -pinAttr PADOUT_30 @name PADOUT -pg 1 -lvl 4 -x 1050 -y 20
+load inst ~ALTERA_AS_DATA1~~ibuf_49 ~ALTERA_AS_DATA1~~ibuf_49 {} -attr @name ~ALTERA_AS_DATA1~~ibuf -attr @cell IO_IBUF -pinAttr I_38 @name I -pg 1 -lvl 5 -x 1280 -y 20
+load inst ~ALTERA_AS_DATA2~_55 ~ALTERA_AS_DATA2~_55 {} -attr @name ~ALTERA_AS_DATA2~ -attr @cell BIDIR -pinAttr PADIN_43 @name PADIN -pinAttr PADOUT_38 @name PADOUT -pg 1 -lvl 4 -x 1050 -y 100
+load inst ~ALTERA_AS_DATA2~~ibuf_61 ~ALTERA_AS_DATA2~~ibuf_61 {} -attr @name ~ALTERA_AS_DATA2~~ibuf -attr @cell IO_IBUF -pinAttr I_49 @name I -pg 1 -lvl 5 -x 1280 -y 100
+load inst ~ALTERA_AS_DATA0~_62 ~ALTERA_AS_DATA0~_62 {} -attr @name ~ALTERA_AS_DATA0~ -attr @cell BIDIR -pinAttr PADIN_50 @name PADIN -pinAttr PADOUT_43 @name PADOUT -pg 1 -lvl 4 -x 1050 -y 520
+load inst ~ALTERA_AS_DATA0~~ibuf_68 ~ALTERA_AS_DATA0~~ibuf_68 {} -attr @name ~ALTERA_AS_DATA0~~ibuf -attr @cell IO_IBUF -pinAttr I_56 @name I -pg 1 -lvl 5 -x 1280 -y 520
+load inst ~ALTERA_AS_DATA3~_89 ~ALTERA_AS_DATA3~_89 {} -attr @name ~ALTERA_AS_DATA3~ -attr @cell BIDIR -pinAttr PADIN_73 @name PADIN -pinAttr PADOUT_60 @name PADOUT -pg 1 -lvl 4 -x 1050 -y 220
+load inst ~ALTERA_AS_DATA3~~ibuf_95 ~ALTERA_AS_DATA3~~ibuf_95 {} -attr @name ~ALTERA_AS_DATA3~~ibuf -attr @cell IO_IBUF -pinAttr I_79 @name I -pg 1 -lvl 5 -x 1280 -y 220
+load inst TheAllMyMuxes_2|MpxMintermsInst_3 MpxMintermsInst_3 {} -unfold -hier TheAllMyMuxes_2 -autohide -attr @name MpxMintermsInst -attr @cell (Mpx) -pinBusAttr SW[0..2]~input_114 @name SW[0..2]~input -pinAttr SW[0]~input_108 @name SW[0]~input -pinAttr SW[1]~input_112 @name SW[1]~input -pinAttr SW[2]~input_110 @name SW[2]~input -pinAttr oY~0_106 @name oY~0 -hierPinBusAttr SW[0..2]~input_114 @name SW[0..2]~input -hierPinAttr SW[0]~input_108 @name SW[0]~input -hierPinAttr SW[1]~input_112 @name SW[1]~input -hierPinAttr SW[2]~input_110 @name SW[2]~input -hierPinAttr oY~0_106 @name oY~0 -pg 1 -lvl 1 -x 570 -y 340
+load inst TheAllMyMuxes_2|MpxMintermsInst_3|oY~0_4 oY~0_4 {} -hier TheAllMyMuxes_2|MpxMintermsInst_3 -attr @name oY~0 -attr @cell {} -pinAttr DATAB_1 @name DATAB -pinAttr DATAC_2 @name DATAC -pinAttr DATAF_3 @name DATAF -pinAttr COMBOUT_1 @name COMBOUT -pg 1 -lvl 1 -x 630 -y 330
+load net I_13 -ground -attr @name {} -pin ~ALTERA_AS_DATA1~~obuf_44 I_46
+load net OE_14 -power -attr @name {} -pin ~ALTERA_AS_DATA1~~obuf_44 OE_47
+load net I_18 -ground -attr @name {} -pin ~ALTERA_AS_nCSO0,ALTERA_MSEL0~~obuf_51 I_53
+load net I_21 -ground -attr @name {} -pin ~ALTERA_AS_DATA2~~obuf_56 I_58
+load net OE_22 -power -attr @name {} -pin ~ALTERA_AS_DATA2~~obuf_56 OE_59
+load net I_26 -ground -attr @name {} -pin ~ALTERA_AS_DATA0~~obuf_63 I_65
+load net OE_27 -power -attr @name {} -pin ~ALTERA_AS_DATA0~~obuf_63 OE_66
+load net I_31 -ground -attr @name {} -pin ~ALTERA_AS_CLK~~obuf_70 I_72
+load net I_34 -ground -attr @name {} -pin ~ALTERA_AS_nCSO2,ALTERA_MSEL1~~obuf_75 I_77
+load net I_37 -ground -attr @name {} -pin ~CONF_DONE~~obuf_80 I_82
+load net I_40 -ground -attr @name {} -pin ~ALTERA_AS_nCSO1,ALTERA_MSEL2~~obuf_85 I_87
+load net I_43 -ground -attr @name {} -pin ~ALTERA_AS_DATA3~~obuf_90 I_92
+load net OE_44 -power -attr @name {} -pin ~ALTERA_AS_DATA3~~obuf_90 OE_93
+load net I_48 -ground -attr @name {} -pin ~ALTERA_AS_nCSO3~~obuf_97 I_99
+load net I_51 -ground -attr @name {} -pin ~ALTERA_AS_nRST~~obuf_102 I_104
+load net MpxMintermsInst:oY~0_59 -attr @name MpxMintermsInst:oY~0 -pin LEDR[0]~output_11 I_13 -pin LEDR[1]~output_16 I_18 -pin LEDR[2]~output_21 I_23 -pin TheAllMyMuxes_2 MpxMintermsInst:oY~0_107
+netloc MpxMintermsInst:oY~0_59 1 3 1 1010 290n
+load net O_60 -attr @name LEDR[0]~output:O -pin LEDR(0)~pad_15 PADIN_10 -pin LEDR[0]~output_11 O_14
+netloc O_60 1 4 1 NJ 290
+load net SIMOUT_61 -attr @name LEDR(0)~pad:SIMOUT -pin LEDR(0)~pad_15 SIMOUT_8 -port LEDR[0]_5
+load net O_62 -attr @name LEDR[1]~output:O -pin LEDR(1)~pad_20 PADIN_14 -pin LEDR[1]~output_16 O_19
+netloc O_62 1 4 1 NJ 350
+load net SIMOUT_63 -attr @name LEDR(1)~pad:SIMOUT -pin LEDR(1)~pad_20 SIMOUT_12 -port LEDR[1]_6
+load net O_64 -attr @name LEDR[2]~output:O -pin LEDR(2)~pad_25 PADIN_18 -pin LEDR[2]~output_21 O_24
+netloc O_64 1 4 1 NJ 410
+load net SIMOUT_65 -attr @name LEDR(2)~pad:SIMOUT -pin LEDR(2)~pad_25 SIMOUT_16 -port LEDR[2]_7
+load net O_68 -attr @name SW[0]~input:O -pin SW[0]~input_26 O_29 -pin TheAllMyMuxes_2 SW[0]~input_109
+load net PADOUT_69 -attr @name SW(0)~pad:PADOUT -pin SW(0)~pad_30 PADOUT_20 -pin SW[0]~input_26 I_28
+netloc PADOUT_69 1 1 1 NJ 210
+load net O_72 -attr @name SW[2]~input:O -pin SW[2]~input_31 O_34 -pin TheAllMyMuxes_2 SW[2]~input_111
+load net PADOUT_73 -attr @name SW(2)~pad:PADOUT -pin SW(2)~pad_35 PADOUT_24 -pin SW[2]~input_31 I_33
+netloc PADOUT_73 1 1 1 NJ 330
+load net O_76 -attr @name SW[1]~input:O -pin SW[1]~input_36 O_39 -pin TheAllMyMuxes_2 SW[1]~input_113
+load net PADOUT_77 -attr @name SW(1)~pad:PADOUT -pin SW(1)~pad_40 PADOUT_28 -pin SW[1]~input_36 I_38
+netloc PADOUT_77 1 1 1 NJ 270
+load net PADOUT_78 -attr @name ~ALTERA_OSC_CLK_1~ -port ~ALTERA_OSC_CLK_1~_41 -pin ~ALTERA_OSC_CLK_1~~ibuf_42 I_31
+netloc PADOUT_78 1 0 1 NJ 390
+load net PADOUT_79 -attr @name ~ALTERA_AS_DATA1~:PADOUT -pin ~ALTERA_AS_DATA1~_43 PADOUT_30 -pin ~ALTERA_AS_DATA1~~ibuf_49 I_38
+netloc PADOUT_79 1 4 1 NJ 30
+load net O_80 -attr @name ~ALTERA_AS_DATA1~~obuf:O -pin ~ALTERA_AS_DATA1~_43 PADIN_32 -pin ~ALTERA_AS_DATA1~~obuf_44 O_48
+netloc O_80 1 3 1 NJ 30
+load net O_81 -attr @name ~ALTERA_AS_nCSO0,ALTERA_MSEL0~~obuf:O -port ~ALTERA_AS_nCSO0,ALTERA_MSEL0~_50 -pin ~ALTERA_AS_nCSO0,ALTERA_MSEL0~~obuf_51 O_54
+netloc O_81 1 5 1 NJ 170
+load net PADOUT_82 -attr @name ~ALTERA_AS_DATA2~:PADOUT -pin ~ALTERA_AS_DATA2~_55 PADOUT_38 -pin ~ALTERA_AS_DATA2~~ibuf_61 I_49
+netloc PADOUT_82 1 4 1 NJ 110
+load net O_83 -attr @name ~ALTERA_AS_DATA2~~obuf:O -pin ~ALTERA_AS_DATA2~_55 PADIN_43 -pin ~ALTERA_AS_DATA2~~obuf_56 O_60
+netloc O_83 1 3 1 NJ 110
+load net PADOUT_84 -attr @name ~ALTERA_AS_DATA0~:PADOUT -pin ~ALTERA_AS_DATA0~_62 PADOUT_43 -pin ~ALTERA_AS_DATA0~~ibuf_68 I_56
+netloc PADOUT_84 1 4 1 NJ 530
+load net O_85 -attr @name ~ALTERA_AS_DATA0~~obuf:O -pin ~ALTERA_AS_DATA0~_62 PADIN_50 -pin ~ALTERA_AS_DATA0~~obuf_63 O_67
+netloc O_85 1 3 1 NJ 530
+load net O_86 -attr @name ~ALTERA_AS_CLK~~obuf:O -port ~ALTERA_AS_CLK~_69 -pin ~ALTERA_AS_CLK~~obuf_70 O_73
+netloc O_86 1 5 1 NJ 470
+load net O_87 -attr @name ~ALTERA_AS_nCSO2,ALTERA_MSEL1~~obuf:O -port ~ALTERA_AS_nCSO2,ALTERA_MSEL1~_74 -pin ~ALTERA_AS_nCSO2,ALTERA_MSEL1~~obuf_75 O_78
+netloc O_87 1 5 1 NJ 650
+load net O_88 -attr @name ~CONF_DONE~~obuf:O -port ~CONF_DONE~_79 -pin ~CONF_DONE~~obuf_80 O_83
+netloc O_88 1 5 1 NJ 830
+load net O_89 -attr @name ~ALTERA_AS_nCSO1,ALTERA_MSEL2~~obuf:O -port ~ALTERA_AS_nCSO1,ALTERA_MSEL2~_84 -pin ~ALTERA_AS_nCSO1,ALTERA_MSEL2~~obuf_85 O_88
+netloc O_89 1 5 1 NJ 590
+load net PADOUT_90 -attr @name ~ALTERA_AS_DATA3~:PADOUT -pin ~ALTERA_AS_DATA3~_89 PADOUT_60 -pin ~ALTERA_AS_DATA3~~ibuf_95 I_79
+netloc PADOUT_90 1 4 1 NJ 230
+load net O_91 -attr @name ~ALTERA_AS_DATA3~~obuf:O -pin ~ALTERA_AS_DATA3~_89 PADIN_73 -pin ~ALTERA_AS_DATA3~~obuf_90 O_94
+netloc O_91 1 3 1 1010J 220n
+load net O_92 -attr @name ~ALTERA_AS_nCSO3~~obuf:O -port ~ALTERA_AS_nCSO3~_96 -pin ~ALTERA_AS_nCSO3~~obuf_97 O_100
+netloc O_92 1 5 1 NJ 710
+load net O_93 -attr @name ~ALTERA_AS_nRST~~obuf:O -port ~ALTERA_AS_nRST~_101 -pin ~ALTERA_AS_nRST~~obuf_102 O_105
+netloc O_93 1 5 1 NJ 770
+load net OUTPUT_54 -attr @name SW[0] -attr @rip 0 -pin SW(0)~pad_30 SIMIN_22 -port SW[0]_8
+load net OUTPUT_56 -attr @name SW[1] -attr @rip 1 -pin SW(1)~pad_40 SIMIN_30 -port SW[1]_10
+load net OUTPUT_55 -attr @name SW[2] -attr @rip 2 -pin SW(2)~pad_35 SIMIN_26 -port SW[2]_9
+load net TheAllMyMuxes_2|oY~0_58 -attr @name oY~0 -hierPin TheAllMyMuxes_2 MpxMintermsInst:oY~0_107 -pin TheAllMyMuxes_2|MpxMintermsInst_3 oY~0_106
+netloc TheAllMyMuxes_2|oY~0_58 1 1 1 840J 350n
+load net TheAllMyMuxes_2|COMBOUT_67 -attr @name SW[0]~input -attr @rip 0 -hierPin TheAllMyMuxes_2 SW[0]~input_109 -pin TheAllMyMuxes_2|MpxMintermsInst_3 SW[0]~input_108
+load net TheAllMyMuxes_2|COMBOUT_75 -attr @name SW[1]~input -attr @rip 1 -hierPin TheAllMyMuxes_2 SW[1]~input_113 -pin TheAllMyMuxes_2|MpxMintermsInst_3 SW[1]~input_112
+load net TheAllMyMuxes_2|COMBOUT_71 -attr @name SW[2]~input -attr @rip 2 -hierPin TheAllMyMuxes_2 SW[2]~input_111 -pin TheAllMyMuxes_2|MpxMintermsInst_3 SW[2]~input_110
+load net TheAllMyMuxes_2|MpxMintermsInst_3|COMBOUT_57 -attr @name oY~0:COMBOUT -hierPin TheAllMyMuxes_2|MpxMintermsInst_3 oY~0_106 -pin TheAllMyMuxes_2|MpxMintermsInst_3|oY~0_4 COMBOUT_1
+netloc TheAllMyMuxes_2|MpxMintermsInst_3|COMBOUT_57 1 1 1 NJ 360
+load net TheAllMyMuxes_2|MpxMintermsInst_3|COMBOUT_66 -attr @name SW[0]~input -attr @rip 0 -hierPin TheAllMyMuxes_2|MpxMintermsInst_3 SW[0]~input_108 -pin TheAllMyMuxes_2|MpxMintermsInst_3|oY~0_4 DATAC_2
+load net TheAllMyMuxes_2|MpxMintermsInst_3|COMBOUT_74 -attr @name SW[1]~input -attr @rip 1 -hierPin TheAllMyMuxes_2|MpxMintermsInst_3 SW[1]~input_112 -pin TheAllMyMuxes_2|MpxMintermsInst_3|oY~0_4 DATAB_1
+load net TheAllMyMuxes_2|MpxMintermsInst_3|COMBOUT_70 -attr @name SW[2]~input -attr @rip 2 -hierPin TheAllMyMuxes_2|MpxMintermsInst_3 SW[2]~input_110 -pin TheAllMyMuxes_2|MpxMintermsInst_3|oY~0_4 DATAF_3
+load netBundle OUTPUT_95 3 OUTPUT_54 OUTPUT_56 OUTPUT_55 -attr @name SW[0..2]
+netbloc OUTPUT_95 1 0 1 20 210n
+load netBundle TheAllMyMuxes_2|COMBOUT_96 3 TheAllMyMuxes_2|COMBOUT_67 TheAllMyMuxes_2|COMBOUT_75 TheAllMyMuxes_2|COMBOUT_71 -attr @name SW[0..2]~input
+netbloc TheAllMyMuxes_2|COMBOUT_96 1 0 1 470J 340n
+load netBundle TheAllMyMuxes_2|MpxMintermsInst_3|COMBOUT_94 3 TheAllMyMuxes_2|MpxMintermsInst_3|COMBOUT_66 TheAllMyMuxes_2|MpxMintermsInst_3|COMBOUT_74 TheAllMyMuxes_2|MpxMintermsInst_3|COMBOUT_70 -attr @name SW[0..2]~input
+netbloc TheAllMyMuxes_2|MpxMintermsInst_3|COMBOUT_94 1 0 1 600J 340n
+load netBundle @SIMOUT_ 3 SIMOUT_61 SIMOUT_63 SIMOUT_65 -autobundled
+netbloc @SIMOUT_ 1 5 1 1460 290n
+load netBundle @O_ 3 O_68 O_76 O_72 -autobundled
+netbloc @O_ 1 2 1 340 210n
+levelinfo -pg 1 0 100 250 460 1050 1280 1480
+levelinfo -hier TheAllMyMuxes_2 * 570 *
+levelinfo -hier TheAllMyMuxes_2|MpxMintermsInst_3 * 630 *
+pagesize -pg 1 -db -bbox -sgen -170 0 1750 870
+pagesize -hier TheAllMyMuxes_2 -db -bbox -sgen 440 290 870 430
+pagesize -hier TheAllMyMuxes_2|MpxMintermsInst_3 -db -bbox -sgen 570 310 780 400
+show
+fullfit
+#
+# initialize ictrl to current module _1 {}
+ictrl init {} |
+ictrl property autohide 1
+ictrl property addSubpinInfo 1
+ictrl property addSubportInfo 1
+ictrl property addFillcolor12 0

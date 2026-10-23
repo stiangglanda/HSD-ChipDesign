@@ -1,0 +1,5 @@
+1 3 mpx 8 minterms 92 /home/stiangglanda/dev/HSD-ChipDesign/Uebung02/prjAllMyMuxes/grpChd3/unitAllMyMuxes/sim/work 1 65 0 0 32 0
+1 3 mpx 9 primeimpl 92 /home/stiangglanda/dev/HSD-ChipDesign/Uebung02/prjAllMyMuxes/grpChd3/unitAllMyMuxes/sim/work 1 65 0 0 13 0
+1 3 mpx 8 nandonly 92 /home/stiangglanda/dev/HSD-ChipDesign/Uebung02/prjAllMyMuxes/grpChd3/unitAllMyMuxes/sim/work 1 65 0 0 23 0
+1 10 allmymuxes 6 struct 92 /home/stiangglanda/dev/HSD-ChipDesign/Uebung02/prjAllMyMuxes/grpChd3/unitAllMyMuxes/sim/work 1 65 0 0 146 0
+1 12 tballmymuxes 3 sim 92 /home/stiangglanda/dev/HSD-ChipDesign/Uebung02/prjAllMyMuxes/grpChd3/unitAllMyMuxes/sim/work 1 65 0 0 309 0

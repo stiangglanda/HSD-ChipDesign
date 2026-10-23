@@ -1,0 +1,7 @@
+# TCL commands history
+# Fri Oct 23 14:35:06 2026
+dni::trigger_gui -command gui_command::rtl_analyzer::unfold -options {"checkpoint":"user_runs/default_run/elaborated","object":"button @hier_unfold inst TheAllMyMuxes TheAllMyMuxes {}"}
+dni::trigger_gui -command gui_command::rtl_analyzer::unfold -options {"checkpoint":"user_runs/default_run/elaborated","object":"button @hier_unfold inst TheAllMyMuxes|MpxMintermsInst TheAllMyMuxes|MpxMintermsInst {}"}
+dni::trigger_gui -command gui_command::rtl_analyzer::unfold -options {"checkpoint":"user_runs/default_run/elaborated","object":"button @hier_unfold inst TheAllMyMuxes|MpxNandOnlyInst TheAllMyMuxes|MpxNandOnlyInst {}"}
+dni::trigger_gui -command gui_command::rtl_analyzer::unfold -options {"checkpoint":"user_runs/default_run/elaborated","object":"button @hier_unfold inst TheAllMyMuxes|MpxPrimeImplInst TheAllMyMuxes|MpxPrimeImplInst {}"}
+dni::trigger_gui -command gui_command::rtl_analyzer::zoom_fit -options {"checkpoint":"user_runs/default_run/elaborated"}
