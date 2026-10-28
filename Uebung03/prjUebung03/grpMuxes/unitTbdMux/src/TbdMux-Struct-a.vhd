@@ -35,26 +35,26 @@ architecture Struct of TbdMux is
        iSel => iSel,
        oY   => oY(2));
    
-   Mux_3: entity work.Mux(StructNand2)
+   Mux_3: entity work.Mux(StructTheNand2)
      port map (
        iA   => iA,
        iB   => iB,
        iSel => iSel,
        oY   => oY(3));
    
-   Mux_4: entity work.Mux(UsingCase)
-     port map (
-       iA   => iA,
-       iB   => iB,
-       iSel => iSel,
-       oY   => oY(4));
+--   Mux_4: entity work.Mux(UsingCase)
+--     port map (
+--       iA   => iA,
+--       iB   => iB,
+--       iSel => iSel,
+--       oY   => oY(4));
    
-   Mux_5: entity work.Mux(UsingIfElse)
-     port map (
-       iA   => iA,
-       iB   => iB,
-       iSel => iSel,
-       oY   => oY(5));
+--   Mux_5: entity work.Mux(UsingIfElse)
+--     port map (
+--       iA   => iA,
+--       iB   => iB,
+--       iSel => iSel,
+--       oY   => oY(5));
    
  end Struct;
 

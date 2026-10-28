@@ -1,0 +1,19 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity TheNand2 is
+  
+  port (
+    iA, iB : in  std_ulogic;
+    oY     : out std_ulogic);
+
+end entity TheNand2;
+
+architecture Rtl of TheNand2 is
+ begin
+
+  oY <= iA nand iB;
+
+ end Rtl;
+
+
