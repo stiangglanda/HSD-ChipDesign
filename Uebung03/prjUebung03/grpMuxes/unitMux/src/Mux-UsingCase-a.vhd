@@ -1,22 +1,16 @@
-library IEEE;				   
+library IEEE;
 use IEEE.std_logic_1164.all;
 
 architecture UsingCase of Mux is
 begin
-    
-usingcase : process is
-begin
+
+  process (iSel, iA, iB) is
+  begin
     case iSel is
-        when '1' =>
-            oY <= iA;
-        when '0' =>
-            oY <= iB;
-        when others =>
-            oY <= iB;
+        when '1' | 'H' => oY <= iA;
+        when '0' | 'L' => oY <= iB;
+        when others    => oY <= 'X';
     end case;
-end process;
+  end process;
 
 end UsingCase;
-
-
-    
