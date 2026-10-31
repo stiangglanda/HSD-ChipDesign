@@ -7,8 +7,8 @@ begin
   process (iSel, iA, iB) is
   begin
     case iSel is
-        when '1' | 'H' => oY <= iA;
-        when '0' | 'L' => oY <= iB;
+        when '1' | 'H' => oY <= iB;
+        when '0' | 'L' => oY <= iA;
         when others    => oY <= 'X';
     end case;
   end process;

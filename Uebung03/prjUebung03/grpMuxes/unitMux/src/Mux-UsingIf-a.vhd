@@ -7,9 +7,9 @@ begin
   process (iSel, iA, iB) is
   begin
     if iSel = '1' or iSel = 'H' then
-        oY <= iA;
-    elsif iSel = '0' or iSel = 'L' then
         oY <= iB;
+    elsif iSel = '0' or iSel = 'L' then
+        oY <= iA;
     else
         oY <= 'X';
     end if;
