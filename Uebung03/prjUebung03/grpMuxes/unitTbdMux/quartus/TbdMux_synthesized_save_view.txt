@@ -50,47 +50,87 @@ property showvconn 1
 #
 module new _1 {}
 load symbol auto_fab_0_2 {} HIERBOX fillcolor 2 fillregion 3
-load symbol Mux_0_7 {} HIERBOX pin iA_23 input.left pin iB_21 input.left pin iSel_22 input.left pin oY~1_24 output.right fillcolor 2 fillregion 3
-load symbol ~GND_20 {} BOX pin COMBOUT_5 output.right fillcolor 6
-load symbol oY~1_8 {} BOX pin DATAA_1 input.left pin DATAB_2 input.left pin DATAC_3 input.left pin COMBOUT_1 output.right fillcolor 6
-load symbol alt_sld_fab_0_3 {} BOX fillcolor 5
-load port iA_19 input -attr @name iA -pg 1 -lvl 0 -x -60 -y 60
-load port iB_17 input -attr @name iB -pg 1 -lvl 0 -x -60 -y 80
-load port iClk_10 input -attr @name iClk -pg 1 -lvl 0 -x -60 -y 20
-load port iSel_18 input -attr @name iSel -pg 1 -lvl 0 -x -60 -y 100
-load portBus oY[0..5]_25 output 6 oY[0]_11 oY[1]_12 oY[2]_13 oY[3]_14 oY[4]_15 oY[5]_16 -attr @name oY[0..5] -portAttr oY[0]_11 @name oY[0] -portAttr oY[1]_12 @name oY[1] -portAttr oY[2]_13 @name oY[2] -portAttr oY[3]_14 @name oY[3] -portAttr oY[4]_15 @name oY[4] -portAttr oY[5]_16 @name oY[5] -pg 1 -lvl 2 -x 340 -y 80
-load inst auto_fab_0_2 auto_fab_0_2 {} -unfold -autohide -attr @name auto_fab_0 -attr @cell (alt_sld_fab_0) -pg 1 -lvl 1 -x 40 -y 220
-load inst Mux_0_7 Mux_0_7 {} -unfold -autohide -attr @name Mux_0 -attr @cell (Mux) -pinAttr iA_23 @name iA -pinAttr iB_21 @name iB -pinAttr iSel_22 @name iSel -pinAttr oY~1_24 @name oY~1 -hierPinAttr iA_23 @name iA -hierPinAttr iB_21 @name iB -hierPinAttr iSel_22 @name iSel -hierPinAttr oY~1_24 @name oY~1 -pg 1 -lvl 1 -x 40 -y 30
-load inst ~GND_20 ~GND_20 {} -attr @name ~GND -attr @cell {} -pinAttr COMBOUT_5 @name COMBOUT -pg 1 -lvl 1 -x 40 -y 130
-load inst Mux_0_7|oY~1_8 oY~1_8 {} -hier Mux_0_7 -attr @name oY~1 -attr @cell {} -pinAttr DATAA_1 @name DATAA -pinAttr DATAB_2 @name DATAB -pinAttr DATAC_3 @name DATAC -pinAttr COMBOUT_1 @name COMBOUT -pg 1 -lvl 1 -x 80 -y 20
-load inst auto_fab_0_2|alt_sld_fab_0_3 alt_sld_fab_0_3 {} -hier auto_fab_0_2 -attr @name alt_sld_fab_0 -attr @cell (alt_sld_fab_0_alt_sld_fab_0_10_fkimwiy) -pg 1 -lvl 1 -x 140 -y 220
-load net OUTPUT_2 -attr @name iB -pin Mux_0_7 iB_21 -port iB_17
-netloc OUTPUT_2 1 0 1 -40J 30n
-load net OUTPUT_4 -attr @name iSel -pin Mux_0_7 iSel_22 -port iSel_18
-netloc OUTPUT_4 1 0 1 0J 50n
-load net OUTPUT_6 -attr @name iA -pin Mux_0_7 iA_23 -port iA_19
-netloc OUTPUT_6 1 0 1 -20J 60n
-load net oY~1_8 -attr @name oY~1 -pin Mux_0_7 oY~1_24 -port oY[0]_11 -port oY[1]_12 -port oY[2]_13 -port oY[3]_14
-load net COMBOUT_9 -attr @name ~GND:COMBOUT -port oY[4]_15 -port oY[5]_16 -pin ~GND_20 COMBOUT_5
-load net Mux_0_7|COMBOUT_1 -attr @name iB -hierPin Mux_0_7 iB_21 -pin Mux_0_7|oY~1_8 DATAA_1
-netloc Mux_0_7|COMBOUT_1 1 0 1 NJ 30
-load net Mux_0_7|COMBOUT_3 -attr @name iSel -hierPin Mux_0_7 iSel_22 -pin Mux_0_7|oY~1_8 DATAB_2
-netloc Mux_0_7|COMBOUT_3 1 0 1 NJ 50
-load net Mux_0_7|COMBOUT_5 -attr @name iA -hierPin Mux_0_7 iA_23 -pin Mux_0_7|oY~1_8 DATAC_3
-netloc Mux_0_7|COMBOUT_5 1 0 1 NJ 70
-load net Mux_0_7|COMBOUT_7 -attr @name oY~1:COMBOUT -hierPin Mux_0_7 oY~1_24 -pin Mux_0_7|oY~1_8 COMBOUT_1
-netloc Mux_0_7|COMBOUT_7 1 1 1 N 50
-load netBundle @oY~1_,COMBOUT_ 2 oY~1_8 COMBOUT_9 -autobundled
-netbloc @oY~1_,COMBOUT_ 1 1 1 320 50n
-levelinfo -pg 1 -60 40 340
-levelinfo -hier auto_fab_0_2 * 140 *
-levelinfo -hier Mux_0_7 * 80 *
-pagesize -pg 1 -db -bbox -sgen -120 -20 430 290
-pagesize -hier auto_fab_0_2 -db -bbox -sgen 40 190 300 260
-pagesize -hier Mux_0_7 -db -bbox -sgen 40 0 230 90
+load symbol Tbd_7 {} HIERBOX pinBus SW[0..2]_56 input.left 3 SW[0]_34 SW[1]_39 SW[2]_44 pin Mux_0:oY~2_29 output.right pin Mux_1:oY~0_49 output.right pin nSelAnBSel:oY~0_32 output.right fillcolor 2 fillregion 3
+load symbol LEDR[0]~_wirecell_26 {} BOX pin DATAA_16 input.left pin COMBOUT_7 output.right fillcolor 6
+load symbol LEDR[3]~_wirecell_27 {} BOX pin DATAA_17 input.left pin COMBOUT_8 output.right fillcolor 6
+load symbol Mux_0_8 {} HIERBOX pinBus SW[0..2]_51 input.left 3 SW[0]_33 SW[1]_38 SW[2]_43 pin oY~2_28 output.right fillcolor 2 fillregion 3
+load symbol Mux_3_9 {} HIERBOX pinBus SW[0..2]_52 input.left 3 SW[0]_36 SW[1]_41 SW[2]_46 pin nSelAnBSel:oY~0_31 output.right fillcolor 2 fillregion 3
+load symbol Mux_1_11 {} HIERBOX pinBus SW[0..2]_53 input.left 3 SW[0]_37 SW[1]_42 SW[2]_47 pin oY~0_48 output.right fillcolor 2 fillregion 3
+load symbol oY~2_12 {} BOX pin DATAA_1 input.left pin DATAB_2 input.left pin DATAC_3 input.left pin COMBOUT_1 output.right fillcolor 6
+load symbol nSelAnBSel_10 {} HIERBOX pinBus SW[0..2]_50 input.left 3 SW[0]_35 SW[1]_40 SW[2]_45 pin oY~0_30 output.right fillcolor 2 fillregion 3
+load symbol oY~0_13 {} BOX pin DATAA_4 input.left pin DATAB_5 input.left pin DATAC_6 input.left pin COMBOUT_2 output.right fillcolor 6
+load port CLOCK0_50_16 input -attr @name CLOCK0_50 -pg 1 -lvl 0 -x 0 -y 20
+load portBus LEDR[0..5]_54 output 6 LEDR[0]_17 LEDR[1]_18 LEDR[2]_19 LEDR[3]_20 LEDR[4]_21 LEDR[5]_22 -attr @name LEDR[0..5] -portAttr LEDR[0]_17 @name LEDR[0] -portAttr LEDR[1]_18 @name LEDR[1] -portAttr LEDR[2]_19 @name LEDR[2] -portAttr LEDR[3]_20 @name LEDR[3] -portAttr LEDR[4]_21 @name LEDR[4] -portAttr LEDR[5]_22 @name LEDR[5] -pg 1 -lvl 3 -x 890 -y 100
+load portBus SW[0..2]_55 input 3 SW[0]_23 SW[1]_24 SW[2]_25 -attr @name SW[0..2] -portAttr SW[0]_23 @name SW[0] -portAttr SW[1]_24 @name SW[1] -portAttr SW[2]_25 @name SW[2] -pg 1 -lvl 0 -x 0 -y 120
+load inst auto_fab_0_2 auto_fab_0_2 {} -autohide -attr @name auto_fab_0 -attr @cell (alt_sld_fab_0) -pg 1 -lvl 2 -x 730 -y 50
+load inst Tbd_7 Tbd_7 {} -unfold -autohide -attr @name Tbd -attr @cell (TbdMux) -pinBusAttr SW[0..2]_56 @name SW[0..2] -pinAttr SW[0]_34 @name SW[0] -pinAttr SW[1]_39 @name SW[1] -pinAttr SW[2]_44 @name SW[2] -pinAttr Mux_0:oY~2_29 @name Mux_0:oY~2 -pinAttr Mux_1:oY~0_49 @name Mux_1:oY~0 -pinAttr nSelAnBSel:oY~0_32 @name nSelAnBSel:oY~0 -hierPinBusAttr SW[0..2]_56 @name SW[0..2] -hierPinAttr SW[0]_34 @name SW[0] -hierPinAttr SW[1]_39 @name SW[1] -hierPinAttr SW[2]_44 @name SW[2] -hierPinAttr Mux_0:oY~2_29 @name Mux_0:oY~2 -hierPinAttr Mux_1:oY~0_49 @name Mux_1:oY~0 -hierPinAttr nSelAnBSel:oY~0_32 @name nSelAnBSel:oY~0 -pg 1 -lvl 1 -x 70 -y 90
+load inst LEDR[0]~_wirecell_26 LEDR[0]~_wirecell_26 {} -attr @name LEDR[0]~_wirecell -attr @cell {} -pinAttr DATAA_16 @name DATAA -pinAttr COMBOUT_7 @name COMBOUT -pg 1 -lvl 2 -x 730 -y 90
+load inst LEDR[3]~_wirecell_27 LEDR[3]~_wirecell_27 {} -attr @name LEDR[3]~_wirecell -attr @cell {} -pinAttr DATAA_17 @name DATAA -pinAttr COMBOUT_8 @name COMBOUT -pg 1 -lvl 2 -x 730 -y 150
+load inst Tbd_7|Mux_0_8 Mux_0_8 {} -unfold -hier Tbd_7 -autohide -attr @name Mux_0 -attr @cell (Mux) -pinBusAttr SW[0..2]_51 @name SW[0..2] -pinAttr SW[0]_33 @name SW[0] -pinAttr SW[1]_38 @name SW[1] -pinAttr SW[2]_43 @name SW[2] -pinAttr oY~2_28 @name oY~2 -hierPinBusAttr SW[0..2]_51 @name SW[0..2] -hierPinAttr SW[0]_33 @name SW[0] -hierPinAttr SW[1]_38 @name SW[1] -hierPinAttr SW[2]_43 @name SW[2] -hierPinAttr oY~2_28 @name oY~2 -pg 1 -lvl 1 -x 170 -y 90
+load inst Tbd_7|Mux_3_9 Mux_3_9 {} -unfold -hier Tbd_7 -autohide -attr @name Mux_3 -attr @cell (Mux) -pinBusAttr SW[0..2]_52 @name SW[0..2] -pinAttr SW[0]_36 @name SW[0] -pinAttr SW[1]_41 @name SW[1] -pinAttr SW[2]_46 @name SW[2] -pinAttr nSelAnBSel:oY~0_31 @name nSelAnBSel:oY~0 -hierPinBusAttr SW[0..2]_52 @name SW[0..2] -hierPinAttr SW[0]_36 @name SW[0] -hierPinAttr SW[1]_41 @name SW[1] -hierPinAttr SW[2]_46 @name SW[2] -hierPinAttr nSelAnBSel:oY~0_31 @name nSelAnBSel:oY~0 -pg 1 -lvl 1 -x 170 -y 350
+load inst Tbd_7|Mux_1_11 Mux_1_11 {} -unfold -hier Tbd_7 -autohide -attr @name Mux_1 -attr @cell (Mux) -pinBusAttr SW[0..2]_53 @name SW[0..2] -pinAttr SW[0]_37 @name SW[0] -pinAttr SW[1]_42 @name SW[1] -pinAttr SW[2]_47 @name SW[2] -pinAttr oY~0_48 @name oY~0 -hierPinBusAttr SW[0..2]_53 @name SW[0..2] -hierPinAttr SW[0]_37 @name SW[0] -hierPinAttr SW[1]_42 @name SW[1] -hierPinAttr SW[2]_47 @name SW[2] -hierPinAttr oY~0_48 @name oY~0 -pg 1 -lvl 1 -x 170 -y 220
+load inst Tbd_7|Mux_0_8|oY~2_12 oY~2_12 {} -hier Tbd_7|Mux_0_8 -attr @name oY~2 -attr @cell {} -pinAttr DATAA_1 @name DATAA -pinAttr DATAB_2 @name DATAB -pinAttr DATAC_3 @name DATAC -pinAttr COMBOUT_1 @name COMBOUT -pg 1 -lvl 1 -x 230 -y 80
+load inst Tbd_7|Mux_3_9|nSelAnBSel_10 nSelAnBSel_10 {} -hier Tbd_7|Mux_3_9 -autohide -attr @name nSelAnBSel -attr @cell (TheNand2) -pinBusAttr SW[0..2]_50 @name SW[0..2] -pinAttr SW[0]_35 @name SW[0] -pinAttr SW[1]_40 @name SW[1] -pinAttr SW[2]_45 @name SW[2] -pinAttr oY~0_30 @name oY~0 -hierPinBusAttr SW[0..2]_50 @name SW[0..2] -hierPinAttr SW[0]_35 @name SW[0] -hierPinAttr SW[1]_40 @name SW[1] -hierPinAttr SW[2]_45 @name SW[2] -hierPinAttr oY~0_30 @name oY~0 -pg 1 -lvl 1 -x 250 -y 370
+load inst Tbd_7|Mux_1_11|oY~0_13 oY~0_13 {} -hier Tbd_7|Mux_1_11 -attr @name oY~0 -attr @cell {} -pinAttr DATAA_4 @name DATAA -pinAttr DATAB_5 @name DATAB -pinAttr DATAC_6 @name DATAC -pinAttr COMBOUT_2 @name COMBOUT -pg 1 -lvl 1 -x 230 -y 210
+load net Mux_0:oY~2_3 -attr @name Mux_0:oY~2 -pin LEDR[0]~_wirecell_26 DATAA_16 -pin Tbd_7 Mux_0:oY~2_29
+netloc Mux_0:oY~2_3 1 1 1 650J 100n
+load net nSelAnBSel:oY~0_7 -attr @name nSelAnBSel:oY~0 -pin LEDR[3]~_wirecell_27 DATAA_17 -pin Tbd_7 nSelAnBSel:oY~0_32
+netloc nSelAnBSel:oY~0_7 1 1 1 690J 160n
+load net Mux_1:oY~0_28 -attr @name Mux_1:oY~0 -port LEDR[1]_18 -port LEDR[2]_19 -port LEDR[4]_21 -port LEDR[5]_22 -pin Tbd_7 Mux_1:oY~0_49
+load net COMBOUT_29 -attr @name LEDR[0]~_wirecell:COMBOUT -port LEDR[0]_17 -pin LEDR[0]~_wirecell_26 COMBOUT_7
+load net COMBOUT_30 -attr @name LEDR[3]~_wirecell:COMBOUT -port LEDR[3]_20 -pin LEDR[3]~_wirecell_27 COMBOUT_8
+load net OUTPUT_10 -attr @name SW[0] -attr @rip 0 -port SW[0]_23 -pin Tbd_7 SW[0]_34
+load net OUTPUT_16 -attr @name SW[1] -attr @rip 1 -port SW[1]_24 -pin Tbd_7 SW[1]_39
+load net OUTPUT_22 -attr @name SW[2] -attr @rip 2 -port SW[2]_25 -pin Tbd_7 SW[2]_44
+load net Tbd_7|oY~2_2 -attr @name oY~2 -hierPin Tbd_7 Mux_0:oY~2_29 -pin Tbd_7|Mux_0_8 oY~2_28
+netloc Tbd_7|oY~2_2 1 1 1 500J 110n
+load net Tbd_7|nSelAnBSel:oY~0_6 -attr @name nSelAnBSel:oY~0 -hierPin Tbd_7 nSelAnBSel:oY~0_32 -pin Tbd_7|Mux_3_9 nSelAnBSel:oY~0_31
+netloc Tbd_7|nSelAnBSel:oY~0_6 1 1 1 500J 280n
+load net Tbd_7|oY~0_27 -attr @name oY~0 -hierPin Tbd_7 Mux_1:oY~0_49 -pin Tbd_7|Mux_1_11 oY~0_48
+netloc Tbd_7|oY~0_27 1 1 1 500J 200n
+load net Tbd_7|COMBOUT_9 -attr @name SW[0] -attr @rip 0 -hierPin Tbd_7 SW[0]_34 -pin Tbd_7|Mux_0_8 SW[0]_33 -pin Tbd_7|Mux_1_11 SW[0]_37 -pin Tbd_7|Mux_3_9 SW[0]_36
+load net Tbd_7|COMBOUT_15 -attr @name SW[1] -attr @rip 1 -hierPin Tbd_7 SW[1]_39 -pin Tbd_7|Mux_0_8 SW[1]_38 -pin Tbd_7|Mux_1_11 SW[1]_42 -pin Tbd_7|Mux_3_9 SW[1]_41
+load net Tbd_7|COMBOUT_21 -attr @name SW[2] -attr @rip 2 -hierPin Tbd_7 SW[2]_44 -pin Tbd_7|Mux_0_8 SW[2]_43 -pin Tbd_7|Mux_1_11 SW[2]_47 -pin Tbd_7|Mux_3_9 SW[2]_46
+load net Tbd_7|Mux_0_8|COMBOUT_1 -attr @name oY~2:COMBOUT -hierPin Tbd_7|Mux_0_8 oY~2_28 -pin Tbd_7|Mux_0_8|oY~2_12 COMBOUT_1
+netloc Tbd_7|Mux_0_8|COMBOUT_1 1 1 1 NJ 110
+load net Tbd_7|Mux_0_8|COMBOUT_8 -attr @name SW[0] -attr @rip 0 -hierPin Tbd_7|Mux_0_8 SW[0]_33 -pin Tbd_7|Mux_0_8|oY~2_12 DATAB_2
+load net Tbd_7|Mux_0_8|COMBOUT_14 -attr @name SW[1] -attr @rip 1 -hierPin Tbd_7|Mux_0_8 SW[1]_38 -pin Tbd_7|Mux_0_8|oY~2_12 DATAA_1
+load net Tbd_7|Mux_0_8|COMBOUT_20 -attr @name SW[2] -attr @rip 2 -hierPin Tbd_7|Mux_0_8 SW[2]_43 -pin Tbd_7|Mux_0_8|oY~2_12 DATAC_3
+load net Tbd_7|Mux_3_9|oY~0_5 -attr @name oY~0 -hierPin Tbd_7|Mux_3_9 nSelAnBSel:oY~0_31 -pin Tbd_7|Mux_3_9|nSelAnBSel_10 oY~0_30
+netloc Tbd_7|Mux_3_9|oY~0_5 1 1 1 NJ 380
+load net Tbd_7|Mux_3_9|COMBOUT_12 -attr @name SW[0] -attr @rip 0 -hierPin Tbd_7|Mux_3_9 SW[0]_36 -pin Tbd_7|Mux_3_9|nSelAnBSel_10 SW[0]_35
+load net Tbd_7|Mux_3_9|COMBOUT_18 -attr @name SW[1] -attr @rip 1 -hierPin Tbd_7|Mux_3_9 SW[1]_41 -pin Tbd_7|Mux_3_9|nSelAnBSel_10 SW[1]_40
+load net Tbd_7|Mux_3_9|COMBOUT_24 -attr @name SW[2] -attr @rip 2 -hierPin Tbd_7|Mux_3_9 SW[2]_46 -pin Tbd_7|Mux_3_9|nSelAnBSel_10 SW[2]_45
+load net Tbd_7|Mux_1_11|COMBOUT_26 -attr @name oY~0:COMBOUT -hierPin Tbd_7|Mux_1_11 oY~0_48 -pin Tbd_7|Mux_1_11|oY~0_13 COMBOUT_2
+netloc Tbd_7|Mux_1_11|COMBOUT_26 1 1 1 NJ 240
+load net Tbd_7|Mux_1_11|COMBOUT_13 -attr @name SW[0] -attr @rip 0 -hierPin Tbd_7|Mux_1_11 SW[0]_37 -pin Tbd_7|Mux_1_11|oY~0_13 DATAA_4
+load net Tbd_7|Mux_1_11|COMBOUT_19 -attr @name SW[1] -attr @rip 1 -hierPin Tbd_7|Mux_1_11 SW[1]_42 -pin Tbd_7|Mux_1_11|oY~0_13 DATAB_5
+load net Tbd_7|Mux_1_11|COMBOUT_25 -attr @name SW[2] -attr @rip 2 -hierPin Tbd_7|Mux_1_11 SW[2]_47 -pin Tbd_7|Mux_1_11|oY~0_13 DATAC_6
+load netBundle OUTPUT_35 3 OUTPUT_10 OUTPUT_16 OUTPUT_22 -attr @name SW[0..2]
+netbloc OUTPUT_35 1 0 1 N 120
+load netBundle Tbd_7|COMBOUT_36 3 Tbd_7|COMBOUT_9 Tbd_7|COMBOUT_15 Tbd_7|COMBOUT_21 -attr @name SW[0..2]
+netbloc Tbd_7|COMBOUT_36 1 0 1 100 90n
+load netBundle Tbd_7|Mux_0_8|COMBOUT_32 3 Tbd_7|Mux_0_8|COMBOUT_8 Tbd_7|Mux_0_8|COMBOUT_14 Tbd_7|Mux_0_8|COMBOUT_20 -attr @name SW[0..2]
+netbloc Tbd_7|Mux_0_8|COMBOUT_32 1 0 1 200J 90n
+load netBundle Tbd_7|Mux_3_9|COMBOUT_33 3 Tbd_7|Mux_3_9|COMBOUT_12 Tbd_7|Mux_3_9|COMBOUT_18 Tbd_7|Mux_3_9|COMBOUT_24 -attr @name SW[0..2]
+netbloc Tbd_7|Mux_3_9|COMBOUT_33 1 0 1 NJ 380
+load netBundle Tbd_7|Mux_1_11|COMBOUT_34 3 Tbd_7|Mux_1_11|COMBOUT_13 Tbd_7|Mux_1_11|COMBOUT_19 Tbd_7|Mux_1_11|COMBOUT_25 -attr @name SW[0..2]
+netbloc Tbd_7|Mux_1_11|COMBOUT_34 1 0 1 200J 220n
+load netBundle @COMBOUT_,Mux_1:oY~0_ 3 COMBOUT_29 Mux_1:oY~0_28 COMBOUT_30 -autobundled
+netbloc @COMBOUT_,Mux_1:oY~0_ 1 1 2 670J 120 870
+levelinfo -pg 1 0 70 730 890
+levelinfo -hier Tbd_7 * 170 *
+levelinfo -hier Tbd_7|Mux_0_8 * 230 *
+levelinfo -hier Tbd_7|Mux_3_9 * 250 *
+levelinfo -hier Tbd_7|Mux_1_11 * 230 *
+pagesize -pg 1 -db -bbox -sgen -110 0 990 480
+pagesize -hier Tbd_7 -db -bbox -sgen 70 40 530 450
+pagesize -hier Tbd_7|Mux_0_8 -db -bbox -sgen 170 60 380 150
+pagesize -hier Tbd_7|Mux_3_9 -db -bbox -sgen 170 320 380 420
+pagesize -hier Tbd_7|Mux_1_11 -db -bbox -sgen 170 190 380 280
 show
-zoom 1.50581
-scrollpos -523 -103
+zoom 1.34896
+scrollpos -414 -113
 #
 # initialize ictrl to current module _1 {}
 ictrl init {} |

@@ -80,3 +80,7 @@ set_location_assignment PIN_F32 -to LEDR[3]
 set_location_assignment PIN_A19 -to LEDR[4]
 set_location_assignment PIN_B24 -to LEDR[5]
 set_global_assignment -name LAST_QUARTUS_VERSION "26.1.1 Pro Edition"
+set_instance_assignment -name PARTITION Mux_1 -to Tbd|Mux_0 -entity AllMyMuxesOnDE23Lite
+set_instance_assignment -name PARTITION Mux -to Tbd|Mux_3 -entity AllMyMuxesOnDE23Lite
+set_instance_assignment -name PARTITION_COLOUR 4288413523 -to Tbd|Mux_3 -entity AllMyMuxesOnDE23Lite
+set_instance_assignment -name PARTITION_COLOUR 4294953886 -to Tbd|Mux_0 -entity AllMyMuxesOnDE23Lite

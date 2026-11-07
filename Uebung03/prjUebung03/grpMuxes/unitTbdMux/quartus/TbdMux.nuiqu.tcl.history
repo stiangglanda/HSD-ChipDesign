@@ -1,13 +1,11 @@
 # TCL commands history
-# Sat Oct 31 21:40:47 2026
+# Sat Nov 7 17:42:38 2026
 dni::trigger_gui -command gui_command::rtl_analyzer::unfold -options {"checkpoint":"user_runs/default_run/elaborated","object":"button @hier_unfold inst Tbd Tbd {}"}
 dni::trigger_gui -command gui_command::rtl_analyzer::zoom_fit -options {"checkpoint":"user_runs/default_run/elaborated"}
 dni::trigger_gui -command gui_command::rtl_analyzer::unfold -options {"checkpoint":"user_runs/default_run/elaborated","object":"button @hier_unfold inst Tbd|Mux_0 Tbd|Mux_0 {}"}
-dni::trigger_gui -command gui_command::rtl_analyzer::fold -options {"checkpoint":"user_runs/default_run/elaborated","object":"button @hier_fold inst Tbd|Mux_0 Tbd|Mux_0 {}"}
-dni::trigger_gui -command gui_command::rtl_analyzer::unfold -options {"checkpoint":"user_runs/default_run/elaborated","object":"button @hier_unfold inst Tbd|Mux_5 Tbd|Mux_5 {}"}
-dni::trigger_gui -command gui_command::rtl_analyzer::unfold -options {"checkpoint":"user_runs/default_run/elaborated","object":"button @hier_unfold inst Tbd|Mux_4 Tbd|Mux_4 {}"}
+dni::trigger_gui -command gui_command::rtl_analyzer::unfold -options {"checkpoint":"user_runs/default_run/elaborated","object":"button @hier_unfold inst Tbd|Mux_1 Tbd|Mux_1 {}"}
+dni::trigger_gui -command gui_command::rtl_analyzer::unfold -options {"checkpoint":"user_runs/default_run/elaborated","object":"button @hier_unfold inst Tbd|Mux_2 Tbd|Mux_2 {}"}
 dni::trigger_gui -command gui_command::rtl_analyzer::unfold -options {"checkpoint":"user_runs/default_run/elaborated","object":"button @hier_unfold inst Tbd|Mux_3 Tbd|Mux_3 {}"}
-dni::trigger_gui -command gui_command::rtl_analyzer::unfold -options {"checkpoint":"user_runs/default_run/elaborated","object":"button @hier_unfold inst Tbd|Mux_3|nSeliA Tbd|Mux_3|nSeliA {}"}
-dni::trigger_gui -command gui_command::rtl_analyzer::unfold -options {"checkpoint":"user_runs/default_run/elaborated","object":"button @hier_unfold inst Tbd|Mux_3|nSelAnBSel Tbd|Mux_3|nSelAnBSel {}"}
-dni::trigger_gui -command gui_command::rtl_analyzer::unfold -options {"checkpoint":"user_runs/default_run/elaborated","object":"button @hier_unfold inst Tbd|Mux_3|niBSel Tbd|Mux_3|niBSel {}"}
-dni::trigger_gui -command gui_command::rtl_analyzer::unfold -options {"checkpoint":"user_runs/default_run/elaborated","object":"button @hier_unfold inst Tbd|Mux_3|niSel Tbd|Mux_3|niSel {}"}
+dni::trigger_gui -command gui_command::rtl_analyzer::unfold -options {"checkpoint":"user_runs/default_run/elaborated","object":"button @hier_unfold inst Tbd|Mux_4 Tbd|Mux_4 {}"}
+dni::trigger_gui -command gui_command::rtl_analyzer::unfold -options {"checkpoint":"user_runs/default_run/elaborated","object":"button @hier_unfold inst Tbd|Mux_5 Tbd|Mux_5 {}"}
+dni::trigger_gui -command gui_command::rtl_analyzer::zoom_fit -options {"checkpoint":"user_runs/default_run/elaborated"}
