@@ -28,25 +28,57 @@ end tbMultiplier;
 
 architecture Bhv of tbMultiplier is
 
-  -- ------------------------------------------------------
-  -- add your code here (signal, constant, ... declaration)
-  -- ------------------------------------------------------
+  constant cArgRange : positive := 4;
+  constant cDelay    : time     := 10 ns;
+
+  signal sMultiplicant   : unsigned(cArgRange-1 downto 0)   := (others => '0');
+  signal sMultiplier     : unsigned(cArgRange-1 downto 0)   := (others => '0');
+  signal sProductLoop    : unsigned(2*cArgRange-1 downto 0);
+  signal sProductGen     : unsigned(2*cArgRange-1 downto 0);
+  signal sProductOp      : unsigned(2*cArgRange-1 downto 0);
 
 begin
-  
-  -- ------------------
-  -- add your code here
-  -- ------------------
+
+  DutLoop : entity work.Multiplier(UsingForLoop)
+    generic map (gArgRange => cArgRange)
+    port map (iMultiplicant => sMultiplicant,
+              iMultiplier   => sMultiplier,
+              oProduct      => sProductLoop);
+
+  DutGenerate : entity work.Multiplier(UsingForGenerate)
+    generic map (gArgRange => cArgRange)
+    port map (iMultiplicant => sMultiplicant,
+              iMultiplier   => sMultiplier,
+              oProduct      => sProductGen);
+
+  DutOperator : entity work.Multiplier(UsingOperator)
+    generic map (gArgRange => cArgRange)
+    port map (iMultiplicant => sMultiplicant,
+              iMultiplier   => sMultiplier,
+              oProduct      => sProductOp);
 
   -- Test loop for multiplicant and multiplier to verify completeness
   TestSequence : process is
   begin
-  
-  -- ------------------
-  -- add your code here
-  -- ------------------
+    for a in 0 to 2**cArgRange - 1 loop
+      for b in 0 to 2**cArgRange - 1 loop
+        sMultiplicant <= to_unsigned(a, cArgRange);
+        sMultiplier   <= to_unsigned(b, cArgRange);
+        wait for cDelay;
 
+        assert sProductLoop = sProductOp
+          report "UsingForLoop falsch bei " & integer'image(a) & " * " & integer'image(b)
+          severity failure;
+
+        assert sProductGen = sProductOp
+          report "UsingForGenerate falsch bei " & integer'image(a) & " * " & integer'image(b)
+          severity failure;
+      end loop;
+    end loop;
+
+    report "Test erfolgreich: alle Kombinationen geprueft" severity note;
+    wait;
   end process TestSequence;
-  
+
 end Bhv;
 

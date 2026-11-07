@@ -1,0 +1,110 @@
+# File saved with Nlview 7.9.1 2025-07-03 36fdeb9b55 VDI=45 GEI=38 GUI=QT:6.8.6
+#  -curmodule
+# non-default properties - (restore without -noprops)
+property -colorscheme classic
+property attrcolor #06476f
+property autobundle 129
+property backgroundcolor #ffffff
+property boxcolor0 #2d2d2d
+property boxhierpins 3
+property boxinstcolor #000000
+property boxpincolor #06476f
+property buscolor #2d2d2d
+property buswidthlimit 0
+property createnetattrdsp 1024
+property createvconn 65
+property decorate 1
+property elidetext 1
+property fillcolor1 #73acac
+property fillcolor2 #81bf5f
+property fillcolor3 #dce6dc
+property fillcolor4 #ffff00
+property fillcolor5 #c0c0c0
+property fillcolor6 #b3a9fe
+property fillcolor7 #f0b0d2
+property fillcolor8 #adadad
+property fillcolor9 #a9feff
+property fillcolor10 #e5ffff
+property instattrmax -1
+property netcolor #2d2d2d
+property netindicators 15
+property netindicatorsize 3
+property nohiernegpins 0
+property overlaycolor #2d2d2d
+property pbuscolor #0000ff
+property pbusnamecolor #000000
+property pinattrmax -1
+property portcolor #0000ff
+property portnamecolor #000000
+property ripattrmax -1
+property rippercolor #000000
+property rubberbandcolor #00aaff
+property selectionappearance 6
+property selectioncolor #aa1027
+property shadowstyle 1
+property sheetheight 34
+property sheetwidth 44
+property showpagenumbers 1
+property showripindex 1
+property showvconn 1
+#
+module new _1 {}
+load symbol InstMuxUsingCase_2 {} HIERBOX pinBus iA[0..7]_32 input.left 8 iA[0]_26 iA[1]_27 iA[2]_28 iA[3]_29 iA[4]_20 iA[5]_21 iA[6]_22 iA[7]_23 pinBus iSel[0..2]_33 input.left 3 iSel[0]_24 iSel[1]_25 iSel[2]_19 pin Mux_0~1_18 output.right fillcolor 2 fillregion 3
+load symbol Mux_0~1_3 {} BOX pin DATAA_1 input.left pin DATAB_2 input.left pin DATAC_3 input.left pin DATAD_4 input.left pin DATAE_5 input.left pin DATAF_6 input.left pin DATAG_7 input.left pin DATAH_8 input.left pin COMBOUT_1 output.right fillcolor 6
+load symbol Mux_0~0_4 {} BOX pin DATAA_9 input.left pin DATAB_10 input.left pin DATAC_11 input.left pin DATAD_12 input.left pin DATAE_13 input.left pin DATAF_14 input.left pin COMBOUT_2 output.right fillcolor 6
+load port oCaseY_5 output -attr @name oCaseY -pg 1 -lvl 2 -x 570 -y 40
+load port oIfY_6 output -attr @name oIfY -pg 1 -lvl 2 -x 570 -y 60
+load portBus iA[0..7]_30 input 8 iA[0]_14 iA[1]_15 iA[2]_16 iA[3]_17 iA[4]_8 iA[5]_9 iA[6]_10 iA[7]_11 -attr @name iA[0..7] -portAttr iA[0]_14 @name iA[0] -portAttr iA[1]_15 @name iA[1] -portAttr iA[2]_16 @name iA[2] -portAttr iA[3]_17 @name iA[3] -portAttr iA[4]_8 @name iA[4] -portAttr iA[5]_9 @name iA[5] -portAttr iA[6]_10 @name iA[6] -portAttr iA[7]_11 @name iA[7] -pg 1 -lvl 0 -x -20 -y 60
+load portBus iSel[0..2]_31 input 3 iSel[0]_12 iSel[1]_13 iSel[2]_7 -attr @name iSel[0..2] -portAttr iSel[0]_12 @name iSel[0] -portAttr iSel[1]_13 @name iSel[1] -portAttr iSel[2]_7 @name iSel[2] -pg 1 -lvl 0 -x -20 -y 80
+load inst InstMuxUsingCase_2 InstMuxUsingCase_2 {} -unfold -autohide -attr @name InstMuxUsingCase -attr @cell (Mpx) -pinBusAttr iA[0..7]_32 @name iA[0..7] -pinAttr iA[0]_26 @name iA[0] -pinAttr iA[1]_27 @name iA[1] -pinAttr iA[2]_28 @name iA[2] -pinAttr iA[3]_29 @name iA[3] -pinAttr iA[4]_20 @name iA[4] -pinAttr iA[5]_21 @name iA[5] -pinAttr iA[6]_22 @name iA[6] -pinAttr iA[7]_23 @name iA[7] -pinBusAttr iSel[0..2]_33 @name iSel[0..2] -pinAttr iSel[0]_24 @name iSel[0] -pinAttr iSel[1]_25 @name iSel[1] -pinAttr iSel[2]_19 @name iSel[2] -pinAttr Mux_0~1_18 @name Mux_0~1 -hierPinBusAttr iA[0..7]_32 @name iA[0..7] -hierPinAttr iA[0]_26 @name iA[0] -hierPinAttr iA[1]_27 @name iA[1] -hierPinAttr iA[2]_28 @name iA[2] -hierPinAttr iA[3]_29 @name iA[3] -hierPinAttr iA[4]_20 @name iA[4] -hierPinAttr iA[5]_21 @name iA[5] -hierPinAttr iA[6]_22 @name iA[6] -hierPinAttr iA[7]_23 @name iA[7] -hierPinBusAttr iSel[0..2]_33 @name iSel[0..2] -hierPinAttr iSel[0]_24 @name iSel[0] -hierPinAttr iSel[1]_25 @name iSel[1] -hierPinAttr iSel[2]_19 @name iSel[2] -hierPinAttr Mux_0~1_18 @name Mux_0~1 -pg 1 -lvl 1 -x 70 -y 50
+load inst InstMuxUsingCase_2|Mux_0~1_3 Mux_0~1_3 {} -hier InstMuxUsingCase_2 -attr @name Mux_0~1 -attr @cell {} -pinAttr DATAA_1 @name DATAA -pinAttr DATAB_2 @name DATAB -pinAttr DATAC_3 @name DATAC -pinAttr DATAD_4 @name DATAD -pinAttr DATAE_5 @name DATAE -pinAttr DATAF_6 @name DATAF -pinAttr DATAG_7 @name DATAG -pinAttr DATAH_8 @name DATAH -pinAttr COMBOUT_1 @name COMBOUT -pg 1 -lvl 2 -x 320 -y 80
+load inst InstMuxUsingCase_2|Mux_0~0_4 Mux_0~0_4 {} -hier InstMuxUsingCase_2 -attr @name Mux_0~0 -attr @cell {} -pinAttr DATAA_9 @name DATAA -pinAttr DATAB_10 @name DATAB -pinAttr DATAC_11 @name DATAC -pinAttr DATAD_12 @name DATAD -pinAttr DATAE_13 @name DATAE -pinAttr DATAF_14 @name DATAF -pinAttr COMBOUT_2 @name COMBOUT -pg 1 -lvl 1 -x 130 -y 60
+load net Mux_0~1_2 -attr @name Mux_0~1 -pin InstMuxUsingCase_2 Mux_0~1_18 -port oCaseY_5 -port oIfY_6
+netloc Mux_0~1_2 1 1 1 550 40n
+load net OUTPUT_18 -attr @name iA[0] -attr @rip 0 -pin InstMuxUsingCase_2 iA[0]_26 -port iA[0]_14
+load net OUTPUT_20 -attr @name iA[1] -attr @rip 1 -pin InstMuxUsingCase_2 iA[1]_27 -port iA[1]_15
+load net OUTPUT_22 -attr @name iA[2] -attr @rip 2 -pin InstMuxUsingCase_2 iA[2]_28 -port iA[2]_16
+load net OUTPUT_24 -attr @name iA[3] -attr @rip 3 -pin InstMuxUsingCase_2 iA[3]_29 -port iA[3]_17
+load net OUTPUT_6 -attr @name iA[4] -attr @rip 4 -pin InstMuxUsingCase_2 iA[4]_20 -port iA[4]_8
+load net OUTPUT_8 -attr @name iA[5] -attr @rip 5 -pin InstMuxUsingCase_2 iA[5]_21 -port iA[5]_9
+load net OUTPUT_10 -attr @name iA[6] -attr @rip 6 -pin InstMuxUsingCase_2 iA[6]_22 -port iA[6]_10
+load net OUTPUT_12 -attr @name iA[7] -attr @rip 7 -pin InstMuxUsingCase_2 iA[7]_23 -port iA[7]_11
+load net OUTPUT_14 -attr @name iSel[0] -attr @rip 0 -pin InstMuxUsingCase_2 iSel[0]_24 -port iSel[0]_12
+load net OUTPUT_16 -attr @name iSel[1] -attr @rip 1 -pin InstMuxUsingCase_2 iSel[1]_25 -port iSel[1]_13
+load net OUTPUT_4 -attr @name iSel[2] -attr @rip 2 -pin InstMuxUsingCase_2 iSel[2]_19 -port iSel[2]_7
+load net InstMuxUsingCase_2|COMBOUT_1 -attr @name Mux_0~1:COMBOUT -hierPin InstMuxUsingCase_2 Mux_0~1_18 -pin InstMuxUsingCase_2|Mux_0~1_3 COMBOUT_1
+netloc InstMuxUsingCase_2|COMBOUT_1 1 2 1 N 150
+load net InstMuxUsingCase_2|COMBOUT_25 -attr @name Mux_0~0:COMBOUT -pin InstMuxUsingCase_2|Mux_0~0_4 COMBOUT_2 -pin InstMuxUsingCase_2|Mux_0~1_3 DATAB_2
+netloc InstMuxUsingCase_2|COMBOUT_25 1 1 1 N 110
+load net InstMuxUsingCase_2|COMBOUT_17 -attr @name iA[0] -attr @rip 0 -hierPin InstMuxUsingCase_2 iA[0]_26 -pin InstMuxUsingCase_2|Mux_0~0_4 DATAA_9
+load net InstMuxUsingCase_2|COMBOUT_19 -attr @name iA[1] -attr @rip 1 -hierPin InstMuxUsingCase_2 iA[1]_27 -pin InstMuxUsingCase_2|Mux_0~0_4 DATAB_10
+load net InstMuxUsingCase_2|COMBOUT_21 -attr @name iA[2] -attr @rip 2 -hierPin InstMuxUsingCase_2 iA[2]_28 -pin InstMuxUsingCase_2|Mux_0~0_4 DATAC_11
+load net InstMuxUsingCase_2|COMBOUT_23 -attr @name iA[3] -attr @rip 3 -hierPin InstMuxUsingCase_2 iA[3]_29 -pin InstMuxUsingCase_2|Mux_0~0_4 DATAD_12
+load net InstMuxUsingCase_2|COMBOUT_5 -attr @name iA[4] -attr @rip 4 -hierPin InstMuxUsingCase_2 iA[4]_20 -pin InstMuxUsingCase_2|Mux_0~1_3 DATAF_6
+load net InstMuxUsingCase_2|COMBOUT_7 -attr @name iA[5] -attr @rip 5 -hierPin InstMuxUsingCase_2 iA[5]_21 -pin InstMuxUsingCase_2|Mux_0~1_3 DATAC_3
+load net InstMuxUsingCase_2|COMBOUT_9 -attr @name iA[6] -attr @rip 6 -hierPin InstMuxUsingCase_2 iA[6]_22 -pin InstMuxUsingCase_2|Mux_0~1_3 DATAG_7
+load net InstMuxUsingCase_2|COMBOUT_11 -attr @name iA[7] -attr @rip 7 -hierPin InstMuxUsingCase_2 iA[7]_23 -pin InstMuxUsingCase_2|Mux_0~1_3 DATAD_4
+load net InstMuxUsingCase_2|COMBOUT_13 -attr @name iSel[0] -attr @rip 0 -hierPin InstMuxUsingCase_2 iSel[0]_24 -pin InstMuxUsingCase_2|Mux_0~0_4 DATAE_13 -pin InstMuxUsingCase_2|Mux_0~1_3 DATAH_8
+load net InstMuxUsingCase_2|COMBOUT_15 -attr @name iSel[1] -attr @rip 1 -hierPin InstMuxUsingCase_2 iSel[1]_25 -pin InstMuxUsingCase_2|Mux_0~0_4 DATAF_14 -pin InstMuxUsingCase_2|Mux_0~1_3 DATAE_5
+load net InstMuxUsingCase_2|COMBOUT_3 -attr @name iSel[2] -attr @rip 2 -hierPin InstMuxUsingCase_2 iSel[2]_19 -pin InstMuxUsingCase_2|Mux_0~1_3 DATAA_1
+load netBundle OUTPUT_26 8 OUTPUT_18 OUTPUT_20 OUTPUT_22 OUTPUT_24 OUTPUT_6 OUTPUT_8 OUTPUT_10 OUTPUT_12 -attr @name iA[0..7]
+netbloc OUTPUT_26 1 0 1 0J 40n
+load netBundle OUTPUT_27 3 OUTPUT_14 OUTPUT_16 OUTPUT_4 -attr @name iSel[0..2]
+netbloc OUTPUT_27 1 0 1 0J 80n
+load netBundle InstMuxUsingCase_2|COMBOUT_28 8 InstMuxUsingCase_2|COMBOUT_17 InstMuxUsingCase_2|COMBOUT_19 InstMuxUsingCase_2|COMBOUT_21 InstMuxUsingCase_2|COMBOUT_23 InstMuxUsingCase_2|COMBOUT_5 InstMuxUsingCase_2|COMBOUT_7 InstMuxUsingCase_2|COMBOUT_9 InstMuxUsingCase_2|COMBOUT_11 -attr @name iA[0..7]
+netbloc InstMuxUsingCase_2|COMBOUT_28 1 0 2 100 30 290
+load netBundle InstMuxUsingCase_2|COMBOUT_29 3 InstMuxUsingCase_2|COMBOUT_13 InstMuxUsingCase_2|COMBOUT_15 InstMuxUsingCase_2|COMBOUT_3 -attr @name iSel[0..2]
+netbloc InstMuxUsingCase_2|COMBOUT_29 1 0 2 100 190 270
+levelinfo -pg 1 -20 70 570
+levelinfo -hier InstMuxUsingCase_2 * 130 320 *
+pagesize -pg 1 -db -bbox -sgen -110 0 660 280
+pagesize -hier InstMuxUsingCase_2 -db -bbox -sgen 70 20 470 250
+show
+fullfit
+#
+# initialize ictrl to current module _1 {}
+ictrl init {} |
+ictrl property autohide 1
+ictrl property addSubpinInfo 1
+ictrl property addSubportInfo 1
+ictrl property addFillcolor12 0

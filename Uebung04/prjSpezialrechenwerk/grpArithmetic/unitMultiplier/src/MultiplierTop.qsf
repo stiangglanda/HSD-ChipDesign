@@ -1,0 +1,15 @@
+set_global_assignment -name TOP_LEVEL_ENTITY MultiplierTop
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 26.1.1
+set_global_assignment -name LAST_QUARTUS_VERSION "26.1.1 Pro Edition"
+set_global_assignment -name FAMILY "Agilex 3"
+set_global_assignment -name DEVICE A3CZ135BB18AE7S
+set_global_assignment -name VHDL_FILE "../../../grpPackages/pkgGlobal/src/Global-p.vhd"
+set_global_assignment -name VHDL_FILE "../src/Multiplier-e.vhd"
+set_global_assignment -name VHDL_FILE "../src/Multiplier-Rtl-a.vhd"
+set_global_assignment -name VHDL_FILE "../src/MultiplierTop.vhd"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_parameter -name gArgRange 4
+set_global_assignment -name SOURCE_FILE MultiplierTop.qsf
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 100
+set_global_assignment -name POWER_APPLY_THERMAL_MARGIN ADDITIONAL

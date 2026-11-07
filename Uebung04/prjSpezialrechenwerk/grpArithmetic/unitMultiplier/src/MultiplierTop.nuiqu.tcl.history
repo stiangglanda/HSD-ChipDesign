@@ -1,0 +1,4 @@
+# TCL commands history
+# Sat Nov 7 23:08:14 2026
+dni::trigger_gui -command gui_command::rtl_analyzer::unfold -options {"checkpoint":"user_runs/default_run/elaborated","object":"button @hier_unfold inst Inst Inst {}"}
+dni::trigger_gui -command gui_command::rtl_analyzer::zoom_fit -options {"checkpoint":"user_runs/default_run/elaborated"}

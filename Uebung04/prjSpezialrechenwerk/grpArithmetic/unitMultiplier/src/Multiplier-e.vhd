@@ -27,6 +27,6 @@ entity Multiplier is
   generic (gArgRange : integer := 4);
   port (iMultiplicant : in  unsigned(gArgRange-1 downto 0);
         iMultiplier   : in  unsigned(gArgRange-1 downto 0);
-        oProduct      : out unsigned(??? downto 0));
+        oProduct      : out unsigned(2*gArgRange-1 downto 0));
 
 end Multiplier;
