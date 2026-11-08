@@ -101,7 +101,6 @@ architecture UsingOperator of Multiplier is
 
 begin -- UsingOperator
 
-  oProduct <= to_unsigned(to_integer(iMultiplier) *
-              to_integer(iMultiplicant), oProduct'length);
+  oProduct <= iMultiplier * iMultiplicant;
 
 end UsingOperator;

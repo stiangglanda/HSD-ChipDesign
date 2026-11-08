@@ -14,16 +14,16 @@ end entity MultiplierTop;
 architecture Rtl of MultiplierTop is
 begin
 
-    --Inst : entity work.Multiplier(UsingForLoop)
-    --    generic map(gArgRange => gArgRange)
-    --    port map(iMultiplicant, iMultiplier, oProduct);
+    Inst : entity work.Multiplier(UsingForLoop)
+        generic map(gArgRange => gArgRange)
+        port map(iMultiplicant, iMultiplier, oProduct);
 
     --Inst : entity work.Multiplier(UsingForGenerate)
     --    generic map(gArgRange => gArgRange)
     --    port map(iMultiplicant, iMultiplier, oProduct);
 
-    Inst : entity work.Multiplier(UsingOperator)
-        generic map(gArgRange => gArgRange)
-        port map(iMultiplicant, iMultiplier, oProduct);
+    --Inst : entity work.Multiplier(UsingOperator)
+    --    generic map(gArgRange => gArgRange)
+    --    port map(iMultiplicant, iMultiplier, oProduct);
 
 end architecture Rtl;

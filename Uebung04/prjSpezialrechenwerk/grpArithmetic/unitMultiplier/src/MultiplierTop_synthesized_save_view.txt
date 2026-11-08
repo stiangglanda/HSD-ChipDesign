@@ -1,0 +1,184 @@
+# File saved with Nlview 7.9.1 2025-07-03 36fdeb9b55 VDI=45 GEI=38 GUI=QT:6.8.6
+#  -curmodule
+# non-default properties - (restore without -noprops)
+property -colorscheme classic
+property attrcolor #06476f
+property autobundle 129
+property backgroundcolor #ffffff
+property boxcolor0 #2d2d2d
+property boxhierpins 3
+property boxinstcolor #000000
+property boxpincolor #06476f
+property buscolor #2d2d2d
+property buswidthlimit 0
+property createnetattrdsp 1024
+property createvconn 65
+property decorate 1
+property elidetext 1
+property fillcolor1 #73acac
+property fillcolor2 #81bf5f
+property fillcolor3 #dce6dc
+property fillcolor4 #ffff00
+property fillcolor5 #c0c0c0
+property fillcolor6 #b3a9fe
+property fillcolor7 #f0b0d2
+property fillcolor8 #adadad
+property fillcolor9 #a9feff
+property fillcolor10 #e5ffff
+property instattrmax -1
+property netcolor #2d2d2d
+property netindicators 15
+property netindicatorsize 3
+property nohiernegpins 0
+property overlaycolor #2d2d2d
+property pbuscolor #0000ff
+property pbusnamecolor #000000
+property pinattrmax -1
+property portcolor #0000ff
+property portnamecolor #000000
+property ripattrmax -1
+property rippercolor #000000
+property rubberbandcolor #00aaff
+property selectionappearance 6
+property selectioncolor #aa1027
+property shadowstyle 1
+property sheetheight 34
+property sheetwidth 44
+property showpagenumbers 1
+property showripindex 1
+property showvconn 1
+#
+module new _1 filter_view
+load symbol Inst_2 {} HIERBOX pinBus iMultiplicant[0..3]_52 input.left 4 iMultiplicant[0]_42 iMultiplicant[1]_44 iMultiplicant[2]_46 iMultiplicant[3]_47 pinBus iMultiplier[0..3]_53 input.left 4 iMultiplier[0]_41 iMultiplier[1]_43 iMultiplier[2]_45 iMultiplier[3]_48 pin mult_0~1_33 output.right pin mult_0~6_34 output.right pin mult_0~11_35 output.right pin mult_0~16_36 output.right pin mult_0~21_37 output.right pin mult_0~26_38 output.right pin mult_0~31_39 output.right pin mult_0~36_40 output.right fillcolor 2 fillregion 3
+load symbol mult_0~1_3 {} BOX pin CIN_5 input.left pin DATAA_1 input.left pin DATAB_2 input.left pin DATAC_3 input.left pin DATAD_4 input.left pin COUT_2 output.right pin SUMOUT_1 output.right fillcolor 6
+load symbol mult_0~6_4 {} BOX pin CIN_10 input.left pin DATAA_6 input.left pin DATAB_7 input.left pin DATAC_8 input.left pin DATAD_9 input.left pin COUT_4 output.right pin SUMOUT_3 output.right fillcolor 6
+load symbol mult_0~11_5 {} BOX pin CIN_15 input.left pin DATAA_11 input.left pin DATAB_12 input.left pin DATAC_13 input.left pin DATAD_14 input.left pin COUT_6 output.right pin SUMOUT_5 output.right fillcolor 6
+load symbol mult_0~16_6 {} BOX pin CIN_18 input.left pin DATAA_16 input.left pin DATAB_17 input.left pin COUT_8 output.right pin SUMOUT_7 output.right fillcolor 6
+load symbol mult_0~21_7 {} BOX pin CIN_23 input.left pin DATAA_19 input.left pin DATAB_20 input.left pin DATAC_21 input.left pin DATAD_22 input.left pin COUT_10 output.right pin SUMOUT_9 output.right fillcolor 6
+load symbol mult_0~26_8 {} BOX pin CIN_27 input.left pin DATAA_24 input.left pin DATAB_25 input.left pin DATAC_26 input.left pin COUT_12 output.right pin SUMOUT_11 output.right fillcolor 6
+load symbol mult_0~31_9 {} BOX pin CIN_31 input.left pin DATAA_28 input.left pin DATAB_29 input.left pin DATAC_30 input.left pin COUT_14 output.right pin SUMOUT_13 output.right fillcolor 6
+load symbol mult_0~36_10 {} BOX pin CIN_32 input.left pin SUMOUT_15 output.right fillcolor 6
+load symbol mult_0~41_11 {} BOX pin CIN_37 input.left pin DATAA_33 input.left pin DATAB_34 input.left pin DATAC_35 input.left pin DATAD_36 input.left pin COUT_17 output.right pin SUMOUT_16 output.right fillcolor 6
+load symbol mult_0~46_12 {} BOX pin CIN_42 input.left pin DATAA_38 input.left pin DATAB_39 input.left pin DATAC_40 input.left pin DATAD_41 input.left pin COUT_19 output.right pin SUMOUT_18 output.right fillcolor 6
+load symbol mult_0~51_13 {} BOX pin CIN_47 input.left pin DATAA_43 input.left pin DATAB_44 input.left pin DATAC_45 input.left pin DATAD_46 input.left pin COUT_21 output.right pin SUMOUT_20 output.right fillcolor 6
+load symbol mult_0~56_14 {} BOX pin CIN_48 input.left pin SUMOUT_22 output.right fillcolor 6
+load symbol mult_0~61_15 {} BOX pin CIN_53 input.left pin DATAA_49 input.left pin DATAB_50 input.left pin DATAC_51 input.left pin DATAD_52 input.left pin COUT_24 output.right pin SUMOUT_23 output.right fillcolor 6
+load symbol mult_0~66_16 {} BOX pin CIN_54 input.left pin SUMOUT_25 output.right fillcolor 6
+load portBus iMultiplicant[0..3]_49 input 4 iMultiplicant[0]_26 iMultiplicant[1]_28 iMultiplicant[2]_30 iMultiplicant[3]_31 -attr @name iMultiplicant[0..3] -portAttr iMultiplicant[0]_26 @name iMultiplicant[0] -portAttr iMultiplicant[1]_28 @name iMultiplicant[1] -portAttr iMultiplicant[2]_30 @name iMultiplicant[2] -portAttr iMultiplicant[3]_31 @name iMultiplicant[3] -pg 1 -lvl 0 -x -40 -y 120
+load portBus iMultiplier[0..3]_50 input 4 iMultiplier[0]_25 iMultiplier[1]_27 iMultiplier[2]_29 iMultiplier[3]_32 -attr @name iMultiplier[0..3] -portAttr iMultiplier[0]_25 @name iMultiplier[0] -portAttr iMultiplier[1]_27 @name iMultiplier[1] -portAttr iMultiplier[2]_29 @name iMultiplier[2] -portAttr iMultiplier[3]_32 @name iMultiplier[3] -pg 1 -lvl 0 -x -40 -y 140
+load portBus oProduct[0..7]_51 output 8 oProduct[0]_17 oProduct[1]_18 oProduct[2]_19 oProduct[3]_20 oProduct[4]_21 oProduct[5]_22 oProduct[6]_23 oProduct[7]_24 -attr @name oProduct[0..7] -portAttr oProduct[0]_17 @name oProduct[0] -portAttr oProduct[1]_18 @name oProduct[1] -portAttr oProduct[2]_19 @name oProduct[2] -portAttr oProduct[3]_20 @name oProduct[3] -portAttr oProduct[4]_21 @name oProduct[4] -portAttr oProduct[5]_22 @name oProduct[5] -portAttr oProduct[6]_23 @name oProduct[6] -portAttr oProduct[7]_24 @name oProduct[7] -pg 1 -lvl 2 -x 1510 -y 60
+load inst Inst_2 Inst_2 {} -unfold -autohide -attr @name Inst -attr @cell (Multiplier) -pinBusAttr iMultiplicant[0..3]_52 @name iMultiplicant[0..3] -pinAttr iMultiplicant[0]_42 @name iMultiplicant[0] -pinAttr iMultiplicant[1]_44 @name iMultiplicant[1] -pinAttr iMultiplicant[2]_46 @name iMultiplicant[2] -pinAttr iMultiplicant[3]_47 @name iMultiplicant[3] -pinBusAttr iMultiplier[0..3]_53 @name iMultiplier[0..3] -pinAttr iMultiplier[0]_41 @name iMultiplier[0] -pinAttr iMultiplier[1]_43 @name iMultiplier[1] -pinAttr iMultiplier[2]_45 @name iMultiplier[2] -pinAttr iMultiplier[3]_48 @name iMultiplier[3] -pinAttr mult_0~1_33 @name mult_0~1 -pinAttr mult_0~6_34 @name mult_0~6 -pinAttr mult_0~11_35 @name mult_0~11 -pinAttr mult_0~16_36 @name mult_0~16 -pinAttr mult_0~21_37 @name mult_0~21 -pinAttr mult_0~26_38 @name mult_0~26 -pinAttr mult_0~31_39 @name mult_0~31 -pinAttr mult_0~36_40 @name mult_0~36 -hierPinBusAttr iMultiplicant[0..3]_52 @name iMultiplicant[0..3] -hierPinAttr iMultiplicant[0]_42 @name iMultiplicant[0] -hierPinAttr iMultiplicant[1]_44 @name iMultiplicant[1] -hierPinAttr iMultiplicant[2]_46 @name iMultiplicant[2] -hierPinAttr iMultiplicant[3]_47 @name iMultiplicant[3] -hierPinBusAttr iMultiplier[0..3]_53 @name iMultiplier[0..3] -hierPinAttr iMultiplier[0]_41 @name iMultiplier[0] -hierPinAttr iMultiplier[1]_43 @name iMultiplier[1] -hierPinAttr iMultiplier[2]_45 @name iMultiplier[2] -hierPinAttr iMultiplier[3]_48 @name iMultiplier[3] -hierPinAttr mult_0~1_33 @name mult_0~1 -hierPinAttr mult_0~6_34 @name mult_0~6 -hierPinAttr mult_0~11_35 @name mult_0~11 -hierPinAttr mult_0~16_36 @name mult_0~16 -hierPinAttr mult_0~21_37 @name mult_0~21 -hierPinAttr mult_0~26_38 @name mult_0~26 -hierPinAttr mult_0~31_39 @name mult_0~31 -hierPinAttr mult_0~36_40 @name mult_0~36 -pg 1 -lvl 1 -x 110 -y 50
+load inst Inst_2|mult_0~1_3 mult_0~1_3 {} -hier Inst_2 -attr @name mult_0~1 -attr @cell {} -pinAttr CIN_5 @name CIN -pinAttr CIN_5 @vconn 1'h0 -pinAttr DATAA_1 @name DATAA -pinAttr DATAB_2 @name DATAB -pinAttr DATAC_3 @name DATAC -pinAttr DATAD_4 @name DATAD -pinAttr COUT_2 @name COUT -pinAttr SUMOUT_1 @name SUMOUT -pg 1 -lvl 5 -x 1010 -y 600
+load inst Inst_2|mult_0~6_4 mult_0~6_4 {} -hier Inst_2 -attr @name mult_0~6 -attr @cell {} -pinAttr CIN_10 @name CIN -pinAttr CIN_10 @vconn 1'h0 -pinAttr DATAA_6 @name DATAA -pinAttr DATAB_7 @name DATAB -pinAttr DATAC_8 @name DATAC -pinAttr DATAD_9 @name DATAD -pinAttr COUT_4 @name COUT -pinAttr SUMOUT_3 @name SUMOUT -pg 1 -lvl 6 -x 1250 -y 40
+load inst Inst_2|mult_0~11_5 mult_0~11_5 {} -hier Inst_2 -attr @name mult_0~11 -attr @cell {} -pinAttr CIN_15 @name CIN -pinAttr DATAA_11 @name DATAA -pinAttr DATAB_12 @name DATAB -pinAttr DATAC_13 @name DATAC -pinAttr DATAD_14 @name DATAD -pinAttr COUT_6 @name COUT -pinAttr SUMOUT_5 @name SUMOUT -pg 1 -lvl 6 -x 1250 -y 260
+load inst Inst_2|mult_0~16_6 mult_0~16_6 {} -hier Inst_2 -attr @name mult_0~16 -attr @cell {} -pinAttr CIN_18 @name CIN -pinAttr CIN_18 @vconn 1'h0 -pinAttr DATAA_16 @name DATAA -pinAttr DATAB_17 @name DATAB -pinAttr COUT_8 @name COUT -pinAttr SUMOUT_7 @name SUMOUT -pg 1 -lvl 5 -x 1010 -y 200
+load inst Inst_2|mult_0~21_7 mult_0~21_7 {} -hier Inst_2 -attr @name mult_0~21 -attr @cell {} -pinAttr CIN_23 @name CIN -pinAttr DATAA_19 @name DATAA -pinAttr DATAB_20 @name DATAB -pinAttr DATAC_21 @name DATAC -pinAttr DATAD_22 @name DATAD -pinAttr COUT_10 @name COUT -pinAttr SUMOUT_9 @name SUMOUT -pg 1 -lvl 5 -x 1010 -y 360
+load inst Inst_2|mult_0~26_8 mult_0~26_8 {} -hier Inst_2 -attr @name mult_0~26 -attr @cell {} -pinAttr CIN_27 @name CIN -pinAttr DATAA_24 @name DATAA -pinAttr DATAB_25 @name DATAB -pinAttr DATAC_26 @name DATAC -pinAttr COUT_12 @name COUT -pinAttr SUMOUT_11 @name SUMOUT -pg 1 -lvl 5 -x 1010 -y 480
+load inst Inst_2|mult_0~31_9 mult_0~31_9 {} -hier Inst_2 -attr @name mult_0~31 -attr @cell {} -pinAttr CIN_31 @name CIN -pinAttr DATAA_28 @name DATAA -pinAttr DATAB_29 @name DATAB -pinAttr DATAC_30 @name DATAC -pinAttr COUT_14 @name COUT -pinAttr SUMOUT_13 @name SUMOUT -pg 1 -lvl 5 -x 1010 -y 720
+load inst Inst_2|mult_0~36_10 mult_0~36_10 {} -hier Inst_2 -attr @name mult_0~36 -attr @cell {} -pinAttr CIN_32 @name CIN -pinAttr SUMOUT_15 @name SUMOUT -pg 1 -lvl 6 -x 1250 -y 740
+load inst Inst_2|mult_0~41_11 mult_0~41_11 {} -hier Inst_2 -attr @name mult_0~41 -attr @cell {} -pinAttr CIN_37 @name CIN -pinAttr DATAA_33 @name DATAA -pinAttr DATAB_34 @name DATAB -pinAttr DATAC_35 @name DATAC -pinAttr DATAD_36 @name DATAD -pinAttr COUT_17 @name COUT -pinAttr SUMOUT_16 @name SUMOUT -pg 1 -lvl 1 -x 190 -y 200
+load inst Inst_2|mult_0~46_12 mult_0~46_12 {} -hier Inst_2 -attr @name mult_0~46 -attr @cell {} -pinAttr CIN_42 @name CIN -pinAttr DATAA_38 @name DATAA -pinAttr DATAB_39 @name DATAB -pinAttr DATAC_40 @name DATAC -pinAttr DATAD_41 @name DATAD -pinAttr COUT_19 @name COUT -pinAttr SUMOUT_18 @name SUMOUT -pg 1 -lvl 3 -x 590 -y 260
+load inst Inst_2|mult_0~51_13 mult_0~51_13 {} -hier Inst_2 -attr @name mult_0~51 -attr @cell {} -pinAttr CIN_47 @name CIN -pinAttr DATAA_43 @name DATAA -pinAttr DATAB_44 @name DATAB -pinAttr DATAC_45 @name DATAC -pinAttr DATAD_46 @name DATAD -pinAttr COUT_21 @name COUT -pinAttr SUMOUT_20 @name SUMOUT -pg 1 -lvl 2 -x 390 -y 340
+load inst Inst_2|mult_0~56_14 mult_0~56_14 {} -hier Inst_2 -attr @name mult_0~56 -attr @cell {} -pinAttr CIN_48 @name CIN -pinAttr SUMOUT_22 @name SUMOUT -pg 1 -lvl 4 -x 770 -y 420
+load inst Inst_2|mult_0~61_15 mult_0~61_15 {} -hier Inst_2 -attr @name mult_0~61 -attr @cell {} -pinAttr CIN_53 @name CIN -pinAttr DATAA_49 @name DATAA -pinAttr DATAB_50 @name DATAB -pinAttr DATAC_51 @name DATAC -pinAttr DATAD_52 @name DATAD -pinAttr COUT_24 @name COUT -pinAttr SUMOUT_23 @name SUMOUT -pg 1 -lvl 3 -x 590 -y 480
+load inst Inst_2|mult_0~66_16 mult_0~66_16 {} -hier Inst_2 -attr @name mult_0~66 -attr @cell {} -pinAttr CIN_54 @name CIN -pinAttr SUMOUT_25 @name SUMOUT -pg 1 -lvl 4 -x 770 -y 780
+load net mult_0~1_5 -attr @name mult_0~1 -pin Inst_2 mult_0~1_33 -port oProduct[0]_17
+load net mult_0~6_8 -attr @name mult_0~6 -pin Inst_2 mult_0~6_34 -port oProduct[1]_18
+load net mult_0~11_11 -attr @name mult_0~11 -pin Inst_2 mult_0~11_35 -port oProduct[2]_19
+load net mult_0~16_14 -attr @name mult_0~16 -pin Inst_2 mult_0~16_36 -port oProduct[3]_20
+load net mult_0~21_17 -attr @name mult_0~21 -pin Inst_2 mult_0~21_37 -port oProduct[4]_21
+load net mult_0~26_20 -attr @name mult_0~26 -pin Inst_2 mult_0~26_38 -port oProduct[5]_22
+load net mult_0~31_23 -attr @name mult_0~31 -pin Inst_2 mult_0~31_39 -port oProduct[6]_23
+load net mult_0~36_26 -attr @name mult_0~36 -pin Inst_2 mult_0~36_40 -port oProduct[7]_24
+load net OUTPUT_40 -attr @name iMultiplicant[0] -attr @rip 0 -pin Inst_2 iMultiplicant[0]_42 -port iMultiplicant[0]_26
+load net OUTPUT_44 -attr @name iMultiplicant[1] -attr @rip 1 -pin Inst_2 iMultiplicant[1]_44 -port iMultiplicant[1]_28
+load net OUTPUT_48 -attr @name iMultiplicant[2] -attr @rip 2 -pin Inst_2 iMultiplicant[2]_46 -port iMultiplicant[2]_30
+load net OUTPUT_50 -attr @name iMultiplicant[3] -attr @rip 3 -pin Inst_2 iMultiplicant[3]_47 -port iMultiplicant[3]_31
+load net OUTPUT_38 -attr @name iMultiplier[0] -attr @rip 0 -pin Inst_2 iMultiplier[0]_41 -port iMultiplier[0]_25
+load net OUTPUT_42 -attr @name iMultiplier[1] -attr @rip 1 -pin Inst_2 iMultiplier[1]_43 -port iMultiplier[1]_27
+load net OUTPUT_46 -attr @name iMultiplier[2] -attr @rip 2 -pin Inst_2 iMultiplier[2]_45 -port iMultiplier[2]_29
+load net OUTPUT_52 -attr @name iMultiplier[3] -attr @rip 3 -pin Inst_2 iMultiplier[3]_48 -port iMultiplier[3]_32
+load net Inst_2|CIN_1 -ground -attr @name {} -pin Inst_2|mult_0~1_3 CIN_5
+load net Inst_2|CIN_2 -ground -attr @name {} -pin Inst_2|mult_0~6_4 CIN_10
+load net Inst_2|CIN_3 -ground -attr @name {} -pin Inst_2|mult_0~16_6 CIN_18
+load net Inst_2|SUMOUT_4 -attr @name mult_0~1:SUMOUT -hierPin Inst_2 mult_0~1_33 -pin Inst_2|mult_0~1_3 SUMOUT_1
+netloc Inst_2|SUMOUT_4 1 5 2 NJ 650 NJ
+load net Inst_2|COUT_6 -attr @name mult_0~1:COUT -pin Inst_2|mult_0~11_5 CIN_15 -pin Inst_2|mult_0~1_3 COUT_2
+netloc Inst_2|COUT_6 1 5 1 1180 270n
+load net Inst_2|SUMOUT_7 -attr @name mult_0~6:SUMOUT -hierPin Inst_2 mult_0~6_34 -pin Inst_2|mult_0~6_4 SUMOUT_3
+netloc Inst_2|SUMOUT_7 1 6 1 NJ 90
+load net Inst_2|COUT_9 -attr @name mult_0~6:COUT -pin Inst_2|mult_0~46_12 CIN_42 -pin Inst_2|mult_0~6_4 COUT_4
+netloc Inst_2|COUT_9 1 2 5 560 150 NJ 150 NJ 150 NJ 150 1380
+load net Inst_2|SUMOUT_10 -attr @name mult_0~11:SUMOUT -hierPin Inst_2 mult_0~11_35 -pin Inst_2|mult_0~11_5 SUMOUT_5
+netloc Inst_2|SUMOUT_10 1 6 1 NJ 310
+load net Inst_2|COUT_12 -attr @name mult_0~11:COUT -pin Inst_2|mult_0~11_5 COUT_6 -pin Inst_2|mult_0~41_11 CIN_37
+netloc Inst_2|COUT_12 1 0 7 160 170 NJ 170 NJ 170 NJ 170 NJ 170 NJ 170 1380
+load net Inst_2|SUMOUT_13 -attr @name mult_0~16:SUMOUT -hierPin Inst_2 mult_0~16_36 -pin Inst_2|mult_0~16_6 SUMOUT_7
+netloc Inst_2|SUMOUT_13 1 5 2 NJ 230 NJ
+load net Inst_2|COUT_15 -attr @name mult_0~16:COUT -pin Inst_2|mult_0~16_6 COUT_8 -pin Inst_2|mult_0~21_7 CIN_23
+netloc Inst_2|COUT_15 1 4 2 940 270 1140
+load net Inst_2|SUMOUT_16 -attr @name mult_0~21:SUMOUT -hierPin Inst_2 mult_0~21_37 -pin Inst_2|mult_0~21_7 SUMOUT_9
+netloc Inst_2|SUMOUT_16 1 5 2 NJ 410 NJ
+load net Inst_2|COUT_18 -attr @name mult_0~21:COUT -pin Inst_2|mult_0~21_7 COUT_10 -pin Inst_2|mult_0~26_8 CIN_27
+netloc Inst_2|COUT_18 1 4 2 960 290 1140
+load net Inst_2|SUMOUT_19 -attr @name mult_0~26:SUMOUT -hierPin Inst_2 mult_0~26_38 -pin Inst_2|mult_0~26_8 SUMOUT_11
+netloc Inst_2|SUMOUT_19 1 5 2 NJ 530 NJ
+load net Inst_2|COUT_21 -attr @name mult_0~26:COUT -pin Inst_2|mult_0~26_8 COUT_12 -pin Inst_2|mult_0~31_9 CIN_31
+netloc Inst_2|COUT_21 1 4 2 960 570 1140
+load net Inst_2|SUMOUT_22 -attr @name mult_0~31:SUMOUT -hierPin Inst_2 mult_0~31_39 -pin Inst_2|mult_0~31_9 SUMOUT_13
+netloc Inst_2|SUMOUT_22 1 5 2 NJ 770 NJ
+load net Inst_2|COUT_24 -attr @name mult_0~31:COUT -pin Inst_2|mult_0~31_9 COUT_14 -pin Inst_2|mult_0~36_10 CIN_32
+netloc Inst_2|COUT_24 1 5 1 NJ 750
+load net Inst_2|SUMOUT_25 -attr @name mult_0~36:SUMOUT -hierPin Inst_2 mult_0~36_40 -pin Inst_2|mult_0~36_10 SUMOUT_15
+netloc Inst_2|SUMOUT_25 1 6 1 NJ 750
+load net Inst_2|SUMOUT_27 -attr @name mult_0~41:SUMOUT -pin Inst_2|mult_0~16_6 DATAA_16 -pin Inst_2|mult_0~41_11 SUMOUT_16
+netloc Inst_2|SUMOUT_27 1 1 4 NJ 250 520J 230 NJ 230 N
+load net Inst_2|COUT_28 -attr @name mult_0~41:COUT -pin Inst_2|mult_0~41_11 COUT_17 -pin Inst_2|mult_0~51_13 CIN_47
+netloc Inst_2|COUT_28 1 1 1 320 230n
+load net Inst_2|SUMOUT_29 -attr @name mult_0~46:SUMOUT -pin Inst_2|mult_0~16_6 DATAB_17 -pin Inst_2|mult_0~46_12 SUMOUT_18
+netloc Inst_2|SUMOUT_29 1 3 2 720 250 NJ
+load net Inst_2|COUT_30 -attr @name mult_0~46:COUT -pin Inst_2|mult_0~46_12 COUT_19 -pin Inst_2|mult_0~56_14 CIN_48
+netloc Inst_2|COUT_30 1 3 1 740 290n
+load net Inst_2|SUMOUT_31 -attr @name mult_0~51:SUMOUT -pin Inst_2|mult_0~21_7 DATAA_19 -pin Inst_2|mult_0~26_8 DATAA_24 -pin Inst_2|mult_0~51_13 SUMOUT_20
+netloc Inst_2|SUMOUT_31 1 2 3 N 390 NJ 390 940
+load net Inst_2|COUT_32 -attr @name mult_0~51:COUT -pin Inst_2|mult_0~51_13 COUT_21 -pin Inst_2|mult_0~61_15 CIN_53
+netloc Inst_2|COUT_32 1 2 1 520 370n
+load net Inst_2|SUMOUT_33 -attr @name mult_0~56:SUMOUT -pin Inst_2|mult_0~21_7 DATAB_20 -pin Inst_2|mult_0~26_8 DATAB_25 -pin Inst_2|mult_0~56_14 SUMOUT_22
+netloc Inst_2|SUMOUT_33 1 4 1 880 410n
+load net Inst_2|SUMOUT_34 -attr @name mult_0~61:SUMOUT -pin Inst_2|mult_0~26_8 DATAC_26 -pin Inst_2|mult_0~61_15 SUMOUT_23
+netloc Inst_2|SUMOUT_34 1 3 2 720 550 NJ
+load net Inst_2|COUT_35 -attr @name mult_0~61:COUT -pin Inst_2|mult_0~61_15 COUT_24 -pin Inst_2|mult_0~66_16 CIN_54
+netloc Inst_2|COUT_35 1 3 1 740 510n
+load net Inst_2|SUMOUT_36 -attr @name mult_0~66:SUMOUT -pin Inst_2|mult_0~31_9 DATAC_30 -pin Inst_2|mult_0~66_16 SUMOUT_25
+netloc Inst_2|SUMOUT_36 1 4 1 NJ 790
+load net Inst_2|COMBOUT_39 -attr @name iMultiplicant[0] -attr @rip 0 -hierPin Inst_2 iMultiplicant[0]_42 -pin Inst_2|mult_0~11_5 DATAB_12 -pin Inst_2|mult_0~1_3 DATAB_2 -pin Inst_2|mult_0~41_11 DATAB_34 -pin Inst_2|mult_0~6_4 DATAB_7
+load net Inst_2|COMBOUT_43 -attr @name iMultiplicant[1] -attr @rip 1 -hierPin Inst_2 iMultiplicant[1]_44 -pin Inst_2|mult_0~1_3 DATAD_4 -pin Inst_2|mult_0~41_11 DATAD_36 -pin Inst_2|mult_0~51_13 DATAB_44 -pin Inst_2|mult_0~6_4 DATAD_9
+load net Inst_2|COMBOUT_47 -attr @name iMultiplicant[2] -attr @rip 2 -hierPin Inst_2 iMultiplicant[2]_46 -pin Inst_2|mult_0~11_5 DATAD_14 -pin Inst_2|mult_0~46_12 DATAB_39 -pin Inst_2|mult_0~51_13 DATAD_46 -pin Inst_2|mult_0~61_15 DATAB_50
+load net Inst_2|COMBOUT_49 -attr @name iMultiplicant[3] -attr @rip 3 -hierPin Inst_2 iMultiplicant[3]_47 -pin Inst_2|mult_0~21_7 DATAD_22 -pin Inst_2|mult_0~31_9 DATAB_29 -pin Inst_2|mult_0~46_12 DATAD_41 -pin Inst_2|mult_0~61_15 DATAD_52
+load net Inst_2|COMBOUT_37 -attr @name iMultiplier[0] -attr @rip 0 -hierPin Inst_2 iMultiplier[0]_41 -pin Inst_2|mult_0~11_5 DATAC_13 -pin Inst_2|mult_0~1_3 DATAA_1 -pin Inst_2|mult_0~46_12 DATAC_40 -pin Inst_2|mult_0~6_4 DATAC_8
+load net Inst_2|COMBOUT_41 -attr @name iMultiplier[1] -attr @rip 1 -hierPin Inst_2 iMultiplier[1]_43 -pin Inst_2|mult_0~1_3 DATAC_3 -pin Inst_2|mult_0~21_7 DATAC_21 -pin Inst_2|mult_0~46_12 DATAA_38 -pin Inst_2|mult_0~6_4 DATAA_6
+load net Inst_2|COMBOUT_45 -attr @name iMultiplier[2] -attr @rip 2 -hierPin Inst_2 iMultiplier[2]_45 -pin Inst_2|mult_0~11_5 DATAA_11 -pin Inst_2|mult_0~41_11 DATAC_35 -pin Inst_2|mult_0~51_13 DATAC_45 -pin Inst_2|mult_0~61_15 DATAC_51
+load net Inst_2|COMBOUT_51 -attr @name iMultiplier[3] -attr @rip 3 -hierPin Inst_2 iMultiplier[3]_48 -pin Inst_2|mult_0~31_9 DATAA_28 -pin Inst_2|mult_0~41_11 DATAA_33 -pin Inst_2|mult_0~51_13 DATAA_43 -pin Inst_2|mult_0~61_15 DATAA_49
+load netBundle OUTPUT_53 4 OUTPUT_40 OUTPUT_44 OUTPUT_48 OUTPUT_50 -attr @name iMultiplicant[0..3]
+netbloc OUTPUT_53 1 0 1 0J 120n
+load netBundle OUTPUT_54 4 OUTPUT_38 OUTPUT_42 OUTPUT_46 OUTPUT_52 -attr @name iMultiplier[0..3]
+netbloc OUTPUT_54 1 0 1 -20J 140n
+load netBundle Inst_2|COMBOUT_55 4 Inst_2|COMBOUT_39 Inst_2|COMBOUT_43 Inst_2|COMBOUT_47 Inst_2|COMBOUT_49 -attr @name iMultiplicant[0..3]
+netbloc Inst_2|COMBOUT_55 1 0 6 140 330 360 310 540 370 NJ 370 920 310 1200
+load netBundle Inst_2|COMBOUT_56 4 Inst_2|COMBOUT_37 Inst_2|COMBOUT_41 Inst_2|COMBOUT_45 Inst_2|COMBOUT_51 -attr @name iMultiplier[0..3]
+netbloc Inst_2|COMBOUT_56 1 0 6 160 310 340 290 560 450 NJ 450 900 330 1160
+load netBundle @mult_0~1_,mult_0~6_ 8 mult_0~1_5 mult_0~6_8 mult_0~11_11 mult_0~16_14 mult_0~21_17 mult_0~26_20 mult_0~31_23 mult_0~36_26 -autobundled
+netbloc @mult_0~1_,mult_0~6_ 1 1 1 1490 60n
+levelinfo -pg 1 -40 110 1510
+levelinfo -hier Inst_2 * 190 390 590 770 1010 1250 *
+pagesize -pg 1 -db -bbox -sgen -180 0 1640 840
+pagesize -hier Inst_2 -db -bbox -sgen 110 20 1410 810
+show
+fullfit
+#
+# initialize ictrl to current module _1 filter_view
+ictrl init _1 |
+ictrl property autohide 1
+ictrl property addSubpinInfo 1
+ictrl property addSubportInfo 1
+ictrl property addFillcolor12 0
